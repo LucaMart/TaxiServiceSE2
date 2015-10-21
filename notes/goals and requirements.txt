@@ -1,0 +1,17 @@
+Goals and requirements
+======================
+
+Goals
+-----
+
+1. The user must be able to:
+
+    1. Transmit its position and the desired destination to the system, thus initiating
+    the request of a taxi
+    #. Access the system from both a in-browser and a mobile application (?)
+    #. Receive the code and the ETA of the incoming taxi
+    
+        **Assumption:** in case the taxi queue is empty, the system will query the
+        adjacent zones
+        
+    #. 
