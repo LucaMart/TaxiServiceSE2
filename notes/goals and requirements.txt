@@ -14,4 +14,13 @@ Goals
         **Assumption:** in case the taxi queue is empty, the system will query the
         adjacent zones
         
-    #. 
+#. The taxi driver must be able to:
+
+    1. Login to the system
+    #. Render him/herself available to the scheduler
+    #. Render him/herself unavailable to the scheduler
+    
+#. The system must:
+
+    1. Keep a database of all the taxi drivers, with rach drivers'ID
+    #. Keep track of the location of taxis
