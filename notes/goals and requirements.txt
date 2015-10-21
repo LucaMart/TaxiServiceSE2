@@ -4,7 +4,7 @@ Goals and requirements
 Goals
 -----
 
-1. The user must be able to:
+1. The passengers must be able to:
 
     1. Transmit its position and the desired destination to the system, thus initiating
     the request of a taxi
@@ -16,11 +16,15 @@ Goals
         
 #. The taxi driver must be able to:
 
-    1. Login to the system
+    1. Login to the system ( requirements?)
+    #. Answer a passenger request
     #. Render him/herself available to the scheduler
     #. Render him/herself unavailable to the scheduler
     
 #. The system must:
 
     1. Keep a database of all the taxi drivers, with rach drivers'ID
-    #. Keep track of the location of taxis
+    #. Keep track of the different zone
+    #. Append free taxis on the queue corresponding to his zone location
+    #. Forward passengers request to the first taxi in the passengers zone queue (?)
+    #.Send taxi ID and ETA to the passenger who  the service
