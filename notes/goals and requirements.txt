@@ -16,8 +16,9 @@ Goals
         
 #. The taxi driver must be able to:
 
-    1. Login to the system ( requirements?)
-    #. Answer a passenger request
+    1. Login to the system ( p
+    #. (?) Create an account adding: Name, Surname, fiscal code, vehicle ID( Targa), phone number (security: verify phone number through a code, Steam like)
+    #. Answer a passenger requester
     #. Render him/herself available to the scheduler
     #. Render him/herself unavailable to the scheduler
     
@@ -27,4 +28,7 @@ Goals
     #. Keep track of the different zone
     #. Append free taxis on the queue corresponding to his zone location
     #. Forward passengers request to the first taxi in the passengers zone queue (?)
-    #.Send taxi ID and ETA to the passenger who asked the service
+    #.Send taxi ID and ETA to the passenger passenger requester
+
+#. Constraints
+    1. Unique account for each veichle ID 
