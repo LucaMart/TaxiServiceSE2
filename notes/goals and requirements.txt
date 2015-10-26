@@ -1,5 +1,6 @@
 Goals, requirements and stuff
 ======================
+WARNING: verbs are not in third person singular form
 
 Goals
 -----
@@ -10,38 +11,54 @@ Goals
     the request of a taxi
     #. Receive the code and the ETA of the incoming taxi
     #. Reserve a taxi for a certain time
-    #. Can select a shared ride
-    
-        **Assumption:** in case the taxi queue is empty, the system will query the
-        adjacent zones
+    #. Request a shared ride
+    #. Receive the fee amount he need to pay in case of a shared ride
         
 #. The taxi driver must be able to:
-
-    1. Login to the system ( requirements?)
-    #. Answer a passenger request
+ 
+    1. Answer a passenger request
     #. Render him/herself available to the scheduler
     #. Render him/herself unavailable to the scheduler
-    
- 
+    #. Receive informations about the fees of the passengers in case of shared ride
+
+#. The system must to:
+
+    1. Offer a programmatic interface to enable the development of additional services
+
 Requirements
 ------------
 
 1. The system forward passengers request to the first taxi in the passengers zone queue
-#. The system append free taxis on the queue corresponding to his zone location
-#. The system send taxi ID and ETA to the passenger requester
+#. If a taxi refuses a call request, the system must forward the call to the second taxi in queue,
+and move the first taxi at the end of the queue
+#. The system appends free taxis on the queue corresponding to his zone location
+#. The system sends taxi ID and ETA to the passenger requester
+#. The system must allocates a taxi ,for a reservation, 10 minutes before the meeting time with the passenger
+#. The system must arranges the shared rides :
+
+    1. Aggregates passengers in the same taxi-zone
+    #. Arranges the route for the taxi driver
+    #. Defines the fee for all persons that are sharing the taxi, and informs the passengers and the taxi driver
+
+#. The system accept only reservation that occur at least two hours before the ride 
+#. A veichle ID can't belong to two different account
+#. Every taxi driver must create an account to access the service, adding: Name, Surname, SSN, veichle ID, License ID, phone number\ badge
+#. The taxi drivers must login to start using the service
 
 Assumptions
 -----------
 
 1. Taxi locations are acquired by GPS
 #. The system append freee taxis on the queue corresponding to his zone location
-#. Create an account adding: Name, Surname, SSN, vehicle ID( Targa), badge/phone number (security: verify phone number through a code, Steam like)
 #. The system must keep a database of all the taxi drivers, with rach drivers'ID
-#. the system must keep track of the different zone
+#. The system must keep track of the different zone
+#. Passenger should be able to access the system from both a in-browser and a mobile application
 
 Constraints
 -----------
 
-1. Unique account for each veichle ID 
-#. Passenger should be able to access the system from both a in-browser and a mobile application
-#. The system accept only reservation that occur at least two hours before the ride
+1. Passengers can access to the service only through mobile or web application
+#. Taxi driver can use the system only with mobile application
+#. Taxi driver must have a GPS to share his location with the system
+#. Both Passengers and Taxi driver must be connected to the netowrk to access the service (too obvious?)
+#. 
