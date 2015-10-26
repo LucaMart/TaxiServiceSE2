@@ -27,4 +27,4 @@ Goals
     #. Keep track of the different zone
     #. Append free taxis on the queue corresponding to his zone location
     #. Forward passengers request to the first taxi in the passengers zone queue (?)
-    #.Send taxi ID and ETA to the passenger who asked the service
+    #. Send taxi ID and ETA to the passenger who asked the service
