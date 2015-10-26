@@ -1,4 +1,4 @@
-Goals and requirements
+Goals, requirements and stuff
 ======================
 
 Goals
@@ -8,27 +8,37 @@ Goals
 
     1. Transmit its position and the desired destination to the system, thus initiating
     the request of a taxi
-    #. Access the system from both a in-browser and a mobile application (?)
     #. Receive the code and the ETA of the incoming taxi
+    #. Reserve a taxi for a certain time
+    #. Can select a shared ride
     
         **Assumption:** in case the taxi queue is empty, the system will query the
         adjacent zones
         
 #. The taxi driver must be able to:
 
-    1. Login to the system ( p
-    #. (?) Create an account adding: Name, Surname, fiscal code, vehicle ID( Targa), phone number (security: verify phone number through a code, Steam like)
+    1. Login to the system(?)
     #. Answer a passenger requester
     #. Render him/herself available to the scheduler
     #. Render him/herself unavailable to the scheduler
     
-#. The system must:
+ 
+Reuqirements
+------------
+    1.The system forward passengers request to the first taxi in the passengers zone queue
+    #.The system append free taxis on the queue corresponding to his zone location
+    #.The system send taxi ID and ETA to the passenger requester
 
-    1. Keep a database of all the taxi drivers, with rach drivers'ID
-    #. Keep track of the different zone
-    #. Append free taxis on the queue corresponding to his zone location
-    #. Forward passengers request to the first taxi in the passengers zone queue (?)
-    #.Send taxi ID and ETA to the passenger passenger requester
+Assumptions
+-----------
+    1.Taxi locations are acquired by GPS
+    #.The system append freee taxis on the queue corresponding to his zone location
+    #.Create an account adding: Name, Surname, SSN, vehicle ID( Targa), badge/phone number (security: verify phone number through a code, Steam like)
+    #.The system must keep a database of all the taxi drivers, with rach drivers'ID
+    #.the system must keep track of the different zone
 
-#. Constraints
+Constraints
+-----------
     1. Unique account for each veichle ID 
+    #. Passenger should be able to access the system from both a in-browser and a mobile application
+    #. The system accept only reservation that occur at least two hours before the ride
