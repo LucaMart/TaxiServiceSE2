@@ -1,0 +1,58 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[utf8]{inputenc}
+
+% Title Page
+\title{Requirement Analysis and Specification Document}
+\author{}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+\addtocounter{chapter}{1}
+
+\section{Purpose}
+This document aims to describe, specify and analyze the software requirements for \textit{My Taxi Service}. \\
+My Taxi Service is needed to provide a passenger-friendly interface to interact with the city's taxi service, and ensure
+a fair management of the city-wide taxi deployment.
+
+\section{Scope}
+%TODO: (michele) Here I will used some terms that are specific in the context of the project...
+% Should I make a reference to the appropriate definition in section "Definitions, Acronyms and Abbreviations"?
+% I have added some footnotes though
+The passengers should be able to use an application (either mobile or browser based) to request a taxi through the system,
+which in turn should answer with the ETA\footnote{Estimated time of arrival} and identification code of the incoming tax. \\
+The passengers should be compelled to provide their current location to the system, for their request to be accepted. \\
+The taxi drivers should be able to use a mobile application to communicate their availability to the system, and accept
+ or refuse incoming calls. \\
+The system shall manage a queue of taxis for each taxi zone\footnote{Partition of the city}. \\
+The system shall receive GPS location data from each taxi, and use that information to assign each taxi to a 
+taxi zone; an available taxi is automatically placed into the taxi queue belonging to the taxi zone it currently occupies. \\
+The system shall remove a taxi from the queue upon receiving a confirmation in which the driver accepts an incoming call; a
+further confirmation is also sent back to the driver. If a taxi (driver) does, on the other hand, refuse an incoming call, the system
+shall move it to the bottom of its taxi queue. \\
+The system matches a passenger's position to a taxi zone, and uses that information to forward the call to the first taxi
+available in the relative taxi queue. \\
+The system shall provide an Application Programming Interface, to make room for future improvements.
+% TODO: (michele) part II and III
+
+\section{Definitions, Acronyms and Abbreviations}
+
+\section{Reference documents}
+
+\section{Overview}
+
+
+\chapter*{Overall description}
+\addcontentsline{toc}{chapter}{Overall description}
+\addtocounter{chapter}{1}
+
+
+\chapter*{Specific requirements}
+\addcontentsline{toc}{chapter}{Specific requirements}
+\addtocounter{chapter}{1}
+
+\end{document}          
