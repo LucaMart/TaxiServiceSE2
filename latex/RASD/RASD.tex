@@ -37,12 +37,23 @@ shall move it to the bottom of its taxi queue. \\
 The system matches a passenger's position to a taxi zone, and uses that information to forward the call to the first taxi
 available in the relative taxi queue. \\
 The system shall provide an Application Programming Interface, to make room for future improvements. \\
-The system shall also provide the possibility of requesting the reservation of a taxi; said reservation must occur not earlier
-than 2 hours before the actual time of the ride; the time of the ride has to be specified by the passenger during the
+The system shall also provide the possibility of requesting the reservation of a taxi; said reservation must occur at least
+2 hours before the actual time of the ride; the time of the ride has to be specified by the passenger during the
 reservation procedure, as well as the passenger's location and destination. \\
 However, the system will actually allocate a taxi (by means of removing it from the queue) only 10 minutes before the
 requested time of the ride.
 % TODO: (michele) part III
+\section{Domain properties}
+In this section we will analize the background laying behind My Taxi Service:
+\begin{itemize}
+\item Users of the service are assumed to be reliable and trustworthy, meaning that if they request a taxi or make a reservation
+they will declare their real position and actually use the taxi;\\
+\item Users of the service will pay at the end of the ride the amount of money demanded by the taxist;\\
+\item Taxi drivers must own a valid taxi driving license;\\
+\item ETA is estimated with a maximum error margin of 5 minutes;\\
+\item We assume that for each zone if its queue is empty there is at least one queue in the eight adjacent zones with available taxis;\\
+\item We assume GPS coordinates reliable;\\
+\end{itemize}
 \section{Goals}
 The passengers must be able to:
 \begin{itemize}
@@ -72,7 +83,7 @@ The system must be able to:
   \item[Queue:] a list of all available taxis in the corresponding taxi zone. It is managed as a FIFO queue.
     There is exactly one taxi queue associated to each taxi zone.
   \item[GPS:] global position system.
-  \item[Shared ride:] a passenger shares the ride with other peoples that origins from the same zone, and go to the same direction
+  \item[Shared ride:] a passenger shares the ride with other people that origins from the same zone, and go to the same direction
     % TODO: what is "same direction"? Maybe "same destination"? <--- direction was mentioned in the Assignments, we have to contact the customer
     \begin{center}
     •
@@ -100,6 +111,7 @@ Passengers can interact with the service through a web browser or a mobile appli
 Taxi driver must access to the application with a device provided of GPS.
 \section{Assumption}
 \begin{itemize}
+<<<<<<< HEAD
 \item If a request comes from a zone, which queue is empty, the system forwards the call to the first taxi in the queue corresponding to an adiacent taxi zone, strartin from the northest.
 \item A passenger doesn't need of an account to reserve a taxi, unless he wants to add a reservation.%team discussion--->confirm/change this assumption
 \item Taxi drivers can create only one account per vichle ID %<--Targa
@@ -109,6 +121,13 @@ Taxi driver must access to the application with a device provided of GPS.
 \item one destination is included in in the path generated to reach the others
 \item 
 \end{itemize}
+=======
+  \item If a request comes from a zone, whose queue is empty, then the system forwards the call to the first taxi in the queue corresponding to an adjacent taxi zone, starting from the northeast.
+  \item A passenger doesn't need an account to request a taxi, however, an account is required to use the reservation service. %team discussion--->confirm/change this assumption
+  \item Taxi drivers can create only one account per vehicle ID %<--Targa
+  \item Passengers who reserve a taxi can delete the reservation; if a taxi was allocated for the ride, the system will notify the taxi driver and put him at the top of the queue.
+  \item
+>>>>>>> origin/master
 \end{itemize}
 \chapter*{Specific requirements}
 \addcontentsline{toc}{chapter}{Specific requirements}

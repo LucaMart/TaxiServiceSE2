@@ -1,0 +1,35 @@
+SCENARIOS
+
+1. 
+Jon, a bank employee, is driving back home while he notices a strange noise coming from his car. He decides to stop at the first garage on the road.
+The mechanic checks the car and tells him that the problem is quite serious, and a part must be replaced immediately,
+but ,since the spare part is not in storage, the car must stay there untill the new part arrives. 
+The garage is far from Jon's home and no public transport covers the distance, so as Jon's hunger grows, he decides to call a taxi.
+He checks on his phone and finds MyTaxiService app. After downloading, he inserts his position and confirms. The app informs him that he has to wait 5
+minutes for taxi 13C to come over.
+
+2. 
+Brandon is going to Moscow in three days and must be at the airport at 3,00 pm. Howewer, differently from what was provided,
+his mother can no longer take him to the airport because she arrenged an appointment with the haidresser at the same time,
+and recommends him to take a taxi that will lead him right near the airport entrance.
+Brandon searches on his personal computer for a taxi service and found MyTaxiService, fill in the form with his address,the airport address and the
+time of departure.Later that day, Brandon receives an email of confirmation and can pack peacefully.
+
+3.
+Eddard, a taxist, is just starting a new day of work. he goes to the taxi station and picks the taxi assigneted to him that day.
+As soon as he gets in the vehicle he logs into his account, inserting his code and password.The light on th display is green, he is connected with the system 
+and he is sending correctly his position. Now he awaits for incoming call.
+
+4.
+Robb, a taxist, receives a notification of an incoming call. The request comes from Mario Street, not far from his position.
+Robb looks at the time, it's 12.58 and his turn is over in two minutes so he declines the request.
+
+5.
+Arya, a young girl, wants to go to an exhibition on environmental sustainability downtown.
+She has heard that the city centre will be closed at traffic and only taxis will be able to access, so she decides to take one, and in order to
+save some money she reserves a ride and enables the sharing option, hoping that also others will use the taxi and join her.
+She receives a message from the taxi service in which they confirm the taxi and that 3 more people will use the same ride so the cost will be only of 5 $.
+
+6.
+Rickon, a taxist, receives a notification of an incoming call. It's a shared ride, so in addition to the starting point and the destination, there are 
+indicated some other checkpoints on the journey.
