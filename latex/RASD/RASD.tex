@@ -43,6 +43,17 @@ reservation procedure, as well as the passenger's location and destination. \\
 However, the system will actually allocate a taxi (by means of removing it from the queue) only 10 minutes before the
 requested time of the ride.
 % TODO: (michele) part III
+\section{Domain properties}
+In this section we will analize the background laying behind My Taxi Service:
+\begin{itemize}
+\item Users of the service are assumed to be reliable and trustworthy, meaning that if they request a taxi or make a reservation
+they will declare their real position and actually use the taxi;\\
+\item Users of the service will pay at the end of the ride the amount of money demanded by the taxist;\\
+\item Taxi drivers must own a valid taxi driving license;\\
+\item ETA is estimated with a maximum error margin of 5 minutes;\\
+\item We assume that for each zone if its queue is empty there is at least one queue in the eight adjacent zones with available taxis;\\
+\item We assume GPS coordinates reliable;\\
+\end{itemize}
 \section{Goals}
 The passengers must be able to:
 \begin{itemize}
@@ -72,7 +83,7 @@ The system must be able to:
   \item[Queue:] a list of all available taxis in the corresponding taxi zone. It is managed as a FIFO queue.
     There is exactly one taxi queue associated to each taxi zone.
   \item[GPS:] global position system.
-  \item[Shared ride:] a passenger shares the ride with other peoples that origins from the same zone, and go to the same direction
+  \item[Shared ride:] a passenger shares the ride with other people that origins from the same zone, and go to the same direction
     % TODO: what is "same direction"? Maybe "same destination"? <--- direction was mentioned in the Assignments, we have to contact the customer
     \begin{center}
     •
