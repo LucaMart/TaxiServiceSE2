@@ -60,8 +60,9 @@ ETA: estimated time of arrival.\\
 Taxi zones: the geografical partition of the city.\\
 Queue: a list of avaliable taxis in the corresponding taxi zone.\\
 GPS: global position system.\\
-Shared ride: a passenger shares the ride with other peoples that start from the same zone, and go to the same direction\\
-
+Shared ride: a passenger shares the ride with other peoples that start from the same zone, and go to the same direction.\\
+Gn: goal number 'n'.\\
+User: both passenger and taxi driver that want to take advantage of the system.
 % WIP
  
 \section{Reference documents}
@@ -72,8 +73,16 @@ Shared ride: a passenger shares the ride with other peoples that start from the 
 \chapter*{Overall description}
 \addcontentsline{toc}{chapter}{Overall description}
 \addtocounter{chapter}{1}
-
-
+\section{Product perspective}
+The system must interact with a map service, to retrieve information about the route to send to the taxi driver in case of shared ride.
+\section{Constraints}
+We will develop a unique mobile application that can be used by both passengers and taxi-drivers.\\
+The web application will include only passengers functions.\\
+The mobile application must be available for Android, Windowsphone and iOS.\\
+\section{User characteristics}
+The users must be connected to the network to use the application.
+Passengers can interact with the service through a web browser or a mobile application.
+Taxi driver must access to the application with a device provided of GPS.
 \chapter*{Specific requirements}
 \addcontentsline{toc}{chapter}{Specific requirements}
 \addtocounter{chapter}{1}
