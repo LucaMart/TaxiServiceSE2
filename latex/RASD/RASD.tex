@@ -100,11 +100,11 @@ Passengers can interact with the service through a web browser or a mobile appli
 Taxi driver must access to the application with a device provided of GPS.
 \section{Assumption}
 \begin{itemize}
-\item If a request comes from a zone, which queue is empty, the system forwards the call to the first taxi in the queue corresponding to an adiacent taxi zone, strartin from the northest.
-\item A passenger doesn't need of an account to reserve a taxi, unless he wants to add a reservation.%team discussion--->confirm/change this assumption
-\item Taxi drivers can create only one account per vichle ID %<--Targa
-\item Passengers who reserve a taxi can delete the reservation, if a taxi was allocated for the ride, the system will notify the taxi driver and put him at the top of the queue.
-\item
+  \item If a request comes from a zone, whose queue is empty, then the system forwards the call to the first taxi in the queue corresponding to an adjacent taxi zone, starting from the northeast.
+  \item A passenger doesn't need an account to request a taxi, however, an account is required to use the reservation service. %team discussion--->confirm/change this assumption
+  \item Taxi drivers can create only one account per vehicle ID %<--Targa
+  \item Passengers who reserve a taxi can delete the reservation; if a taxi was allocated for the ride, the system will notify the taxi driver and put him at the top of the queue.
+  \item
 \end{itemize}
 \chapter*{Specific requirements}
 \addcontentsline{toc}{chapter}{Specific requirements}
