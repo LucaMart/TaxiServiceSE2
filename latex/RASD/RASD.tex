@@ -24,7 +24,7 @@ a fair management of the city-wide taxi deployment.
 % Should I make a reference to the appropriate definition in section "Definitions, Acronyms and Abbreviations"?
 % I have added some footnotes though
 The passengers should be able to use an application (either mobile or browser based) to request a taxi through the system,
-which in turn should answer with the ETA\footnote{Estimated time of arrival} and identification code of the incoming tax. \\
+which in turn should answer with the ETA and identification code of the incoming tax. \\
 The passengers should be compelled to provide their current location to the system, for their request to be accepted. \\
 The taxi drivers should be able to use a mobile application to communicate their availability to the system, and accept
  or refuse incoming calls. \\
@@ -38,9 +38,32 @@ The system matches a passenger's position to a taxi zone, and uses that informat
 available in the relative taxi queue. \\
 The system shall provide an Application Programming Interface, to make room for future improvements.
 % TODO: (michele) part II and III
-
+\section{Goals}
+The passengers must be able to:\\
+ G1. Transmit its position and the desired destination to the system, thus initiating the Request of a taxi
+    G2. Receive the code and the ETA of the incoming taxi\\
+    G3. Reserve a taxi for a certain time\\
+    G4. Request a shared ride\\
+    G5. Receive the fee amount he need to pay in case of a shared ride\\
+The taxi driver must be able to:\\
+    G6. Answer a passenger request\\
+    G7. Render him/herself available to the scheduler\\
+    G8. Render him/herself unavailable to the scheduler\\
+    G9. Receive informations about the fees of the passengers in case of shared ride\\
+The system must be able to:\\
+   G10.Offer a programmatic interface to enable the development of additional services\\
+ 
 \section{Definitions, Acronyms and Abbreviations}
+Passenger: the person who needs to call a taxi.\\
+(?)System: the automatic part that manages the service.\\
+ETA: estimated time of arrival.\\
+Taxi zones: the geografical partition of the city.\\
+Queue: a list of avaliable taxis in the corresponding taxi zone.\\
+GPS: global position system.\\
+Shared ride: a passenger shares the ride with other peoples that start from the same zone, and go to the same direction\\
 
+% WIP
+ 
 \section{Reference documents}
 
 \section{Overview}
