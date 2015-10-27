@@ -36,24 +36,35 @@ further confirmation is also sent back to the driver. If a taxi (driver) does, o
 shall move it to the bottom of its taxi queue. \\
 The system matches a passenger's position to a taxi zone, and uses that information to forward the call to the first taxi
 available in the relative taxi queue. \\
-The system shall provide an Application Programming Interface, to make room for future improvements.
-% TODO: (michele) part II and III
+The system shall provide an Application Programming Interface, to make room for future improvements. \\
+The system shall also provide the possibility of requesting the reservation of a taxi; said reservation must occur not earlier
+than 2 hours before the actual time of the ride; the time of the ride has to be specified by the passenger during the
+reservation procedure, as well as the passenger's location and destination. \\
+However, the system will actually allocate a taxi (by means of removing it from the queue) only 10 minutes before the
+requested time of the ride.
+% TODO: (michele) part III
 \section{Goals}
-The passengers must be able to:\\
- G1. Transmit its position and the desired destination to the system, thus initiating the Request of a taxi
-    G2. Receive the code and the ETA of the incoming taxi\\
-    G3. Reserve a taxi for a certain time\\
-    G4. Request a shared ride\\
-    G5. Receive the fee amount he need to pay in case of a shared ride\\
-The taxi driver must be able to:\\
-    G6. Answer a passenger request\\
-    G7. Render him/herself available to the scheduler\\
-    G8. Render him/herself unavailable to the scheduler\\
-    G9. Receive informations about the fees of the passengers in case of shared ride\\
-The system must be able to:\\
-   G10.Offer a programmatic interface to enable the development of additional services\\
- 
+The passengers must be able to:
+\begin{itemize}
+  \item [G1] Transmit its position and the desired destination to the system, thus initiating the Request of a taxi
+  \item [G2] Receive the code and the ETA of the incoming taxi
+  \item [G3] Reserve a taxi for a certain time  % TODO: this sounds kinda ambiguous, i.e. "this taxi is mine for xx time"
+  \item [G4] Request a shared ride
+  \item [G5] Receive the fee amount he need to pay in case of a shared ride
+\end{itemize}
+The taxi driver must be able to:
+\begin{itemize}
+  \item [G6] Answer a passenger's request
+  \item [G7] Render him/herself available to the scheduler
+  \item [G8] Render him/herself unavailable to the scheduler
+  \item [G9] Receive informations regarding the fee defined for each passenger in case of shared ride
+\end{itemize}
+The system must be able to:
+\begin{itemize}
+  \item [G10] Offer a programmatic interface to enable the development of additional services
+\end{itemize}
 \section{Definitions, Acronyms and Abbreviations}
+<<<<<<< HEAD
 Passenger: the person who needs to call a taxi.\\
 (?)System: the automatic part that manages the service.\\
 ETA: estimated time of arrival.\\
@@ -63,6 +74,19 @@ GPS: global position system.\\
 Shared ride: a passenger shares the ride with other peoples that start from the same zone, and go to the same direction.\\
 Gn: goal number 'n'.\\
 User: both passenger and taxi driver that want to take advantage of the system.
+=======
+\begin{description}
+  \item[Passenger:] the person who needs to call a taxi.  % TODO: is he considered a passenger even if the request has not yet been initiated?
+  \item[System:] the automatic part that manages the service.  % (?) <- add doubts/TODOs as comments pls
+  \item[ETA:] estimated time of arrival.
+  \item[Taxi zones:] geographical partitions of the city, non overlapping, with an average size of 2Km\textsuperscript{2}.
+  \item[Queue:] a list of all available taxis in the corresponding taxi zone. It is managed as a FIFO queue.
+    There is exactly one taxi queue associated to each taxi zone.
+  \item[GPS:] global position system.
+  \item[Shared ride:] a passenger shares the ride with other peoples that origins from the same zone, and go to the same direction
+    % TODO: what is "same direction"? Maybe "same destination"?
+\end{description}
+>>>>>>> origin/master
 % WIP
  
 \section{Reference documents}

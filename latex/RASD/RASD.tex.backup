@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt]{report}
+\documentclass[a4paper,11pt]{report}
 \usepackage[utf8]{inputenc}
 
 % Title Page
@@ -20,21 +20,60 @@ My Taxi Service is needed to provide a passenger-friendly interface to interact 
 a fair management of the city-wide taxi deployment.
 
 \section{Scope}
+%TODO: (michele) Here I will used some terms that are specific in the context of the project...
+% Should I make a reference to the appropriate definition in section "Definitions, Acronyms and Abbreviations"?
+% I have added some footnotes though
 The passengers should be able to use an application (either mobile or browser based) to request a taxi through the system,
-which in turn should answer with the ETA \footnote{Estimated time of arrival} and identification code of the incoming tax. \\
-The taxi drivers should be able to use a mobile application to communicate their availability to the system, and accept incoming
-calls. \\
-The system shall manage a queue of taxis for each taxi zone \footnote{partition of the city}. \\
+which in turn should answer with the ETA and identification code of the incoming tax. \\
+The passengers should be compelled to provide their current location to the system, for their request to be accepted. \\
+The taxi drivers should be able to use a mobile application to communicate their availability to the system, and accept
+ or refuse incoming calls. \\
+The system shall manage a queue of taxis for each taxi zone\footnote{Partition of the city}. \\
 The system shall receive GPS location data from each taxi, and use that information to assign each taxi to a 
 taxi zone; an available taxi is automatically placed into the taxi queue belonging to the taxi zone it currently occupies. \\
 The system shall remove a taxi from the queue upon receiving a confirmation in which the driver accepts an incoming call; a
 further confirmation is also sent back to the driver. If a taxi (driver) does, on the other hand, refuse an incoming call, the system
 shall move it to the bottom of its taxi queue. \\
-The system shall provide an Application Programming Interface, to make room for future improvements.
-% TODO: part II and III
+The system matches a passenger's position to a taxi zone, and uses that information to forward the call to the first taxi
+available in the relative taxi queue. \\
+The system shall provide an Application Programming Interface, to make room for future improvements. \\
+The system shall also provide the possibility of request the reservation of a taxi; said reservation must occur not earlier
+than 2 hours before the actual time of the ride; the time of the ride has to be specified by the passenger during the
+reservation procedure, as well as the passenger's location and destination. \\
 
+% TODO: (michele) part III
+\section{Goals}
+The passengers must be able to:
+\begin{itemize}
+  \item [G1] Transmit its position and the desired destination to the system, thus initiating the Request of a taxi
+  \item [G2] Receive the code and the ETA of the incoming taxi
+  \item [G3] Reserve a taxi for a certain time
+  \item [G4] Request a shared ride
+  \item [G5] Receive the fee amount he need to pay in case of a shared ride
+\end{itemize}
+The taxi driver must be able to:
+\begin{itemize}
+  \item [G6] Answer a passenger request
+  \item [G7] Render him/herself available to the scheduler
+  \item [G8] Render him/herself unavailable to the scheduler
+  \item [G9] Receive informations about the fees of the passengers in case of shared ride
+\end{itemize}
+The system must be able to:
+\begin{itemize}
+  \item [G10] Offer a programmatic interface to enable the development of additional services
+\end{itemize}
 \section{Definitions, Acronyms and Abbreviations}
-
+\begin{description}
+  \item[Passenger:] the person who needs to call a taxi.
+  \item[System:] the automatic part that manages the service.  % (?) <- add doubts/TODOs as comments pls
+  \item[ETA:] estimated time of arrival.
+  \item[Taxi zones:] the geographical partition of the city, non overlapping, with and average size of 2Km\textsuperscript{2}.
+  \item[Queue:] a list of available taxis in the corresponding taxi zone. It is managed as a FIFO queue.
+  \item[GPS:] global position system.
+  \item[Shared ride:] a passenger shares the ride with other peoples that start from the same zone, and go to the same direction
+\end{description}
+% WIP
+ 
 \section{Reference documents}
 
 \section{Overview}

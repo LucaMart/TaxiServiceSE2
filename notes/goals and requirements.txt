@@ -33,7 +33,7 @@ Requirements
 and move the first taxi at the end of the queue
 #. The system appends free taxis on the queue corresponding to his zone location
 #. The system sends taxi ID and ETA to the passenger requester
-#. The system must allocates a taxi ,for a reservation, 10 minutes before the meeting time with the passenger
+#. The system must allocate a taxi, for a reservation, 10 minutes before the meeting time with the passenger
 #. The system must arranges the shared rides :
 
     1. Aggregates passengers in the same taxi-zone
@@ -44,6 +44,8 @@ and move the first taxi at the end of the queue
 #. A veichle ID can't belong to two different account
 #. Every taxi driver must create an account to access the service, adding: Name, Surname, SSN, veichle ID, License ID, phone number\ badge
 #. The taxi drivers must login to start using the service
+#. Upon logout of a driver, the system must remove the corresponding taxi from the queue
+
 
 Assumptions
 -----------
@@ -61,4 +63,5 @@ Constraints
 #. Taxi driver can use the system only with mobile application
 #. Taxi driver must have a GPS to share his location with the system
 #. Both Passengers and Taxi driver must be connected to the netowrk to access the service (too obvious?)
+#. Each taxi driver is in charge of exactly one taxi vehicle
 #. 
