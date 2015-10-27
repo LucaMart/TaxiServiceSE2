@@ -59,14 +59,15 @@ The system must be able to:
   \item [G10] Offer a programmatic interface to enable the development of additional services\\
 \end{itemize}
 \section{Definitions, Acronyms and Abbreviations}
-Passenger: the person who needs to call a taxi.\\
-(?)System: the automatic part that manages the service.\\
-ETA: estimated time of arrival.\\
-Taxi zones: the geografical partition of the city.\\
-Queue: a list of avaliable taxis in the corresponding taxi zone.\\
-GPS: global position system.\\
-Shared ride: a passenger shares the ride with other peoples that start from the same zone, and go to the same direction\\
-
+\begin{description}
+  \item[Passenger:] the person who needs to call a taxi.
+  \item[System:] the automatic part that manages the service.  % (?) <- add doubts/todos as comments pls
+  \item[ETA:] estimated time of arrival.
+  \item[Taxi zones:] the geographical partition of the city, non overlapping, with and average size of 2Km\textsuperscript{2}.
+  \item[Queue:] a list of available taxis in the corresponding taxi zone. It is managed as a FIFO queue.
+  \item[GPS:] global position system.
+  \item[Shared ride:] a passenger shares the ride with other peoples that start from the same zone, and go to the same direction\\
+\end{description}
 % WIP
  
 \section{Reference documents}
