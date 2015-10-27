@@ -57,7 +57,7 @@ Assumptions
 Constraints
 -----------
 
-1. Passengers can access to the service only through mobile or web application
+1. Passengers can access to the service through mobile or web application
 #. Taxi driver can use the system only with mobile application
 #. Taxi driver must have a GPS to share his location with the system
 #. Both Passengers and Taxi driver must be connected to the netowrk to access the service (too obvious?)
