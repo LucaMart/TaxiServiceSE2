@@ -1,8 +1,9 @@
 \contentsline {chapter}{Introduction}{2}
 \contentsline {section}{\numberline {1.1}Purpose}{2}
 \contentsline {section}{\numberline {1.2}Scope}{2}
-\contentsline {section}{\numberline {1.3}Definitions, Acronyms and Abbreviations}{3}
-\contentsline {section}{\numberline {1.4}Reference documents}{3}
-\contentsline {section}{\numberline {1.5}Overview}{3}
+\contentsline {section}{\numberline {1.3}Goals}{3}
+\contentsline {section}{\numberline {1.4}Definitions, Acronyms and Abbreviations}{3}
+\contentsline {section}{\numberline {1.5}Reference documents}{3}
+\contentsline {section}{\numberline {1.6}Overview}{3}
 \contentsline {chapter}{Overall description}{4}
 \contentsline {chapter}{Specific requirements}{5}
