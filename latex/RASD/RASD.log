@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.9.16)  27 OCT 2015 15:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.9.16)  27 OCT 2015 15:40
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -277,15 +277,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 31.
+ [2
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--55
+]
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
-[2
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 57--64
+Underfull \hbox (badness 10000) in paragraph at lines 62--69
 
  []
 
@@ -297,7 +297,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--64
 Here is how much of TeX's memory you used:
  474 strings out of 493089
  4640 string characters out of 6140694
- 58870 words of memory out of 5000000
+ 57870 words of memory out of 5000000
  4011 multiletter control sequences out of 15000+600000
  10368 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -310,7 +310,7 @@ amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
 6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/shar
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on RASD.pdf (6 pages, 107853 bytes).
+Output written on RASD.pdf (6 pages, 107895 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
