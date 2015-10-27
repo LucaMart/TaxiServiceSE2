@@ -61,4 +61,5 @@ Constraints
 #. Taxi driver can use the system only with mobile application
 #. Taxi driver must have a GPS to share his location with the system
 #. Both Passengers and Taxi driver must be connected to the netowrk to access the service (too obvious?)
+#. Each taxi driver is in charge of exactly one taxi vehicle
 #. 
