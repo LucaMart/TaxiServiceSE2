@@ -17,7 +17,8 @@ The system shall manage a queue of taxis for each taxi zone\footnote{Partition o
 The system shall receive GPS location data from each taxi, and use that information to assign each taxi to a 
 taxi zone; an available taxi is automatically placed into the taxi queue belonging to the taxi zone it currently occupies. \\
 The system shall remove a taxi from the queue upon receiving a confirmation in which the driver accepts an incoming call; a
-further confirmation is also sent back to the driver. If a taxi (driver) does, on the other hand, refuse an incoming call, the system
+further confirmation is also sent back to the driver.%what do you mean?
+ If a taxi (driver) does, on the other hand, refuse an incoming call, the system
 shall move it to the bottom of its taxi queue. \\
 The system matches a passenger's position to a taxi zone, and uses that information to forward the call to the first taxi
 available in the relative taxi queue. \\
