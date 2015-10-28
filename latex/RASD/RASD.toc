@@ -10,5 +10,5 @@
 \contentsline {section}{\numberline {2.1}Product perspective}{5}
 \contentsline {section}{\numberline {2.2}Constraints}{5}
 \contentsline {section}{\numberline {2.3}User characteristics}{5}
-\contentsline {section}{\numberline {2.4}Assumption}{5}
+\contentsline {section}{\numberline {2.4}Assumptions}{5}
 \contentsline {chapter}{Specific requirements}{7}
