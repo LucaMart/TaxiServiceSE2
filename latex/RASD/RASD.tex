@@ -1,10 +1,10 @@
 \documentclass[a4paper,11pt]{report}
 \usepackage[utf8]{inputenc}
 
+
 % Title Page
 \title{Requirement Analysis and Specification Document}
 \author{}
-
 
 \begin{document}
 \maketitle
@@ -12,113 +12,20 @@
 
 \chapter*{Introduction}
 \addcontentsline{toc}{chapter}{Introduction}
+\setcounter{section}{0}
 \addtocounter{chapter}{1}
-
-\section{Purpose}
-This document aims to describe, specify and analyze the software requirements for \textit{My Taxi Service}. \\
-My Taxi Service is needed to provide a passenger-friendly interface to interact with the city's taxi service, and ensure
-a fair management of the city-wide taxi deployment.
-
-\section{Scope}
-%TODO: (michele) Here I will used some terms that are specific in the context of the project...
-% Should I make a reference to the appropriate definition in section "Definitions, Acronyms and Abbreviations"?
-% I have added some footnotes though
-The passengers should be able to use an application (either mobile or browser based) to request a taxi through the system,
-which in turn should answer with the ETA and identification code of the incoming tax. \\
-The passengers should be compelled to provide their current location to the system, for their request to be accepted. \\
-The taxi drivers should be able to use a mobile application to communicate their availability to the system, and accept
- or refuse incoming calls. \\
-The system shall manage a queue of taxis for each taxi zone\footnote{Partition of the city}. \\
-The system shall receive GPS location data from each taxi, and use that information to assign each taxi to a 
-taxi zone; an available taxi is automatically placed into the taxi queue belonging to the taxi zone it currently occupies. \\
-The system shall remove a taxi from the queue upon receiving a confirmation in which the driver accepts an incoming call; a
-further confirmation is also sent back to the driver. If a taxi (driver) does, on the other hand, refuse an incoming call, the system
-shall move it to the bottom of its taxi queue. \\
-The system matches a passenger's position to a taxi zone, and uses that information to forward the call to the first taxi
-available in the relative taxi queue. \\
-The system shall provide an Application Programming Interface, to make room for future improvements. \\
-The system shall also provide the possibility of requesting the reservation of a taxi; said reservation must occur at least
-2 hours before the actual time of the ride; the time of the ride has to be specified by the passenger during the
-reservation procedure, as well as the passenger's location and destination. \\
-However, the system will actually allocate a taxi (by means of removing it from the queue) only 10 minutes before the
-requested time of the ride.
-% TODO: (michele) part III
-\section{Domain properties}
-In this section we will analize the background laying behind My Taxi Service:
-\begin{itemize}
-\item Users of the service are assumed to be reliable and trustworthy, meaning that if they request a taxi or make a reservation
-they will declare their real position and actually use the taxi;\\
-\item Users of the service will pay at the end of the ride the amount of money demanded by the taxist;\\
-\item Taxi drivers must own a valid taxi driving license;\\
-\item ETA is estimated with a maximum error margin of 5 minutes;\\
-\item We assume that for each zone if its queue is empty there is at least one queue in the eight adjacent zones with available taxis;\\
-\item We assume GPS coordinates reliable;\\
-\end{itemize}
-\section{Goals}
-The passengers must be able to:
-\begin{itemize}
-  \item [G1] Transmit its position and the desired destination to the system, thus initiating the Request of a taxi
-  \item [G2] Receive the code and the ETA of the incoming taxi
-  \item [G3] Reserve a taxi for a certain time  % TODO: this sounds kinda ambiguous, i.e. "this taxi is mine for xx time"
-  \item [G4] Request a shared ride
-  \item [G5] Receive the fee amount he need to pay in case of a shared ride
-\end{itemize}
-The taxi driver must be able to:
-\begin{itemize}
-  \item [G6] Answer a passenger's request
-  \item [G7] Render him/herself available to the scheduler
-  \item [G8] Render him/herself unavailable to the scheduler
-  \item [G9] Receive informations regarding the fee defined for each passenger in case of shared ride
-\end{itemize}
-The system must be able to:
-\begin{itemize}
-  \item [G10] Offer a programmatic interface to enable the development of additional services
-\end{itemize}
-\section{Definitions, Acronyms and Abbreviations}
-\begin{description}
-  \item[Passenger:] the user who sends a taxi request.
-  \item[System:] the automatic part that manages the service.  % (?) <- add doubts/TODOs as comments pls----> is that the right definition?
-  \item[ETA:] estimated time of arrival.
-  \item[Taxi zones:] geographical partitions of the city, non overlapping, with an average size of 2Km\textsuperscript{2}.
-  \item[Queue:] a list of all available taxis in the corresponding taxi zone. It is managed as a FIFO queue.
-    There is exactly one taxi queue associated to each taxi zone.
-  \item[GPS:] global position system.
-  \item[Shared ride:] a passenger shares the ride with other people that origins from the same zone, and go to the same direction
-    % TODO: what is "same direction"? Maybe "same destination"? <--- direction was mentioned in the Assignments, we have to contact the customer
-    \begin{center}
-    •
-    \end{center}
-\end{description}
-% WIP
+\input{chapters/introduction.tex}
  
-\section{Reference documents}
-
-\section{Overview}
-
-
 \chapter*{Overall description}
 \addcontentsline{toc}{chapter}{Overall description}
+\setcounter{section}{0}
 \addtocounter{chapter}{1}
-\section{Product perspective}
-The system must interact with a map service, to retrieve information about the route to send to the taxi driver in case of shared ride.
-\section{Constraints}
-We will develop a unique mobile application that can be used by both passengers and taxi-drivers.\\
-The web application will include only passengers functions.\\
-The mobile application must be available for Android, Windowsphone and iOS.\\
-\section{User characteristics}
-The users must be connected to the network to use the application.
-Passengers can interact with the service through a web browser or a mobile application.\\
-Taxi driver must access to the application with a device provided of GPS.
-\section{Assumption}
-\begin{itemize}
-  \item If a request comes from a zone, whose queue is empty, then the system forwards the call to the first taxi in the queue corresponding to an adjacent taxi zone, starting from the northeast.
-  \item A passenger doesn't need an account to request a taxi, however, an account is required to use the reservation service. %team discussion--->confirm/change this assumption
-  \item Taxi drivers can create only one account per vehicle ID %<--Targa
-  \item Passengers who reserve a taxi can delete the reservation; if a taxi was allocated for the ride, the system will notify the taxi driver and put him at the top of the queue.
-  \item
-\end{itemize}
+\input{chapters/overall_description.tex}
+
 \chapter*{Specific requirements}
 \addcontentsline{toc}{chapter}{Specific requirements}
+\setcounter{section}{0}
 \addtocounter{chapter}{1}
+\input{chapters/specific_requirements.tex}
 
 \end{document}    

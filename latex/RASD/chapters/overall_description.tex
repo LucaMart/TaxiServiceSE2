@@ -1,0 +1,25 @@
+\section{Product perspective}
+The system must interact with a map service, to retrieve information about the route to send to the taxi driver in case of shared ride.
+
+
+\section{Constraints}
+We will develop a unique mobile application that can be used by both passengers and taxi-drivers.\\
+The web application will include only passengers functions.\\
+The mobile application must be available for Android, Windowsphone and iOS.\\
+
+
+\section{User characteristics}
+The users must be connected to the network to use the application.
+Passengers can interact with the service through a web browser or a mobile application.\\
+Taxi driver must access to the application with a device provided of GPS.
+
+
+\section{Assumption}
+\begin{itemize}
+  \item If a request comes from a zone, whose queue is empty, then the system forwards the call to the first taxi in the queue corresponding to an adjacent taxi zone, starting from the northeast.
+  \item A passenger doesn't need an account to request a taxi, however, an account is required to use the reservation service. %team discussion--->confirm/change this assumption
+  \item Taxi drivers can create only one account per vehicle ID %<--Targa
+  \item Passengers who reserve a taxi can delete the reservation; if a taxi was allocated for the ride, the system will notify the taxi driver and put him at the top of the queue.
+  \item
+\end{itemize} 
+
