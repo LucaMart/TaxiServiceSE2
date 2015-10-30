@@ -71,3 +71,11 @@ Further observation
 
 1. G5 "Receive the fee amount he need to pay in case of a shared ride" is actually a requirement
 #. Modify G4: a shared ride must be available even without having reserved it first (aka Sharing on demand)
+
+**Measures to harden the system in case of misuse**
+
+#. Add reporting system to enforce the users' nice behaviour
+    * Both driver-side and passenger-side
+    * This required every user to be tracked with a personal account, in scenarios I, II and III
+    * Decide how much should the system's intervention be automatic (i.e. timed ban) VS
+    non-automatic (forward the report for scrutiny by the authorities)
