@@ -19,12 +19,30 @@ scan the list for a taxist to accept;
 \item [G3]:
 	\begin{itemize}
 	\item  Passengers can select from a menu the option of reserving a taxi for a chosen ride and date; 
-	\item Passengers can insert the initial and final position, time and date, their email and confirm it;%account or not?
+	\item Passengers can insert the initial and final position, time and date, their email and confirm it;%account or not?<---we need to talk about this, cause withouth an account, some villain could request  taxis withouth taking it, taxi-drivers may react like --> >.< fuck this technology! #?!*§!
 	\item The system will receive the reservation and if it respects the 2 hour constraint it will send a confirmation;
 	\item Ten minutes before the ride starts, the system allocates a taxi for it.
 	\end{itemize}
-\item [G4]:\\
+\item [G4]:\\% we need an account for this, otherwise a Passengers could requests infinite number of shared ride, and pay 0 bucks 
+% shared ride available only for reserved ride? ( Add the corresponding assumption)
+	\begin{itemize}
+	\item The application must have a selectable option labled:"share your ride", that allows passengers ,who reserved a ride, to enable the shared ride service.
+	\item When the system receive a request of a shared ride, it will search for others shared ride requests starting from the same taxi zone, and going in the same direction %TODO decide by ourselves or ask  the "customer" what does "same direction" mean
+	\item When a new passenger is added to a shared ride, the system will interact with the map service, in order to retrieve a new route for the taxi driver, and to calculate new fees
+	\item After the taxi allocation, the passengers who requested the shared ride will receive, not only the taxi ID, but also the fee they have to pay.
+	%I assumed that a shared ride can be selected only in case of reserved ride....
+	\end{itemize}
+\item [G5] % <<< I don't think that it is an actual goal
 
+\item[G6]:
+	\begin{itemize}
+	\item When a request comes or there is a reservation for the next 10 minutes without an assigned taxi driver, the system must search for the first queued taxi and forward him the request.
+	\item If a taxi driver refuse to take care about a call, the system will move him at the end of the queue, and forward the request to the next taxi driver in the queue. If a queue is empty, the system will search a taxi driver in a queue belonging to an adiacent taxi zone % What all taxi driver refuse to take care of a certain call, infinite loop?.....and also: If there are more than one adiacent zones, how to decide which to choose? 
+	\end{itemize}
+\item [G7]:
+	\begin{itemize}
+	\item
+	\end{itemize}
 \end {itemize}
  • • •
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
