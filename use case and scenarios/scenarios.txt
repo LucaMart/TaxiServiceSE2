@@ -1,7 +1,7 @@
 SCENARIOS
 
 1. 
-Jon, a bank employee, is driving back home while he notices a strange noise coming from his car. He decides to stop at the first garage on the road.
+Jon is driving back home while he notices a strange noise coming from his car. He decides to stop at the first garage on the road.
 The mechanic checks the car and tells him that the problem is quite serious, and a part must be replaced immediately,
 but ,since the spare part is not in storage, the car must stay there untill the new part arrives. 
 The garage is far from Jon's home and no public transport covers the distance, so as Jon's hunger grows, he decides to call a taxi.

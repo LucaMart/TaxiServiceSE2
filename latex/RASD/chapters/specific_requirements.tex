@@ -37,7 +37,7 @@ scan the list for a taxist to accept;
 \item[G6]:
 	\begin{itemize}
 	\item When a request comes or there is a reservation for the next 10 minutes without an assigned taxi driver, the system must search for the first queued taxi and forward him the request.
-	\item If a taxi driver refuse to take care about a call, the system will move him at the end of the queue, and forward the request to the next taxi driver in the queue. If a queue is empty, the system will search a taxi driver in a queue belonging to an adiacent taxi zone % What all taxi driver refuse to take care of a certain call, infinite loop?.....and also: If there are more than one adiacent zones, how to decide which to choose? 
+	\item If a taxi driver refuse to take care about a call, the system will move him at the end of the queue, and forward the request to the next taxi driver in the queue. If a queue is empty, the system will search a taxi driver in a queue belonging to an adiacent taxi zone % What all taxi driver refuse to take care of a certain call, infinite loop?.....and also: If there are more than one adiacent zones, how to decide which to choose?--> in the domain properties we assume that there is at least one.. 
 	\end{itemize}
 \item [G7]:
 	\begin{itemize}
