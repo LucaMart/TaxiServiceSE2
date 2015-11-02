@@ -1,11 +1,10 @@
+﻿
 \section { Functional Requirements}
  
 For each goal, we define the specific function that we will have to implement;\\
 \begin {itemize}
 \item [G1]:
 	\begin{itemize}
-	\item Users can create an account;
-	\item Users can log into their account;
 	\item Passengers can select from a menu the option of requesting a taxi as soon as possible; 
 	\item Passengers can insert their position filling an input form and confirm it;
 	\item The system will receive the request and identify the zone in which the passenger is in;
@@ -43,8 +42,20 @@ scan the list for a taxist to accept;
 	\end{itemize}
 \item [G7]:
 	\begin{itemize}
+	\item A taxi driver logged in into the system can select the button " Ready ", then the system will notify the system that the logged user is ready to accept some passengr's call. The application also send the taxi drive postion detected with a GPS
+	\item If the application needs to retrieve data from a GPS and this isn't available, it will remind  the user to turn it on.
+	\item When the system receive a notification , by a taxi driver, informing that he is ready to take care of some passengers, it will append the user in the queue corresponding to the taxi zone that include the position retrieved by the application.
+	\end{itemize}
+\item[G8]
+	\beign{itemize}
+	\item When a taxi driver is assigned to a shared ride, the system will send him the route he need to follow, and the fee amount every passenger have to pay
+	\end{itemize}
+\item[G9]:
+	\begin{itemize}
+	\item
 	\item
 	\end{itemize}
+	
 \end {itemize}
  • • •
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
