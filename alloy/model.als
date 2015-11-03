@@ -38,7 +38,8 @@ fact {
 	all q: TaxiQueue | q in TaxiZone.queue  // every taxi-queue must belong to a taxi-zone
 	all t: TaxiZone | t in City.zones  // every taxizone must belong to a city
 	all p: GeographicalPosition | p in TaxiZone.positions  // every point in the city must belong to a taxi-zone (in other words: the city is fully covered by taxi-zones)
-	all t: Taxi, z: TaxiZone | t.location in z.positions => t in z.queue.taxi  // the dual of what specified in TaxiZone's appended fact: if a taxi belongs to a zone's queue, then its location must be in the zone as well
+	// the following constraint is incorrect (commented away), since a taxi servicing a passenger resides in a zone, without appearing in the queue
+	//all t: Taxi, z: TaxiZone | t.location in z.positions => t in z.queue.taxi  // the dual of what specified in TaxiZone's appended fact: if a taxi belongs to a zone's queue, then its location must be in the zone as well
 	all q: TaxiQueue | q in TaxiZone.queue  // every taxiqueue must be attached to a taxizone
 	#City = 1  // the scope of our project
 }
