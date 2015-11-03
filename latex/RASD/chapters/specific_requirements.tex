@@ -15,7 +15,8 @@ scan the list for a taxist to accept;
 	\end{itemize}
 \item [G2]:
 	\begin{itemize}
-	\item As soon as a taxist accepts a request, the system invokes the support system to calculate the ETA giving the position of the taxi and the position of the passenger;
+	\item As soon as a taxist accepts a request, the system invokes the support system to calculate the ETA 
+	giving the position of the taxi and the position of the passenger;
 	\item The system will communicate the taxi code and the ETA;
 	\end{itemize}
 \item [G3]:
@@ -27,46 +28,66 @@ scan the list for a taxist to accept;
 	\end{itemize}
 \item [G4]:
 	\begin{itemize}
-	\item The application must have a selectable option labled:"share your ride", that allows passengers to enable the shared ride service. In case of non reserved ride, the application will ask passengers the amount of time they can wait for others people.
-	\item When the system receive a request of a shared ride, it will search for others shared ride requests starting from the same taxi zone, and going in the same direction. %TODO decide by ourselves or ask  the "customer" what does "same direction" mean
-	\item When a new passenger is added to a shared ride, the system will interact with the map service, in order to retrieve a new route for the taxi driver, and to calculate new fees
-	\item When the timeout of one passengers ,added to the current ride, occur, the system will procede with the allocation of the taxi .
-	\item After the taxi allocation, the passengers who requested the shared ride will receive, not only the taxi ID, but also the fee they have to pay.
+	\item The application must have a selectable option labled:"share your ride", that allows passengers to enable 
+	the shared ride service. In case of non reserved ride, the application will ask passengers the amount of time 
+	they can wait for others people.
+	\item When the system receive a request of a shared ride, it will search for others shared ride requests starting 
+	from the same taxi zone, and going in the same direction. 
+	%TODO "same direction" -> see introduction
+	\item When a new passenger is added to a shared ride, the system will interact with the map service, in order to 
+	retrieve a new route for the taxi driver, and to calculate new fees
+	\item When the timeout of one passengers ,added to the current ride, occur, the system will proceed with the allocation of the taxi .
+	\item After the taxi allocation, the passengers who requested the shared ride will receive, not only the taxi ID, 
+	but also the fee they have to pay.
 	\end{itemize}
 \item[G5]:
 	\begin{itemize}
-	\item When a request comes or there is a reservation for the next 10 minutes without an assigned taxi driver, the system must search for the first queued taxi and forward him the request.
-	\item If a taxi driver refuse to take care about a call, the system will move him at the end of the queue, and forward the request to the next taxi driver in the queue. If a queue is empty, the system will search a taxi driver in a queue belonging to an adiacent taxi zone % What all taxi driver refuse to take care of a certain call, infinite loop?.....and also: If there are more than one adiacent zones, how to decide which to choose?--> in the domain properties we assume that there is at least one.. 
+	\item When a request comes or there is a reservation for the next 10 minutes without an assigned taxi driver, the 
+	system must search for the first queued taxi and forward him the request.
+	\item If a taxi driver refuse to take care about a call, the system will move him at the end of the queue, and 
+	forward the request to the next taxi driver in the queue. If a queue is empty, the system will search a taxi 
+	driver in a queue belonging to an adiacent taxi zone 
+	% What all taxi driver refuse to take care of a certain call, infinite loop?.....
+	% and also: If there are more than one adiacent zones, how to decide which to choose?--> in the domain properties we assume that there is at least one.. 
 	\end{itemize}
 \item [G6]:
 	\begin{itemize}
-	\item A taxi driver logged in into the system can select the button " Ready ", then the system will notify the system that the logged user is ready to accept some passengr's call. The application also send the taxi driver's postion detected with a GPS
+	\item A taxi driver logged in into the system can select the button " Ready ", then the system will notify the system 
+	that the logged user is ready to accept some passengr's call. The application also send the taxi driver's postion detected with a GPS
 	\item If the application needs to retrieve data from a GPS and this isn't available, it will remind  the user to turn it on.
-	\item When the system receive a notification , by a taxi driver, informing that he is ready to take care of some passengers, it will append the user in the queue corresponding to the taxi zone that include the position retrieved by the application.
+	\item When the system receive a notification , by a taxi driver, informing that he is ready to take care of some passengers, 
+	it will append the user in the queue corresponding to the taxi zone that include the position retrieved by the application.
 	\end{itemize}
 \item[G7]
 	\begin{itemize}
-	\item When a taxi driver is assigned to a shared ride, the system will send him the route he need to follow, and the fee amount every passenger have to pay
+	\item When a taxi driver is assigned to a shared ride, the system will send him the route he need to follow, and the fee 
+	amount every passenger have to pay
 	\end{itemize}
 \item[G8]:
 	\begin{itemize}
-	\item  It is also neccessary to develop programmatic interfaces that allow to customize the system, adding new features.
+	\item  It is also necessary to develop programmatic interfaces that allow to customize the system, adding new features.
 	\end{itemize}
 \end {itemize}
 \begin{itemize}
- \item Passengers can access a section, in which they be able to check the ID of the taxi assigned to their ride and manage ( delete or modify) an active reservation. %TODO specify the meaning of ACTIVE RESERVATION
- \item When a passenger delete a reservation, the system will remove it from the reservation scheduler and, if a taxi driver is already assigned, notify the taxist.
+ \item Passengers can access a section, in which they be able to check the ID of the taxi assigned to their ride and manage 
+ ( delete or modify) an active reservation. 
+ %TODO: specify the meaning of ACTIVE RESERVATION
+ %TODO: id'say "a registered reservation whose taxi has not yet been allocated (removed from the queue)"
+ \item When a passenger delete a reservation, the system will remove it from the reservation scheduler and, if a taxi driver 
+ is already assigned, notify the taxist.
  \item A passenger can modify an active reservation changing position, date and time.
- \item The system will accept modification only if sended before the taxi allocation.
+ \item The system will accept modification only if sent before the taxi allocation.
  \item The system will accept date and time modification if it occur at least two hours after the request or/and after the previous reservation.
  \item A taxi driver have the possibility to remove himself from the queue by clicking the:``Disable'' button.
- \item The system will remove a taxi from the list if receive the corresponding request by the taxi driver, or if the taxist logged out for XXXXX minutes. %TODO decide how much or decide to remove him when we need to send him a request
+ \item The system will remove a taxi from the list if receive the corresponding request by the taxi driver, or if the taxist 
+ logged out for XXXXX minutes. %TODO decide how much or decide to remove him when we need to send him a request
 \end{itemize}
 \section{Software system attribute}
   \subsection{Reliability}
   
   \subsection{Availability}
-  The system is completely automatized, so it will be available every day at every time, except for the night of the first wednesday, where the server will be disconnected due to maintenance or update.
+  The system is completely automatized, so it will be available every day at every time, except for the night of the first wednesday,
+  where the server will be disconnected due to maintenance or update.
   \subsection{Security}
   \subsection{Maintainability}
   \subsection{Portability}
