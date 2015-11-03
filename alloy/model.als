@@ -41,6 +41,7 @@ fact {
 	// the following constraint is incorrect (commented away), since a taxi servicing a passenger resides in a zone, without appearing in the queue
 	//all t: Taxi, z: TaxiZone | t.location in z.positions => t in z.queue.taxi  // the dual of what specified in TaxiZone's appended fact: if a taxi belongs to a zone's queue, then its location must be in the zone as well
 	all q: TaxiQueue | q in TaxiZone.queue  // every taxiqueue must be attached to a taxizone
+	all t: Taxi | t in City.taxis
 	#City = 1  // the scope of our project
 }
 
