@@ -50,16 +50,17 @@ The passengers must be able to:
   \item [G3] Reserve a taxi for a time period, starting at the time specified during the reservation\footnote{the starting of the
   reserved ride must occur at least 2 hours after the time of the reservation}, and ending after the ride is complete.
   \item [G4] Request a shared ride
+  \item [G5] Receive the fee amount he need to pay in case of a shared ride % is that a Goal? I think its a requirement needed to reach [G4]
 \end{itemize}
 The taxi driver must be able to:
 \begin{itemize}
-  \item [G5] Answer a passenger's request
-  \item [G6] Render him/herself available to the scheduler
-  \item [G7] Receive informations regarding the fee defined for each passenger in case of shared ride
+  \item [G6] Answer a passenger's request
+  \item [G7] Render him/herself available to the scheduler
+  \item [G8] Receive informations regarding the fee defined for each passenger in case of shared ride
 \end{itemize}
 The system must be able to:
 \begin{itemize}
-  \item [G8] Offer a programmatic interface to enable the development of additional services
+  \item [G10] Offer a programmatic interface to enable the development of additional services
 \end{itemize}
 
 

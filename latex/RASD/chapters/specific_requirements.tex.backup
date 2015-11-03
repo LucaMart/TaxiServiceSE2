@@ -62,8 +62,8 @@ scan the list for a taxist to accept;
  \item The system will accept modification only if sended before the taxi allocation.
  \item The system will accept date and time modification if it occur at least two hours after the request or/and after the previous reservation.
  \item A taxi driver have the possibility to remove himself from the queue by clicking the:``Disable'' button.
- \item The system will remove a taxi from the list if receive the corresponding request by the taxi driver, or if the taxist logged out for XXXXX minutes. %TODO decide how much or decide to remove him when we need to send him a request
-\end{itemize}
+ \item The system will remove a taxi from the list if receive the corresponding request by the taxi driver, or if the taxis logged out.
+ \end{itemize}
 
  • • •
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
