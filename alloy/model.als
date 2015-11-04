@@ -45,7 +45,15 @@ fact {
 	#City = 1  // the scope of our project
 }
 
+pred taxiMove[t: Taxi, start, dest: GeographicalPosition, fromZone, toZone, fromZone', toZone': TaxiZone] {
+	start in fromZone.positions and start in fromZone'.positions
+	dest in toZone.positions and dest in toZone'.positions
+	fromZone'.queue.taxi = fromZone.queue.taxi - t
+	toZone'.queue.taxi = toZone.queue.taxi + t
+}
+
 pred show {
 	#TaxiZone >= 2
 }
 run show for 15
+run taxiMove for 1 City, 1 Taxi, 2 GeographicalPosition, 5 TaxiZone, 5 TaxiQueue
