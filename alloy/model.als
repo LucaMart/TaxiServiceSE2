@@ -52,8 +52,14 @@ pred taxiMove[t: Taxi, start, dest: GeographicalPosition, fromZone, toZone, from
 	toZone'.queue.taxi = toZone.queue.taxi + t
 }
 
+pred taxiUnavailable[t: Taxi, z: TaxiZone] {  // TODO? unsure
+	t.location in z.positions
+	t not in z.queue.taxi
+}
+
 pred show {
-	#TaxiZone >= 2
+	#TaxiZone >= 2 // to make things interesting
 }
 run show for 15
 run taxiMove for 1 City, 1 Taxi, 2 GeographicalPosition, 5 TaxiZone, 5 TaxiQueue
+run taxiUnavailable for 1 City, 4 Taxi, 4 GeographicalPosition, 4 TaxiZone, 4 TaxiQueue

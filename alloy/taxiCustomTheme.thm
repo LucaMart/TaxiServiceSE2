@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view>
+
+<defaultnode/>
+
+<defaultedge/>
+
+<node>
+   <type name="Int"/>
+   <type name="String"/>
+   <type name="univ"/>
+   <type name="seq/Int"/>
+   <set name="$taxiMove_dest" type="GeographicalPosition"/>
+   <set name="$taxiMove_fromZone" type="TaxiZone"/>
+   <set name="$taxiMove_fromZone&apos;" type="TaxiZone"/>
+   <set name="$taxiMove_start" type="GeographicalPosition"/>
+   <set name="$taxiMove_t" type="Taxi"/>
+   <set name="$taxiMove_toZone" type="TaxiZone"/>
+   <set name="$taxiMove_toZone&apos;" type="TaxiZone"/>
+</node>
+
+<node color="Red">
+   <type name="GeographicalPosition"/>
+</node>
+
+<node shape="Circle">
+   <type name="TaxiZone"/>
+</node>
+
+<node shape="Dbl Circle">
+   <type name="TaxiQueue"/>
+</node>
+
+<node shape="Egg" color="Blue">
+   <type name="City"/>
+</node>
+
+<node shape="Trapezoid" color="Gray">
+   <type name="Taxi"/>
+</node>
+
+</view>
+
+</alloy>
