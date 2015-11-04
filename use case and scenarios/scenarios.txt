@@ -1,18 +1,17 @@
 SCENARIOS
 
 1. 
-Jon is driving back home while he notices a strange noise coming from his car. He decides to stop at the first garage on the road.
-The mechanic checks the car and tells him that the problem is quite serious, and a part must be replaced immediately,
-but ,since the spare part is not in storage, the car must stay there untill the new part arrives. 
-The garage is far from Jon's home and no public transport covers the distance, so as Jon's hunger grows, he decides to call a taxi.
-He checks on his phone and finds MyTaxiService app. After downloading, he inserts his position and confirms. The app informs him that he has to wait 5
-minutes for taxi 13C to come over.
+Jon is driving back home while he notices a strange noise coming from his car. He decides to stop at the first garage
+on the road and then call a taxi using an app he downloaded some weeks ago, MyTaxiService.
+The mechanic checks the car and tells him that the problem is quite serious, in fact the car must stay there for some maintenance. 
+He opens MyTaxiService app and he accesses his account with his email and password. Then he inserts his position and selects "call a taxi".
+The app informs him that he has to wait 5 minutes for taxi 13C to come over.
 
 2. 
-Brandon is going to Moscow in three days and must be at the airport at 3,00 pm. Howewer, differently from what was provided,
-his mother can no longer take him to the airport because she arrenged an appointment with the haidresser at the same time,
-and recommends him to take a taxi that will lead him right near the airport entrance.
-Brandon searches on his personal computer for a taxi service and found MyTaxiService, fill in the form with his address,the airport address and the
+Brandon is going to Moscow in three days and must be at the airport at 3,00 pm. Since the park fee at the airport is very expensive
+he decides to take a taxi that will lead him right near the airport entrance.
+Brandon searches on his personal computer for a taxi service and found MyTaxiService, creates an account inserting his email address and inventing a password,
+he waits untill he receives a mail from MyTaxiService at the same email account 
 time of departure.Later that day, Brandon receives an email of confirmation and can pack peacefully.
 
 3.
