@@ -63,11 +63,12 @@ pred taxiIsAvailable[t: Taxi, z: TaxiZone] {
 }
 
 pred taxiBecomeUnavailable[t: Taxi, c, c': City] {  // TODO? unsure
-	t in c.taxis and t in c'.taxis
-	c.taxis = c'.taxis
+	t in c.taxis and t in c'.taxis  // t always belongs to the city
+	c.taxis = c'.taxis  // the taxi set is unchanged
 	all z: c.zones | t not in z.queue.taxi => z in c'.zones  // all zones the same except the one with the changed taxi
-	all z: c.zones | taxiIsAvailable[t, z] => taxiIsAvailable[t, c'.zones]
-	c.positions = c'.positions
+	// the availability of t in the pre-state implies the unavailability of t in the post-state
+	taxiIsAvailable[t, c.zones] => taxiIsUnavailable[t, c'.zones]
+	c.positions = c'.positions  // the pre/post state are physycally the same city
 	
 }
 
@@ -78,5 +79,5 @@ run show for 15
 run taxiMove for 1 City, 1 Taxi, 2 GeographicalPosition, 5 TaxiZone, 5 TaxiQueue
 run taxiIsUnavailable for 1 City, 4 Taxi, 4 GeographicalPosition, 4 TaxiZone, 4 TaxiQueue
 run taxiIsAvailable for 1 City, 4 Taxi, 4 GeographicalPosition, 4 TaxiZone, 4 TaxiQueue
-run taxiBecomeUnavailable for 2 City, 4 Taxi, 4 GeographicalPosition, 4 TaxiZone, 4 TaxiQueue
+run taxiBecomeUnavailable for 1 City, 4 Taxi, 4 GeographicalPosition, 4 TaxiZone, 4 TaxiQueue
 
