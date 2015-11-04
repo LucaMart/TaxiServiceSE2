@@ -63,6 +63,15 @@ scan the list for a taxist to accept;
  \item A taxi driver have the possibility to remove himself from the queue by clicking the:``Disable'' button.
  \item The system will remove a taxi from the list if receive the corresponding request by the taxi driver, or if the taxist logged out for XXXXX minutes. %TODO decide how much or decide to remove him when we need to send him a request
 \end{itemize}
-
+\section{Software system attribute}
+  \subsection{Reliability}
+  In order to easly react against failure, the system will make a backup of all the server and save it on a cloud service.
+  \subsection{Availability}
+  The system is completely automatized, so it will be available every day at every time, except for the first wednesday of every month from ~20:00 to ~23:00 , when the server will be disconnected due to maintenance or update.
+  \subsection{Security}
+  The servers will be protected ,by external attack , adding two firewall located between the network and the apllication server, and between the applicatione server and a the data server.
+  \subsection{Maintainability}
+  
+  \subsection{Portability}
  • • •
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   

@@ -1,6 +1,8 @@
 ﻿
+\section{External interface requirements}
+  The system must be able to comunicate with a map service, in order to retrieve information about the users' position, send the best route to the taxi drivers ,in case of shared ride, calculate the ETA for the passengers that requested a taxi.\\
+  Also the application must be able to interact with a map service, due to allow passengers to select the meeting position.\\ 
 \section { Functional Requirements}
- 
 For each goal, we define the specific function that we will have to implement;\\
 \begin {itemize}
 \item [G1]:
@@ -41,7 +43,7 @@ scan the list for a taxist to accept;
 	\end{itemize}
 \item [G6]:
 	\begin{itemize}
-	\item A taxi driver logged in into the system can select the button " Ready ", then the system will notify the system that the logged user is ready to accept some passengr's call. The application also send the taxi driver's postion detected with a GPS
+	\item A taxi driver logged in into the system can select the button " Ready ", then the system will notify the system that the logged user is ready to accept some passengr's call. The application also send the taxi driver's position detected with a GPS
 	\item If the application needs to retrieve data from a GPS and this isn't available, it will remind  the user to turn it on.
 	\item When the system receive a notification , by a taxi driver, informing that he is ready to take care of some passengers, it will append the user in the queue corresponding to the taxi zone that include the position retrieved by the application.
 	\end{itemize}
@@ -65,11 +67,13 @@ scan the list for a taxist to accept;
 \end{itemize}
 \section{Software system attribute}
   \subsection{Reliability}
-  
+  In order to easly react against failure, the system will make a backup of all the server and save it on a cloud service.
   \subsection{Availability}
-  The system is completely automatized, so it will be available every day at every time, except for the night of the first wednesday, where the server will be disconnected due to maintenance or update.
+  The system is completely automatized, so it will be available every day at every time, except for the first wednesday of every month from ~20:00 to ~23:00 , when the server will be disconnected due to maintenance or update.
   \subsection{Security}
+  The servers will be protected ,by external attack , adding two firewall located between the network and the apllication server, and between the applicatione server and a the data server.
   \subsection{Maintainability}
+  
   \subsection{Portability}
  • • •
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
