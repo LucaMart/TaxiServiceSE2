@@ -11,22 +11,25 @@ The app informs him that he has to wait 5 minutes for taxi 13C to come over.
 Brandon is going to Moscow in three days and must be at the airport at 3,00 pm. Since the park fee at the airport is very expensive
 he decides to take a taxi that will lead him right near the airport entrance.
 Brandon searches on his personal computer for a taxi service and found MyTaxiService, creates an account inserting his email address and inventing a password,
-he waits untill he receives a mail from MyTaxiService at the same email account 
-time of departure.Later that day, Brandon receives an email of confirmation and can pack peacefully.
+he waits untill he receives a mail from MyTaxiService at the same email account he gave while signing in. He clicks the link 
+and now his account is valid. He can reserve a taxi from his house to the airport for that day and see the details in his "active taxi list".
+
 
 3.
-Eddard, a taxist, is just starting a new day of work. he goes to the taxi station and picks the taxi assigneted to him that day.
-As soon as he gets in the vehicle he logs into his account, inserting his code and password.The light on th display is green, he is connected with the system 
-and he is sending correctly his position. Now he awaits for incoming call.
+Eddard, a taxist, is just starting a new day of work.
+As soon as he gets in his vehicle he logs into his account, inserting his code and password.Now he is connected with the system, 
+a notification pop up informs him to turn on the gps. He activates the gps and he is sending correctly his position. 
+Now he awaits for incoming calls.
 
 4.
 Robb, a taxist, receives a notification of an incoming call. The request comes from Mario Street, not far from his position.
 Robb looks at the time, it's 12.58 and his turn is over in two minutes so he declines the request.
 
 5.
-Arya, a young girl, wants to go to an exhibition on environmental sustainability downtown.
-She has heard that the city centre will be closed at traffic and only taxis will be able to access, so she decides to take one, and in order to
-save some money she reserves a ride and enables the sharing option, hoping that also others will use the taxi and join her.
+Arya wants to go at an exibition downtown.
+She has heard that the city centre will be closed at traffic but taxis will be able to access,though. 
+So she decides to book one, and in order to save some money she reserves a ride and enables the sharing option,
+hoping that also others will use the taxi and join her.
 She receives a message from the taxi service in which they confirm the taxi and that 3 more people will use the same ride so the cost will be only of 5 $.
 
 6.
