@@ -75,12 +75,8 @@ scan the list for a taxist to accept;
   \subsection{Security}
   The servers will be protected ,by external attack , adding two firewall located between the network and the apllication server, and between the applicatione server and a the data server.
   \subsection{Maintainability}
-  The application must porvide set of API for the purpose of adding new features in future time.
-  Those API must be thoroughly documented; the core system must be documented as well.
-  \subsection{Portability}
-  The server side application could be deployed on any platform supporting JRE-7.\\
-  The mobile application shall be developed for the major mobile operating systems ( Android , iOS, Windows phone).
-  The web application shall be compatible with the most widely used browsers ( Mozzilla,Google Chrome, Safari, Internet explorer) % >.<  
   
+  \subsection{Portability}
+  The server side application must be deployed
  • • •
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
