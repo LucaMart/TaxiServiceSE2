@@ -16,8 +16,7 @@ The taxi drivers should be able to use a mobile application to communicate their
 The system shall manage a queue of taxis for each taxi zone\footnote{Partition of the city}. \\
 The system shall receive GPS location data from each taxi, and use that information to assign each taxi to a 
 taxi zone; an available taxi is automatically placed into the taxi queue belonging to the taxi zone it currently occupies. \\
-The system shall remove a taxi from the queue upon receiving a confirmation in which the driver accepts an incoming call; a
-further confirmation is also sent back to the driver.
+The system shall remove a taxi from the queue upon receiving a confirmation in which the driver accepts an incoming call.
  If a taxi (driver) does, on the other hand, refuse an incoming call, the system
 shall move it to the bottom of its taxi queue. \\
 The system matches a passenger's position to a taxi zone, and uses that information to forward the call to the first taxi
@@ -37,7 +36,9 @@ In this section we will analyze the background laying behind My Taxi Service:
   \item Passengers are assumed to be reliable and trustworthy, meaning that if they request a taxi or make a reservation
   they will declare their real position and actually use the taxi
   \item Passengers will pay at the end of the ride the amount of money demanded by the taxi driver
+  \item Passenger reserve a taxi only in a period of three month starting from the current time
   \item Taxi drivers must own a valid taxi driving license
+  \item A taxi can reach every position within the same zone in less than 10 minutes
   \item ETA is estimated with a maximum error margin of 5 minutes
   \item We assume that, for each zone, if its queue is empty, then at least one queue in the eight adjacent zones has available taxis
   \item We assume GPS coordinates reliable
@@ -75,6 +76,8 @@ The system must be able to:
   \item[GPS:] global position system.
   \item[Shared ride:] a passenger shares the ride with other people that origins from the same zone, and go to the same direction
     % TODO: what is "same direction"? Maybe "same destination"? <--- direction was mentioned in the Assignments, we have to contact the customer
+    % TODO: It become clear that a reasonable interpretation of "same direction" is:
+    % TODO:   "a ride which ends in the same taxi zone as a given ride"
   \item[Active reservation]: a reservation is considered active if it is in the reservation scheduler and isn't occured yet
     \begin{center}
     •

@@ -13,3 +13,9 @@
 \contentsline {section}{\numberline {2.4}Assumptions}{5}
 \contentsline {chapter}{Specific requirements}{7}
 \contentsline {section}{\numberline {3.1} Functional Requirements}{7}
+\contentsline {section}{\numberline {3.2}Software system attribute}{9}
+\contentsline {subsection}{\numberline {3.2.1}Reliability}{9}
+\contentsline {subsection}{\numberline {3.2.2}Availability}{9}
+\contentsline {subsection}{\numberline {3.2.3}Security}{10}
+\contentsline {subsection}{\numberline {3.2.4}Maintainability}{10}
+\contentsline {subsection}{\numberline {3.2.5}Portability}{10}
