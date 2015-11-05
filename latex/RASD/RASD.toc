@@ -14,9 +14,11 @@
 \contentsline {chapter}{Specific requirements}{7}
 \contentsline {section}{\numberline {3.1}External interface requirements}{7}
 \contentsline {section}{\numberline {3.2} Functional Requirements}{7}
-\contentsline {section}{\numberline {3.3}Software system attribute}{10}
-\contentsline {subsection}{\numberline {3.3.1}Reliability}{10}
-\contentsline {subsection}{\numberline {3.3.2}Availability}{10}
-\contentsline {subsection}{\numberline {3.3.3}Security}{10}
-\contentsline {subsection}{\numberline {3.3.4}Maintainability}{10}
-\contentsline {subsection}{\numberline {3.3.5}Portability}{10}
+\contentsline {section}{\numberline {3.3}Scenarios}{10}
+\contentsline {section}{\numberline {3.4}Use cases}{11}
+\contentsline {section}{\numberline {3.5}Software system attribute}{11}
+\contentsline {subsection}{\numberline {3.5.1}Reliability}{11}
+\contentsline {subsection}{\numberline {3.5.2}Availability}{11}
+\contentsline {subsection}{\numberline {3.5.3}Security}{11}
+\contentsline {subsection}{\numberline {3.5.4}Maintainability}{12}
+\contentsline {subsection}{\numberline {3.5.5}Portability}{12}

@@ -77,6 +77,57 @@ scan the list for a taxist to accept;
  \item A taxi driver have the possibility to remove himself from the queue by clicking the:``Disable'' button.
  \item The system will remove a taxi from the list if receive the corresponding request by the taxi driver, or if the taxist logged out.
 \end{itemize}
+
+\section {Scenarios}
+\begin{itemize}
+\item 1. \\
+Jon is driving back home while he notices a strange noise coming from his car. He decides to stop at the first garage
+on the road and then call a taxi using an app he downloaded some weeks ago, MyTaxiService.
+The mechanic checks the car and tells him that the problem is quite serious and the car must stay there for some maintenance. 
+He opens MyTaxiService app and he accesses his account with his email and password. Then he inserts his position and selects "call a taxi".
+The app informs him that he has to wait 5 minutes for taxi 13C to come over.
+\item 2.\\
+Brandon is going to Moscow in three days and must be at the airport at 3,00 pm. Since the parking fee at the airport is very high
+he decides to reserve a taxi that will lead him right near the airport entrance.
+Brandon searches on his personal computer for a taxi service and finds MyTaxiService, creates an account inserting his email address and inventing a password,
+he waits untill he receives a mail from MyTaxiService at the same email account he gave while signing in. He clicks the link in the mail
+and now his account is valid. He can reserve a taxi from his house to the airport for that day and see the details in his "active taxi list".
+\item 3.\\
+Eddard, a taxist, has just started a new day of work.
+As soon as he gets in his vehicle he logs into his account, inserting his code and password.
+Now he is connected with the system, a notification pop up informs him to turn on the gps. He activates the gps and he is sending correctly his position. 
+Now he awaits for incoming calls.
+\item 4.\\
+Robb, a taxist, receives a notification of an incoming call. The request comes from Mario Street, not far from his position.
+Robb looks at the time, it's 12.58 meaning that his turn is over in two minutes, so he declines the request.
+\item 5.\\
+Arya wants to go to an exibition downtown.
+She has heard that the city centre will be closed at traffic but taxis will still be able to access. 
+So she decides to book one, and in order to save some money she reserves a ride and enables the sharing option,
+hoping that also others will use the taxi and join her.
+She receives a notification from the taxi service in which they confirm the taxi and that 3 more people will use the same ride so the cost will be only of 5 dollars.
+\item 6.\\
+Rickon, a taxist, receives a notification of an incoming call. It's a shared ride, the system provides him the route he has to follow, pick up a person in Golgi street then 
+one in Grossich Street and leading them to Piazza Duomo, and the fees every passenger has to pay.
+\end{itemize}
+
+\section {Use cases}
+\begin{itemize}
+\item Create an account
+\begin{center}
+    \begin{tabular}{ | l | p{13cm} |}
+    \hline
+   USE CASE & A user can create an account into myTaxiService \\ \hline
+    ACTORS & Visitor \\ \hline
+     Entry condition &  \\ \hline
+     Flow events & Visitor creates an account inserting his email address and choosing a password (longer than 8 characters), the system processes the submission and sends a confirmation mail to the given address in which there’s a link that the user must click to validate his account. \\ \hline
+     Exit condition & A new account is created \\ \hline
+     Exception &  If the email address is not correct or the user doesn’t confirm his account, the system will not consider any request from it. If the email address already belongs to an existing account or the password is shorter than 8 characters, the system gives an error before the user can continue.\\ \hline
+    \end{tabular}
+\end{center}
+
+\end{itemize}
+
 \section{Software system attribute}
   \subsection{Reliability}
   In order to easly react against failure, the system will make a backup of all the server and save it on a cloud service.
