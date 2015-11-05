@@ -1,5 +1,6 @@
 \section{External interface requirements}
-  The system must be able to comunicate with a map service, in order to retrieve information about the users' position, send the best route to the taxi drivers ,in case of shared ride, calculate the ETA for the passengers that requested a taxi.\\
+  The system must be able to comunicate with a map service, in order to retrieve information about the users' position, send the best 
+  route to the taxi drivers ,in case of shared ride, calculate the ETA for the passengers that requested a taxi.\\
   Also the application must be able to interact with a map service, due to allow passengers to select the meeting position.\\ 
 \section { Functional Requirements}
 For each goal, we define the specific function that we will have to implement;\\
@@ -17,7 +18,8 @@ scan the list for a taxist to accept;
 	\end{itemize}
 \item [G2]:
 	\begin{itemize}
-	\item As soon as a taxist accepts a request, the system invokes the support system to calculate the ETA giving the position of the taxi and the position of the passenger;
+	\item As soon as a taxist accepts a request, the system invokes the support system to calculate the ETA giving the position of the 
+	taxi and the position of the passenger;
 	\item The system will communicate the taxi code and the ETA;
 	\end{itemize}
 \item [G3]:
@@ -52,13 +54,18 @@ scan the list for a taxist to accept;
 	\end{itemize}
 \item [G6]:
 	\begin{itemize}
-	\item A taxi driver logged in into the system can select the button " Ready ", then the system will notify the system that the logged user is ready to accept some passengr's call. The application also send the taxi driver's position detected with a GPS
+	\item A taxi driver logged in into the system can select the button " Ready ", then the system will notify the system that 
+	the logged user is ready to accept some passengr's call. The application also send the taxi driver's position detected with a GPS
 	\item If the application needs to retrieve data from a GPS and this isn't available, it will remind  the user to turn it on.
-	\item When the system receive a notification , by a taxi driver, informing that he is ready to take care of some passengers, it will append the user in the queue corresponding to the taxi zone that include the position retrieved by the application.
+	\item When the system receive a notification , by a taxi driver, informing that he is ready to take care of some passengers, 
+	it will append the user in the queue corresponding to the taxi zone that include the position retrieved by the application.
 	\end{itemize}
 \item[G7]
 	\begin{itemize}
-	\item When a taxi driver is assigned to a shared ride, the system will send him the route he need to follow, and the fee amount every passenger have to pay
+	\item When a taxi driver is assigned to a shared ride, the system will send him the route he needs to follow, and the fee 
+	amount every passenger have to pay
+	\item When a driver is assigned to a non-shared ride, the system will send him the route he needs to follow, and the fee
+	amount the passenger has to pay
 	\end{itemize}
 \item[G8]:
 	\begin{itemize}
@@ -71,7 +78,7 @@ scan the list for a taxist to accept;
  \item When a passenger delete a reservation , the system will remove it from the reservation scheduler and, if a taxi 
  driver is already assigned, notify the taxist.
  \item A passenger can modify an active reservation changing position, date and time.
- \item The system will accept modification only if sended before the taxi allocation.
+ \item The system will accept modification only if sent before the taxi allocation.
  \item The system will accept date and time modification if it occur at least two hours after the request or/and after the 
  previous reservation.
  \item A taxi driver have the possibility to remove himself from the queue by clicking the:``Disable'' button.
@@ -79,37 +86,38 @@ scan the list for a taxist to accept;
 \end{itemize}
 
 \section {Scenarios}
-\begin{itemize}
-\item 1. \\
+\begin{enumerate}
+\item
 Jon is driving back home while he notices a strange noise coming from his car. He decides to stop at the first garage
 on the road and then call a taxi using an app he downloaded some weeks ago, MyTaxiService.
 The mechanic checks the car and tells him that the problem is quite serious and the car must stay there for some maintenance. 
 He opens MyTaxiService app and he accesses his account with his email and password. Then he inserts his position and selects "call a taxi".
 The app informs him that he has to wait 5 minutes for taxi 13C to come over.
-\item 2.\\
+\item
 Brandon is going to Moscow in three days and must be at the airport at 3,00 pm. Since the parking fee at the airport is very high
 he decides to reserve a taxi that will lead him right near the airport entrance.
-Brandon searches on his personal computer for a taxi service and finds MyTaxiService, creates an account inserting his email address and inventing a password,
+Brandon searches on his personal computer for a taxi service and finds MyTaxiService, creates an account inserting his email address and 
+inventing a password,
 he waits untill he receives a mail from MyTaxiService at the same email account he gave while signing in. He clicks the link in the mail
 and now his account is valid. He can reserve a taxi from his house to the airport for that day and see the details in his "active taxi list".
-\item 3.\\
+\item
 Eddard, a taxist, has just started a new day of work.
 As soon as he gets in his vehicle he logs into his account, inserting his code and password.
 Now he is connected with the system, a notification pop up informs him to turn on the gps. He activates the gps and he is sending correctly his position. 
 Now he awaits for incoming calls.
-\item 4.\\
+\item
 Robb, a taxist, receives a notification of an incoming call. The request comes from Mario Street, not far from his position.
 Robb looks at the time, it's 12.58 meaning that his turn is over in two minutes, so he declines the request.
-\item 5.\\
+\item
 Arya wants to go to an exibition downtown.
 She has heard that the city centre will be closed at traffic but taxis will still be able to access. 
 So she decides to book one, and in order to save some money she reserves a ride and enables the sharing option,
 hoping that also others will use the taxi and join her.
 She receives a notification from the taxi service in which they confirm the taxi and that 3 more people will use the same ride so the cost will be only of 5 dollars.
-\item 6.\\
+\item
 Rickon, a taxist, receives a notification of an incoming call. It's a shared ride, the system provides him the route he has to follow, pick up a person in Golgi street then 
 one in Grossich Street and leading them to Piazza Duomo, and the fees every passenger has to pay.
-\end{itemize}
+\end{enumerate}
 
 \section {Use cases}
 \begin{itemize}

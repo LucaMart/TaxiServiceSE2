@@ -33,8 +33,9 @@ requested time of the ride.
 \section{Domain properties}
 In this section we will analyze the background laying behind My Taxi Service:
 \begin{itemize}
-  \item Passengers are assumed to be reliable and trustworthy, meaning that if they request a taxi or make a reservation
-  they will declare their real position and actually use the taxi
+  % scrapped, because we can't assume that:
+  %\item Passengers are assumed to be reliable and trustworthy, meaning that if they request a taxi or make a reservation
+  %they will declare their real position and actually use the taxi
   \item Passengers will pay at the end of the ride the amount of money demanded by the taxi driver
   \item Passenger reserve a taxi only in a period of three month starting from the current time
   \item Taxi drivers must own a valid taxi driving license
@@ -56,7 +57,7 @@ The taxi driver must be able to:
 \begin{itemize}
   \item [G5] Answer a passenger's request
   \item [G6] Render him/herself available to the scheduler
-  \item [G7] Receive informations regarding the fee defined for each passenger in case of shared ride
+  \item [G7] Receive informations regarding the fee defined for each passenger
 \end{itemize}
 The system must be able to:
 \begin{itemize}
@@ -76,7 +77,7 @@ The system must be able to:
   \item[GPS:] global position system.
   \item[Shared ride:] a passenger shares the ride with other people that origins from the same zone, and go to the same direction
   \item[Active reservation]: a reservation is considered active if it is in the reservation scheduler and isn't occured yet.
-  \item[Same direction]: two taxi rdies are considered to be going in "the same direction" if and only if the destination taxi zone
+  \item[Same direction]: two taxi rdies are considered to be going in ``the same direction'' if and only if the destination taxi zone
   is the same.
     \begin{center}
     •

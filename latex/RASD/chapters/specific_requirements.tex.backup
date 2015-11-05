@@ -1,5 +1,6 @@
-﻿\section{External interface requirements}
-  The system must be able to comunicate with a map service, in order to retrieve information about the users' position, send the best route to the taxi drivers ,in case of shared ride, calculate the ETA for the passengers that requested a taxi.\\
+\section{External interface requirements}
+  The system must be able to comunicate with a map service, in order to retrieve information about the users' position, send the best 
+  route to the taxi drivers ,in case of shared ride, calculate the ETA for the passengers that requested a taxi.\\
   Also the application must be able to interact with a map service, due to allow passengers to select the meeting position.\\ 
 \section { Functional Requirements}
 For each goal, we define the specific function that we will have to implement;\\
@@ -17,7 +18,8 @@ scan the list for a taxist to accept;
 	\end{itemize}
 \item [G2]:
 	\begin{itemize}
-	\item As soon as a taxist accepts a request, the system invokes the support system to calculate the ETA giving the position of the taxi and the position of the passenger;
+	\item As soon as a taxist accepts a request, the system invokes the support system to calculate the ETA giving the position of the 
+	taxi and the position of the passenger;
 	\item The system will communicate the taxi code and the ETA;
 	\end{itemize}
 \item [G3]:
@@ -47,19 +49,21 @@ scan the list for a taxist to accept;
 	   \item [2:] A taxi reservation is sheduled to begin in 10 minutes.
 	  \end{itemize}
 	\item If a taxi driver refuses to take care about a call, the system will move him at the end of the queue,and forward the
-	request to the next taxi driver in the queue. If a queue is empty, the system will search a taxi driver in a queue belonging 
-	to an adiacent taxi zone.
+	request to the next taxi driver in the queue. If a queue is empty, the system will notify the passenger that there are no taxi available.
 	\item If a taxe driver accepts to take care of the call, the system shall  remove him from the queue.
 	\end{itemize}
 \item [G6]:
 	\begin{itemize}
-	\item A taxi driver logged in into the system can select the button " Ready ", then the system will notify the system that the logged user is ready to accept some passengr's call. The application also send the taxi driver's position detected with a GPS
+	\item A taxi driver logged in into the system can select the button " Ready ", then the system will notify the system that 
+	the logged user is ready to accept some passengr's call. The application also send the taxi driver's position detected with a GPS
 	\item If the application needs to retrieve data from a GPS and this isn't available, it will remind  the user to turn it on.
-	\item When the system receive a notification , by a taxi driver, informing that he is ready to take care of some passengers, it will append the user in the queue corresponding to the taxi zone that include the position retrieved by the application.
+	\item When the system receive a notification , by a taxi driver, informing that he is ready to take care of some passengers, 
+	it will append the user in the queue corresponding to the taxi zone that include the position retrieved by the application.
 	\end{itemize}
 \item[G7]
 	\begin{itemize}
-	\item When a taxi driver is assigned to a shared ride, the system will send him the route he need to follow, and the fee amount every passenger have to pay
+	\item When a taxi driver is assigned to a shared ride, the system will send him the route he need to follow, and the fee 
+	amount every passenger have to pay
 	\end{itemize}
 \item[G8]:
 	\begin{itemize}
@@ -68,8 +72,8 @@ scan the list for a taxist to accept;
 \end {itemize}
 \begin{itemize}
  \item Passengers can access a section, in which they be able to check the ID of the taxi assigned to their ride 
- and manage ( delete or modify) an active reservation or an active request.
- \item When a passenger delete a reservation or a request, the system will remove it from the reservation scheduler and, if a taxi 
+ and manage ( delete or modify) an active reservation.
+ \item When a passenger delete a reservation , the system will remove it from the reservation scheduler and, if a taxi 
  driver is already assigned, notify the taxist.
  \item A passenger can modify an active reservation changing position, date and time.
  \item The system will accept modification only if sended before the taxi allocation.
@@ -78,6 +82,68 @@ scan the list for a taxist to accept;
  \item A taxi driver have the possibility to remove himself from the queue by clicking the:``Disable'' button.
  \item The system will remove a taxi from the list if receive the corresponding request by the taxi driver, or if the taxist logged out.
 \end{itemize}
+
+\section {Scenarios}
+\begin{itemize}
+\item 1.
+Jon is driving back home while he notices a strange noise coming from his car. He decides to stop at the first garage
+on the road and then call a taxi using an app he downloaded some weeks ago, MyTaxiService.
+The mechanic checks the car and tells him that the problem is quite serious and the car must stay there for some maintenance. 
+He opens MyTaxiService app and he accesses his account with his email and password. Then he inserts his position and selects "call a taxi".
+The app informs him that he has to wait 5 minutes for taxi 13C to come over.
+\item 2.
+Brandon is going to Moscow in three days and must be at the airport at 3,00 pm. Since the parking fee at the airport is very high
+he decides to reserve a taxi that will lead him right near the airport entrance.
+Brandon searches on his personal computer for a taxi service and finds MyTaxiService, creates an account inserting his email address and 
+inventing a password,
+he waits untill he receives a mail from MyTaxiService at the same email account he gave while signing in. He clicks the link in the mail
+and now his account is valid. He can reserve a taxi from his house to the airport for that day and see the details in his "active taxi list".
+\item 3.
+Eddard, a taxist, has just started a new day of work.
+As soon as he gets in his vehicle he logs into his account, inserting his code and password.
+Now he is connected with the system, a notification pop up informs him to turn on the gps. He activates the gps and he is sending correctly his position. 
+Now he awaits for incoming calls.
+\item 4.
+Robb, a taxist, receives a notification of an incoming call. The request comes from Mario Street, not far from his position.
+Robb looks at the time, it's 12.58 meaning that his turn is over in two minutes, so he declines the request.
+\item 5.
+Arya wants to go to an exibition downtown.
+She has heard that the city centre will be closed at traffic but taxis will still be able to access. 
+So she decides to book one, and in order to save some money she reserves a ride and enables the sharing option,
+hoping that also others will use the taxi and join her.
+She receives a notification from the taxi service in which they confirm the taxi and that 3 more people will use the same ride so the cost will be only of 5 dollars.
+\item 6.
+Rickon, a taxist, receives a notification of an incoming call. It's a shared ride, the system provides him the route he has to follow, pick up a person in Golgi street then 
+one in Grossich Street and leading them to Piazza Duomo, and the fees every passenger has to pay.
+\end{itemize}
+
+\section {Use cases}
+\begin{itemize}
+\item Create an account
+\begin{center}
+    \begin{tabular}{ | l | p{11cm} |}
+    \hline
+   USE CASE & A user can create an account into myTaxiService \\ \hline
+    ACTORS & Visitor \\ \hline
+     Entry condition &  \\ \hline
+     Flow events & Visitor creates an account inserting his email address and choosing a password (longer than 8 characters), the system processes the submission and sends a confirmation mail to the given address in which there’s a link that the user must click to validate his account. \\ \hline
+     Exit condition & A new account is created \\ \hline
+     Exception &  If the email address is not correct or the user doesn’t confirm his account, the system will not consider any request from it. If the email address already belongs to an existing account or the password is shorter than 8 characters, the system gives an error before the user can continue.\\ \hline
+    \end{tabular}
+\end{center}
+\begin{center}
+\begin{figure} [h]
+    \includegraphics [width=15cm, height=10cm]{register1.png}
+\end{figure}
+\end{center}
+\newpage 
+\end{itemize}
+
+
+
+
+
+
 \section{Software system attribute}
   \subsection{Reliability}
   In order to easly react against failure, the system will make a backup of all the server and save it on a cloud service.
