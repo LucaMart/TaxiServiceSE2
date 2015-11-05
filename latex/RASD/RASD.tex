@@ -1,6 +1,7 @@
 \documentclass[a4paper,11pt]{report}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{listings}
 
 
 % Title Page
@@ -34,5 +35,11 @@
 \setcounter{section}{0}
 \addtocounter{chapter}{1}
 \input{chapters/specific_requirements.tex}
+
+\chapter*{Appendix}
+\addcontentsline{toc}{chapter}{Appendix}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+\input{chapters/appendix.tex}
 
 \end{document}    

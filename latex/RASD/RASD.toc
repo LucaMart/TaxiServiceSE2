@@ -22,3 +22,5 @@
 \contentsline {subsection}{\numberline {3.5.3}Security}{12}
 \contentsline {subsection}{\numberline {3.5.4}Maintainability}{12}
 \contentsline {subsection}{\numberline {3.5.5}Portability}{13}
+\contentsline {chapter}{Appendix}{14}
+\contentsline {section}{\numberline {4.1}Alloy}{14}
