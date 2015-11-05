@@ -89,10 +89,11 @@ pred taxiBecomeAvailable[t: Taxi, c, c': City] {
 pred show {
 	#TaxiZone >= 2 // just to make things interesting
 }
-run show for 15
+
 run taxiMove for 1 City, 1 Taxi, 2 GeographicalPosition, 5 TaxiZone, 5 TaxiQueue
 run taxiIsUnavailable for 1 City, 4 Taxi, 4 GeographicalPosition, 4 TaxiZone, 4 TaxiQueue
 run taxiIsAvailable for 1 City, 4 Taxi, 4 GeographicalPosition, 4 TaxiZone, 4 TaxiQueue
 run taxiBecomeUnavailable for 1 City, 4 Taxi, 4 GeographicalPosition, 4 TaxiZone, 4 TaxiQueue
 run taxiBecomeAvailable for 1 City, 4 Taxi, 4 GeographicalPosition, 4 TaxiZone, 4 TaxiQueue
+run show for 15
 
