@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.4)  5 NOV 2015 09:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.4)  5 NOV 2015 10:20
 entering extended mode
 **C:/Users/lidia/Documents/GitHub/TaxiServiceSE2/TaxiServiceSE2/latex/RASD/RASD
 .tex
@@ -362,32 +362,40 @@ Overfull \hbox (79.97131pt too wide) in paragraph at lines 118--127
  [] 
  []
 
-<register.png, id=45, 952.55875pt x 521.95pt>
-File: register.png Graphic file (type png)
- <use register.png>
-Package pdftex.def Info: register.png used on input line 130.
-(pdftex.def)             Requested size: 360.0pt x 197.2599pt.
- [11 <./register.png>]) [12] (RASD.aux) ) 
+<register1.png, id=45, 992.70876pt x 602.25pt>
+File: register1.png Graphic file (type png)
+ <use register1.png>
+Package pdftex.def Info: register1.png used on input line 130.
+(pdftex.def)             Requested size: 426.79585pt x 284.53705pt.
+
+Overfull \hbox (66.79585pt too wide) in paragraph at lines 130--131
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11] [12 <./register1.png>]) [13] (RASD.aux) ) 
 Here is how much of TeX's memory you used:
  1403 strings out of 493698
- 17608 string characters out of 3144412
+ 17613 string characters out of 3144412
  75038 words of memory out of 3000000
  4734 multiletter control sequences out of 15000+200000
  10982 words of font info for 38 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 27i,8n,19p,1202b,331s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
-12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on RASD.pdf (13 pages, 147214 bytes).
+ 27i,8n,19p,1202b,336s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
+msfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on RASD.pdf (14 pages, 148509 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
+ 87 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
