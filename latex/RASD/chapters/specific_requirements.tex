@@ -122,23 +122,111 @@ one in Grossich Street and leading them to Piazza Duomo, and the fees every pass
 \section {Use cases}
 \begin{itemize}
 \item Create an account
-\begin{center}
-    \begin{tabular}{ | l | p{11cm} |}
-    \hline
-   USE CASE & A user can create an account into myTaxiService \\ \hline
-    ACTORS & Visitor \\ \hline
-     Entry condition &  \\ \hline
-     Flow events & Visitor creates an account inserting his email address and choosing a password (longer than 8 characters), the system processes the submission and sends a confirmation mail to the given address in which there’s a link that the user must click to validate his account. \\ \hline
-     Exit condition & A new account is created \\ \hline
-     Exception &  If the email address is not correct or the user doesn’t confirm his account, the system will not consider any request from it. If the email address already belongs to an existing account or the password is shorter than 8 characters, the system gives an error before the user can continue.\\ \hline
+	\begin{center}
+    	\begin{tabular}{ | l | p{11cm} |}
+    	\hline
+   	USE CASE & A user can create an account into myTaxiService \\ \hline
+    	ACTORS & Visitor \\ \hline
+     	Entry condition &  \\ \hline
+     	Flow events & Visitor creates an account inserting his email address and choosing a password (longer than 8 characters). If he is willing to create an account as taxi driver, he must specify also his license number. The system processes the submission (in particular for a taxi driver checks the validity of the license given) and sends a confirmation mail to the given address in which there’s a link that the user must 			click to validate his account. \\ \hline
+     	Exit condition & A new account is created \\ \hline
+     	Exception &  If the email address is not correct or the user doesn’t confirm his account, the system will not consider any 			request from it. If the email address already belongs to an existing account or the password is shorter than 8 characters, the 			system gives an error before the user can continue.\\ \hline
+    \end{tabular}
+	\end{center}
+	\begin{center}
+	\begin{figure} [h]
+  	  \includegraphics[scale=0.5]{register.png}
+	\end{figure}
+	\end{center}
+	\newpage 
+\item Request a taxi
+	\begin{center}
+   	 \begin{tabular}{ | l | p{11cm} |}
+   	 \hline
+   	USE CASE & A passenger can request a taxi\\ \hline
+   	 ACTORS & Registered passenger \\ \hline
+    	 Entry condition & Passenger must have already created an account \\ \hline
+    	 Flow events & Passenger logs into his account from the app or from the website, presses the button “call a taxi”, then inserts 			his adress (street/square, number) and number of passengers. When he has done he clicks “send” button. The system checks 			if the location exists and then contacts the first taxist in the queue.
+	When a taxist positively responds, the system look up for his position using his code and then calculates the ETA. Send both 			information, the taxi’s code and ETA to the user via a notification. \\ \hline
+  	   Exit condition & A taxi, no more in the queue of available taxis, takes charge of the call and it’s moving towards the 				passenger.\\ \hline
+  	   Exception &  If the location doesn’t exists or the system doesn’t find this address in the city map: the system sends an error 			message;
+	If there are no taxis in the queue: the system sends a notification saying there are no available taxis;.\\ \hline
+    \end{tabular}
+	\end{center}
+	\begin{center}
+	\begin{figure} [h]
+    	\includegraphics [scale=0.5]{callataxi.png}
+	\end{figure}
+	\end{center}
+	\newpage 
+\item Book a taxi
+	\begin{center}
+   	 \begin{tabular}{ | l | p{11cm} |}
+   	 \hline
+   	USE CASE & A Passenger can book a taxi \\ \hline
+   	 ACTORS & Registered passenger \\ \hline
+    	 Entry condition & Passenger must have already created an account \\ \hline
+    	 Flow events & Passenger logs into his account from the app or from the website, presses the button “book a taxi”, then inserts the departure adress (street/square, number), the destination address (street/square, number), the date (dd/mm/yyyy 00.00) and number of passengers. He can select the shared ride option .When he has filled all fields, he clicks “send” button. The system checks if the location exists and if the date respects the constraints then sends a confirmation back to the user and saves the reservation in the scheduler system for the day it occurs and in the queue where the ride will start.\\ \hline
+  	   Exit condition & A taxi is allocated ten minutes before the ride begins, and the passenger can see in his active taxi list the reservation.\\ \hline
+  	   Exception &  If the location doesn’t exists or the system doesn’’t find this address in the city map: the system sends an error message;
+If the date doesn’t respect the constraints an error message is sent.\\ \hline
     \end{tabular}
 \end{center}
-\begin{center}
-\begin{figure} [h]
-    \includegraphics [width=15cm, height=10cm]{register1.png}
-\end{figure}
+\item Book a shared taxi ride
+	\begin{center}
+   	 \begin{tabular}{ | l | p{11cm} |}
+   	 \hline
+   	USE CASE & A Passenger can book a taxi with shared ride option\\ \hline
+   	 ACTORS & Registered passenger \\ \hline
+    	 Entry condition & Passenger must have already created an account \\ \hline
+    	 Flow events & Passenger performs the same operation as bookin a traditional ride but select also the share ride option. Now the input form will also ask him which destinations he wants to share. When he has done he clicks “send” button. The system checks if the location exists and if the date respects the constraints then sends a confirmation back to the user and saves the reservation for the day it occurs and in the queue where the ride will start, in addition it will search for other reservations with shared option enabled that could have parts of the way in common and arrange a special route the taxist will follow.\\ \hline
+  	   Exit condition & A taxi is allocated ten minutes before the ride begins, and the passenger can see in his active taxi list the reservation.
+The system will send a notification with the price the user must pay.\\ \hline
+  	   Exception &  If the location doesn’t exists or the system doesn’t find this address in the city map: the system sends an error message;
+If the date doesn’t respect the constraints an error message is sent\\ \hline
+    \end{tabular}
+	\end{center}
+	\begin{center}
+	\begin{figure} [h]
+    	\includegraphics [scale=0.5]{bookataxi.png}
+	\end{figure}
+	\end{center}
+	\newpage 
+\item Answer a call
+	\begin{center}
+   	 \begin{tabular}{ | l | p{11cm} |}
+   	 \hline
+   	USE CASE & A taxist can answer a call\\ \hline
+   	 ACTORS & Taxist \\ \hline
+    	 Entry condition & Taxist must be working and available, the system must forward a valid request \\ \hline
+    	 Flow events & Taxist receives a notification on his mobile, with information about the ride (number of passengers, route to follow, time).
+He displays two option, accept or refuse. If he accepts he takes charge of the call otherwise he waits for another call. In the first case his code is sent to the system.\\ \hline
+  	   Exit condition & If the taxist accepts, he is no more visible in that queue to the system.
+If he refuses, he will be moved from first position in the queue to the last one.\\ \hline
+  	   Exception &  \\ \hline
+    \end{tabular}
 \end{center}
-\newpage 
+\item Set availability
+	\begin{center}
+   	 \begin{tabular}{ | l | p{11cm} |}
+   	 \hline
+   	USE CASE & A taxist can render himself availablel\\ \hline
+   	 ACTORS & Taxist \\ \hline
+    	 Entry condition & Taxist must be working \\ \hline
+    	 Flow events & Taxist logs into his account, giving his Id vehicle and password.
+He sends his availability to the system,pushing the “ready” button.\\ \hline
+  	   Exit condition & The system receives his position and puts him in the queue in which he is in.\\ \hline
+  	   Exception &  If the taxist hasn’t abilitate the gps, the app notifies him to turn it on.\\ \hline
+    \end{tabular}
+\end{center}
+	\begin{center}
+	\begin{figure} [h]
+    	\includegraphics [scale=0.5]{taxist.png}
+	\end{figure}
+	\end{center}
+	\newpage
+
+
 \end{itemize}
 
 
