@@ -1,15 +1,18 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.4)  6 NOV 2015 19:42
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.9.16)  6 NOV 2015 19:37
+>>>>>>> origin/master
 entering extended mode
-**C:/Users/lidia/Documents/GitHub/TaxiServiceSE2/TaxiServiceSE2/latex/RASD/RASD
-.tex
-
-(C:/Users/lidia/Documents/GitHub/TaxiServiceSE2/TaxiServiceSE2/latex/RASD/RASD.
-tex
-LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 68 languages loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+ \write18 enabled.
+ %&-line parsing enabled.
+**RASD.tex
+(./RASD.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/usr/share/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+(/usr/share/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -25,19 +28,19 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
-Package: inputenc 2014/04/30 v1.2b Input encoding file
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+(/usr/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+(/usr/share/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -187,7 +190,7 @@ File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+(/usr/share/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -218,7 +221,7 @@ File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+(/usr/share/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -242,31 +245,31 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
@@ -274,7 +277,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+(/usr/share/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count89
 \lst@gtempboxa=\box26
 \lst@token=\toks17
@@ -288,21 +291,21 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \lst@lineno=\count94
 \lst@maxwidth=\dimen108
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count95
 \lst@skipnumbers=\count96
 \lst@framebox=\box27
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
+(/usr/share/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count97
@@ -311,16 +314,16 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box28
 \rot@mess@toks=\toks18
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
-Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+(/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
-Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+(/usr/share/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
@@ -351,7 +354,7 @@ Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
 Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
@@ -359,27 +362,27 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+(/usr/share/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen109
 \Hy@linkcounter=\count98
 \Hy@pagecounter=\count99
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count100
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+(/usr/share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -391,7 +394,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count101
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+(/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -416,25 +419,27 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+(/usr/share/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count106
 \c@bookmark@seq@number=\count107
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+(/usr/share/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip45
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grffile.sty"
+(/usr/share/texmf-dist/tex/latex/oberdiek/grffile.sty
 Package: grffile 2012/04/05 v1.16 Extended file name support for graphics (HO)
 Package grffile Info: Option `multidot' is set to `true'.
 Package grffile Info: Option `extendedchars' is set to `false'.
 Package grffile Info: Option `space' is set to `true'.
 Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 486.
-) (RASD.aux)
+) (./RASD.aux)
+\openout1 = `RASD.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
@@ -450,7 +455,7 @@ LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count108
 \scratchdimen=\dimen113
@@ -463,14 +468,29 @@ LaTeX Font Info:    ... okay on input line 19.
 \MPnumerator=\count112
 \makeMPintoPDFobject=\count113
 \everyMPtoPDFconversion=\toks20
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 \c@lstlisting=\count114
 \AtBeginShipoutBox=\box30
 Package hyperref Info: Link coloring OFF on input line 19.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+(/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count115
@@ -478,9 +498,11 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 19.
 LaTeX Info: Redefining \pageref on input line 19.
 LaTeX Info: Redefining \nameref on input line 19.
-
-(RASD.out) (RASD.out)
+ (./RASD.out)
+(./RASD.out)
 \@outlinefile=\write3
+\openout3 = `RASD.out'.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 21.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -489,8 +511,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 21.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(RASD.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./RASD.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 2.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
@@ -502,8 +523,10 @@ l.31 ...rline {6.3}Solver output}{47}{section.6.3}
 
 ])
 \tf@toc=\write4
+\openout4 = `RASD.toc'.
+
  [2]
-(chapters/introduction.tex
+(./chapters/introduction.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -513,13 +536,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 37.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+(/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
  [4]) [5]
-(chapters/overall_description.tex
+(./chapters/overall_description.tex
 Underfull \hbox (badness 10000) in paragraph at lines 6--9
 
  []
@@ -531,15 +554,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--17
 
 [6
 
-]) [7] (chapters/ui_mockup.tex
-<ui/sequencelogin.png, id=205, 451.6875pt x 825.0825pt>
+]) [7] (./chapters/ui_mockup.tex
+<ui/sequencelogin.png, id=207, 451.6875pt x 825.0825pt>
 File: ui/sequencelogin.png Graphic file (type png)
 
 <use ui/sequencelogin.png>
 Package pdftex.def Info: ui/sequencelogin.png used on input line 4.
 (pdftex.def)             Requested size: 225.84319pt x 412.54024pt.
 
-<ui/Login + menu.png, id=207, 451.6875pt x 825.0825pt>
+<ui/Login + menu.png, id=209, 451.6875pt x 825.0825pt>
 File: ui/Login + menu.png Graphic file (type png)
 
 <use ui/Login + menu.png>
@@ -549,7 +572,7 @@ Package pdftex.def Info: ui/Login + menu.png used on input line 10.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Login + toast.png, id=208, 451.6875pt x 825.0825pt>
+<ui/Login + toast.png, id=210, 451.6875pt x 825.0825pt>
 File: ui/Login + toast.png Graphic file (type png)
 
 <use ui/Login + toast.png>
@@ -559,7 +582,7 @@ Package pdftex.def Info: ui/Login + toast.png used on input line 16.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Login + toast (driver).png, id=209, 451.6875pt x 825.0825pt>
+<ui/Login + toast (driver).png, id=211, 451.6875pt x 825.0825pt>
 File: ui/Login + toast (driver).png Graphic file (type png)
 
 <use ui/Login + toast (driver).png>
@@ -569,7 +592,7 @@ Package pdftex.def Info: ui/Login + toast (driver).png used on input line 22.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Passenger map screen.png, id=210, 451.6875pt x 825.0825pt>
+<ui/Passenger map screen.png, id=212, 451.6875pt x 825.0825pt>
 File: ui/Passenger map screen.png Graphic file (type png)
 
 <use ui/Passenger map screen.png>
@@ -579,7 +602,7 @@ Package pdftex.def Info: ui/Passenger map screen.png used on input line 28.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Passenger confirm screen.png, id=211, 451.6875pt x 825.0825pt>
+<ui/Passenger confirm screen.png, id=213, 451.6875pt x 825.0825pt>
 File: ui/Passenger confirm screen.png Graphic file (type png)
 
 <use ui/Passenger confirm screen.png>
@@ -590,7 +613,7 @@ Package pdftex.def Info: ui/Passenger confirm screen.png used on input line 34.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Passenger confirm screen - reserve.png, id=212, 451.6875pt x 825.0825pt>
+<ui/Passenger confirm screen - reserve.png, id=214, 451.6875pt x 825.0825pt>
 File: ui/Passenger confirm screen - reserve.png Graphic file (type png)
 
 <use ui/Passenger confirm screen - reserve.png>
@@ -601,7 +624,7 @@ t line 40.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Passenger call list screen + toast.png, id=213, 451.6875pt x 825.0825pt>
+<ui/Passenger call list screen + toast.png, id=215, 451.6875pt x 825.0825pt>
 File: ui/Passenger call list screen + toast.png Graphic file (type png)
 
 <use ui/Passenger call list screen + toast.png>
@@ -612,7 +635,7 @@ t line 46.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Passenger call list detail.png, id=214, 451.6875pt x 825.0825pt>
+<ui/Passenger call list detail.png, id=216, 451.6875pt x 825.0825pt>
 File: ui/Passenger call list detail.png Graphic file (type png)
 
 <use ui/Passenger call list detail.png>
@@ -623,7 +646,7 @@ Package pdftex.def Info: ui/Passenger call list detail.png used on input line 5
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Passenger call list + menu.png, id=215, 451.6875pt x 825.0825pt>
+<ui/Passenger call list + menu.png, id=217, 451.6875pt x 825.0825pt>
 File: ui/Passenger call list + menu.png Graphic file (type png)
 
 <use ui/Passenger call list + menu.png>
@@ -634,7 +657,7 @@ Package pdftex.def Info: ui/Passenger call list + menu.png used on input line 6
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Driver Idle screen.png, id=216, 451.6875pt x 825.0825pt>
+<ui/Driver Idle screen.png, id=218, 451.6875pt x 825.0825pt>
 File: ui/Driver Idle screen.png Graphic file (type png)
 
 <use ui/Driver Idle screen.png>
@@ -644,7 +667,7 @@ Package pdftex.def Info: ui/Driver Idle screen.png used on input line 67.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Driver new call dialog.png, id=217, 451.6875pt x 825.0825pt>
+<ui/Driver new call dialog.png, id=219, 451.6875pt x 825.0825pt>
 File: ui/Driver new call dialog.png Graphic file (type png)
 
 <use ui/Driver new call dialog.png>
@@ -654,7 +677,7 @@ Package pdftex.def Info: ui/Driver new call dialog.png used on input line 74.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Driver ride info screen.png, id=218, 451.6875pt x 825.0825pt>
+<ui/Driver ride info screen.png, id=220, 451.6875pt x 825.0825pt>
 File: ui/Driver ride info screen.png Graphic file (type png)
 
 <use ui/Driver ride info screen.png>
@@ -664,7 +687,7 @@ Package pdftex.def Info: ui/Driver ride info screen.png used on input line 81.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Driver call list.png, id=219, 451.6875pt x 825.0825pt>
+<ui/Driver call list.png, id=221, 451.6875pt x 825.0825pt>
 File: ui/Driver call list.png Graphic file (type png)
 
 <use ui/Driver call list.png>
@@ -674,7 +697,7 @@ Package pdftex.def Info: ui/Driver call list.png used on input line 88.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Driver shared fee dialog.png, id=220, 451.6875pt x 825.0825pt>
+<ui/Driver shared fee dialog.png, id=222, 451.6875pt x 825.0825pt>
 File: ui/Driver shared fee dialog.png Graphic file (type png)
 
 <use ui/Driver shared fee dialog.png>
@@ -685,7 +708,7 @@ Package pdftex.def Info: ui/Driver shared fee dialog.png used on input line 95.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Driver normal ride dialog.png, id=221, 451.6875pt x 825.0825pt>
+<ui/Driver normal ride dialog.png, id=223, 451.6875pt x 825.0825pt>
 File: ui/Driver normal ride dialog.png Graphic file (type png)
 
 <use ui/Driver normal ride dialog.png>
@@ -696,7 +719,7 @@ Package pdftex.def Info: ui/Driver normal ride dialog.png used on input line 10
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Driver call list + menu.png, id=222, 451.6875pt x 825.0825pt>
+<ui/Driver call list + menu.png, id=224, 451.6875pt x 825.0825pt>
 File: ui/Driver call list + menu.png Graphic file (type png)
 
 <use ui/Driver call list + menu.png>
@@ -717,8 +740,8 @@ ssenger call list detail.png>] [17 <./ui/Passenger call list + menu.png>]
 [18 <./ui/Driver Idle screen.png>] [19 <./ui/Driver new call dialog.png>]
 [20 <./ui/Driver ride info screen.png>] [21 <./ui/Driver call list.png>]
 [22 <./ui/Driver shared fee dialog.png>] [23 <./ui/Driver normal ride dialog.pn
-g>] [24 <./ui/Driver call list + menu.png>] (chapters/specific_requirements.tex
-
+g>] [24 <./ui/Driver call list + menu.png>]
+(./chapters/specific_requirements.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--5
 
  []
@@ -735,7 +758,7 @@ Overfull \hbox (79.97131pt too wide) in paragraph at lines 149--159
  [] 
  []
 
-<register.png, id=354, 992.70876pt x 602.25pt>
+<register.png, id=357, 992.70876pt x 602.25pt>
 File: register.png Graphic file (type png)
  <use register.png>
 Package pdftex.def Info: register.png used on input line 162.
@@ -750,7 +773,7 @@ Overfull \hbox (79.97131pt too wide) in paragraph at lines 169--180
  [] 
  []
 
-<callataxi.png, id=361, 1024.82875pt x 738.76pt>
+<callataxi.png, id=364, 1024.82875pt x 738.76pt>
 File: callataxi.png Graphic file (type png)
  <use callataxi.png>
 Package pdftex.def Info: callataxi.png used on input line 183.
@@ -770,12 +793,16 @@ Overfull \hbox (79.97131pt too wide) in paragraph at lines 202--213
  [] 
  []
 
+<<<<<<< HEAD
 
 Overfull \hbox (79.97131pt too wide) in paragraph at lines 216--227
  [] 
  []
 
 [32] <bookataxi.png, id=371, 1056.94875pt x 682.55pt>
+=======
+<bookataxi.png, id=370, 1056.94875pt x 682.55pt>
+>>>>>>> origin/master
 File: bookataxi.png Graphic file (type png)
  <use bookataxi.png>
 Package pdftex.def Info: bookataxi.png used on input line 230.
@@ -795,7 +822,11 @@ Overfull \hbox (79.97131pt too wide) in paragraph at lines 250--259
  [] 
  []
 
+<<<<<<< HEAD
 <taxist.png, id=377, 984.67876pt x 722.7pt>
+=======
+[33 <./bookataxi.png>] <taxist.png, id=380, 984.67876pt x 722.7pt>
+>>>>>>> origin/master
 File: taxist.png Graphic file (type png)
  <use taxist.png>
 Package pdftex.def Info: taxist.png used on input line 264.
@@ -805,10 +836,14 @@ Overfull \hbox (132.33817pt too wide) in paragraph at lines 264--265
 [][] 
  []
 
+<<<<<<< HEAD
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [34] <sequencelogin.png, id=382, 1025.8325pt x 769.87625pt>
+=======
+[34 <./taxist.png>] <sequencelogin.png, id=386, 1025.8325pt x 769.87625pt>
+>>>>>>> origin/master
 File: sequencelogin.png Graphic file (type png)
 
 <use sequencelogin.png>
@@ -819,10 +854,15 @@ Overfull \hbox (152.91501pt too wide) in paragraph at lines 275--276
 [][] 
  []
 
+<<<<<<< HEAD
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [35 <./taxist.png>] <sequenceregister.png, id=388, 1081.03876pt x 596.2275pt>
+=======
+[35 <./sequencelogin.png>]
+<sequenceregister.png, id=392, 1081.03876pt x 596.2275pt>
+>>>>>>> origin/master
 File: sequenceregister.png Graphic file (type png)
 
 <use sequenceregister.png>
@@ -833,10 +873,15 @@ Overfull \hbox (72.40784pt too wide) in paragraph at lines 283--284
 [][] 
  []
 
+<<<<<<< HEAD
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [36 <./sequencelogin.png>] <sequencecall.png, id=396, 1449.415pt x 1108.14pt>
+=======
+[36 <./sequenceregister.png>]
+<sequencecall.png, id=399, 1449.415pt x 1108.14pt>
+>>>>>>> origin/master
 File: sequencecall.png Graphic file (type png)
 
 <use sequencecall.png>
@@ -847,11 +892,16 @@ Overfull \hbox (74.82785pt too wide) in paragraph at lines 291--292
 [][] 
  []
 
+<<<<<<< HEAD
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [37 <./sequenceregister.png>]
 <sequencerefuse.png, id=403, 1297.84875pt x 792.9625pt>
+=======
+[37 <./sequencecall.png>]
+<sequencerefuse.png, id=405, 1297.84875pt x 792.9625pt>
+>>>>>>> origin/master
 File: sequencerefuse.png Graphic file (type png)
 
 <use sequencerefuse.png>
@@ -862,11 +912,16 @@ Overfull \hbox (29.35764pt too wide) in paragraph at lines 299--300
 [][] 
  []
 
+<<<<<<< HEAD
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [38 <./sequencecall.png>] [39 <./sequencerefuse.png>]) [40] (chapters/UML.tex
 <UML/Diagramma1.png, id=420, 1149.29375pt x 919.435pt>
+=======
+[38 <./sequencerefuse.png>]) [39] (./chapters/UML.tex
+<UML/Diagramma1.png, id=415, 1149.29375pt x 919.435pt>
+>>>>>>> origin/master
 File: UML/Diagramma1.png Graphic file (type png)
 
 <use UML/Diagramma1.png>
@@ -883,18 +938,27 @@ Overfull \hbox (97.68973pt too wide) in paragraph at lines 6--8
 Overfull \vbox (115.562pt too high) has occurred while \output is active []
 
 
+<<<<<<< HEAD
 [42 <./UML/Diagramma1.png>]) (chapters/appendix.tex (../../alloy/model.als
+=======
+[41 <./UML/Diagramma1.png>]) (./chapters/appendix.tex (../../alloy/model.als
+>>>>>>> origin/master
 LaTeX Font Info:    Try loading font information for OML+cmr on input line 17.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
+(/usr/share/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 17.
  [43
 
+<<<<<<< HEAD
 ] [44] [45])
 [46] <../../alloy/generated_world.png, id=548, 2144.01pt x 1505.625pt>
+=======
+] [43] [44]) [45]
+<../../alloy/generated_world.png, id=544, 2144.01pt x 1505.625pt>
+>>>>>>> origin/master
 File: ../../alloy/generated_world.png Graphic file (type png)
 
 <use ../../alloy/generated_world.png>
@@ -910,14 +974,15 @@ Overfull \hbox (47.40771pt too wide) in paragraph at lines 13--14
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
  [47] [48 <../../alloy/generated_world.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
- (RASD.aux)
+ (./RASD.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 Package rerunfilecheck Info: File `RASD.out' has not changed.
-(rerunfilecheck)             Checksum: EFEA133367C9DB24291BF7F6E6CE80AA;1919.
+(rerunfilecheck)             Checksum: 8A2BDC9E9988148A5063CFA0483D78FA;1888.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 59.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  7353 strings out of 493698
  106124 string characters out of 3144412
  321155 words of memory out of 3000000
@@ -938,5 +1003,28 @@ Output written on RASD.pdf (49 pages, 2579287 bytes).
 PDF statistics:
  651 PDF objects out of 1000 (max. 8388607)
  218 named destinations out of 1000 (max. 500000)
+=======
+ 7460 strings out of 493089
+ 107522 string characters out of 6140694
+ 324395 words of memory out of 5000000
+ 10646 multiletter control sequences out of 15000+600000
+ 10982 words of font info for 38 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 32i,9n,32p,1128b,1746s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmti10.pfb>
+Output written on RASD.pdf (48 pages, 2583352 bytes).
+PDF statistics:
+ 645 PDF objects out of 1000 (max. 8388607)
+ 525 compressed objects within 6 object streams
+ 213 named destinations out of 1000 (max. 500000)
+>>>>>>> origin/master
  384 words of extra memory for PDF output out of 10000 (max. 10000000)
 
