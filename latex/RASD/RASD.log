@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.9.16)  6 NOV 2015 20:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.3)  6 NOV 2015 21:39
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **RASD.tex
 (./RASD.tex
@@ -514,7 +514,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 ...rline {6.3}Solver output}{47}{section.6.3}
+l.31 ...ine {6.2}Generated world}{47}{section.6.2}
                                                    [1
 
 ])
@@ -539,26 +539,26 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
  [4] [5]) [6]
 (./chapters/overall_description.tex
-Underfull \hbox (badness 10000) in paragraph at lines 6--9
+Underfull \hbox (badness 10000) in paragraph at lines 6--10
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--17
+Underfull \hbox (badness 10000) in paragraph at lines 13--18
 
  []
 
 [7
 
 ]) [8] (./chapters/ui_mockup.tex
-<ui/sequencelogin.png, id=211, 451.6875pt x 825.0825pt>
+<ui/sequencelogin.png, id=221, 451.6875pt x 825.0825pt>
 File: ui/sequencelogin.png Graphic file (type png)
 
 <use ui/sequencelogin.png>
 Package pdftex.def Info: ui/sequencelogin.png used on input line 4.
 (pdftex.def)             Requested size: 225.84319pt x 412.54024pt.
 
-<ui/Login + menu.png, id=213, 451.6875pt x 825.0825pt>
+<ui/Login + menu.png, id=223, 451.6875pt x 825.0825pt>
 File: ui/Login + menu.png Graphic file (type png)
 
 <use ui/Login + menu.png>
@@ -568,7 +568,7 @@ Package pdftex.def Info: ui/Login + menu.png used on input line 10.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Login + toast.png, id=214, 451.6875pt x 825.0825pt>
+<ui/Login + toast.png, id=224, 451.6875pt x 825.0825pt>
 File: ui/Login + toast.png Graphic file (type png)
 
 <use ui/Login + toast.png>
@@ -578,7 +578,7 @@ Package pdftex.def Info: ui/Login + toast.png used on input line 16.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Login + toast (driver).png, id=215, 451.6875pt x 825.0825pt>
+<ui/Login + toast (driver).png, id=225, 451.6875pt x 825.0825pt>
 File: ui/Login + toast (driver).png Graphic file (type png)
 
 <use ui/Login + toast (driver).png>
@@ -588,7 +588,7 @@ Package pdftex.def Info: ui/Login + toast (driver).png used on input line 22.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Passenger map screen.png, id=216, 451.6875pt x 825.0825pt>
+<ui/Passenger map screen.png, id=226, 451.6875pt x 825.0825pt>
 File: ui/Passenger map screen.png Graphic file (type png)
 
 <use ui/Passenger map screen.png>
@@ -598,7 +598,7 @@ Package pdftex.def Info: ui/Passenger map screen.png used on input line 28.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Passenger confirm screen.png, id=217, 451.6875pt x 825.0825pt>
+<ui/Passenger confirm screen.png, id=227, 451.6875pt x 825.0825pt>
 File: ui/Passenger confirm screen.png Graphic file (type png)
 
 <use ui/Passenger confirm screen.png>
@@ -609,7 +609,7 @@ Package pdftex.def Info: ui/Passenger confirm screen.png used on input line 34.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Passenger confirm screen - reserve.png, id=218, 451.6875pt x 825.0825pt>
+<ui/Passenger confirm screen - reserve.png, id=228, 451.6875pt x 825.0825pt>
 File: ui/Passenger confirm screen - reserve.png Graphic file (type png)
 
 <use ui/Passenger confirm screen - reserve.png>
@@ -620,7 +620,7 @@ t line 40.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Passenger call list screen + toast.png, id=219, 451.6875pt x 825.0825pt>
+<ui/Passenger call list screen + toast.png, id=229, 451.6875pt x 825.0825pt>
 File: ui/Passenger call list screen + toast.png Graphic file (type png)
 
 <use ui/Passenger call list screen + toast.png>
@@ -631,7 +631,7 @@ t line 46.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Passenger call list detail.png, id=220, 451.6875pt x 825.0825pt>
+<ui/Passenger call list detail.png, id=230, 451.6875pt x 825.0825pt>
 File: ui/Passenger call list detail.png Graphic file (type png)
 
 <use ui/Passenger call list detail.png>
@@ -642,7 +642,7 @@ Package pdftex.def Info: ui/Passenger call list detail.png used on input line 5
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Passenger call list + menu.png, id=221, 451.6875pt x 825.0825pt>
+<ui/Passenger call list + menu.png, id=231, 451.6875pt x 825.0825pt>
 File: ui/Passenger call list + menu.png Graphic file (type png)
 
 <use ui/Passenger call list + menu.png>
@@ -653,7 +653,7 @@ Package pdftex.def Info: ui/Passenger call list + menu.png used on input line 6
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Driver Idle screen.png, id=222, 451.6875pt x 825.0825pt>
+<ui/Driver Idle screen.png, id=232, 451.6875pt x 825.0825pt>
 File: ui/Driver Idle screen.png Graphic file (type png)
 
 <use ui/Driver Idle screen.png>
@@ -663,7 +663,7 @@ Package pdftex.def Info: ui/Driver Idle screen.png used on input line 67.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Driver new call dialog.png, id=223, 451.6875pt x 825.0825pt>
+<ui/Driver new call dialog.png, id=233, 451.6875pt x 825.0825pt>
 File: ui/Driver new call dialog.png Graphic file (type png)
 
 <use ui/Driver new call dialog.png>
@@ -673,7 +673,7 @@ Package pdftex.def Info: ui/Driver new call dialog.png used on input line 74.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Driver ride info screen.png, id=224, 451.6875pt x 825.0825pt>
+<ui/Driver ride info screen.png, id=234, 451.6875pt x 825.0825pt>
 File: ui/Driver ride info screen.png Graphic file (type png)
 
 <use ui/Driver ride info screen.png>
@@ -683,7 +683,7 @@ Package pdftex.def Info: ui/Driver ride info screen.png used on input line 81.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Driver call list.png, id=225, 451.6875pt x 825.0825pt>
+<ui/Driver call list.png, id=235, 451.6875pt x 825.0825pt>
 File: ui/Driver call list.png Graphic file (type png)
 
 <use ui/Driver call list.png>
@@ -693,7 +693,7 @@ Package pdftex.def Info: ui/Driver call list.png used on input line 88.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Driver shared fee dialog.png, id=226, 451.6875pt x 825.0825pt>
+<ui/Driver shared fee dialog.png, id=236, 451.6875pt x 825.0825pt>
 File: ui/Driver shared fee dialog.png Graphic file (type png)
 
 <use ui/Driver shared fee dialog.png>
@@ -704,7 +704,7 @@ Package pdftex.def Info: ui/Driver shared fee dialog.png used on input line 95.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Driver normal ride dialog.png, id=227, 451.6875pt x 825.0825pt>
+<ui/Driver normal ride dialog.png, id=237, 451.6875pt x 825.0825pt>
 File: ui/Driver normal ride dialog.png Graphic file (type png)
 
 <use ui/Driver normal ride dialog.png>
@@ -715,7 +715,7 @@ Package pdftex.def Info: ui/Driver normal ride dialog.png used on input line 10
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<ui/Driver call list + menu.png, id=228, 451.6875pt x 825.0825pt>
+<ui/Driver call list + menu.png, id=238, 451.6875pt x 825.0825pt>
 File: ui/Driver call list + menu.png Graphic file (type png)
 
 <use ui/Driver call list + menu.png>
@@ -754,7 +754,7 @@ Overfull \hbox (79.97131pt too wide) in paragraph at lines 149--159
  [] 
  []
 
-<register.png, id=362, 729.72626pt x 362.35374pt>
+<register.png, id=372, 729.72626pt x 362.35374pt>
 File: register.png Graphic file (type png)
  <use register.png>
 Package pdftex.def Info: register.png used on input line 163.
@@ -769,7 +769,7 @@ Overfull \hbox (79.97131pt too wide) in paragraph at lines 170--181
  [] 
  []
 
-<callataxi.png, id=368, 688.5725pt x 418.56375pt>
+<callataxi.png, id=378, 688.5725pt x 418.56375pt>
 File: callataxi.png Graphic file (type png)
  <use callataxi.png>
 Package pdftex.def Info: callataxi.png used on input line 185.
@@ -789,7 +789,7 @@ Overfull \hbox (79.97131pt too wide) in paragraph at lines 219--230
  [] 
  []
 
-[33] <bookataxi.png, id=378, 769.87625pt x 410.53375pt>
+[33] <bookataxi.png, id=388, 769.87625pt x 410.53375pt>
 File: bookataxi.png Graphic file (type png)
  <use bookataxi.png>
 Package pdftex.def Info: bookataxi.png used on input line 234.
@@ -809,7 +809,7 @@ Overfull \hbox (79.97131pt too wide) in paragraph at lines 255--264
  [] 
  []
 
-<taxist.png, id=384, 640.3925pt x 402.50375pt>
+<taxist.png, id=394, 640.3925pt x 402.50375pt>
 File: taxist.png Graphic file (type png)
  <use taxist.png>
 Package pdftex.def Info: taxist.png used on input line 268.
@@ -818,14 +818,14 @@ Package pdftex.def Info: taxist.png used on input line 268.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[35] <sequencelogin.png, id=389, 659.46375pt x 402.50375pt>
+[35] <sequencelogin.png, id=399, 659.46375pt x 402.50375pt>
 File: sequencelogin.png Graphic file (type png)
 
 <use sequencelogin.png>
 Package pdftex.def Info: sequencelogin.png used on input line 278.
 (pdftex.def)             Requested size: 329.73106pt x 201.25137pt.
  [36 <./taxist.png> <./sequencelogin.png>]
-<sequenceregister.png, id=397, 918.43124pt x 484.81125pt>
+<sequenceregister.png, id=407, 918.43124pt x 484.81125pt>
 File: sequenceregister.png Graphic file (type png)
 
 <use sequenceregister.png>
@@ -837,13 +837,13 @@ Overfull \hbox (7.36598pt too wide) in paragraph at lines 284--285
  []
 
 [37 <./sequenceregister.png>]
-<sequencecall.png, id=403, 820.06375pt x 548.0475pt>
+<sequencecall.png, id=413, 820.06375pt x 548.0475pt>
 File: sequencecall.png Graphic file (type png)
  <use sequencecall.png>
 Package pdftex.def Info: sequencecall.png used on input line 290.
 (pdftex.def)             Requested size: 328.01968pt x 219.2151pt.
 
-[38 <./sequencecall.png>] <sequencerefuse.png, id=409, 996.72375pt x 538.01pt>
+[38 <./sequencecall.png>] <sequencerefuse.png, id=419, 996.72375pt x 538.01pt>
 File: sequencerefuse.png Graphic file (type png)
 
 <use sequencerefuse.png>
@@ -855,7 +855,7 @@ Overfull \hbox (38.68243pt too wide) in paragraph at lines 296--297
  []
 
 [39 <./sequencerefuse.png>]) [40] (./chapters/UML.tex
-<UML/Diagramma1.png, id=419, 1149.29375pt x 919.435pt>
+<UML/Diagramma1.png, id=429, 1149.29375pt x 919.435pt>
 File: UML/Diagramma1.png Graphic file (type png)
 
 <use UML/Diagramma1.png>
@@ -883,7 +883,7 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
  [43
 
 ] [44] [45]) [46]
-<../../alloy/generated_world.png, id=548, 2144.01pt x 1505.625pt>
+<../../alloy/generated_world.png, id=558, 2144.01pt x 1505.625pt>
 File: ../../alloy/generated_world.png Graphic file (type png)
 
 <use ../../alloy/generated_world.png>
@@ -895,25 +895,27 @@ Overfull \hbox (47.40771pt too wide) in paragraph at lines 13--14
 [][] 
  []
 
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
- [47] [48 <../../alloy/generated_world.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
+) [47] [48 <../../alloy/generated_world.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
+ [49
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
  (./RASD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 62.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 62.
 Package rerunfilecheck Info: File `RASD.out' has not changed.
-(rerunfilecheck)             Checksum: 8A2BDC9E9988148A5063CFA0483D78FA;1888.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 59.
+(rerunfilecheck)             Checksum: DE07A388B2FEA315578C74C8DF8E1A5D;1996.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 62.
  ) 
 Here is how much of TeX's memory you used:
- 7461 strings out of 493089
- 107529 string characters out of 6140694
- 324395 words of memory out of 5000000
- 10646 multiletter control sequences out of 15000+600000
+ 7466 strings out of 493089
+ 107582 string characters out of 6140694
+ 324396 words of memory out of 5000000
+ 10648 multiletter control sequences out of 15000+600000
  10982 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,9n,32p,1128b,1746s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,9n,32p,1281b,1746s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -923,10 +925,10 @@ hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmti10.pfb>
-Output written on RASD.pdf (49 pages, 2556689 bytes).
+Output written on RASD.pdf (50 pages, 2571730 bytes).
 PDF statistics:
- 650 PDF objects out of 1000 (max. 8388607)
- 529 compressed objects within 6 object streams
- 214 named destinations out of 1000 (max. 500000)
- 384 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 668 PDF objects out of 1000 (max. 8388607)
+ 546 compressed objects within 6 object streams
+ 217 named destinations out of 1000 (max. 500000)
+ 400 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -78,12 +78,18 @@ The system must be able to:
   \item[Shared ride:] a passenger shares the ride with other people that origins from the same zone, and go to the same direction
   \item[Active reservation]: a reservation is considered active if it is in the reservation scheduler and isn't occured yet.
   \item[Same direction]: two taxi rdies are considered to be going in ``the same direction'' if and only if the destination taxi zone is the same.
-\item [UI]: User interface
+  \item [UI]: User interface
+  \item[Vehicle ID] : in this document vehicle ID is a synonymous of "license plate"
 \end{description}
 
 
 \section{Reference documents}
-
+We wrote this document helped by :
+\begin{itemize}
+ \item ["Assignments 1 and 2"]: the file that explain the service we need to development
+ \item ["Requirements2"]: the file containing the standard IEE for RASD
+ \item ["RASD example SWIMv2"]: an old RASD wrote for the meteocal project
+\end{itemize}
 
 \section{Overview}
 

@@ -56,7 +56,4 @@
 \addtocounter{chapter}{1}
 \input{chapters/appendix.tex}
 
-\chapter*{Working hours}
-\addcontentsline{toc}{chapter}{Working hours}
-To complete this document we spent more or less 33 hours per person
 \end{document}    
