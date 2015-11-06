@@ -24,7 +24,7 @@
 \contentsline {subsection}{\numberline {4.5.4}Maintainability}{37}{subsection.4.5.4}
 \contentsline {subsection}{\numberline {4.5.5}Portability}{37}{subsection.4.5.5}
 \contentsline {chapter}{UML}{38}{chapter*.6}
-\contentsline {chapter}{Appendix}{39}{chapter*.7}
-\contentsline {section}{\numberline {6.1}Alloy}{39}{section.6.1}
-\contentsline {section}{\numberline {6.2}Generated world}{43}{section.6.2}
-\contentsline {section}{\numberline {6.3}Solver output}{43}{section.6.3}
+\contentsline {chapter}{Appendix}{40}{chapter*.7}
+\contentsline {section}{\numberline {6.1}Alloy}{40}{section.6.1}
+\contentsline {section}{\numberline {6.2}Generated world}{44}{section.6.2}
+\contentsline {section}{\numberline {6.3}Solver output}{44}{section.6.3}
