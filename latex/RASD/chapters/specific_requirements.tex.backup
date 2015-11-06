@@ -3,7 +3,7 @@
   route to the taxi drivers ,in case of shared ride, calculate the ETA for the passengers that requested a taxi.\\
   Also the application must be able to interact with a map service, due to allow passengers to select the meeting position.\\ 
 \section { Functional Requirements}
-For each goal, we define the specific function that we will have to implement;\\
+For each goal, we define the specific function that we will have to implement;
 \begin {itemize}
 \item [G1]:
 	\begin{itemize}
@@ -62,8 +62,10 @@ scan the list for a taxist to accept;
 	\end{itemize}
 \item[G7]
 	\begin{itemize}
-	\item When a taxi driver is assigned to a shared ride, the system will send him the route he need to follow, and the fee 
+	\item When a taxi driver is assigned to a shared ride, the system will send him the route he needs to follow, and the fee 
 	amount every passenger have to pay
+	\item When a driver is assigned to a non-shared ride, the system will send him the route he needs to follow, and the fee
+	amount the passenger has to pay
 	\end{itemize}
 \item[G8]:
 	\begin{itemize}
@@ -76,67 +78,176 @@ scan the list for a taxist to accept;
  \item When a passenger delete a reservation , the system will remove it from the reservation scheduler and, if a taxi 
  driver is already assigned, notify the taxist.
  \item A passenger can modify an active reservation changing position, date and time.
- \item The system will accept modification only if sended before the taxi allocation.
+ \item The system will accept modification only if sent before the taxi allocation.
  \item The system will accept date and time modification if it occur at least two hours after the request or/and after the 
  previous reservation.
  \item A taxi driver have the possibility to remove himself from the queue by clicking the:``Disable'' button.
  \item The system will remove a taxi from the list if receive the corresponding request by the taxi driver, or if the taxist logged out.
-\end{itemize}
+ \item A master terminal interface must be implemented in order to allow, the stakeholder, to configure some parameters 
+ (the number of the taxi zones, the set of positions belonging to each zone, the number of reports (per day, month and year)
+  needed to automatically ban a user and the maximum number of reports ( per hour) a user can insert.
+ \item Every time a report is added to a user, the system will check if the constraints inserted by the master terminal are satified,
+ otherwise the system must automatically ban the user.
+ \item The system must refuse reports added by a user if the user has already reached the maximum number of reports ( per hour) decided
+ by the master terminal.
+ \item When the system refuse a report, a notification appear on the user screen, reminding him that he has already exceeded
+ the maximum number of reports for that hour.
+ \end{itemize}
 
 \section {Scenarios}
-\begin{itemize}
-\item 1.
+\begin{enumerate}
+\item
 Jon is driving back home while he notices a strange noise coming from his car. He decides to stop at the first garage
 on the road and then call a taxi using an app he downloaded some weeks ago, MyTaxiService.
 The mechanic checks the car and tells him that the problem is quite serious and the car must stay there for some maintenance. 
 He opens MyTaxiService app and he accesses his account with his email and password. Then he inserts his position and selects "call a taxi".
 The app informs him that he has to wait 5 minutes for taxi 13C to come over.
-\item 2.
+\item
 Brandon is going to Moscow in three days and must be at the airport at 3,00 pm. Since the parking fee at the airport is very high
 he decides to reserve a taxi that will lead him right near the airport entrance.
 Brandon searches on his personal computer for a taxi service and finds MyTaxiService, creates an account inserting his email address and 
 inventing a password,
 he waits untill he receives a mail from MyTaxiService at the same email account he gave while signing in. He clicks the link in the mail
 and now his account is valid. He can reserve a taxi from his house to the airport for that day and see the details in his "active taxi list".
-\item 3.
+\item
 Eddard, a taxist, has just started a new day of work.
 As soon as he gets in his vehicle he logs into his account, inserting his code and password.
 Now he is connected with the system, a notification pop up informs him to turn on the gps. He activates the gps and he is sending correctly his position. 
 Now he awaits for incoming calls.
-\item 4.
+\item
 Robb, a taxist, receives a notification of an incoming call. The request comes from Mario Street, not far from his position.
 Robb looks at the time, it's 12.58 meaning that his turn is over in two minutes, so he declines the request.
-\item 5.
+\item
 Arya wants to go to an exibition downtown.
 She has heard that the city centre will be closed at traffic but taxis will still be able to access. 
 So she decides to book one, and in order to save some money she reserves a ride and enables the sharing option,
 hoping that also others will use the taxi and join her.
 She receives a notification from the taxi service in which they confirm the taxi and that 3 more people will use the same ride so the cost will be only of 5 dollars.
-\item 6.
+\item
 Rickon, a taxist, receives a notification of an incoming call. It's a shared ride, the system provides him the route he has to follow, pick up a person in Golgi street then 
 one in Grossich Street and leading them to Piazza Duomo, and the fees every passenger has to pay.
-\end{itemize}
+\end{enumerate}
 
 \section {Use cases}
 \begin{itemize}
 \item Create an account
-\begin{center}
-    \begin{tabular}{ | l | p{11cm} |}
-    \hline
-   USE CASE & A user can create an account into myTaxiService \\ \hline
-    ACTORS & Visitor \\ \hline
-     Entry condition &  \\ \hline
-     Flow events & Visitor creates an account inserting his email address and choosing a password (longer than 8 characters), the system processes the submission and sends a confirmation mail to the given address in which there’s a link that the user must click to validate his account. \\ \hline
-     Exit condition & A new account is created \\ \hline
-     Exception &  If the email address is not correct or the user doesn’t confirm his account, the system will not consider any request from it. If the email address already belongs to an existing account or the password is shorter than 8 characters, the system gives an error before the user can continue.\\ \hline
+	\begin{center}
+    	\begin{tabular}{ | l | p{11cm} |}
+    	\hline
+   	USE CASE & A user can create an account into myTaxiService \\ \hline
+    	ACTORS & Visitor \\ \hline
+     	Entry condition &  \\ \hline
+     	Flow events & Visitor creates an account inserting his email address and choosing a password (longer than 8 characters). If he is willing to create an account as taxi driver, he must specify also his license number. The system processes the submission (in particular for a taxi driver checks the validity of the license given) and sends a confirmation mail to the given address in which there’s a link that the user must click to validate his account. \\ \hline
+     	Exit condition & A new account is created \\ \hline
+     	Exception &  If the email address is not correct or the user doesn’t confirm his account, the system will not consider any request from it. If the email address already belongs to an existing account or the password is shorter than 8 characters, the system gives an error before the user can continue.\\ \hline
+    \end{tabular}
+	\end{center}
+	\begin{center}
+	\begin{figure} [h]
+  	  \includegraphics[scale=0.5]{register.png}
+	\end{figure}
+	\end{center}
+	\newpage 
+\item Log in
+	\begin{center}
+   	 \begin{tabular}{ | l | p{11cm} |}
+   	 \hline
+   	USE CASE & A user can access his account\\ \hline
+   	 ACTORS & User\\ \hline
+    	 Entry condition & User must have already created an account \\ \hline
+    	 Flow events & User inserts his email and password.\\ \hline
+  	   Exit condition & The user sees his homepage, the taxist interface if he is a taxi driver or a passenger interface if he is not.\\ \hline
+  	   Exception &  If the email doesn't correspond to an account the system gives an error message;
+            if email is correct but the password isn't, the system gives an error message;\\ \hline
     \end{tabular}
 \end{center}
-\begin{center}
-\begin{figure} [h]
-    \includegraphics [width=15cm, height=10cm]{register1.png}
-\end{figure}
+\item Request a taxi
+	\begin{center}
+   	 \begin{tabular}{ | l | p{11cm} |}
+   	 \hline
+   	USE CASE & A passenger can request a taxi\\ \hline
+   	 ACTORS & Logged passenger \\ \hline
+    	 Entry condition & Passenger must have already logged into his account \\ \hline
+    	 Flow events & Passenger presses the button “call a taxi”, then inserts his adress (street/square, number). When he has done he clicks “send” button. The system checks if the location exists and then contacts the first taxist in the queue.
+	When a taxist positively responds, the system look up for his position using his code and then calculates the ETA. Send both information, the taxi’s code and ETA to the user via a notification. \\ \hline
+  	   Exit condition & A taxi, no more in the queue of available taxis, takes charge of the call and it’s moving towards the passenger.\\ \hline
+  	   Exception &  If the location doesn’t exists or the system doesn’t find this address in the city map: the system sends an error 	message;
+	If there are no taxis in the queue: the system sends a notification saying there are no available taxis;.\\ \hline
+    \end{tabular}
+	\end{center}
+	\begin{center}
+	\begin{figure} [h]
+    	\includegraphics [scale=0.5]{callataxi.png}
+	\end{figure}
+	\end{center}
+	\newpage 
+\item Book a taxi
+	\begin{center}
+   	 \begin{tabular}{ | l | p{11cm} |}
+   	 \hline
+   	USE CASE & A Passenger can book a taxi \\ \hline
+   	 ACTORS & Logged passenger \\ \hline
+    	 Entry condition & Passenger must have already logged into his account\\ \hline
+    	 Flow events & Passenger presses the button “book a taxi”, then inserts the departure adress (street/square, number), the destination address (street/square, number), the date (dd/mm/yyyy 00.00). He can select the shared ride option .When he has filled all fields, he clicks “send” button. The system checks if the location exists and if the date respects the constraints then sends a confirmation back to the user and saves the reservation in the scheduler system for the day it occurs and in the queue where the ride will start.\\ \hline
+  	   Exit condition & A taxi is allocated ten minutes before the ride begins, and the passenger can see in his active taxi list the reservation.\\ \hline
+  	   Exception &  If the location doesn’t exists or the system doesn’’t find this address in the city map: the system sends an error message;
+If the date doesn’t respect the constraints an error message is sent.\\ \hline
+    \end{tabular}
 \end{center}
-\newpage 
+\item Book a shared taxi ride
+	\begin{center}
+   	 \begin{tabular}{ | l | p{11cm} |}
+   	 \hline
+   	USE CASE & A Passenger can book a taxi with shared ride option\\ \hline
+   	 ACTORS & Logged passenger \\ \hline
+    	 Entry condition & Passenger must have already logged into his account \\ \hline
+    	 Flow events & Passenger performs the same operation as booking a traditional ride but selects also the share ride option. Now the input form will also ask him which destinations he wants to share. When he has done he clicks “send” button. The system checks if the location exists and if the date respects the constraints then sends a confirmation back to the user and saves the reservation for the day it occurs and in the queue where the ride will start, in addition it will search for other reservations with shared option enabled that could have parts of the way in common and arrange a special route the taxist will follow.\\ \hline
+  	   Exit condition & A taxi is allocated ten minutes before the ride begins, and the passenger can see in his active taxi list the reservation.
+The system will send a notification with the price the user must pay.\\ \hline
+  	   Exception &  If the location doesn’t exists or the system doesn’t find this address in the city map: the system sends an error message;
+If the date doesn’t respect the constraints an error message is sent\\ \hline
+    \end{tabular}
+	\end{center}
+	\begin{center}
+	\begin{figure} [h]
+    	\includegraphics [scale=0.5]{bookataxi.png}
+	\end{figure}
+	\end{center}
+	\newpage 
+\item Answer a call
+	\begin{center}
+   	 \begin{tabular}{ | l | p{11cm} |}
+   	 \hline
+   	USE CASE & A taxist can answer a call\\ \hline
+   	 ACTORS & Logged taxist \\ \hline
+    	 Entry condition & Taxist must be working and available, the system must forward a valid request \\ \hline
+    	 Flow events & Taxist receives a notification on his mobile, with information about the ride ( route to follow, time).
+He displays two option, accept or refuse. If he accepts he takes charge of the call otherwise he waits for another call. In the first case his code is sent to the system.\\ \hline
+  	   Exit condition & If the taxist accepts, he is no more visible in that queue to the system.
+If he refuses, he will be moved from first position in the queue to the last one.\\ \hline
+  	   Exception &  \\ \hline
+    \end{tabular}
+\end{center}
+\item Set availability
+	\begin{center}
+   	 \begin{tabular}{ | l | p{11cm} |}
+   	 \hline
+   	USE CASE & A taxist can render himself availablel\\ \hline
+   	 ACTORS & Logged axist \\ \hline
+    	 Entry condition & Taxist must be working \\ \hline
+    	 Flow events & Taxist sends his availability to the system pushing the “ready” button.\\ \hline
+  	   Exit condition & The system receives his position and puts him in the queue in which he is in.\\ \hline
+  	   Exception &  If the taxist hasn’t abilitate the gps, the app notifies him to turn it on.\\ \hline
+    \end{tabular}
+\end{center}
+	\begin{center}
+	\begin{figure} [h]
+    	\includegraphics [scale=0.5]{taxist.png}
+	\end{figure}
+	\end{center}
+	\newpage
+
+
 \end{itemize}
 
 
@@ -146,13 +257,16 @@ one in Grossich Street and leading them to Piazza Duomo, and the fees every pass
 
 \section{Software system attribute}
   \subsection{Reliability}
-  In order to easly react against failure, the system will make a backup of all the server and save it on a cloud service.
+  In order to easily react against failure, the system will make a backup of all the server and save it on a cloud service.
   \subsection{Availability}
-  The system is completely automatized, so it will be available every day at every time, except for the first wednesday of every month from ~20:00 to ~23:00 , when the server will be disconnected due to maintenance or update.
+  The system is completely automatized, so it will be available every day at every time, except for the first Wednesday 
+  of every month from ~20:00 to ~23:00 , when the server will be disconnected due to maintenance or update.
   \subsection{Security}
-  The servers will be protected ,by external attack , adding two firewall located between the network and the apllication server, and between the applicatione server and a the data server.
+  The servers will be protected from external attack by adding two firewalls, located: between the network and the application server, 
+  and between the application server and a the data server.
+  Furthermore, all communications between user and server will be protected via Transport Layer Security.
   \subsection{Maintainability}
-  The application must porvide set of API for the purpose of adding new features in future time.
+  The application must provide set of API for the purpose of adding new features in future time.
   Those API must be thoroughly documented; the core system must be documented as well.
   \subsection{Portability}
   The server side application could be deployed on any platform supporting JRE-7.\\

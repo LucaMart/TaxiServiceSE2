@@ -83,7 +83,17 @@ scan the list for a taxist to accept;
  previous reservation.
  \item A taxi driver have the possibility to remove himself from the queue by clicking the:``Disable'' button.
  \item The system will remove a taxi from the list if receive the corresponding request by the taxi driver, or if the taxist logged out.
-\end{itemize}
+ \item A master terminal interface must be implemented in order to allow, the stakeholder, to configure some parameters 
+ (the number of the taxi zones, the set of positions belonging to each zone, the number of reports (per day, month and year)
+  needed to automatically ban a user and the maximum number of reports ( per hour) a user can insert.
+ \item Every time a report is added to a user, the system will check if the constraints inserted by the master terminal are satified,
+ otherwise the system must automatically ban the user.
+ \item The master terminal interface allows to manually ban users, or enable banned users.
+ \item The system must refuse reports added by a user if the user has already reached the maximum number of reports ( per hour) decided
+ by the master terminal.
+ \item When the system refuse a report, a notification appear on the user screen, reminding him that he has already exceeded
+ the maximum number of reports for that hour.
+ \end{itemize}
 
 \section {Scenarios}
 \begin{enumerate}

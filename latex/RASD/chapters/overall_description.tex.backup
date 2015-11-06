@@ -24,7 +24,6 @@ they must attend a formation course before starting (2 hours will be enough).\\
   \item Taxi drivers can create only one account per vehicle ID
   \item Passengers who reserve a taxi can delete the reservation; if a taxi was allocated for the ride, 
   the system will notify the taxi driver and put him at the top of the queue.
-  \item In order to evade bad behaviour, we decide to implement a report system, that allow the service to disable users.
-  \item We also decide to add a master terminal interface, that allow the stakeholder to set up some parameters
+  \item
 \end{itemize} 
 
