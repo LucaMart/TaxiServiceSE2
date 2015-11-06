@@ -1,0 +1,5 @@
+#!/bin/bash
+
+RATIO=0.7  # aspect ratio of the generated image
+
+dot -Gratio=$RATIO -Tpng generated_world.dot -o generated_world.png
