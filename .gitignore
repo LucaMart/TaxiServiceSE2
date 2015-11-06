@@ -3,3 +3,5 @@
 
 # Windows hidden files
 
+# Others
+.~lock*
