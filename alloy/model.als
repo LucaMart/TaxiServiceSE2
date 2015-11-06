@@ -87,7 +87,7 @@ pred taxiBecomeAvailable[t: Taxi, c, c': City] {
 }
 
 pred show {
-	#TaxiZone >= 2 // just to make things interesting
+	#TaxiZone >= 3 // just to make things interesting
 }
 
 run taxiMove for 1 City, 1 Taxi, 2 GeographicalPosition, 5 TaxiZone, 5 TaxiQueue
