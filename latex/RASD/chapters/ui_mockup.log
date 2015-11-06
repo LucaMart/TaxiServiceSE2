@@ -1,0 +1,38 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.4)  6 NOV 2015 18:08
+entering extended mode
+**C:/Users/lidia/Documents/GitHub/TaxiServiceSE2/TaxiServiceSE2/latex/RASD/chap
+ters/ui_mockup.tex
+
+(C:/Users/lidia/Documents/GitHub/TaxiServiceSE2/TaxiServiceSE2/latex/RASD/chapt
+ers/ui_mockup.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 68 languages loaded.
+
+! LaTeX Error: Environment figure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \begin{figure}
+                   [h]
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.1 \begin{figure}
+                   [h]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+ 
+Here is how much of TeX's memory you used:
+ 9 strings out of 493698
+ 486 string characters out of 3144412
+ 52149 words of memory out of 3000000
+ 3433 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 5i,0n,4p,123b,16s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!
