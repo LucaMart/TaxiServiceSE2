@@ -67,7 +67,8 @@ The system must be able to:
 \section{Definitions, Acronyms and Abbreviations}
 \begin{description}
   \item[Passenger:] the user who sends a taxi request.
-  \item[User:] an human interacting with the system. Users are split in 2 classes: `passengers' and `taxi drivers'.
+  \item[Guest/Visitor]: an huma interacting with the system withouth a related account.
+  \item[User:] an human interacting with the system identifiable with a related account. Users are split in 2 classes: `passengers' and `taxi drivers'.
   \item[System:] the automatic part that manages the service.
   \item[ETA:] estimated time of arrival.
   \item[Taxi zones:] geographical partitions of the city, non overlapping, with an average size of 2Km\textsuperscript{2}.
@@ -79,7 +80,6 @@ The system must be able to:
   \item[Same direction]: two taxi rdies are considered to be going in ``the same direction'' if and only if the destination taxi zone is the same.
 \item [UI]: User interface
 \end{description}
-% WIP
 
 
 \section{Reference documents}
@@ -87,3 +87,15 @@ The system must be able to:
 
 \section{Overview}
 
+This document is structured in 6 parts:
+
+\begin{description}
+ \item [Introduction] in which it is explained the purpose of the software, and specific project-related terms are explained
+ \item [Overall description] in which more focus is given to constraints and assumptions regarding the project
+ \item [UI mockup] in which are given sample screenshots, preparatory for the prototyping of an actual application 
+ \item [Specific requirements] in which requirements, both functional and non-functional, are fully explained.
+ Use cases are also located there.
+ \item [UML] in which is displayed an UML class diagram in aid of the future implementation of the system
+ \item [Appendix] in which is given an alloy modelization of project related aspects of the taxi system
+ 
+\end{description}
