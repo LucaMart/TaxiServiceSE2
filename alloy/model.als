@@ -46,7 +46,7 @@ fact {
 }
 
 // arguments: 	t: target taxi, dest: its destination, fromZone, fromZone': pre and post state of the taxi's initial zone
-//			toZone, toZone': pre and post state of the taxi's final zone
+// toZone, toZone': pre and post state of the taxi's final zone
 pred taxiMove[t: Taxi, start, dest: GeographicalPosition, fromZone, toZone, fromZone', toZone': TaxiZone] {
 	start in fromZone.positions and start in fromZone'.positions
 	dest in toZone.positions and dest in toZone'.positions
