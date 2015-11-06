@@ -211,6 +211,20 @@ The system will send a notification with the price the user must pay.\\ \hline
 If the date doesn’t respect the constraints an error message is sent\\ \hline
     \end{tabular}
 	\end{center}
+\item Modify a booked ride
+	\begin{center}
+   	 \begin{tabular}{ | l | p{11cm} |}
+   	 \hline
+   	USE CASE & A Passenger can modify a previous reservation\\ \hline
+   	 ACTORS & Logged passenger \\ \hline
+    	 Entry condition & Passenger must have already logged into his account and booked a ride, shared or not\\ \hline
+    	 Flow events & Passenger enters his taxi calls and visualizes all the active rides he booked. He can modify all the parameters (start, destination, date).
+In addition he can also delete a reservation.\\ \hline
+  	   Exit condition & The modification/deletion is effective.\\ \hline
+  	   Exception &  If the location doesn’t exists or the system doesn’t find this address in the city map: the system sends an error message;
+If the date doesn’t respect the constraints an error message is sent\\ \hline
+    \end{tabular}
+	\end{center}
 	\begin{center}
 	\begin{figure} [h]
     	\includegraphics [scale=0.5]{bookataxi.png}
@@ -243,6 +257,8 @@ If he refuses, he will be moved from first position in the queue to the last one
   	   Exception &  If the taxist hasn’t abilitate the gps, the app notifies him to turn it on.\\ \hline
     \end{tabular}
 \end{center}
+
+
 	\begin{center}
 	\begin{figure} [h]
     	\includegraphics [scale=0.5]{taxist.png}
@@ -257,6 +273,7 @@ If he refuses, he will be moved from first position in the queue to the last one
 \begin{center}
 	\begin{figure} [h]
     	\includegraphics [scale=0.5]{sequencelogin.png}
+\caption{sign in sequence}
 	\end{figure}
 	\end{center}
 	\newpage
@@ -264,20 +281,23 @@ If he refuses, he will be moved from first position in the queue to the last one
 \begin{center}
 	\begin{figure} [h]
     	\includegraphics [scale=0.4]{sequenceregister.png}
+\caption{log in sequence}
 	\end{figure}
 	\end{center}
 	\newpage
 
 \begin{center}
 	\begin{figure} [h]
-    	\includegraphics [scale=0.4]{sequencecall.png}
+    	\includegraphics [scale=0.3]{sequencecall.png}
+\caption{call a taxi sequence}
 	\end{figure}
 	\end{center}
 	\newpage
 
 \begin{center}
 	\begin{figure} [h]
-    	\includegraphics [scale=0.4]{sequencerefuse.png}
+    	\includegraphics [scale=0.3]{sequencerefuse.png}
+\caption {refuse a call sequence}
 	\end{figure}
 	\end{center}
 	\newpage
