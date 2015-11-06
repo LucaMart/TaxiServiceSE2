@@ -5,15 +5,12 @@ a fair management of the city-wide taxi deployment.
 
 
 \section{Scope}
-%TODO: (michele) Here I will used some terms that are specific in the context of the project...
-% Should I make a reference to the appropriate definition in section "Definitions, Acronyms and Abbreviations"?
-% I have added some footnotes though
 The passengers should be able to use an application (either mobile or browser based) to request a taxi through the system,
 which in turn should answer with the ETA and identification code of the incoming tax. \\
 The passengers should be compelled to provide their current location to the system, for their request to be accepted. \\
 The taxi drivers should be able to use a mobile application to communicate their availability to the system, and accept
  or refuse incoming calls. \\
-The system shall manage a queue of taxis for each taxi zone\footnote{Partition of the city}. \\
+The system shall manage a queue of taxis for each taxi zone\footnote{See Definitions}. \\
 The system shall receive GPS location data from each taxi, and use that information to assign each taxi to a 
 taxi zone; an available taxi is automatically placed into the taxi queue belonging to the taxi zone it currently occupies. \\
 The system shall remove a taxi from the queue upon receiving a confirmation in which the driver accepts an incoming call.
@@ -26,22 +23,25 @@ The system shall also provide the possibility of requesting the reservation of a
 2 hours before the actual time of the ride; the time of the ride has to be specified by the passenger during the
 reservation procedure, as well as the passenger's location and destination. \\
 However, the system will actually allocate a taxi (by means of removing it from the queue) only 10 minutes before the
-requested time of the ride.
-% TODO: (michele) part III
-
+requested time of the ride. \\
+On top of that, a ``taxi sharing'' option shall also be provided. The request of a shared ride shall trigger a process
+in which the systems looks for other compatible taxi-sharing requests, computes an adequate route, and calculates
+the amount of money each different passenger has to pay.
 
 \section{Domain properties}
 In this section we will analyze the background laying behind My Taxi Service:
 \begin{itemize}
-  \item Passengers are assumed to be reliable and trustworthy, meaning that if they request a taxi or make a reservation
-  they will declare their real position and actually use the taxi
+  % scrapped, because we can't assume that:
+  %\item Passengers are assumed to be reliable and trustworthy, meaning that if they request a taxi or make a reservation
+  %they will declare their real position and actually use the taxi
   \item Passengers will pay at the end of the ride the amount of money demanded by the taxi driver
   \item Passenger reserve a taxi only in a period of three month starting from the current time
   \item Taxi drivers must own a valid taxi driving license
   \item A taxi can reach every position within the same zone in less than 10 minutes
-  \item ETA is estimated with a maximum error margin of 5 minutes
-  \item We assume that, for each zone, if its queue is empty, then at least one queue in the eight adjacent zones has available taxis
+  \item ETA is estimated with a maximum error margin of 5 minutes and it's supplied by the map service our system will interact with
   \item We assume GPS coordinates reliable
+  \item We assume that, for each zone, if its queue is empty, the system must notify the unavailability of taxis
+ 
 \end{itemize}
 \section{Goals}
 The passengers must be able to:
@@ -56,7 +56,7 @@ The taxi driver must be able to:
 \begin{itemize}
   \item [G5] Answer a passenger's request
   \item [G6] Render him/herself available to the scheduler
-  \item [G7] Receive informations regarding the fee defined for each passenger in case of shared ride
+  \item [G7] Receive informations regarding the fee defined for each passenger
 \end{itemize}
 The system must be able to:
 \begin{itemize}
@@ -75,13 +75,9 @@ The system must be able to:
     There is exactly one taxi queue associated to each taxi zone.
   \item[GPS:] global position system.
   \item[Shared ride:] a passenger shares the ride with other people that origins from the same zone, and go to the same direction
-    % TODO: what is "same direction"? Maybe "same destination"? <--- direction was mentioned in the Assignments, we have to contact the customer
-    % TODO: It become clear that a reasonable interpretation of "same direction" is:
-    % TODO:   "a ride which ends in the same taxi zone as a given ride"
-  \item[Active reservation]: a reservation is considered active if it is in the reservation scheduler and isn't occured yet
-    \begin{center}
-    •
-    \end{center}
+  \item[Active reservation]: a reservation is considered active if it is in the reservation scheduler and isn't occured yet.
+  \item[Same direction]: two taxi rdies are considered to be going in ``the same direction'' if and only if the destination taxi zone is the same.
+\item [UI]: User interface
 \end{description}
 % WIP
 
