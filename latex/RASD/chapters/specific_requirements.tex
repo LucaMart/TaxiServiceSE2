@@ -85,7 +85,7 @@ scan the list for a taxist to accept;
  \item The system will remove a taxi from the list if receive the corresponding request by the taxi driver, or if the taxist logged out.
  \item A master terminal interface must be implemented in order to allow, the stakeholder, to configure some parameters 
  (the number of the taxi zones, the set of positions belonging to each zone, the number of reports (per day, month and year)
-  needed to automatically ban a user and the maximum number of reports ( per hour) a user can insert.
+  needed to automatically ban a user and the maximum number of reports ( per hour) a user can insert).
  \item Every time a report is added to a user, the system will check if the constraints inserted by the master terminal are satified,
  otherwise the system must automatically ban the user.
  \item The master terminal interface allows to manually ban users, or enable banned users.
@@ -94,6 +94,16 @@ scan the list for a taxist to accept;
  \item When the system refuse a report, a notification appear on the user screen, reminding him that he has already exceeded
  the maximum number of reports for that hour.
  \end{itemize}
+ 
+\section{The World and the Machine}
+
+Figure \ref{fig:world_and_machine} shows the model of the system, according to Jackson and Zave's model ``The world and the machine''
+
+\begin{figure} [ht]
+  \centering
+  \includegraphics[scale=0.6]{../../notes/world and machine diagram.png}
+  \caption{\label{fig:world_and_machine} the world and the machine}
+\end{figure}
 
 \section {Scenarios}
 \begin{enumerate}
@@ -194,7 +204,11 @@ one in Grossich Street and leading them to Piazza Duomo, and the fees every pass
    	USE CASE & A Passenger can book a taxi \\ \hline
    	 ACTORS & Logged passenger \\ \hline
     	 Entry condition & Passenger must have already logged into his account\\ \hline
-    	 Flow events & Passenger presses the button “book a taxi”, then inserts the departure adress (street/square, number), the destination address (street/square, number), the date (dd/mm/yyyy 00.00). He can select the shared ride option .When he has filled all fields, he clicks “send” button. The system checks if the location exists and if the date respects the constraints then sends a confirmation back to the user and saves the reservation in the scheduler system for the day it occurs and in the queue where the ride will start.\\ \hline
+    	 Flow events & Passenger presses the button “book a taxi”, then inserts the departure adress (street/square, number), 
+    	 the destination address (street/square, number), the date (dd/mm/yyyy 00.00). He can select the shared ride option. 
+    	 When he has filled all fields, he clicks “send” button. The system checks if the location exists and if the date respects 
+    	 the constraints then sends a confirmation back to the user and saves the reservation in the scheduler system for the day it 
+    	 occurs and in the queue where the ride will start.\\ \hline
   	   Exit condition & A taxi is allocated ten minutes before the ride begins, and the passenger can see in his active taxi list the reservation.\\ \hline
   	   Exception &  If the location doesn’t exists or the system doesn’’t find this address in the city map: the system sends an error message;
 If the date doesn’t respect the constraints an error message is sent.\\ \hline
@@ -207,8 +221,16 @@ If the date doesn’t respect the constraints an error message is sent.\\ \hline
    	USE CASE & A Passenger can book a taxi with shared ride option\\ \hline
    	 ACTORS & Logged passenger \\ \hline
     	 Entry condition & Passenger must have already logged into his account \\ \hline
-    	 Flow events & Passenger performs the same operation as booking a traditional ride but selects also the share ride option. Now the input form will also ask him which destinations he wants to share. When he has done he clicks “send” button. The system checks if the location exists and if the date respects the constraints then sends a confirmation back to the user and saves the reservation for the day it occurs and in the queue where the ride will start, in addition it will search for other reservations with shared option enabled that could have parts of the way in common and arrange a special route the taxist will follow.\\ \hline
-  	   Exit condition & A taxi is allocated ten minutes before the ride begins, and the passenger can see in his active taxi list the reservation.
+    	 Flow events & Passenger performs the same operation as booking a traditional 
+    	 ride but selects also the share ride option. Now the input form will also ask him
+    	 which destinations he wants to share. When he has done he clicks “send” button. 
+    	 The system checks if the location exists and if the date respects the constraints 
+    	 then sends a confirmation back to the user and saves the reservation for the day 
+    	 it occurs and in the queue where the ride will start, in addition it will search 
+    	 for other reservations with shared option enabled that could have parts of the way 
+    	 in common and arrange a special route the taxist will follow.\\ \hline
+  	   Exit condition & A taxi is allocated ten minutes before the ride begins, and the 
+  	   passenger can see in his active taxi list the reservation.
 The system will send a notification with the price the user must pay.\\ \hline
   	   Exception &  If the location doesn’t exists or the system doesn’t find this address in the city map: the system sends an error message;
 If the date doesn’t respect the constraints an error message is sent\\ \hline

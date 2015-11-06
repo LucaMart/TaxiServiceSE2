@@ -16,15 +16,16 @@
 \contentsline {chapter}{Specific requirements}{26}{chapter*.5}
 \contentsline {section}{\numberline {4.1}External interface requirements}{26}{section.4.1}
 \contentsline {section}{\numberline {4.2} Functional Requirements}{26}{section.4.2}
-\contentsline {section}{\numberline {4.3}Scenarios}{29}{section.4.3}
-\contentsline {section}{\numberline {4.4}Use cases}{30}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Sequence diagrams}{36}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Software system attribute}{40}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Reliability}{40}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Availability}{40}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Security}{40}{subsection.4.5.3}
-\contentsline {subsection}{\numberline {4.5.4}Maintainability}{40}{subsection.4.5.4}
-\contentsline {subsection}{\numberline {4.5.5}Portability}{40}{subsection.4.5.5}
+\contentsline {section}{\numberline {4.3}The World and the Machine}{29}{section.4.3}
+\contentsline {section}{\numberline {4.4}Scenarios}{29}{section.4.4}
+\contentsline {section}{\numberline {4.5}Use cases}{31}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Sequence diagrams}{36}{subsection.4.5.1}
+\contentsline {section}{\numberline {4.6}Software system attribute}{40}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Reliability}{40}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Availability}{40}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Security}{40}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}Maintainability}{40}{subsection.4.6.4}
+\contentsline {subsection}{\numberline {4.6.5}Portability}{40}{subsection.4.6.5}
 \contentsline {chapter}{UML}{41}{chapter*.6}
 \contentsline {chapter}{Appendix}{43}{chapter*.7}
 \contentsline {section}{\numberline {6.1}Alloy}{43}{section.6.1}

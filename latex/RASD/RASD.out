@@ -16,18 +16,19 @@
 \BOOKMARK [0][-]{chapter*.5}{Specific requirements}{}% 16
 \BOOKMARK [1][-]{section.4.1}{External interface requirements}{chapter*.5}% 17
 \BOOKMARK [1][-]{section.4.2}{ Functional Requirements}{chapter*.5}% 18
-\BOOKMARK [1][-]{section.4.3}{Scenarios}{chapter*.5}% 19
-\BOOKMARK [1][-]{section.4.4}{Use cases}{chapter*.5}% 20
-\BOOKMARK [2][-]{subsection.4.4.1}{Sequence diagrams}{section.4.4}% 21
-\BOOKMARK [1][-]{section.4.5}{Software system attribute}{chapter*.5}% 22
-\BOOKMARK [2][-]{subsection.4.5.1}{Reliability}{section.4.5}% 23
-\BOOKMARK [2][-]{subsection.4.5.2}{Availability}{section.4.5}% 24
-\BOOKMARK [2][-]{subsection.4.5.3}{Security}{section.4.5}% 25
-\BOOKMARK [2][-]{subsection.4.5.4}{Maintainability}{section.4.5}% 26
-\BOOKMARK [2][-]{subsection.4.5.5}{Portability}{section.4.5}% 27
-\BOOKMARK [0][-]{chapter*.6}{UML}{}% 28
-\BOOKMARK [0][-]{chapter*.7}{Appendix}{}% 29
-\BOOKMARK [1][-]{section.6.1}{Alloy}{chapter*.7}% 30
-\BOOKMARK [1][-]{section.6.2}{Generated world}{chapter*.7}% 31
-\BOOKMARK [1][-]{section.6.3}{Solver output}{chapter*.7}% 32
-\BOOKMARK [0][-]{chapter*.8}{Working hours}{}% 33
+\BOOKMARK [1][-]{section.4.3}{The World and the Machine}{chapter*.5}% 19
+\BOOKMARK [1][-]{section.4.4}{Scenarios}{chapter*.5}% 20
+\BOOKMARK [1][-]{section.4.5}{Use cases}{chapter*.5}% 21
+\BOOKMARK [2][-]{subsection.4.5.1}{Sequence diagrams}{section.4.5}% 22
+\BOOKMARK [1][-]{section.4.6}{Software system attribute}{chapter*.5}% 23
+\BOOKMARK [2][-]{subsection.4.6.1}{Reliability}{section.4.6}% 24
+\BOOKMARK [2][-]{subsection.4.6.2}{Availability}{section.4.6}% 25
+\BOOKMARK [2][-]{subsection.4.6.3}{Security}{section.4.6}% 26
+\BOOKMARK [2][-]{subsection.4.6.4}{Maintainability}{section.4.6}% 27
+\BOOKMARK [2][-]{subsection.4.6.5}{Portability}{section.4.6}% 28
+\BOOKMARK [0][-]{chapter*.6}{UML}{}% 29
+\BOOKMARK [0][-]{chapter*.7}{Appendix}{}% 30
+\BOOKMARK [1][-]{section.6.1}{Alloy}{chapter*.7}% 31
+\BOOKMARK [1][-]{section.6.2}{Generated world}{chapter*.7}% 32
+\BOOKMARK [1][-]{section.6.3}{Solver output}{chapter*.7}% 33
+\BOOKMARK [0][-]{chapter*.8}{Working hours}{}% 34
