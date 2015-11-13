@@ -1,0 +1,59 @@
+\documentclass[a4paper,11pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{rotating}
+\usepackage[hidelinks]{hyperref}
+\usepackage[space]{grffile}
+
+% Title Page
+\title{\textbf{Design Document}}
+\author{
+  Michele Madaschi
+  \and
+  Lidia Moioli
+  \and
+  Luca Martinazzi  % last but not least
+}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+\input{chapters/Introduction.tex}
+ 
+\chapter*{Architectural Design}
+\addcontentsline{toc}{chapter}{Architectural Design}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+%\input{chapters/overall_description.tex}
+
+\chapter*{Algorithm Design}
+\addcontentsline{toc}{chapter}{Algorithm Design}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+%\input{chapters/ui_mockup.tex}
+
+\chapter*{User Interface Design}
+\addcontentsline{toc}{chapter}{User Interface Design}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+%\input{chapters/specific_requirements.tex}
+
+\chapter*{Requirements Traceability}
+\addcontentsline{toc}{chapter}{Requirements Traceability}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+%\input{chapters/UML.tex}
+
+\chapter*{References}
+\addcontentsline{toc}{chapter}{References}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+%\input{chapters/appendix.tex}
+
+\end{document}    
