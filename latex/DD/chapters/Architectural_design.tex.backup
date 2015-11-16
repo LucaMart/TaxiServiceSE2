@@ -4,12 +4,8 @@ The distributed application is composed by a server side, and a client one.
 The client side interacts with users ( or guests), showing the correct activity, and send requests to the server sdie, when needed.
 The server side manages requests comeing from the client side, and notify the users ( or the guests) involved in the requests. 
 \section{High level components and their interaction}
-% aggiungere l'UML che ho fatto per il RASD?
-The client side is composed by a set of activity composed by one or more actions and displayed through the user interface.
-The client side has also an interface that manage that manage the interaction with the server.
-The server side has a controller for each connected client, that manages the requests comeing from the users ( or guests), 
-taking data from the ride manager. It also sends messages to the clients in order to resolve the requests.
-The controller interacts with the clients through a network interface.
+The client side is composed by a set of activi
+
 \section{Component view}
 	\subsection{Client}
 	  % [client] activity
