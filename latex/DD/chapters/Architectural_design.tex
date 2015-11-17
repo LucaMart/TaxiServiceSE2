@@ -2,7 +2,9 @@
 % gps required
 The distributed application is composed by a server side, and a client one.
 The client side interacts with users ( or guests), showing the correct activity, and send requests to the server sdie, when needed.
-The server side manages requests comeing from the client side, and notify the users ( or the guests) involved in the requests. 
+The client side must be able to interact with the GPS,
+The server side manages requests comeing from the client side, and notify the users ( or the guests) involved in the requests.
+The server side must also interact with a map system, in order to retreives information about the route and the km of the ride.
 \section{High level components and their interaction}
 % aggiungere l'UML che ho fatto per il RASD?
 The client side is composed by a set of activity composed by one or more actions and displayed through the user interface.
@@ -12,14 +14,27 @@ taking data from the ride manager. It also sends messages to the clients in orde
 The controller interacts with the clients through a network interface.
 \section{Component view}
 	\subsection{Client}
-	  % [client] activity
-	  % [client] action
-	  % [client] userinterface
+	 \begin{itemize}
+	  \item [Activity]: an activity is a set of messages and actions, that the application must display to the users.
+	  No more than one activity can be displayed at the same time;
+	  The default activity is the "guest home" activity. Each time the user taps a button, the application must execute
+	  the related action, and select the next activity. 
+	  \item [Action]: an action is something that a user can do, in order to interact with the application.
+	  If an action need some data, the userinterface must display a field ,for each input needed, that allows the human
+	  to provide the necessary incormations.
+	  Some actions can also select the next activity that must be shown, or/and send informations to the server,
+	  in order to complete their job.
+	  \item [Userinterface]: is the component that directly interact with the human.
+	  It contains the activity that must be displayed, and read the components of the activity, in order to display them.
+	  It also launch the actions selected by the human.
+	  \item[Clientnetworkinterface]: is the component that allow the others to exchange messages with the server sdie.
+	 \end{itemize}
 	\subsection{Server}
-	  % [server] controller
-	  % [server] (singleton) ridesmanager
-	  % [server] user
-
+	\begin{itemize}
+	 \item [Controller]
+	 \item [Ridesmanager]
+	 \item [User]
+	\end{itemize}
 \section{Runtime view}
 % sequence diagrams
 % sequence for: login
