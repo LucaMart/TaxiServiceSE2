@@ -1,5 +1,6 @@
 \section{Overview}
 % gps required
+%TODO aggiungere anche il numero di tier e qualcosa di più specifico sulla parte hardware?
 The distributed application is composed by a server side, and a client one.
 The client side interacts with users ( or guests), showing the correct activity, and send requests to the server sdie, when needed.
 The client side must be able to interact with the GPS,
@@ -27,13 +28,21 @@ The controller interacts with the clients through a network interface.
 	  \item [Userinterface]: is the component that directly interact with the human.
 	  It contains the activity that must be displayed, and read the components of the activity, in order to display them.
 	  It also launch the actions selected by the human.
-	  \item[]:
+	  \item[Clientnetworkinterface]: is the component that allow the others to exchange messages with the server sdie.
 	 \end{itemize}
 	\subsection{Server}
 	\begin{itemize}
-	 \item [Controller]
+	 \item [Controller]: we have one conroller for each client connected; initially will be a guest controller,
+	 that allow to login/register. After a succesfull login, the guest controller will create a taxi driver/passenger controller,
+	 and substitutes himself with the new controller. The controller must manage requests comeing from
+	 the client, taking informations from the ridesmanager, and eventually adding new objects to him.
+	 In order to sends and receives message from the client, the controller communicates with a Servernetworkinterface.
+	 The controller also contains a User object, that allows him to retrieves information about the specific logged user.
 	 \item [Ridesmanager]
-	 \item [User]
+	 \item [User]: is the component that contains every possible information about a logged user, taken from the database.
+	 User is a part of the controller ( obviously only in case of passenger/taxi driver controller).
+	 User is splitted in taxi driver and passenger, cause there are some differences between the two kind of user.
+	 \item[Servernetworkinterface]:
 	\end{itemize}
 \section{Runtime view}
 % sequence diagrams
