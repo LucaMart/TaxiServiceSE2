@@ -40,10 +40,11 @@ The controller interacts with the clients through a network interface.
 	 In order to sends and receives message from the client, the controller communicates with a Servernetworkinterface.
 	 The controller also contains a User object, that allows him to retrieves information about the specific logged user.
 	 \item [Ridesmanager]: it is a singleton, that contains informations about the queues, the active rides. This corresponds 
-	 to the view in the MVC pattern and it is shared by all the controllers.
+	 to the model in the MVC pattern and it is shared by all the controllers.
 	 \item [User]: is the component that contains every possible information about a logged user, taken from the database.
 	 User is a part of the controller ( obviously only in case of passenger/taxi driver controller).
 	 User is splitted in taxi driver and passenger, cause there are some differences between the two kind of user.
+	 Also user is a part of the model, but it is not shared.
 	 \item[Servernetworkinterface]:
 	\end{itemize}
 \section{Runtime view}
