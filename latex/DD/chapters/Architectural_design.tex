@@ -33,7 +33,7 @@ The controller interacts with the clients through a network interface.
 	 \end{itemize}
 	\subsection{Server}
 	\begin{itemize}
-	 \item [Controller]: we have one conroller for each client connected; initially will be a guest controller,
+	 \item [Controller]: we have one conroller for each client connected; initially it will be a guest controller,
 	 that allow to login/register. After a succesfull login, the guest controller will create a taxi driver/passenger controller,
 	 and substitutes himself with the new controller. The controller must manage requests comeing from
 	 the client, taking informations from the ridesmanager, and eventually adding new objects to him.
@@ -45,7 +45,8 @@ The controller interacts with the clients through a network interface.
 	 User is a part of the controller ( obviously only in case of passenger/taxi driver controller).
 	 User is splitted in taxi driver and passenger, cause there are some differences between the two kind of user.
 	 Also user is a part of the model, but it is not shared.
-	 \item[Servernetworkinterface]:
+	 \item[Servernetworkinterface]: is the component tha allow the interaction with the client side. It converts messages comeing from
+	 the other server component, in messages readable from the Clientnetwrokinterface, and vice versa.
 	\end{itemize}
 \section{Runtime view}
 % sequence diagrams
