@@ -43,7 +43,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFRKXTj31M5ztE="
 									},
-									"name": "Successful registration",
+									"name": "Successfully registration",
 									"visible": true,
 									"defaultDiagram": false,
 									"ownedViews": [
@@ -74,11 +74,11 @@
 													"containerExtending": false,
 													"left": 75.97900390625,
 													"top": 10,
-													"width": 131.78076171875,
+													"width": 141.1689453125,
 													"height": 13,
 													"autoResize": false,
 													"underline": false,
-													"text": "Successful registration",
+													"text": "Successfully registration",
 													"horizontalAlignment": 2,
 													"verticalAlignment": 5
 												},
@@ -2285,9 +2285,9 @@
 													"showShadow": true,
 													"containerChangeable": false,
 													"containerExtending": false,
-													"left": 63,
+													"left": 59,
 													"top": 445,
-													"width": 212.41796875,
+													"width": 221.80615234375,
 													"height": 13,
 													"autoResize": false,
 													"alpha": -0.6202496549017802,
@@ -2297,7 +2297,7 @@
 													},
 													"edgePosition": 1,
 													"underline": false,
-													"text": "9 : Show successful registration form",
+													"text": "9 : Show successfully registration form",
 													"horizontalAlignment": 2,
 													"verticalAlignment": 5
 												},
@@ -2575,7 +2575,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFRKXTj31M5ztE="
 									},
-									"name": "Show successful registration form",
+									"name": "Show successfully registration form",
 									"source": {
 										"$ref": "AAAAAAFRKXZFvlNqhVg="
 									},
@@ -2655,6 +2655,7 @@
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -2708,6 +2709,7 @@
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
+							"type": "",
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
