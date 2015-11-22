@@ -10,11 +10,11 @@
 \contentsline {section}{\numberline {2.3}Component view}{3}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Client}{3}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Server}{4}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Runtime view}{4}{section.2.4}
-\contentsline {section}{\numberline {2.5}Component interfaces}{4}{section.2.5}
-\contentsline {section}{\numberline {2.6}Selected architectural styles and patterns}{4}{section.2.6}
-\contentsline {section}{\numberline {2.7}Other design decisions}{4}{section.2.7}
-\contentsline {chapter}{Algorithm Design}{5}{chapter*.4}
-\contentsline {chapter}{User Interface Design}{6}{chapter*.5}
-\contentsline {chapter}{Requirements Traceability}{7}{chapter*.6}
-\contentsline {chapter}{References}{8}{chapter*.7}
+\contentsline {section}{\numberline {2.4}Runtime view}{5}{section.2.4}
+\contentsline {section}{\numberline {2.5}Component interfaces}{5}{section.2.5}
+\contentsline {section}{\numberline {2.6}Selected architectural styles and patterns}{5}{section.2.6}
+\contentsline {section}{\numberline {2.7}Other design decisions}{5}{section.2.7}
+\contentsline {chapter}{Algorithm Design}{6}{chapter*.4}
+\contentsline {chapter}{User Interface Design}{7}{chapter*.5}
+\contentsline {chapter}{Requirements Traceability}{8}{chapter*.6}
+\contentsline {chapter}{References}{9}{chapter*.7}
