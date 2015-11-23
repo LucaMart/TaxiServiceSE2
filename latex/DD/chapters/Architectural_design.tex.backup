@@ -23,32 +23,33 @@ The controller interacts with the clients through a network interface.
 	  \item [Activity]: an activity is a set of messages and actions, that the application must display to the users.
 	  No more than one activity can be displayed at the same time;
 	  The default activity is the "guest home" activity. Each time the user taps a button, the application must execute
-	  the related action, and select the next activity. 
+	  the related action, and select the next activity.
+	  %TODO: paragone con le activity in android
 	  \item [Action]: an action is something that a user can do, in order to interact with the application.
-	  If an action need some data, the userinterface must display a field ,for each input needed, that allows the human
+	  If an action need some data, the userinterface must display a field, for each input needed, that allows the human
 	  to provide the necessary incormations.
 	  Some actions can also select the next activity that must be shown, or/and send informations to the server,
 	  in order to complete their job.
 	  \item [Userinterface]: is the component that directly interact with the human.
 	  It contains the activity that must be displayed, and read the components of the activity, in order to display them.
 	  It also launch the actions selected by the human.
-	  \item[Clientnetworkinterface]: is the component that allow the others to exchange messages with the server sdie.
+	  \item[Clientnetworkinterface]: is the component that allow the others to exchange messages with the server side.
 	 \end{itemize}
 	\subsection{Server}
 	\begin{itemize}
-	 \item [Controller]: we have one conroller for each client connected; initially it will be a guest controller,
-	 that allow to login/register. After a succesfull login, the guest controller will create a taxi driver/passenger controller,
-	 and substitutes himself with the new controller. The controller must manage requests comeing from
-	 the client, taking informations from the ridesmanager, and eventually adding new objects to him.
+	 \item [Controller]: we have one controller for each client connected; initially it will be a guest controller,
+	 which allows login/register. After a successful login, the guest controller will create a taxi driver/passenger controller,
+	 and substitutes himself with the new controller. The controller must manage requests coming from
+	 the client, taking informations from the ridesmanager, and eventually adding new objects to it.
 	 In order to sends and receives message from the client, the controller communicates with a Servernetworkinterface.
 	 The controller also contains a User object, that allows him to retrieves information about the specific logged user.
 	 \item [Ridesmanager]: it is a singleton, that contains informations about the queues, the active rides. This corresponds 
 	 to the model in the MVC pattern and it is shared by all the controllers.
 	 \item [User]: is the component that contains every possible information about a logged user, taken from the database.
 	 User is a part of the controller ( obviously only in case of passenger/taxi driver controller).
-	 User is splitted in taxi driver and passenger, cause there are some differences between the two kind of user.
+	 User is split in taxi driver and passenger, cause there are some differences between the two kind of user.
 	 Also user is a part of the model, but it is not shared.
-	 \item[Servernetworkinterface]: is the component tha allow the interaction with the client side. It converts messages comeing from
+	 \item[Servernetworkinterface]: is the component that allows the interaction with the client side. It converts messages coming from
 	 the other server component, in messages readable from the Clientnetwrokinterface, and vice versa.
 	\end{itemize}
 \section{Runtime view}
