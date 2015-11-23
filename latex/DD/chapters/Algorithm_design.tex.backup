@@ -1,0 +1,24 @@
+\section{Outsourced algorithms}
+% Punti principali:
+% non reinventare la ruota
+% * usiamo servizi esistenti per il mapping / pathfinding
+% --> "vedi Component interfaces"
+
+\section{In-house developed algorithms}
+% sviluppati in-house:
+% gestione delle *shared ride*
+% * assegnamento passeggeri
+\subsection{Shared ride}
+Passenger gathering and assignment
+\begin{algorithmic}
+ \ForAll {}
+  
+ \EndFor
+\end{algorithmic}
+
+% * billing passeggeri (suddivisione dei costi)
+%   -> costo per passaggero: funzione della distanza
+
+% la gestione delle code è <salvi>banale</salvi>
+
+

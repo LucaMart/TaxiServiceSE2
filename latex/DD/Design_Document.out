@@ -15,6 +15,9 @@
 \BOOKMARK [1][-]{section.2.6}{Selected architectural styles and patterns}{chapter*.3}% 15
 \BOOKMARK [1][-]{section.2.7}{Other design decisions}{chapter*.3}% 16
 \BOOKMARK [0][-]{chapter*.4}{Algorithm Design}{}% 17
-\BOOKMARK [0][-]{chapter*.5}{User Interface Design}{}% 18
-\BOOKMARK [0][-]{chapter*.6}{Requirements Traceability}{}% 19
-\BOOKMARK [0][-]{chapter*.7}{References}{}% 20
+\BOOKMARK [1][-]{section.3.1}{Outsourced algorithms}{chapter*.4}% 18
+\BOOKMARK [1][-]{section.3.2}{In-house developed algorithms}{chapter*.4}% 19
+\BOOKMARK [2][-]{subsection.3.2.1}{Shared ride}{section.3.2}% 20
+\BOOKMARK [0][-]{chapter*.5}{User Interface Design}{}% 21
+\BOOKMARK [0][-]{chapter*.6}{Requirements Traceability}{}% 22
+\BOOKMARK [0][-]{chapter*.7}{References}{}% 23
