@@ -12,7 +12,7 @@
 Passenger gathering and assignment
 \begin{algorithmic}
  \Function {sharedRequest} {passenger}
-  \State $ shared \gets findSharedRidesAvailable(fromZone, toZone) $
+  \State $ shared \gets findSharedRideAvailable(fromZone, toZone, timeout) $
   \If {exists shared}
     \State $ shared.addReservation() $
   \Else
@@ -24,10 +24,34 @@ Passenger gathering and assignment
     \EndIf
   \EndIf
  \EndFunction
+ \Function {findSharedRideAvailable} {fromZone, toZone, timeout}
+  \ForAll{ride in Rides}
+    \If {ride is shared}
+      \If {$ride.fromZone == fromZone$ AND $ride.toZone == toZone$}
+	\If {not ride.isFull() AND not tide.isReserved()}
+	  \If {$now() - ride.allocationTime < timeout$}
+	    \Return ride
+	  \EndIf
+	\EndIf
+      \EndIf
+    \EndIf
+  \EndFor
+  \Return empty set
+ \EndFunction
 \end{algorithmic}
 
 % * billing passeggeri (suddivisione dei costi)
 %   -> costo per passaggero: funzione della distanza
+Billing calculation:
+\begin{align*}
+ B_{i} &= \text{Amount paid by the i-th passenger} \\
+ D_{i} &= \text{Distance traveled by the i-th passenger} \\
+ D &= \text{Total traveled distance} \\
+ C &= \text{Total amount calculated by the taximeter} \\
+ B_{i} &= \frac{D_{i}}{D} * C |_{\substack{\text{rounded to the nearest €0.1 }}} \\
+ T &= \sum_{i=0}^{n} B_{i} = \text{Total cost, calculated as the sum of the n partial costs}
+\end{align*}
+
 
 % la gestione delle code è <salvi>banale</salvi>
 
