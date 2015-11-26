@@ -3,9 +3,9 @@
 %TODO devo essere più preciso nella spiegazione delle funzioni dei vari componenti?
 %TODO aggiungere anche il numero di tier e qualcosa di più specifico sulla parte hardware?
 The distributed application is composed by a server side, and a client one.
-The client side interacts with users ( or guests), showing the correct activity, and send requests to the server side, when needed.
-The client side must be able to interact with the GPS,
-The server side manages requests coming from the client side, and notifies the users ( or the guests) involved in the requests.
+The client side interacts with users (or guests), showing the correct activity, and sends requests to the server side, when needed.
+The client side must be able to interact with the GPS.
+The server side manages requests coming from the client side, and notifies the users (or the guests) involved in the requests.
 The server side must also interact with a map system, in order to retrieve information about the route and the length of the ride.
 
 \section{High level components and their interaction}
@@ -14,7 +14,7 @@ The server side must also interact with a map system, in order to retrieve infor
 								%   sessione dedicata ai pattern usati, forse è meglio inserirlo lì>
 The client side is composed by a set of activities composed by one or more actions and displayed through the user interface.
 The client side has also an interface which manages the interaction with the server.
-The server side has a controller for each connected client, that manages the requests coming from the users ( or guests), 
+The server side has a controller for each connected client, that manages the requests coming from the users (or guests), 
 taking data from the ride manager. It also sends messages to the clients in order to resolve the requests.
 The controller interacts with the clients through a network interface.
 %TODO: sequence diagram del lato server, che è interessante da mettere
@@ -27,14 +27,14 @@ The controller interacts with the clients through a network interface.
 	  the related action, and select the next activity.
 	  %TODO: paragone con le activity in android
 	  \item [Action]: an action is something that a user can do, in order to interact with the application.
-	  If an action need some data, the userinterface must display a field, for each input needed, that allows the human
+	  If an action needs some data, the userinterface must display a field, for each input needed, that allows the human
 	  to provide the necessary incormations.
 	  Some actions can also select the next activity that must be shown, or/and send informations to the server,
 	  in order to complete their job.
-	  \item [Userinterface]: is the component that directly interact with the human.
+	  \item [Userinterface]: is the component that directly interacts with the human.
 	  It contains the activity that must be displayed, and read the components of the activity, in order to display them.
-	  It also launch the actions selected by the human.
-	  \item[Clientnetworkinterface]: is the component that allow the others to exchange messages with the server side.
+	  It also launches the actions selected by the human.
+	  \item[Clientnetworkinterface]: is the component that allows the others to exchange messages with the server side.
 	 \end{itemize}
 	\subsection{Server}
 	\begin{itemize}
