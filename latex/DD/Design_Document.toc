@@ -10,6 +10,7 @@
 \contentsline {section}{\numberline {2.3}Component view}{3}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Client}{3}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Server}{4}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Master view}{5}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}Runtime view}{5}{section.2.4}
 \contentsline {section}{\numberline {2.5}Component interfaces}{5}{section.2.5}
 \contentsline {section}{\numberline {2.6}Selected architectural styles and patterns}{5}{section.2.6}
@@ -18,6 +19,7 @@
 \contentsline {section}{\numberline {3.1}Outsourced algorithms}{6}{section.3.1}
 \contentsline {section}{\numberline {3.2}In-house developed algorithms}{6}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Shared ride}{6}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Billing calculation}{7}{subsection.3.2.2}
 \contentsline {chapter}{User Interface Design}{8}{chapter*.5}
 \contentsline {chapter}{Requirements Traceability}{9}{chapter*.6}
 \contentsline {chapter}{References}{10}{chapter*.7}

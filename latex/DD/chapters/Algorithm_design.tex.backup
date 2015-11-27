@@ -9,14 +9,14 @@
 % gestione delle *shared ride*
 % * assegnamento passeggeri
 \subsection{Shared ride}
-Passenger gathering and assignment
+The following pseudocode describes how share taxi request should be handled
 \begin{algorithmic}
  \Function {sharedRequest} {passenger}
-  \State $ shared \gets findSharedRidesAvailable(fromZone, toZone, timeout) $
+  \State $ shared \gets findSharedRideAvailable(fromZone, toZone, timeout) $
   \If {exists shared}
     \State $ shared.addReservation() $
   \Else
-    \State $ taxi \gets getAvailableTaxi(fromzone) $
+    \State $ taxi \gets getAvailableTaxi(fromZone) $
     \If {exists $ taxi $}
       \State create new shared ride
     \Else
@@ -24,9 +24,44 @@ Passenger gathering and assignment
     \EndIf
   \EndIf
  \EndFunction
- \Function {findSharedRidesAvailable} {fromZone, toZone, timeout}
-  
+\end{algorithmic}
+The following function (dependency of \textit{sharedRequest}), describes how the system should search for an
+available shared ride, compatible with the constraints provided via arguments
+\begin{algorithmic}
+ \Function {findSharedRideAvailable} {fromZone, toZone, timeout}
+  \ForAll{ride in Rides}
+    \If {ride is shared}
+      \If {$ride.fromZone == fromZone$ AND $ride.toZone == toZone$}
+	\If {not ride.isFull() AND not ride.isReserved()}
+	  \If {$now() - ride.allocationTime < timeout$}
+	    \State \Return ride
+	  \EndIf
+	\EndIf
+      \EndIf
+    \EndIf
+  \EndFor
+  \State \Return empty set
  \EndFunction
+\end{algorithmic}
+The following function (dependency of \textit{sharedRequest}), describes how the system should fetch an available taxi.
+Keep in mind that the process of issuing the call to a driver and managing his/her response happens inside this function
+(or its sub-routines)
+% TODO: specificare come/quando avviene la rimozione dalla coda
+\begin{algorithmic}
+\Function {getAvailableTaxi} {fromZone}
+\ForAll {queue in Queues}
+  \If { queue.getZone()==fromZone AND not queue.isEmpty()}
+       \State $ taxi \gets queue.getFirstTaxi() $
+     \If {taxi.sendRequest()} %TODO: timeout, magari? (non server specificarlo qua, può anche essere implementato dentro a sendRequest())
+         \Return taxi
+     \Else 
+         \State manage queue and retry
+    \EndIf
+\EndIf
+\EndFor
+\EndFunction
+
+
 \end{algorithmic}
 
 % * billing passeggeri (suddivisione dei costi)
