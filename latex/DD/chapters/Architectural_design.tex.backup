@@ -53,7 +53,9 @@ The controller interacts with the clients through a network interface.
 	 \item[Ride]: this class allows to create object, containing all information about a specific ride. 
 	 As soon as a passengers make a taxi requests, the controller create a rides containing information recevied from the client.
 	 In case of shared ride, a ride object will be created and added to the corresponding sharedride ones.
-	 \item[Sharedride]: 
+	 \item[Sharedride]: the sharedride object contains the set of the ride object, the total cost of the ride and the route.
+	 When a new passenger is added to the shared ride, the controller will adjust the path, the total cost, and the cost of each
+	 rides object, contained in the current sharedride.
 	 \item[Servernetworkinterface]: is the component that allows the interaction with the client side. It converts messages coming from
 	 the other server component, in messages readable from the Clientnetwrokinterface, and vice versa.
 	\end{itemize}
