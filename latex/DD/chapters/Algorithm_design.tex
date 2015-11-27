@@ -25,6 +25,8 @@ The following pseudocode describes how share taxi request should be handled
   \EndIf
  \EndFunction
 \end{algorithmic}
+\vspace{5mm}
+
 The following function (dependency of \textit{sharedRequest}), describes how the system should search for an
 available shared ride, compatible with the constraints provided via arguments
 \begin{algorithmic}
@@ -43,6 +45,8 @@ available shared ride, compatible with the constraints provided via arguments
   \State \Return empty set
  \EndFunction
 \end{algorithmic}
+\vspace{5mm}
+
 The following function (dependency of \textit{sharedRequest}), describes how the system should fetch an available taxi.
 Keep in mind that the process of issuing the call to a driver and managing his/her response happens inside this function
 (or its sub-routines)
