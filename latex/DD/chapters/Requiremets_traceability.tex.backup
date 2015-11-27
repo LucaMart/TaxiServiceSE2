@@ -11,6 +11,8 @@
  and ad hoc activity, that allow the taxi driver to click on "accept" or "refuse". After that, the client will send a message to the
  server, in order to inform him about the human's decision.
  \item[G6]: the taxi driver home activity provide a button that switch the taxist status; it will requests the controller to 
- remove/ add himself to a taxi queue .
- \item[G7]: 
+ remove/ add himself to a taxi queue.
+ \item[G7]: when a taxists accepts to take care about a requests ( either shared or not), the controller will notify the client about
+ the ETA and the fee amount. The client will display an ad hoc activity for these informations.
+ \item[G8]: %TODO 
 \end{itemize}
