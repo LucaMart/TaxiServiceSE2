@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.19)  27 NOV 2015 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.16)  27 NOV 2015 18:48
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
  %&-line parsing enabled.
 **Design_Document.tex
 (./Design_Document.tex
@@ -546,6 +546,14 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
+)
+(/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen123
+\extrarowheight=\dimen124
+\NC@list=\toks24
+\extratabsurround=\skip52
+\backup@length=\skip53
 ) (./Design_Document.aux)
 \openout1 = `Design_Document.aux'.
 
@@ -567,16 +575,16 @@ LaTeX Font Info:    ... okay on input line 21.
 (/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count127
-\scratchdimen=\dimen123
+\scratchdimen=\dimen125
 \scratchbox=\box31
 \nofMPsegments=\count128
 \nofMParguments=\count129
-\everyMPshowfont=\toks24
+\everyMPshowfont=\toks25
 \MPscratchCnt=\count130
-\MPscratchDim=\dimen124
+\MPscratchDim=\dimen126
 \MPnumerator=\count131
 \makeMPintoPDFobject=\count132
-\everyMPtoPDFconversion=\toks25
+\everyMPtoPDFconversion=\toks26
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -671,16 +679,35 @@ or  <return>  to continue without it.
 
 ) [7] [8
 
-] (./chapters/Requirements_traceability.tex) [9
+] (./chapters/Requirements_traceability.tex
+Underfull \hbox (badness 2460) in paragraph at lines 26--27
+[]|\OT1/cmr/m/n/10.95 2.3.1 User-in-ter-face, Ac-tion,
+ []
 
-]
+
+Underfull \hbox (badness 1325) in paragraph at lines 26--27
+\OT1/cmr/m/n/10.95 face 2.3.2 Con-troller, User,
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 30--30
+[]|\OT1/cmr/m/n/10.95 2.3.1 User-in-ter-face, Ac-tion,
+ []
+
+
+Overfull \hbox (104.39131pt too wide) in paragraph at lines 22--37
+ [] 
+ []
+
+[9
+
+]) [10]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 61.
- [10
+ [11
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 61.
-
-(./Design_Document.aux)
+ (./Design_Document.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 61.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 61.
 Package rerunfilecheck Info: File `Design_Document.out' has not changed.
@@ -688,10 +715,10 @@ Package rerunfilecheck Info: File `Design_Document.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 61.
  ) 
 Here is how much of TeX's memory you used:
- 7971 strings out of 493054
- 113545 string characters out of 6140585
- 207730 words of memory out of 5000000
- 11356 multiletter control sequences out of 15000+600000
+ 8016 strings out of 493054
+ 114076 string characters out of 6140585
+ 210420 words of memory out of 5000000
+ 11397 multiletter control sequences out of 15000+600000
  12633 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,16n,32p,281b,460s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -706,10 +733,10 @@ dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type
 s/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Design_Document.pdf (11 pages, 167529 bytes).
+Output written on Design_Document.pdf (12 pages, 168778 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 217 compressed objects within 3 object streams
- 38 named destinations out of 1000 (max. 500000)
+ 250 PDF objects out of 1000 (max. 8388607)
+ 220 compressed objects within 3 object streams
+ 39 named destinations out of 1000 (max. 500000)
  201 words of extra memory for PDF output out of 10000 (max. 10000000)
 
