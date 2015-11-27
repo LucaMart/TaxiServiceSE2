@@ -16,7 +16,7 @@ Passenger gathering and assignment
   \If {exists shared}
     \State $ shared.addReservation() $
   \Else
-    \State $ taxi \gets getAvailableTaxi(fromzone) $
+    \State $ taxi \gets getAvailableTaxi(fromZone) $
     \If {exists $ taxi $}
       \State create new shared ride
     \Else
@@ -28,7 +28,7 @@ Passenger gathering and assignment
   \ForAll{ride in Rides}
     \If {ride is shared}
       \If {$ride.fromZone == fromZone$ AND $ride.toZone == toZone$}
-	\If {not ride.isFull() AND not tide.isReserved()}
+	\If {not ride.isFull() AND not ride.isReserved()}
 	  \If {$now() - ride.allocationTime < timeout$}
 	    \Return ride
 	  \EndIf
@@ -38,6 +38,20 @@ Passenger gathering and assignment
   \EndFor
   \Return empty set
  \EndFunction
+\Function {getAvailableTaxi} {fromZone}
+\ForAll {queue in Queues}
+  \If { queue.getZone()==fromZone AND not queue.isEmpty()}
+       \State $ taxi \gets queue.getFirstTaxi() $
+     \If {taxi.sendRequest()}
+         \Return taxi
+     \Else 
+         \State $ manage queue and retry $
+    \EndIf
+\EndIf
+\EndFor
+\EndFunction
+
+
 \end{algorithmic}
 
 % * billing passeggeri (suddivisione dei costi)
