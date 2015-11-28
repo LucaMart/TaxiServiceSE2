@@ -60,6 +60,10 @@ The controller interacts with the clients through a network interface.
 	 the other server component, in messages readable from the Clientnetwrokinterface, and vice versa.
 	\end{itemize}
 	\subsection{Master view}
+	(the whole master view component is singleton)
+	\item [CLI:] simple text based interface, receives input from stdin, sends output to stdout
+	\item [Controller:] interprets the cli commands, and invokes the relative methods on the specific server classes;
+	the outcome of the operation is returned to the cli.
 	% In teoria basta una semplice interfaccia testuale, più un controller che interpreta gli input e chiama i
 	% dovuti metodi sul Server
 \section{Runtime view}
@@ -90,11 +94,24 @@ All the communications must be protected using the TLS protocol.
 All the underlying functions (request taxis, list active calls, list taxis in a zone...) shall be made available using a simple,
 object-like interface:
 \begin{verbatim}
- https://api.mytaxiservice.com/requestride/nonshared/<passengername>/
+ https://api.mytaxiservice.com/request-ride/nonshared/<passengername>/
     <password>/<from_location>/<to_location>
  https://api.mytaxiservice.com/list-taxis/by-zone/<zone_id>
+ https://api.mytaxiservice.com/list-calls/active/<passengername>/
+    <password>/
+ https://api.mytaxiservice.com/list-calls/active/<drivername>/
+    <password>/
 \end{verbatim}
-
+A sample response (without the HTTP headers)
+\begin{verbatim}
+{
+  type: "request_outcome",
+  outcome: {
+    taxi-id: "AZX934",
+    eta: "12:30",
+  }
+}
+\end{verbatim}
 
 % socket?
 % io (Il Vate(r)), suggerei di usare JSON per incapsulare i messaggi client-server, dato chè è il metodo più

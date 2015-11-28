@@ -60,6 +60,12 @@ The controller interacts with the clients through a network interface.
 	 the other server component, in messages readable from the Clientnetwrokinterface, and vice versa.
 	\end{itemize}
 	\subsection{Master view}
+	(the whole master view component is singleton)
+	\begin{itemize}
+	  \item [CLI:] simple text based interface, receives input from stdin, sends output to stdout
+	  \item [Controller:] interprets the cli commands, and invokes the relative methods on the specific server classes;
+	  the outcome of the operation is returned to the cli.
+	\end{itemize}
 	% In teoria basta una semplice interfaccia testuale, più un controller che interpreta gli input e chiama i
 	% dovuti metodi sul Server
 \section{Runtime view}
