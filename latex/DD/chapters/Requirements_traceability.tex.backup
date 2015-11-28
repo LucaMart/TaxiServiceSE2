@@ -19,9 +19,9 @@
 \end{itemize}
 
 \begin{center}
- \begin{longtable}{| m{5cm} | m{5cm} | m{5cm} | }
+ \begin{longtable}{| m{2cm} | m{6cm} | m{5cm} | }
  \hline
-  Goal & Requirement & Design document section\\
+  Goal & Requirement & Design document sections \newline involved\\
  \hline\hline
  \endhead
    G1&	Persons can create an account& 2.3.1 Userinterface, Action, Activity, Clientnetworkinterface\newline
@@ -47,17 +47,35 @@ scan the list for a taxist to accept& 2.3.2 Controller, Ridesmanager, Ride\\ \hl
     G4&The application must have a selectable option labled:"share your ride", that allows passengers to enable the shared 
 	ride service. In case of non reserved ride, the application will ask passengers the amount of time they can wait for others people  & 2.3.1 Userinterface, Activity, Action \\ \hline
     G4& When the system receive a request of a shared ride, it will search for others shared ride requests starting from the same
-	taxi zone, and going in the same direction & 2.3.2 Servernetworkinterface, Controller, Ridesmanager, Sharedride, Ride\\ \hline
+	taxi zone, and going in the same direction & 2.3.2 Servernetworkinterface, Controller, Ridesmanager, Sharedride, Ride\newline
+						      3.2.1 sharedRequest, findSharedRideAvailable\\ \hline
     G4& When a new passenger is added to a shared ride, the system will interact with the map service, in order to 
-	retrieve a new route for the taxi driver, and to calculate new fees & \\ \hline
-    G4& When the timeout of one passengers ,added to the current ride, occur, the system will procede with the allocation of the taxi & \\ \hline
+	retrieve a new route for the taxi driver, and to calculate new fees & 2.3.2 Controller, Ridesmanager, Ride, Sharedride\newline
+										2.5 Google map service\newline
+										3.2.2 Billing calculation\\ \hline
+    G4& When the timeout of one passengers ,added to the current ride, occur, the system will procede with the allocation of the taxi & 2.3.2 Ridesmanager, Sharedride, Reservation\newline
+																	  3.2.1 getAvailableTaxi\\ \hline
     G4& After the taxi allocation, the passengers who requested the shared ride will receive, not only the taxi ID, but also 
-	the fee they have to pay & \\ \hline
-     &  & \\ \hline
-     &  & \\ \hline
-     &  & \\ \hline
-     &  & \\ \hline
-     &  & \\ \hline
-     &  & \\ \hline
+	the fee they have to pay & 2.3.1 Userinterface, Activity, Clientnetworkinterface\\ \hline
+    G5& The system must forward a taxi request in the following cases:
+	  \begin{itemize}
+	   \item [1:] A passenger has requested a ride.
+	   \item [2:] A taxi reservation is sheduled to begin in 10 minutes.
+	  \end{itemize} & 2.3.2 Controller, Ridesmanager, Ride, Servernetworkinterface\\ \hline
+    G5& If a taxi driver refuses to take care about a call, the system will move him at the end of the queue,and forward the
+	request to the next taxi driver in the queue. If a queue is empty, the system will notify the passenger that there are no taxi available& 2.3.2	Servernetworkinterface, Controller, Ridesmanager\\ \hline
+    G5&If a taxe driver accepts to take care of the call, the system shall  remove him from the queue. & 2.3.2 Servernetworkinterface, Controller, Ridesmanager\\ \hline
+    G6&A taxi driver logged in into the system can select the button " Ready ", then the application will notify the server that 
+	the logged user is ready to accept some passengr's call. The application also send the taxi driver's position detected with a GPS& 2.3.1 Userinterface, Activity, Action, Clientnetworkinterface\newline
+																	    2.3.2 Servernetworkinterface, Controller, Ridesmanager\newline
+																	     2.1 GPS\\ \hline
+    G6&If the application needs to retrieve data from a GPS and this isn't available, it will remind  the user to turn it on&  3.2.1 Activity, Userinterface, Action\\ \hline
+    G6&When the system receive a notification , by a taxi driver, informing that he is ready to take care of some passengers, 
+	it will append the user in the queue corresponding to the taxi zone that include the position retrieved by the application& \\ \hline
+    G7&When a taxi driver is assigned to a shared ride, the system will send him the route he needs to follow, and the fee 
+	amount every passenger have to pay& \\ \hline
+    G7&When a driver is assigned to a non-shared ride, the system will send him the route he needs to follow, and the fee
+	amount the passenger has to pay& \\ \hline
+    G8& It is also neccessary to develop programmatic interfaces that allow to customize the system, adding new features& \\ \hline
  \end{longtable}
 \end{center}

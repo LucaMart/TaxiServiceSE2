@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.16)  28 NOV 2015 11:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.16)  28 NOV 2015 15:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -698,7 +698,7 @@ or  <return>  to continue without it.
 ) [7] [8
 
 ] (./chapters/Requirements_traceability.tex
-Overfull \hbox (104.39131pt too wide) in alignment at lines 22--26
+Overfull \hbox (47.48578pt too wide) in alignment at lines 22--26
  [] [] [] 
  []
 
@@ -768,21 +768,6 @@ Underfull \hbox (badness 1527) in paragraph at lines 46--46
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-[]|\OT1/cmr/m/n/10.95 The ap-pli-ca-tion must
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-\OT1/cmr/m/n/10.95 have a se-lectable op-tion
- []
-
-
-Underfull \hbox (badness 1077) in paragraph at lines 47--48
-\OT1/cmr/m/n/10.95 al-lows pas-sen-gers to en-able
- []
-
-
 Underfull \hbox (badness 1354) in paragraph at lines 50--51
 []|\OT1/cmr/m/n/10.95 2.3.2 Server-net-work-in-ter-face,
  []
@@ -798,11 +783,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
  []
 
 
-Underfull \hbox (badness 2698) in paragraph at lines 52--53
-[]|\OT1/cmr/m/n/10.95 When a new pas-sen-ger is
- []
-
-
 Underfull \hbox (badness 1565) in paragraph at lines 53--55
 []|\OT1/cmr/m/n/10.95 2.3.2 Con-troller, Rides-man-
  []
@@ -813,20 +793,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
  []
 
 
-Overfull \hbox (104.39131pt too wide) in alignment at lines 26--61
+Underfull \hbox (badness 1565) in paragraph at lines 64--64
+[]|\OT1/cmr/m/n/10.95 2.3.2 Con-troller, Rides-man-
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 66--66
+[]|\OT1/cmr/m/n/10.95 2.3.2 Server-net-work-in-ter-face,
+ []
+
+
+Overfull \hbox (47.48578pt too wide) in alignment at lines 26--66
  [] [] [] 
  []
 
 [9
 
 ]
-Overfull \hbox (104.39131pt too wide) in alignment at lines 61--66
+Underfull \hbox (badness 1354) in paragraph at lines 67--67
+[]|\OT1/cmr/m/n/10.95 2.3.2 Server-net-work-in-ter-face,
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 69--71
+[]|\OT1/cmr/m/n/10.95 2.3.1 User-in-ter-face, Ac-tiv-
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 69--71
+\OT1/cmr/m/n/10.95 2.3.2 Server-net-work-in-ter-face,
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 74--74
+[]|\OT1/cmr/m/n/10.95 2.3.2 Server-net-work-in-ter-face,
+ []
+
+
+Overfull \hbox (47.48578pt too wide) in alignment at lines 66--80
  [] [] [] 
  []
 
-[10] [11]) [12]
+[10] [11] [12]) [13]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
- [13
+ [14
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
@@ -838,13 +848,13 @@ Package rerunfilecheck Info: File `Design_Document.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 62.
  ) 
 Here is how much of TeX's memory you used:
- 8101 strings out of 493054
- 115028 string characters out of 6140585
- 237174 words of memory out of 5000000
+ 8102 strings out of 493054
+ 115035 string characters out of 6140585
+ 239173 words of memory out of 5000000
  11476 multiletter control sequences out of 15000+600000
  12633 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,16n,32p,281b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,16n,32p,291b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/publ
@@ -856,10 +866,10 @@ dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type
 s/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Design_Document.pdf (14 pages, 172405 bytes).
+Output written on Design_Document.pdf (15 pages, 174752 bytes).
 PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 228 compressed objects within 3 object streams
- 42 named destinations out of 1000 (max. 500000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 232 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 500000)
  201 words of extra memory for PDF output out of 10000 (max. 10000000)
 
