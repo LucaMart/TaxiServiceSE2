@@ -19,19 +19,22 @@
 \end{itemize}
 
 \begin{center}
- \begin{tabular}{| m{5cm} | m{5cm} | m{5cm} | }
+ \begin{longtable}{| m{5cm} | m{5cm} | m{5cm} | }
  \hline
   Goal & Requirement & Design document section\\
  \hline\hline
-   G1&	Persons can create an account& 2.3.1 Userinteraface display the guest home Activity, and the registration form Activity;
-   \\ \hline
-   G1&	Persons can log into their account& \\\hline
-   G1&	Passengers can select from a menu the option of requesting a taxi as soon as possible& \\ \hline
-   G1&	Passengers can insert their position filling an input form and confirm it& \\ \hline
-   G1&	The system will receive the request and identify the zone in which the passenger is in	& \\ \hline
-   G1&	The system will forward the request to the first taxi in the selected zone queue and wait for an answer	& \\ \hline
+ \endhead
+   G1&	Persons can create an account& 2.3.1 Userinterface, Action, Activity, Clientnetworkinterface\newline
+					2.3.2 Controller, User, Servernetworkinterface\\ \hline
+   G1&	Persons can log into their account& 2.3.1 Userinterface, Action, Activity, Clientnetworkinterface\newline
+					      2.3.2 Controller, User, Servernetworkinterface\\ \hline
+   G1&	Passengers can select from a menu the option of requesting a taxi as soon as possible& 2.3.1 Userinterface, Action, Activity\\ \hline
+   G1&	Passengers can insert their position filling an input form and confirm it& 2.3.1 Userinterface, Action, Activity, Clientnetworkinterface\newline 
+										    2.1 GPS \\ \hline
+   G1&	The system will receive the request and identify the zone in which the passenger is in	& 2.3.2 Servernetworkinterface,Ride, Controller \\ \hline 
+   G1&	The system will forward the request to the first taxi in the selected zone queue and wait for an answer	& 2.3.2 Controller, Ridesmanager, Servernetworkinterface\\ \hline
    G1&	If the taxist accepts, the system will remove him from the queue; otherwise it will append the taxist to the last position and
-scan the list for a taxist to accept& \\ \hline
+scan the list for a taxist to accept& 2.3.2 Controller, Ridesmanager, Ride\\ \hline
   \hline
- \end{tabular}
+ \end{longtable}
 \end{center}
