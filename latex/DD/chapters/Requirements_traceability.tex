@@ -42,8 +42,8 @@ scan the list for a taxist to accept& 2.3.2 Controller, Ridesmanager, Ride\\ \hl
 								2.3.2 Controller, Servernetworkinterface, Ridesmanager, Ride\\ \hline
     G3& Passengers can select from a menu the option of reserving a taxi for a chosen ride and date & 2.3.1 Userinterface, Activity, Action \\ \hline
     G3& Passengers can insert the initial and final position, time and date, their email and confirm it & 2.3.1 Userinterface, Activity, Action \newline 2.1 GPS\\ \hline
-    G3&The system will receive the reservation and if it respects the 2 hour constraint it will send a confirmation & 2.3.2 Servernetworkinterface, Controller, Ridesmanager, Reservation \\ \hline
-    G3&Ten minutes before the ride starts, the system allocates a taxi for it.  & 2.3.2 Passenger, Taxidriver, Ridesmanager, Reservation\\ \hline
+    G3&The system will receive the reservation and if it respects the 2 hour constraint it will send a confirmation & 2.3.2 Servernetworkinterface, Controller, Ridesmanager, Ride \\ \hline
+    G3&Ten minutes before the ride starts, the system allocates a taxi for it.  & 2.3.2 Passenger, Taxidriver, Ridesmanager, Ride\\ \hline
     G4&The application must have a selectable option labled:"share your ride", that allows passengers to enable the shared 
 	ride service. In case of non reserved ride, the application will ask passengers the amount of time they can wait for others people  & 2.3.1 Userinterface, Activity, Action \\ \hline
     G4& When the system receive a request of a shared ride, it will search for others shared ride requests starting from the same
@@ -53,7 +53,7 @@ scan the list for a taxist to accept& 2.3.2 Controller, Ridesmanager, Ride\\ \hl
 	retrieve a new route for the taxi driver, and to calculate new fees & 2.3.2 Controller, Ridesmanager, Ride, Sharedride\newline
 										2.5 Google map service\newline
 										3.2.2 Billing calculation\\ \hline
-    G4& When the timeout of one passengers ,added to the current ride, occur, the system will procede with the allocation of the taxi & 2.3.2 Ridesmanager, Sharedride, Reservation\newline
+    G4& When the timeout of one passengers ,added to the current ride, occur, the system will procede with the allocation of the taxi & 2.3.2 Ridesmanager, Sharedride, Ride\newline
 																	  3.2.1 getAvailableTaxi\\ \hline
     G4& After the taxi allocation, the passengers who requested the shared ride will receive, not only the taxi ID, but also 
 	the fee they have to pay & 2.3.1 Userinterface, Activity, Clientnetworkinterface\\ \hline
@@ -73,9 +73,34 @@ scan the list for a taxist to accept& 2.3.2 Controller, Ridesmanager, Ride\\ \hl
     G6&When the system receive a notification , by a taxi driver, informing that he is ready to take care of some passengers, 
 	it will append the user in the queue corresponding to the taxi zone that include the position retrieved by the application&  2.3.2 Servernetworkinterface, Controller,Ridesmanager\\ \hline
     G7&When a taxi driver is assigned to a shared ride, the system will send him the route he needs to follow, and the fee 
-	amount every passenger have to pay& \\ \hline
+	amount every passenger have to pay& 2.3.2 Controller, Ridesmanager, Sharedride, Servernetworkinterface\\ \hline
     G7&When a driver is assigned to a non-shared ride, the system will send him the route he needs to follow, and the fee
-	amount the passenger has to pay& \\ \hline
+	amount the passenger has to pay& 2.3.2 Controller, Ridesmanager, Ride, Servernetworkinterface \\ \hline
     G8& It is also neccessary to develop programmatic interfaces that allow to customize the system, adding new features& \\ \hline
+      & Passengers can access a section, in which they be able to check the ID of the taxi assigned to their ride 
+	and manage ( delete or modify) an active reservation&  2.3.1 Userinterface, Action, Activity\\ \hline
+      & When a passenger delete a reservation , the system will remove it from the reservation scheduler and, if a taxi 
+	driver is already assigned, notify the taxist& 2.3.1 Userinterface, Activity, Clientnetworkinterface\newline
+							2.3.2 Controller, Servernetworkinterface, Ridesmanager, Ride\\ \hline
+      & A passenger can modify an active reservation changing position, date and time& 2.3.1 Userinterface, Action, Activity, Clientnetworkinterface\newline
+											2.3.2 Servernetworkinterface, Controller, Ridesmanager, Rid \newline
+											2.1 GPS\\ \hline
+      & The system will accept modification only if sent before the taxi allocation&2.3.2 Controller, Ridesmanager, Ride \\ \hline
+      & The system will accept date and time modification if it occur at least two hours after the request or/and after the 
+	previous reservation& 2.3.2 Controller, Ridesmanager, Ride\\ \hline
+      & A taxi driver have the possibility to remove himself from the queue by clicking the:``Disable'' button& 2.3.1 Userinterface, Action, Activity, Clientnetworkinterface \newline
+														 2.3.2 Servernetworkinterface, Controller, Ridesmanager\\ \hline
+      & The system will remove a taxi from the list if receive the corresponding request by the taxi driver, or if the taxist logged out& 2.3.2 Ridesmanager, Controller\\ \hline
+      &  A master terminal interface must be implemented in order to allow, the stakeholder, to configure some parameters 
+	 (the number of the taxi zones, the set of positions belonging to each zone, the number of reports (per day, month and year)
+	 needed to automatically ban a user and the maximum number of reports ( per hour) a user can insert)& 2.3.3 Master view\\ \hline
+      & Every time a report is added to a user, the system will check if the constraints inserted by the master terminal are satified,
+	otherwise the system must automatically ban the user&  2.3.2 User\\ \hline
+      & The master terminal interface allows to manually ban users, or enable banned users& 2.3.3 Master view\\ \hline
+      & The system must refuse reports added by a user if the user has already reached the maximum number of reports ( per hour) decided
+	 by the master terminal& 2.3.2 User \\ \hline
+      & When the system refuse a report, a notification appear on the user screen, reminding him that he has already exceeded
+	the maximum number of reports for that hour& 2.3.1 Userinterface, Activity, Clientnetworkinterface\newline
+						     2.3.2 Servernetworkinterface, User, Controller\\ \hline
  \end{longtable}
 \end{center}
