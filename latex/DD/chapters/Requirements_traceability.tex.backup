@@ -40,10 +40,19 @@ scan the list for a taxist to accept& 2.3.2 Controller, Ridesmanager, Ride\\ \hl
 						2.5 Google map service\\ \hline
     G2& he system will communicate the taxi code and the ETA& 2.3.1 Userinterface, Activity, Clientnetworkinterface\newline
 								2.3.2 Controller, Servernetworkinterface, Ridesmanager, Ride\\ \hline
-    G3& Passengers can select from a menu the option of reserving a taxi for a chosen ride and date & \\ \hline
-     & Passengers can insert the initial and final position, time and date, their email and confirm it & \\ \hline
-     &  & \\ \hline
-     &  & \\ \hline
+    G3& Passengers can select from a menu the option of reserving a taxi for a chosen ride and date & 2.3.1 Userinterface, Activity, Action \\ \hline
+    G3& Passengers can insert the initial and final position, time and date, their email and confirm it & 2.3.1 Userinterface, Activity, Action \newline 2.1 GPS\\ \hline
+    G3&The system will receive the reservation and if it respects the 2 hour constraint it will send a confirmation & 2.3.2 Servernetworkinterface, Controller, Ridesmanager, Reservation \\ \hline
+    G3&Ten minutes before the ride starts, the system allocates a taxi for it.  & 2.3.2 Passenger, Taxidriver, Ridesmanager, Reservation\\ \hline
+    G4&The application must have a selectable option labled:"share your ride", that allows passengers to enable the shared 
+	ride service. In case of non reserved ride, the application will ask passengers the amount of time they can wait for others people  & 2.3.1 Userinterface, Activity, Action \\ \hline
+    G4& When the system receive a request of a shared ride, it will search for others shared ride requests starting from the same
+	taxi zone, and going in the same direction & 2.3.2 Servernetworkinterface, Controller, Ridesmanager, Sharedride, Ride\\ \hline
+    G4& When a new passenger is added to a shared ride, the system will interact with the map service, in order to 
+	retrieve a new route for the taxi driver, and to calculate new fees & \\ \hline
+    G4& When the timeout of one passengers ,added to the current ride, occur, the system will procede with the allocation of the taxi & \\ \hline
+    G4& After the taxi allocation, the passengers who requested the shared ride will receive, not only the taxi ID, but also 
+	the fee they have to pay & \\ \hline
      &  & \\ \hline
      &  & \\ \hline
      &  & \\ \hline

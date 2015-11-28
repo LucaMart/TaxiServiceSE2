@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.16)  28 NOV 2015 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.16)  28 NOV 2015 11:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -768,15 +768,65 @@ Underfull \hbox (badness 1527) in paragraph at lines 46--46
  []
 
 
-Overfull \hbox (104.39131pt too wide) in alignment at lines 26--53
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+[]|\OT1/cmr/m/n/10.95 The ap-pli-ca-tion must
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+\OT1/cmr/m/n/10.95 have a se-lectable op-tion
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 47--48
+\OT1/cmr/m/n/10.95 al-lows pas-sen-gers to en-able
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 50--51
+[]|\OT1/cmr/m/n/10.95 2.3.2 Server-net-work-in-ter-face,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\OT1/cmr/m/n/10.95 Con-troller, Rides-man-ager,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+\OT1/cmr/m/n/10.95 3.2.1 share-dRequest, find-
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 52--53
+[]|\OT1/cmr/m/n/10.95 When a new pas-sen-ger is
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 53--55
+[]|\OT1/cmr/m/n/10.95 2.3.2 Con-troller, Rides-man-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+[]|\OT1/cmr/m/n/10.95 2.3.2 Rides-man-ager,
+ []
+
+
+Overfull \hbox (104.39131pt too wide) in alignment at lines 26--61
  [] [] [] 
  []
 
 [9
 
-] [10]) [11]
+]
+Overfull \hbox (104.39131pt too wide) in alignment at lines 61--66
+ [] [] [] 
+ []
+
+[10] [11]) [12]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
- [12
+ [13
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
@@ -788,9 +838,9 @@ Package rerunfilecheck Info: File `Design_Document.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 62.
  ) 
 Here is how much of TeX's memory you used:
- 8100 strings out of 493054
- 115021 string characters out of 6140585
- 233174 words of memory out of 5000000
+ 8101 strings out of 493054
+ 115028 string characters out of 6140585
+ 237174 words of memory out of 5000000
  11476 multiletter control sequences out of 15000+600000
  12633 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -806,10 +856,10 @@ dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type
 s/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Design_Document.pdf (13 pages, 170722 bytes).
+Output written on Design_Document.pdf (14 pages, 172405 bytes).
 PDF statistics:
- 256 PDF objects out of 1000 (max. 8388607)
- 225 compressed objects within 3 object streams
- 41 named destinations out of 1000 (max. 500000)
+ 260 PDF objects out of 1000 (max. 8388607)
+ 228 compressed objects within 3 object streams
+ 42 named destinations out of 1000 (max. 500000)
  201 words of extra memory for PDF output out of 10000 (max. 10000000)
 
