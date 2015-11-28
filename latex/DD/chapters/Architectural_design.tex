@@ -72,8 +72,43 @@ The controller interacts with the clients through a network interface.
 % sequence for: shared taxi ride <server side>
 
 \section{Component interfaces}
+
+\subsection{Usage of third-party API}
 The passenger controller class must interfaces with Google map sevice, using its API, in order to get the shortest path and the 
 chilometers of the ride.
+
+\subsection{In-house developed API}
+The system must expose a set of public web based API. To access the API, an user must register first, using an unique key
+obtained from the API's maintainer.
+After successful registration, the system must return an authentication token to be used within a session.
+The key and the token must be sent using the HTTP POST method.
+The server will send the required data encoded in JSON form.
+All the communications must be protected using the TLS protocol.
+\begin{verbatim}
+ https://api.mytaxiservice.com/registerapikey
+\end{verbatim}
+All the underlying functions (request taxis, list active calls, list taxis in a zone...) shall be made available using a simple,
+object-like interface:
+\begin{verbatim}
+ https://api.mytaxiservice.com/request-ride/nonshared/<passengername>/
+    <password>/<from_location>/<to_location>
+ https://api.mytaxiservice.com/list-taxis/by-zone/<zone_id>
+ https://api.mytaxiservice.com/list-calls/active/<passengername>/
+    <password>/
+ https://api.mytaxiservice.com/list-calls/active/<drivername>/
+    <password>/
+\end{verbatim}
+A sample response (without the HTTP headers)
+\begin{verbatim}
+{
+  type: "request_outcome",
+  outcome: {
+    taxi-id: "AZX934",
+    eta: "12:30",
+  }
+}
+\end{verbatim}
+
 % socket?
 % io (Il Vate(r)), suggerei di usare JSON per incapsulare i messaggi client-server, dato chè è il metodo più
 % semplice e anche popolare per questi usi

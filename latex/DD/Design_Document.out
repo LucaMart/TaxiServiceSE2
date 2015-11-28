@@ -13,13 +13,15 @@
 \BOOKMARK [2][-]{subsection.2.3.3}{Master view}{section.2.3}% 13
 \BOOKMARK [1][-]{section.2.4}{Runtime view}{chapter*.3}% 14
 \BOOKMARK [1][-]{section.2.5}{Component interfaces}{chapter*.3}% 15
-\BOOKMARK [1][-]{section.2.6}{Selected architectural styles and patterns}{chapter*.3}% 16
-\BOOKMARK [1][-]{section.2.7}{Other design decisions}{chapter*.3}% 17
-\BOOKMARK [0][-]{chapter*.4}{Algorithm Design}{}% 18
-\BOOKMARK [1][-]{section.3.1}{Outsourced algorithms}{chapter*.4}% 19
-\BOOKMARK [1][-]{section.3.2}{In-house developed algorithms}{chapter*.4}% 20
-\BOOKMARK [2][-]{subsection.3.2.1}{Shared ride}{section.3.2}% 21
-\BOOKMARK [2][-]{subsection.3.2.2}{Billing calculation}{section.3.2}% 22
-\BOOKMARK [0][-]{chapter*.5}{User Interface Design}{}% 23
-\BOOKMARK [0][-]{chapter*.6}{Requirements Traceability}{}% 24
-\BOOKMARK [0][-]{chapter*.7}{References}{}% 25
+\BOOKMARK [2][-]{subsection.2.5.1}{Usage of third-party API}{section.2.5}% 16
+\BOOKMARK [2][-]{subsection.2.5.2}{In-house developed API}{section.2.5}% 17
+\BOOKMARK [1][-]{section.2.6}{Selected architectural styles and patterns}{chapter*.3}% 18
+\BOOKMARK [1][-]{section.2.7}{Other design decisions}{chapter*.3}% 19
+\BOOKMARK [0][-]{chapter*.4}{Algorithm Design}{}% 20
+\BOOKMARK [1][-]{section.3.1}{Outsourced algorithms}{chapter*.4}% 21
+\BOOKMARK [1][-]{section.3.2}{In-house developed algorithms}{chapter*.4}% 22
+\BOOKMARK [2][-]{subsection.3.2.1}{Shared ride}{section.3.2}% 23
+\BOOKMARK [2][-]{subsection.3.2.2}{Billing calculation}{section.3.2}% 24
+\BOOKMARK [0][-]{chapter*.5}{User Interface Design}{}% 25
+\BOOKMARK [0][-]{chapter*.6}{Requirements Traceability}{}% 26
+\BOOKMARK [0][-]{chapter*.7}{References}{}% 27
