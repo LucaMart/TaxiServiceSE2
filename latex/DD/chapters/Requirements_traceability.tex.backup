@@ -35,6 +35,20 @@
    G1&	The system will forward the request to the first taxi in the selected zone queue and wait for an answer	& 2.3.2 Controller, Ridesmanager, Servernetworkinterface\\ \hline
    G1&	If the taxist accepts, the system will remove him from the queue; otherwise it will append the taxist to the last position and
 scan the list for a taxist to accept& 2.3.2 Controller, Ridesmanager, Ride\\ \hline
-  \hline
+    G2&	As soon as a taxist accepts a request, the system invokes the support system to calculate the ETA giving the position of the 
+	taxi and the position of the passenger& 2.3.2 Servernetworkinterface, Controller, Ridesmanager, Ride \newline
+						2.5 Google map service\\ \hline
+    G2& he system will communicate the taxi code and the ETA& 2.3.1 Userinterface, Activity, Clientnetworkinterface\newline
+								2.3.2 Controller, Servernetworkinterface, Ridesmanager, Ride\\ \hline
+    G3& Passengers can select from a menu the option of reserving a taxi for a chosen ride and date & \\ \hline
+     & Passengers can insert the initial and final position, time and date, their email and confirm it & \\ \hline
+     &  & \\ \hline
+     &  & \\ \hline
+     &  & \\ \hline
+     &  & \\ \hline
+     &  & \\ \hline
+     &  & \\ \hline
+     &  & \\ \hline
+     &  & \\ \hline
  \end{longtable}
 \end{center}
