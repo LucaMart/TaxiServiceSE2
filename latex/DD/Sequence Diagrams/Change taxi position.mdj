@@ -43,6 +43,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFRKz0BdITJ1/M="
 									},
+									"name": "Change taxi position",
 									"visible": true,
 									"defaultDiagram": false,
 									"ownedViews": [
@@ -73,11 +74,11 @@
 													"containerExtending": false,
 													"left": 70.97900390625,
 													"top": 5,
-													"width": 72.5380859375,
+													"width": 118.7998046875,
 													"height": 13,
 													"autoResize": false,
 													"underline": false,
-													"text": "Refused call",
+													"text": "Change taxi position",
 													"horizontalAlignment": 2,
 													"verticalAlignment": 5
 												},
@@ -118,7 +119,7 @@
 											"containerExtending": false,
 											"left": 0,
 											"top": 0,
-											"width": 695,
+											"width": 817,
 											"height": 481,
 											"autoResize": false,
 											"nameLabel": {
@@ -1418,9 +1419,9 @@
 													"showShadow": true,
 													"containerChangeable": false,
 													"containerExtending": false,
-													"left": 577,
+													"left": 576,
 													"top": 336,
-													"width": 185.01513671875,
+													"width": 187.916015625,
 													"height": 13,
 													"autoResize": false,
 													"alpha": 1.8529190201854373,
@@ -1430,7 +1431,7 @@
 													},
 													"edgePosition": 1,
 													"underline": false,
-													"text": "5 : Append taxi to current queue",
+													"text": "5 : Append taxi to present queue",
 													"horizontalAlignment": 2,
 													"verticalAlignment": 5
 												},
@@ -1577,7 +1578,7 @@
 											"width": 70,
 											"height": 64,
 											"autoResize": false,
-											"text": "if taxi has changed zone",
+											"text": "if taxi changes zone",
 											"wordWrap": true
 										}
 									],
@@ -1663,7 +1664,7 @@
 									"_parent": {
 										"$ref": "AAAAAAFRKz0BdITJ1/M="
 									},
-									"name": "Append taxi to current queue",
+									"name": "Append taxi to present queue",
 									"source": {
 										"$ref": "AAAAAAFRKz4kOoUbdmY="
 									},
