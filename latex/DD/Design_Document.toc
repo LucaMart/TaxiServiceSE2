@@ -9,8 +9,9 @@
 \contentsline {section}{\numberline {2.2}High level components and their interaction}{3}{section.2.2}
 \contentsline {section}{\numberline {2.3}Component view}{3}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Client}{3}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Server}{4}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Application server}{4}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Master view}{5}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Database server}{5}{subsection.2.3.4}
 \contentsline {section}{\numberline {2.4}Runtime view}{5}{section.2.4}
 \contentsline {section}{\numberline {2.5}Component interfaces}{5}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Usage of third-party API}{5}{subsection.2.5.1}
