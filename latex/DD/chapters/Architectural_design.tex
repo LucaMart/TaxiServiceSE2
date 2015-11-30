@@ -92,7 +92,8 @@ kilometers of the ride.
 The system must expose a set of public web based API. To access the API, an user must register first, using an unique key
 obtained from the API's maintainer.
 After successful registration, the system must return an authentication token to be used within a session.
-The key and the token must be sent using the HTTP POST method.
+The key and the token must be sent using the HTTP POST method; when needed, user-specific passwords must also
+be sent via POST
 The server will send the required data encoded in JSON form.
 All the communications must be protected using the TLS protocol.
 \begin{verbatim}
@@ -102,12 +103,10 @@ All the underlying functions (request taxis, list active calls, list taxis in a 
 object-like interface:
 \begin{verbatim}
  https://api.mytaxiservice.com/request-ride/nonshared/<passengername>/
-    <password>/<from_location>/<to_location>
+    <from_location>/<to_location>
  https://api.mytaxiservice.com/list-taxis/by-zone/<zone_id>
  https://api.mytaxiservice.com/list-calls/active/<passengername>/
-    <password>/
  https://api.mytaxiservice.com/list-calls/active/<drivername>/
-    <password>/
 \end{verbatim}
 A sample response (without the HTTP headers)
 \begin{verbatim}
