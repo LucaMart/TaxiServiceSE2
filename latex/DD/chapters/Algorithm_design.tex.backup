@@ -25,6 +25,8 @@ The following pseudocode describes how share taxi request should be handled
   \EndIf
  \EndFunction
 \end{algorithmic}
+\vspace{5mm}
+
 The following function (dependency of \textit{sharedRequest}), describes how the system should search for an
 available shared ride, compatible with the constraints provided via arguments
 \begin{algorithmic}
@@ -43,16 +45,20 @@ available shared ride, compatible with the constraints provided via arguments
   \State \Return empty set
  \EndFunction
 \end{algorithmic}
+\vspace{5mm}
+
 The following function (dependency of \textit{sharedRequest}), describes how the system should fetch an available taxi.
 Keep in mind that the process of issuing the call to a driver and managing his/her response happens inside this function
-(or its sub-routines)
+(or its sub-routines). \\
+
 % TODO: specificare come/quando avviene la rimozione dalla coda
 \begin{algorithmic}
 \Function {getAvailableTaxi} {fromZone}
 \ForAll {queue in Queues}
   \If { queue.getZone()==fromZone AND not queue.isEmpty()}
        \State $ taxi \gets queue.getFirstTaxi() $
-     \If {taxi.sendRequest()} %TODO: timeout, magari? (non server specificarlo qua, può anche essere implementato dentro a sendRequest())
+     \If {taxi.sendRequest() == SUCCESS} %TODO: timeout, magari? (non server specificarlo qua, può anche essere implementato dentro a sendRequest())
+         \State manage queue
          \Return taxi
      \Else 
          \State manage queue and retry
@@ -66,7 +72,9 @@ Keep in mind that the process of issuing the call to a driver and managing his/h
 
 % * billing passeggeri (suddivisione dei costi)
 %   -> costo per passaggero: funzione della distanza
-Billing calculation:
+\subsection{Billing calculation}
+The following formula describes how the system should calculate the amount of money each passenger
+has to pay after a shared ride (to put it simply, how to ``split the bill'') % Biiiilll!
 \begin{align*}
  B_{i} &= \text{Amount paid by the i-th passenger} \\
  D_{i} &= \text{Distance traveled by the i-th passenger} \\

@@ -49,14 +49,16 @@ available shared ride, compatible with the constraints provided via arguments
 
 The following function (dependency of \textit{sharedRequest}), describes how the system should fetch an available taxi.
 Keep in mind that the process of issuing the call to a driver and managing his/her response happens inside this function
-(or its sub-routines)
-% TODO: specificare come/quando avviene la rimozione dalla coda
+(or its sub-routines). \\
+Note: a timeout for the ``accept/refuse call'' action (executed by the taxi driver) must be implemented. However, it
+should be encapsulated inside taxi.sendRequest(), rather that the high level getAvailableTaxi() function.
 \begin{algorithmic}
 \Function {getAvailableTaxi} {fromZone}
 \ForAll {queue in Queues}
   \If { queue.getZone()==fromZone AND not queue.isEmpty()}
        \State $ taxi \gets queue.getFirstTaxi() $
-     \If {taxi.sendRequest()} %TODO: timeout, magari? (non server specificarlo qua, può anche essere implementato dentro a sendRequest())
+     \If {taxi.sendRequest() == SUCCESS}
+         \State manage queue
          \Return taxi
      \Else 
          \State manage queue and retry
