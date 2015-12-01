@@ -18,13 +18,13 @@
 \contentsline {subsection}{\numberline {2.5.2}In-house developed API}{7}{subsection.2.5.2}
 \contentsline {section}{\numberline {2.6}Selected architectural styles and patterns}{8}{section.2.6}
 \contentsline {section}{\numberline {2.7}Other design decisions}{8}{section.2.7}
-\contentsline {chapter}{Algorithm Design}{9}{chapter*.4}
-\contentsline {section}{\numberline {3.1}Outsourced algorithms}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}In-house developed algorithms}{9}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Shared ride}{9}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Billing calculation}{10}{subsection.3.2.2}
-\contentsline {chapter}{User Interface Design}{11}{chapter*.5}
-\contentsline {section}{\numberline {4.1}Guidelines}{11}{section.4.1}
-\contentsline {section}{\numberline {4.2}Mockup}{11}{section.4.2}
-\contentsline {chapter}{Requirements Traceability}{12}{chapter*.6}
-\contentsline {chapter}{References}{18}{chapter*.7}
+\contentsline {chapter}{Algorithm Design}{10}{chapter*.4}
+\contentsline {section}{\numberline {3.1}Outsourced algorithms}{10}{section.3.1}
+\contentsline {section}{\numberline {3.2}In-house developed algorithms}{10}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Shared ride}{10}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Billing calculation}{11}{subsection.3.2.2}
+\contentsline {chapter}{User Interface Design}{12}{chapter*.5}
+\contentsline {section}{\numberline {4.1}Guidelines}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}Mockup}{12}{section.4.2}
+\contentsline {chapter}{Requirements Traceability}{13}{chapter*.6}
+\contentsline {chapter}{References}{19}{chapter*.7}

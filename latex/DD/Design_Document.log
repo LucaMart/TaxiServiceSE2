@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.19)  1 DEC 2015 17:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.19)  1 DEC 2015 18:18
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -645,7 +645,7 @@ eX warning (ext4): destination with the same identifier (name{page.1}) has been
  already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 ...line {chapter}{References}{17}{chapter*.7}
+l.30 ...line {chapter}{References}{19}{chapter*.7}
                                                    [1
 
 ])
@@ -670,14 +670,30 @@ Overfull \hbox (13.6647pt too wide) in paragraph at lines 110--110
 ername>/[] 
  []
 
-) [8] (./chapters/Algorithm_design.tex
+<../../architecture/architecture.png, id=200, 1214.5375pt x 753.81625pt>
+File: ../../architecture/architecture.png Graphic file (type png)
+
+<use ../../architecture/architecture.png>
+Package pdftex.def Info: ../../architecture/architecture.png used on input line
+ 144.
+(pdftex.def)             Requested size: 425.0945pt x 263.83965pt.
+
+Overfull \hbox (65.0945pt too wide) in paragraph at lines 144--145
+ [][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [8] [9 <../../architecture/architecture.png>]
+(./chapters/Algorithm_design.tex
 Overfull \hbox (5.6825pt too wide) in paragraph at lines 36--37
 [] \OT1/cmr/bx/n/10.95 if $\OML/cmm/m/it/10.95 ride:fromZone \OT1/cmr/m/n/10.95
  == \OML/cmm/m/it/10.95 fromZone$ \OT1/cmr/m/n/10.95 AND $\OML/cmm/m/it/10.95 r
 ide:toZone \OT1/cmr/m/n/10.95 == \OML/cmm/m/it/10.95 toZone$
  []
 
-[9
+[10
 
 ]
 
@@ -708,7 +724,15 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-) [10] (./chapters/ui_design.tex) [11
+) [11] (./chapters/ui_design.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 4.
+
+(/usr/share/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4.
+) [12
 
 ]
 (./chapters/Requirements_traceability.tex
@@ -821,7 +845,7 @@ Overfull \hbox (47.48578pt too wide) in alignment at lines 25--67
  [] [] [] 
  []
 
-[12
+[13
 
 ]
 Underfull \hbox (badness 1354) in paragraph at lines 68--68
@@ -923,9 +947,9 @@ Overfull \hbox (47.48578pt too wide) in alignment at lines 67--106
  [] [] [] 
  []
 
-[13] [14] [15] [16]) [17]
+[14] [15] [16] [17]) [18]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
- [18
+ [19
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
@@ -937,10 +961,10 @@ Package rerunfilecheck Info: File `Design_Document.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 62.
  ) 
 Here is how much of TeX's memory you used:
- 8121 strings out of 493054
- 115292 string characters out of 6140585
- 239172 words of memory out of 5000000
- 11482 multiletter control sequences out of 15000+600000
+ 8147 strings out of 493054
+ 115780 string characters out of 6140585
+ 239217 words of memory out of 5000000
+ 11503 multiletter control sequences out of 15000+600000
  12801 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,16n,32p,291b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -956,10 +980,10 @@ s/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Design_Document.pdf (19 pages, 197205 bytes).
+Output written on Design_Document.pdf (20 pages, 297126 bytes).
 PDF statistics:
- 312 PDF objects out of 1000 (max. 8388607)
- 274 compressed objects within 3 object streams
- 52 named destinations out of 1000 (max. 500000)
- 241 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 321 PDF objects out of 1000 (max. 8388607)
+ 280 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 246 words of extra memory for PDF output out of 10000 (max. 10000000)
 

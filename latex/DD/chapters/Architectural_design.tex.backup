@@ -34,15 +34,15 @@ The controller interacts with the clients through a network interface.
 	  \item [Userinterface]: is the component that directly interacts with the human.
 	  It contains the activity that must be displayed, and read the components of the activity, in order to display them.
 	  It also launches the actions selected by the human.
-	  \item[Clientnetworkinterface]: is the component that allows the others to exchange messages with the server side.
+	  \item[Clientnetworkinterface]: is the component that allows the other ones to exchange messages with the server side.
 	 \end{itemize}
-	\subsection{Server}
+	\subsection{Application server}
 	\begin{itemize}
 	 \item [Controller]: we have one controller for each client connected; initially it will be a guest controller,
 	 which allows login/register. After a successful login, the guest controller will create a taxi driver/passenger controller,
 	 and substitutes himself with the new controller. The controller must manage requests coming from
 	 the client, taking informations from the ridesmanager, and eventually adding new objects to it.
-	 In order to sends and receives message from the client, the controller communicates with a Servernetworkinterface.
+	 In order to send and receive messages from the client, the controller communicates with a Servernetworkinterface.
 	 The controller also contains a User object, that allows him to retrieves information about the specific logged user.
 	 \item [Ridesmanager]: it is a singleton, that contains informations about the queues, the active rides. This corresponds 
 	 to the model in the MVC pattern and it is shared by all the controllers.
@@ -51,21 +51,28 @@ The controller interacts with the clients through a network interface.
 	 User is split in taxi driver and passenger, cause there are some differences between the two kind of user.
 	 Also user is a part of the model, but it is not shared.
 	 \item[Ride]: this class allows to create object, containing all information about a specific ride. 
-	 As soon as a passengers make a taxi requests, the controller create a rides containing information recevied from the client.
+	 As soon as a passenger makes a taxi requests, the controller creates a ride containing information recevied from the client.
 	 In case of shared ride, a ride object will be created and added to the corresponding sharedride ones.
 	 \item[Sharedride]: the sharedride object contains the set of the ride object, the total cost of the ride and the route.
 	 When a new passenger is added to the shared ride, the controller will adjust the path, the total cost, and the cost of each
 	 rides object, contained in the current sharedride.
 	 \item[Servernetworkinterface]: is the component that allows the interaction with the client side. It converts messages coming from
-	 the other server component, in messages readable from the Clientnetwrokinterface, and vice versa.
+	 the other server component, in messages readable by the Clientnetwrokinterface, and vice versa.
 	\end{itemize}
 	\subsection{Master view}
 	(the whole master view component is singleton)
-	\item [CLI:] simple text based interface, receives input from stdin, sends output to stdout
-	\item [Controller:] interprets the cli commands, and invokes the relative methods on the specific server classes;
-	the outcome of the operation is returned to the cli.
+	\begin{itemize}
+	  \item [CLI:] simple text based interface, receives input from stdin, sends output to stdout
+	  \item [Controller:] interprets the cli commands, and invokes the relative methods on the specific server classes;
+	  the outcome of the operation is returned to the cli.
+	\end{itemize}
 	% In teoria basta una semplice interfaccia testuale, più un controller che interpreta gli input e chiama i
 	% dovuti metodi sul Server
+	\subsection{Database server}
+	The database server will contain all informations about users, and, for each user, the list of unsent notifications.
+	The client will periodically send notification request to the server, that must query the database, send the list of notification,
+	and empty the unsent notification list.
+	%TODO facciamo dei backup periodici del database in un altro database posto in una zona "sicura"?
 \section{Runtime view}
 % sequence diagrams
 % sequence for: login
@@ -78,14 +85,15 @@ The controller interacts with the clients through a network interface.
 \section{Component interfaces}
 
 \subsection{Usage of third-party API}
-The passenger controller class must interfaces with Google map sevice, using its API, in order to get the shortest path and the 
-chilometers of the ride.
+The passenger controller class must interface with Google map sevice, using its API, to get the shortest path, the Eta to be sent to the user and the 
+kilometers of the ride.
 
 \subsection{In-house developed API}
 The system must expose a set of public web based API. To access the API, an user must register first, using an unique key
 obtained from the API's maintainer.
 After successful registration, the system must return an authentication token to be used within a session.
-The key and the token must be sent using the HTTP POST method.
+The key and the token must be sent using the HTTP POST method; when needed, user-specific passwords must also
+be sent via POST
 The server will send the required data encoded in JSON form.
 All the communications must be protected using the TLS protocol.
 \begin{verbatim}
@@ -95,12 +103,10 @@ All the underlying functions (request taxis, list active calls, list taxis in a 
 object-like interface:
 \begin{verbatim}
  https://api.mytaxiservice.com/request-ride/nonshared/<passengername>/
-    <password>/<from_location>/<to_location>
+    <from_location>/<to_location>
  https://api.mytaxiservice.com/list-taxis/by-zone/<zone_id>
  https://api.mytaxiservice.com/list-calls/active/<passengername>/
-    <password>/
  https://api.mytaxiservice.com/list-calls/active/<drivername>/
-    <password>/
 \end{verbatim}
 A sample response (without the HTTP headers)
 \begin{verbatim}
@@ -132,7 +138,7 @@ The server side structure is composed as shown in the picture below:
 The load balancer is needed to equally divides requests coming from different clients, in order to increase performances.
 Different application servers must be placed in different physical zones, in order to react to possibly partial blackout and other
 local physical accidents.
-Client side there's only one constraint, the obbligation, for the taxi driver, to use a divece with a working GPS.
+For the client side there's only one constraint, the obbligation for the taxi driver to use a device with a working GPS.
 % hw architecture (see diagram)
 % distributed application servers (not in the same physical local network) -> abstraction -> just like big G
 % we exclude a priori the possibility of a water-powered machine
