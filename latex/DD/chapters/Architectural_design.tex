@@ -74,13 +74,47 @@ The controller interacts with the clients through a network interface.
 	and empty the unsent notification list.
 	%TODO facciamo dei backup periodici del database in un altro database posto in una zona "sicura"?
 \section{Runtime view}
-% sequence diagrams
-% sequence for: login
-% sequence for: registration
-% sequence for: taxi request
-% sequence for: refused call
-% sequence for: update taxi position
-% sequence for: shared taxi ride <server side>
+	\subsection{Sequence diagrams}
+\begin{figure} [h]
+\centering\includegraphics[scale=0.5]{Sequence Diagrams/successfully_registration.png}
+\caption{Figure 1: registration }
+\end{figure}
+
+\begin{figure} [h]
+\centering\includegraphics[scale=0.5]{Sequence Diagrams/login.png}
+\caption{Figure 2: login }
+\end{figure}
+
+\begin{figure} [h]
+\centering\includegraphics[scale=0.5]{Sequence Diagrams/successfully_taxi_request.png}
+\caption{Figure 3: taxi request }
+\end{figure}
+
+\begin{figure} [h]
+\centering\includegraphics[scale=0.5]{Sequence Diagrams/Shared_ride.png}
+\caption{Figure 4: request of a shared ride }
+\end{figure}
+
+\begin{figure} [h]
+\centering\includegraphics[scale=0.5]{Sequence Diagrams/refuse_call.png}
+\caption{Figure 5: refuse incoming call }
+\end{figure}
+
+\begin{figure} [h]
+\centering\includegraphics[scale=0.5]{Sequence Diagrams/change_taxi_position.png}
+\caption{Figure 6: change taxi position }
+\end{figure}
+
+	\subsection{MVC diagrams}
+\begin{figure} [h]
+\centering\includegraphics[scale=0.5]{Sequence Diagrams/MVC_reserve_taxi.png}
+\caption{Figure 7: reserve a taxi }
+\end{figure}
+
+\begin{figure} [h]
+\centering\includegraphics[scale=0.5]{Sequence Diagrams/MVC_Shared_ride.png}
+\caption{Figure 8: shared ride request }
+\end{figure}
 
 \section{Component interfaces}
 
