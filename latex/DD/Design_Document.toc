@@ -13,18 +13,20 @@
 \contentsline {subsection}{\numberline {2.3.3}Master view}{7}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Database server}{7}{subsection.2.3.4}
 \contentsline {section}{\numberline {2.4}Runtime view}{7}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Sequence diagrams}{7}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}MVC diagrams}{7}{subsection.2.4.2}
 \contentsline {section}{\numberline {2.5}Component interfaces}{7}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Usage of third-party API}{7}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}In-house developed API}{7}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}Selected architectural styles and patterns}{8}{section.2.6}
-\contentsline {section}{\numberline {2.7}Other design decisions}{8}{section.2.7}
-\contentsline {chapter}{Algorithm Design}{10}{chapter*.4}
-\contentsline {section}{\numberline {3.1}Outsourced algorithms}{10}{section.3.1}
-\contentsline {section}{\numberline {3.2}In-house developed algorithms}{10}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Shared ride}{10}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Billing calculation}{11}{subsection.3.2.2}
-\contentsline {chapter}{User Interface Design}{12}{chapter*.5}
-\contentsline {section}{\numberline {4.1}Guidelines}{12}{section.4.1}
-\contentsline {section}{\numberline {4.2}Mockup}{12}{section.4.2}
-\contentsline {chapter}{Requirements Traceability}{13}{chapter*.6}
-\contentsline {chapter}{References}{19}{chapter*.7}
+\contentsline {section}{\numberline {2.6}Selected architectural styles and patterns}{9}{section.2.6}
+\contentsline {section}{\numberline {2.7}Other design decisions}{10}{section.2.7}
+\contentsline {chapter}{Algorithm Design}{16}{chapter*.4}
+\contentsline {section}{\numberline {3.1}Outsourced algorithms}{16}{section.3.1}
+\contentsline {section}{\numberline {3.2}In-house developed algorithms}{16}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Shared ride}{16}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Billing calculation}{17}{subsection.3.2.2}
+\contentsline {chapter}{User Interface Design}{18}{chapter*.5}
+\contentsline {section}{\numberline {4.1}Guidelines}{18}{section.4.1}
+\contentsline {section}{\numberline {4.2}Mockup}{18}{section.4.2}
+\contentsline {chapter}{Requirements Traceability}{25}{chapter*.6}
+\contentsline {chapter}{References}{31}{chapter*.7}

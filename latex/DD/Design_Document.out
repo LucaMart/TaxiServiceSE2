@@ -13,18 +13,20 @@
 \BOOKMARK [2][-]{subsection.2.3.3}{Master view}{section.2.3}% 13
 \BOOKMARK [2][-]{subsection.2.3.4}{Database server}{section.2.3}% 14
 \BOOKMARK [1][-]{section.2.4}{Runtime view}{chapter*.3}% 15
-\BOOKMARK [1][-]{section.2.5}{Component interfaces}{chapter*.3}% 16
-\BOOKMARK [2][-]{subsection.2.5.1}{Usage of third-party API}{section.2.5}% 17
-\BOOKMARK [2][-]{subsection.2.5.2}{In-house developed API}{section.2.5}% 18
-\BOOKMARK [1][-]{section.2.6}{Selected architectural styles and patterns}{chapter*.3}% 19
-\BOOKMARK [1][-]{section.2.7}{Other design decisions}{chapter*.3}% 20
-\BOOKMARK [0][-]{chapter*.4}{Algorithm Design}{}% 21
-\BOOKMARK [1][-]{section.3.1}{Outsourced algorithms}{chapter*.4}% 22
-\BOOKMARK [1][-]{section.3.2}{In-house developed algorithms}{chapter*.4}% 23
-\BOOKMARK [2][-]{subsection.3.2.1}{Shared ride}{section.3.2}% 24
-\BOOKMARK [2][-]{subsection.3.2.2}{Billing calculation}{section.3.2}% 25
-\BOOKMARK [0][-]{chapter*.5}{User Interface Design}{}% 26
-\BOOKMARK [1][-]{section.4.1}{Guidelines}{chapter*.5}% 27
-\BOOKMARK [1][-]{section.4.2}{Mockup}{chapter*.5}% 28
-\BOOKMARK [0][-]{chapter*.6}{Requirements Traceability}{}% 29
-\BOOKMARK [0][-]{chapter*.7}{References}{}% 30
+\BOOKMARK [2][-]{subsection.2.4.1}{Sequence diagrams}{section.2.4}% 16
+\BOOKMARK [2][-]{subsection.2.4.2}{MVC diagrams}{section.2.4}% 17
+\BOOKMARK [1][-]{section.2.5}{Component interfaces}{chapter*.3}% 18
+\BOOKMARK [2][-]{subsection.2.5.1}{Usage of third-party API}{section.2.5}% 19
+\BOOKMARK [2][-]{subsection.2.5.2}{In-house developed API}{section.2.5}% 20
+\BOOKMARK [1][-]{section.2.6}{Selected architectural styles and patterns}{chapter*.3}% 21
+\BOOKMARK [1][-]{section.2.7}{Other design decisions}{chapter*.3}% 22
+\BOOKMARK [0][-]{chapter*.4}{Algorithm Design}{}% 23
+\BOOKMARK [1][-]{section.3.1}{Outsourced algorithms}{chapter*.4}% 24
+\BOOKMARK [1][-]{section.3.2}{In-house developed algorithms}{chapter*.4}% 25
+\BOOKMARK [2][-]{subsection.3.2.1}{Shared ride}{section.3.2}% 26
+\BOOKMARK [2][-]{subsection.3.2.2}{Billing calculation}{section.3.2}% 27
+\BOOKMARK [0][-]{chapter*.5}{User Interface Design}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Guidelines}{chapter*.5}% 29
+\BOOKMARK [1][-]{section.4.2}{Mockup}{chapter*.5}% 30
+\BOOKMARK [0][-]{chapter*.6}{Requirements Traceability}{}% 31
+\BOOKMARK [0][-]{chapter*.7}{References}{}% 32
