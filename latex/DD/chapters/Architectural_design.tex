@@ -28,7 +28,7 @@ The controller interacts with the clients through a network interface.
 	  %TODO: paragone con le activity in android
 	  \item [Action]: an action is something that a user can do, in order to interact with the application.
 	  If an action needs some data, the userinterface must display a field, for each input needed, that allows the human
-	  to provide the necessary incormations.
+	  to provide the necessary incormations. Every Action class must also implement a "serverrun" method, that will be used by the 			      controller, when the user ( or the guest) tap on an action that need to communicate with the server.
 	  Some actions can also select the next activity that must be shown, or/and send informations to the server,
 	  in order to complete their job.
 	  \item [Userinterface]: is the component that directly interacts with the human.
@@ -42,10 +42,12 @@ The controller interacts with the clients through a network interface.
 	 which allows login/register. After a successful login, the guest controller will create a taxi driver/passenger controller,
 	 and substitutes himself with the new controller. The controller must manage requests coming from
 	 the client, taking informations from the ridesmanager, and eventually adding new objects to it.
+	 In order to execute client's requests, the controller must launch the "serverrun" method implemented in the corresponding action class
 	 In order to send and receive messages from the client, the controller communicates with a Servernetworkinterface.
 	 The controller also contains a User object, that allows him to retrieves information about the specific logged user.
 	 \item [Ridesmanager]: it is a singleton, that contains informations about the queues, the active rides. This corresponds 
 	 to the model in the MVC pattern and it is shared by all the controllers.
+	 The Ridesmanager must also implement some functions, that manage authomatic actions ( like the allocation of a taxi driver for a reservation, 10 minutes before the reservation occur).
 	 \item [User]: is the component that contains every possible information about a logged user, taken from the database.
 	 User is a part of the controller ( obviously only in case of passenger/taxi driver controller).
 	 User is split in taxi driver and passenger, cause there are some differences between the two kind of user.
