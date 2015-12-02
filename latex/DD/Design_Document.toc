@@ -12,21 +12,21 @@
 \contentsline {subsection}{\numberline {2.3.2}Application server}{6}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Master view}{7}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Database server}{7}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Runtime view}{7}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Sequence diagrams}{7}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}MVC diagrams}{7}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Component interfaces}{7}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Usage of third-party API}{7}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}In-house developed API}{7}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}Selected architectural styles and patterns}{9}{section.2.6}
-\contentsline {section}{\numberline {2.7}Other design decisions}{9}{section.2.7}
-\contentsline {chapter}{Algorithm Design}{15}{chapter*.4}
-\contentsline {section}{\numberline {3.1}Outsourced algorithms}{15}{section.3.1}
-\contentsline {section}{\numberline {3.2}In-house developed algorithms}{15}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Shared ride}{15}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Billing calculation}{16}{subsection.3.2.2}
-\contentsline {chapter}{User Interface Design}{17}{chapter*.5}
-\contentsline {section}{\numberline {4.1}Guidelines}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}Mockup}{17}{section.4.2}
-\contentsline {chapter}{Requirements Traceability}{24}{chapter*.6}
-\contentsline {chapter}{References}{30}{chapter*.7}
+\contentsline {section}{\numberline {2.4}Runtime view}{8}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Sequence diagrams}{8}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}MVC diagrams}{14}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Component interfaces}{16}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Usage of third-party API}{16}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}In-house developed API}{16}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}Selected architectural styles and patterns}{16}{section.2.6}
+\contentsline {section}{\numberline {2.7}Other design decisions}{17}{section.2.7}
+\contentsline {chapter}{Algorithm Design}{18}{chapter*.4}
+\contentsline {section}{\numberline {3.1}Outsourced algorithms}{18}{section.3.1}
+\contentsline {section}{\numberline {3.2}In-house developed algorithms}{18}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Shared ride}{18}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Billing calculation}{19}{subsection.3.2.2}
+\contentsline {chapter}{User Interface Design}{20}{chapter*.5}
+\contentsline {section}{\numberline {4.1}Guidelines}{20}{section.4.1}
+\contentsline {section}{\numberline {4.2}Mockup}{20}{section.4.2}
+\contentsline {chapter}{Requirements Traceability}{27}{chapter*.6}
+\contentsline {chapter}{References}{33}{chapter*.7}
