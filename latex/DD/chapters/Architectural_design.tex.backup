@@ -1,23 +1,27 @@
 \section{Overview}
 % gps required
-%TODO devo essere più preciso nella spiegazione delle funzioni dei vari componenti?
 %TODO aggiungere anche il numero di tier e qualcosa di più specifico sulla parte hardware?
+The system is composed by 3 tier: database, application server, presentation( client in case of users or guests, terminal in case of master view).
+The system will also include a load balancer.
 The distributed application is composed by a server side, and a client one.
 The client side interacts with users (or guests), showing the correct activity, and sends requests to the server side, when needed.
 The client side must be able to interact with the GPS.
 The server side manages requests coming from the client side, and notifies the users (or the guests) involved in the requests.
 The server side must also interact with a map system, in order to retrieve information about the route and the length of the ride.
-
 \section{High level components and their interaction}
-% aggiungere l'UML che ho fatto per il RASD? Sì da bravo
-%TODO: fare un parallelo con MVC, per chiarificare le cose <---@luca: <personalmente preferirei anch'io farlo qua, ma essendoci una
-								%   sessione dedicata ai pattern usati, forse è meglio inserirlo lì>
+In the following page you will see an UML diagram that show the main classes and their interaction. No methods are written in the diagram, but
+class's functions are described in the "Component view" section.
+\newpage
+\begin{center}
+\hspace*{-2cm}
+ \includegraphics[height=20cm, width=18cm]{UML/Diagramma1.png}
+\end{center}
+
 The client side is composed by a set of activities composed by one or more actions and displayed through the user interface.
 The client side has also an interface which manages the interaction with the server.
 The server side has a controller for each connected client, that manages the requests coming from the users (or guests), 
 taking data from the ride manager. It also sends messages to the clients in order to resolve the requests.
 The controller interacts with the clients through a network interface.
-%TODO: sequence diagram del lato server, che è interessante da mettere
 \section{Component view}
 	\subsection{Client}
 	 \begin{itemize}
@@ -28,7 +32,7 @@ The controller interacts with the clients through a network interface.
 	  %TODO: paragone con le activity in android
 	  \item [Action]: an action is something that a user can do, in order to interact with the application.
 	  If an action needs some data, the userinterface must display a field, for each input needed, that allows the human
-	  to provide the necessary incormations.
+	  to provide the necessary incormations. Every Action class must also implement a "serverrun" method, that will be used by the 			      controller, when the user ( or the guest) tap on an action that need to communicate with the server.
 	  Some actions can also select the next activity that must be shown, or/and send informations to the server,
 	  in order to complete their job.
 	  \item [Userinterface]: is the component that directly interacts with the human.
@@ -42,10 +46,12 @@ The controller interacts with the clients through a network interface.
 	 which allows login/register. After a successful login, the guest controller will create a taxi driver/passenger controller,
 	 and substitutes himself with the new controller. The controller must manage requests coming from
 	 the client, taking informations from the ridesmanager, and eventually adding new objects to it.
+	 In order to execute client's requests, the controller must launch the "serverrun" method implemented in the corresponding action class
 	 In order to send and receive messages from the client, the controller communicates with a Servernetworkinterface.
 	 The controller also contains a User object, that allows him to retrieves information about the specific logged user.
 	 \item [Ridesmanager]: it is a singleton, that contains informations about the queues, the active rides. This corresponds 
 	 to the model in the MVC pattern and it is shared by all the controllers.
+	 The Ridesmanager must also implement some functions, that manage authomatic actions ( like the allocation of a taxi driver for a reservation, 10 minutes before the reservation occur).
 	 \item [User]: is the component that contains every possible information about a logged user, taken from the database.
 	 User is a part of the controller ( obviously only in case of passenger/taxi driver controller).
 	 User is split in taxi driver and passenger, cause there are some differences between the two kind of user.
@@ -73,15 +79,60 @@ The controller interacts with the clients through a network interface.
 	The client will periodically send notification request to the server, that must query the database, send the list of notification,
 	and empty the unsent notification list.
 	%TODO facciamo dei backup periodici del database in un altro database posto in una zona "sicura"?
+\newpage
 \section{Runtime view}
-% sequence diagrams
-% sequence for: login
-% sequence for: registration
-% sequence for: taxi request
-% sequence for: refused call
-% sequence for: update taxi position
-% sequence for: shared taxi ride <server side>
-
+	\subsection{Sequence diagrams}
+\begin{figure} [h]
+\centering
+\includegraphics[scale=0.5]{Sequence Diagrams/successfully_registration.png}
+\caption{ Registration }
+\end{figure}
+\newpage
+\begin{figure} [h]
+\centering
+\includegraphics[scale=0.5]{Sequence Diagrams/login.png}
+\caption{Login }
+\end{figure}
+\newpage
+\begin{figure} [h]
+\centering
+\includegraphics[scale=0.5]{Sequence Diagrams/successfully_taxi_request.png}
+\caption{Taxi request }
+\end{figure}
+\newpage
+\begin{figure} [h]
+\centering
+\includegraphics[scale=0.5]{Sequence Diagrams/Shared_ride.png}
+\caption{Request of a shared ride }
+\end{figure}
+\newpage
+\begin{figure} [h]
+\centering
+\includegraphics[scale=0.5]{Sequence Diagrams/refuse_call.png}
+\caption{Refuse incoming call }
+\end{figure}
+\newpage
+\begin{figure} [h]
+\centering
+\includegraphics[scale=0.5]{Sequence Diagrams/change_taxi_position.png}
+\caption{Change taxi position }
+\end{figure}
+\newpage
+	\subsection{MVC diagrams}
+\begin{figure} [h]
+\centering
+\includegraphics[scale=0.5]{Sequence Diagrams/MVC_reserve_taxi.png}
+\caption{Reserve a taxi }
+\end{figure}
+\newpage
+\begin{figure} [h]
+\centering
+\includegraphics[scale=0.5]{Sequence Diagrams/MVC_Shared_ride.png}
+\caption{Shared ride request }
+\end{figure}
+\newpage
+%\hline %This was causing problems. I removed it, as I do for every problem blocking my righteous path
+\newpage
 \section{Component interfaces}
 
 \subsection{Usage of third-party API}
@@ -127,18 +178,20 @@ The application follows the MVC (Model-View-Controller) pattern.
 The model is entirely contained in the server side, and it's composed by a singleton class (Ridesmanager), that contains 
 informations shared by all the controllers, and a user class (User), that contains informations about a specific user, and is
 accessible only by the controller assigned to the corresponding user.
-Furthermore, the view is completely contained in the client side; it is composed by the " userinterface" class, that must display
+Furthermore, the view is completely contained in the client side; it is composed by the ``userinterface'' class, that must display
 the activity's objects.
 The controller is mainly represented by the homonym class, in the server side. There are few controller's functions , that don't 
 require data contained in the server, implemented in the action class.
 
 \section{Other design decisions}
-The server side structure is composed as shown in the picture below:
-%TODO aggiungere lo schema
+The server side structure is composed as shown in Figure \ref{fig:hwarch}:
 The load balancer is needed to equally divides requests coming from different clients, in order to increase performances.
-Different application servers must be placed in different physical zones, in order to react to possibly partial blackout and other
-local physical accidents.
-For the client side there's only one constraint, the obbligation for the taxi driver to use a device with a working GPS.
-% hw architecture (see diagram)
-% distributed application servers (not in the same physical local network) -> abstraction -> just like big G
-% we exclude a priori the possibility of a water-powered machine
+%Different application servers must be placed in different physical zones, in order to react to possibly partial blackout and other
+%local physical accidents.
+For the client side there's only one constraint, the obligation for the taxi driver to use a device with a working GPS.
+
+\begin{figure} [h]
+  \centering
+  \includegraphics[scale=0.35]{../../architecture/architecture.png}
+\caption{Server architecture \label{fig:hwarch}}
+\end{figure}

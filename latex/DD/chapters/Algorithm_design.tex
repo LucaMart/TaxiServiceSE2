@@ -5,9 +5,7 @@
 % --> "vedi Component interfaces"
 
 \section{In-house developed algorithms}
-% sviluppati in-house:
-% gestione delle *shared ride*
-% * assegnamento passeggeri
+
 \subsection{Shared ride}
 The following pseudocode describes how share taxi request should be handled
 \begin{algorithmic}
@@ -70,8 +68,6 @@ should be encapsulated inside taxi.sendRequest(), rather that the high level get
 
 \end{algorithmic}
 
-% * billing passeggeri (suddivisione dei costi)
-%   -> costo per passaggero: funzione della distanza
 \subsection{Billing calculation}
 The following formula describes how the system should calculate the amount of money each passenger
 has to pay after a shared ride (to put it simply, how to ``split the bill'') % Biiiilll!
@@ -83,8 +79,3 @@ has to pay after a shared ride (to put it simply, how to ``split the bill'') % B
  B_{i} &= \frac{D_{i}}{D} * C |_{\substack{\text{rounded to the nearest €0.1 }}} \\
  T &= \sum_{i=0}^{n} B_{i} = \text{Total cost, calculated as the sum of the n partial costs}
 \end{align*}
-
-
-% la gestione delle code è <salvi>banale</salvi>
-
-

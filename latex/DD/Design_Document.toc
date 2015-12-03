@@ -2,31 +2,31 @@
 \contentsline {section}{\numberline {1.1}Purpose}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}Scope}{3}{section.1.2}
 \contentsline {section}{\numberline {1.3}Definition, Acronyms, Abbreviation}{3}{section.1.3}
-\contentsline {section}{\numberline {1.4}Reference Documents}{3}{section.1.4}
-\contentsline {section}{\numberline {1.5}Document Structure}{3}{section.1.5}
+\contentsline {section}{\numberline {1.4}Reference Documents}{4}{section.1.4}
+\contentsline {section}{\numberline {1.5}Document Structure}{4}{section.1.5}
 \contentsline {chapter}{Architectural Design}{5}{chapter*.3}
 \contentsline {section}{\numberline {2.1}Overview}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}High level components and their interaction}{5}{section.2.2}
-\contentsline {section}{\numberline {2.3}Component view}{5}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Client}{5}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Application server}{6}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Master view}{7}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Database server}{7}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Runtime view}{8}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Sequence diagrams}{8}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}MVC diagrams}{14}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Component interfaces}{16}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Usage of third-party API}{16}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}In-house developed API}{16}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}Selected architectural styles and patterns}{16}{section.2.6}
-\contentsline {section}{\numberline {2.7}Other design decisions}{17}{section.2.7}
-\contentsline {chapter}{Algorithm Design}{18}{chapter*.4}
-\contentsline {section}{\numberline {3.1}Outsourced algorithms}{18}{section.3.1}
-\contentsline {section}{\numberline {3.2}In-house developed algorithms}{18}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Shared ride}{18}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Billing calculation}{19}{subsection.3.2.2}
-\contentsline {chapter}{User Interface Design}{20}{chapter*.5}
-\contentsline {section}{\numberline {4.1}Guidelines}{20}{section.4.1}
-\contentsline {section}{\numberline {4.2}Mockup}{20}{section.4.2}
-\contentsline {chapter}{Requirements Traceability}{27}{chapter*.6}
-\contentsline {chapter}{References}{33}{chapter*.7}
+\contentsline {section}{\numberline {2.3}Component view}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Client}{7}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Application server}{7}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Master view}{8}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Database server}{9}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Runtime view}{10}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Sequence diagrams}{10}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}MVC diagrams}{16}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Component interfaces}{18}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Usage of third-party API}{18}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}In-house developed API}{18}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}Selected architectural styles and patterns}{18}{section.2.6}
+\contentsline {section}{\numberline {2.7}Other design decisions}{19}{section.2.7}
+\contentsline {chapter}{Algorithm Design}{20}{chapter*.4}
+\contentsline {section}{\numberline {3.1}Outsourced algorithms}{20}{section.3.1}
+\contentsline {section}{\numberline {3.2}In-house developed algorithms}{20}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Shared ride}{20}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Billing calculation}{21}{subsection.3.2.2}
+\contentsline {chapter}{User Interface Design}{22}{chapter*.5}
+\contentsline {section}{\numberline {4.1}Guidelines}{22}{section.4.1}
+\contentsline {section}{\numberline {4.2}Mockup}{22}{section.4.2}
+\contentsline {chapter}{Requirements Traceability}{29}{chapter*.6}
+\contentsline {chapter}{References}{35}{chapter*.7}
