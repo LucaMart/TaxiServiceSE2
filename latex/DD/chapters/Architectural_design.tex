@@ -71,8 +71,6 @@ The controller interacts with the clients through a network interface.
 	  \item [Controller:] interprets the cli commands, and invokes the relative methods on the specific server classes;
 	  the outcome of the operation is returned to the cli.
 	\end{itemize}
-	% In teoria basta una semplice interfaccia testuale, più un controller che interpreta gli input e chiama i
-	% dovuti metodi sul Server
 	\subsection{Database server}
 	The database server will contain all informations about users, and, for each user, the list of unsent notifications.
 	The client will periodically send a notification request to the server, that must query the database, send the list of notification,
