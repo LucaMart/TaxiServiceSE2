@@ -3,6 +3,18 @@
 % non reinventare la ruota
 % * usiamo servizi esistenti per il mapping / pathfinding
 % --> "vedi Component interfaces"
+Routing and path-finding are critical components of our infrastructure; therefore, we have determined
+that the best approach would be to resort to domain-specific, well tested third party solutions.
+The developer should implement an adapter to the mapping service, since some experimentation will
+be required in order to find the solution which best suits our specific needs. For
+the same reason, we do not push the choice of a specific routing API; however, some criteria
+have to be satisfied:
+\begin{itemize}
+ \item The API must answer our request withing a reasonable time (doesn't violate the timing constraints specified in RASD)
+ \item The API must take advantage of updated traffic information
+\end{itemize}
+Some obvious API choices would be Google's and MapQuest's
+
 
 \section{In-house developed algorithms}
 

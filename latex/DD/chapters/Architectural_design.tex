@@ -137,8 +137,8 @@ In this section we show the interaction of the components in terms of the MVC pa
 \section{Component interfaces}
 
 \subsection{Usage of third-party API}
-The passenger controller class must interface with Google map sevice, using its API, to get the shortest path, the ETA and the 
-kilometers of the ride.
+The passenger controller class must implement an adapter to a third-part mapping service (see ``Outsourced algorithms''), in order
+to retrieve informations such as: the route to be followed by the taxi, the route's total length, the taxi ETA. 
 
 \subsection{In-house developed API}
 The system must expose a set of public web based API. To access the API, an user must register first, using an unique key
