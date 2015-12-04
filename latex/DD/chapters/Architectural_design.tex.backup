@@ -71,8 +71,6 @@ The controller interacts with the clients through a network interface.
 	  \item [Controller:] interprets the cli commands, and invokes the relative methods on the specific server classes;
 	  the outcome of the operation is returned to the cli.
 	\end{itemize}
-	% In teoria basta una semplice interfaccia testuale, più un controller che interpreta gli input e chiama i
-	% dovuti metodi sul Server
 	\subsection{Database server}
 	The database server will contain all informations about users, and, for each user, the list of unsent notifications.
 	The client will periodically send a notification request to the server, that must query the database, send the list of notification,
@@ -81,6 +79,7 @@ The controller interacts with the clients through a network interface.
 \newpage
 \section{Runtime view}
 	\subsection{Sequence diagrams}
+In this section we show how the components of our application interact
 \begin{figure} [h]
 \centering
 \includegraphics[scale=0.5]{Sequence Diagrams/successfully_registration.png}
@@ -118,6 +117,7 @@ The controller interacts with the clients through a network interface.
 \end{figure}
 \newpage
 	\subsection{MVC diagrams}
+In this section we show the interaction of the components in terms of the MVC pattern. 
 \begin{figure} [h]
 \centering
 \includegraphics[scale=0.4]{Sequence Diagrams/MVC_reserve_taxi.png}
@@ -135,8 +135,8 @@ The controller interacts with the clients through a network interface.
 \section{Component interfaces}
 
 \subsection{Usage of third-party API}
-The passenger controller class must interface with Google map sevice, using its API, to get the shortest path, the ETA and the 
-kilometers of the ride.
+The passenger controller class must implement an adapter to a third-part mapping service (see ``Outsourced algorithms''), in order
+to retrieve informations such as: the route to be followed by the taxi, the route's total length, the taxi ETA. 
 
 \subsection{In-house developed API}
 The system must expose a set of public web based API. To access the API, an user must register first, using an unique key
@@ -181,8 +181,8 @@ require data contained in the server, implemented in the action class.
 
 \section{Other design decisions}
 The server side structure is composed as shown in Figure \ref{fig:hwarch}:
-The load balancer is needed to equally divides requests coming from different clients, in order to increase performances.
-For the client side there's only one constraint, the obligation for the taxi driver to use a device with a working GPS.
+The load balancer is needed to equally divide requests coming from different clients, in order to increase performances.
+For the client side there's only one constraint, the obligation, for the taxi driver, to use a device with a working GPS.
 
 \begin{figure} [h]
   \centering

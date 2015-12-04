@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.16)  3 DEC 2015 15:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.19)  4 DEC 2015 13:02
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **RASD.tex
 (./RASD.tex
@@ -953,7 +953,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 62.
 Here is how much of TeX's memory you used:
  7490 strings out of 493054
  107960 string characters out of 6140585
- 324908 words of memory out of 5000000
+ 324907 words of memory out of 5000000
  10708 multiletter control sequences out of 15000+600000
  10982 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -967,7 +967,7 @@ hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmti10.pfb>
-Output written on RASD.pdf (50 pages, 2683177 bytes).
+Output written on RASD.pdf (50 pages, 2683132 bytes).
 PDF statistics:
  677 PDF objects out of 1000 (max. 8388607)
  553 compressed objects within 6 object streams

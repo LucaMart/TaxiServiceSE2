@@ -75,6 +75,13 @@ The controller interacts with the clients through a network interface.
 	The database server will contain all informations about users, and, for each user, the list of unsent notifications.
 	The client will periodically send a notification request to the server, that must query the database, send the list of notification,
 	and empty the unsent notification list.
+	The database server requires regular backups. Such backups will be stored:
+	\begin{itemize}
+	 \item On a local backup server, situated in a different location from the main production machines
+	 \item On an enterprise cloud storage solution
+	\end{itemize}
+	The backup operation will be carried on during the ``maintenance/update'' window specified in the RASD.
+
 	%TODO facciamo dei backup periodici del database in un altro database posto in una zona "sicura"?
 \newpage
 \section{Runtime view}

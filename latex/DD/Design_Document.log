@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.19)  4 DEC 2015 12:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.19)  4 DEC 2015 13:00
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -682,14 +682,14 @@ Overfull \hbox (97.68973pt too wide) in paragraph at lines 14--16
 File: Sequence Diagrams/successfully_registration.png Graphic file (type png)
 <use Sequence Diagrams/successfully_registration.png>
 Package pdftex.def Info: Sequence Diagrams/successfully_registration.png used o
-n input line 87.
+n input line 92.
 (pdftex.def)             Requested size: 349.30414pt x 299.11676pt.
  [10 <./Sequence Diagrams/successfully_registration.png>]
 <Sequence Diagrams/login.png, id=227, 698.61pt x 598.235pt>
 File: Sequence Diagrams/login.png Graphic file (type png)
 
 <use Sequence Diagrams/login.png>
-Package pdftex.def Info: Sequence Diagrams/login.png used on input line 93.
+Package pdftex.def Info: Sequence Diagrams/login.png used on input line 98.
 (pdftex.def)             Requested size: 349.30414pt x 299.11676pt.
  [11 <./Sequence Diagrams/login.png>]
 <Sequence Diagrams/successfully_taxi_request.png, id=234, 925.4575pt x 598.235p
@@ -697,10 +697,10 @@ t>
 File: Sequence Diagrams/successfully_taxi_request.png Graphic file (type png)
  <use Sequence Diagrams/successfully_taxi_request.png>
 Package pdftex.def Info: Sequence Diagrams/successfully_taxi_request.png used o
-n input line 99.
+n input line 104.
 (pdftex.def)             Requested size: 462.72762pt x 299.11676pt.
 
-Overfull \hbox (102.72762pt too wide) in paragraph at lines 99--100
+Overfull \hbox (102.72762pt too wide) in paragraph at lines 104--105
  [][] 
  []
 
@@ -710,10 +710,10 @@ File: Sequence Diagrams/Shared_ride.png Graphic file (type png)
 
 <use Sequence Diagrams/Shared_ride.png>
 Package pdftex.def Info: Sequence Diagrams/Shared_ride.png used on input line 1
-05.
+10.
 (pdftex.def)             Requested size: 410.53275pt x 241.90315pt.
 
-Overfull \hbox (50.53275pt too wide) in paragraph at lines 105--106
+Overfull \hbox (50.53275pt too wide) in paragraph at lines 110--111
  [][] 
  []
 
@@ -723,7 +723,7 @@ File: Sequence Diagrams/refuse_call.png Graphic file (type png)
 
 <use Sequence Diagrams/refuse_call.png>
 Package pdftex.def Info: Sequence Diagrams/refuse_call.png used on input line 1
-11.
+16.
 (pdftex.def)             Requested size: 349.30414pt x 241.90315pt.
  [14 <./Sequence Diagrams/refuse_call.png>]
 <Sequence Diagrams/change_taxi_position.png, id=256, 821.0675pt x 483.8075pt>
@@ -731,10 +731,10 @@ File: Sequence Diagrams/change_taxi_position.png Graphic file (type png)
 
 <use Sequence Diagrams/change_taxi_position.png>
 Package pdftex.def Info: Sequence Diagrams/change_taxi_position.png used on inp
-ut line 117.
+ut line 122.
 (pdftex.def)             Requested size: 410.53275pt x 241.90315pt.
 
-Overfull \hbox (50.53275pt too wide) in paragraph at lines 117--118
+Overfull \hbox (50.53275pt too wide) in paragraph at lines 122--123
  [][] 
  []
 
@@ -744,10 +744,10 @@ File: Sequence Diagrams/MVC_reserve_taxi.png Graphic file (type png)
 
 <use Sequence Diagrams/MVC_reserve_taxi.png>
 Package pdftex.def Info: Sequence Diagrams/MVC_reserve_taxi.png used on input l
-ine 125.
+ine 130.
 (pdftex.def)             Requested size: 437.62724pt x 235.27483pt.
 
-Overfull \hbox (77.62724pt too wide) in paragraph at lines 125--126
+Overfull \hbox (77.62724pt too wide) in paragraph at lines 130--131
  [][] 
  []
 
@@ -757,21 +757,21 @@ File: Sequence Diagrams/MVC_Shared_ride.png Graphic file (type png)
 
 <use Sequence Diagrams/MVC_Shared_ride.png>
 Package pdftex.def Info: Sequence Diagrams/MVC_Shared_ride.png used on input li
-ne 131.
+ne 136.
 (pdftex.def)             Requested size: 447.16953pt x 294.09802pt.
 
-Overfull \hbox (87.16953pt too wide) in paragraph at lines 131--132
+Overfull \hbox (87.16953pt too wide) in paragraph at lines 136--137
  [][] 
  []
 
 [17 <./Sequence Diagrams/MVC_Shared_ride.png>]
-Overfull \hbox (42.40814pt too wide) in paragraph at lines 162--162
+Overfull \hbox (42.40814pt too wide) in paragraph at lines 167--167
 [] \OT1/cmtt/m/n/10.95 https://api.mytaxiservice.com/request-ride/nonshared/<pa
 ssengername>/[] 
  []
 
 
-Overfull \hbox (13.6647pt too wide) in paragraph at lines 162--162
+Overfull \hbox (13.6647pt too wide) in paragraph at lines 167--167
 [] \OT1/cmtt/m/n/10.95 https://api.mytaxiservice.com/list-calls/active/<passeng
 ername>/[] 
  []
@@ -781,10 +781,10 @@ File: ../../architecture/architecture.png Graphic file (type png)
 
 <use ../../architecture/architecture.png>
 Package pdftex.def Info: ../../architecture/architecture.png used on input line
- 191.
+ 196.
 (pdftex.def)             Requested size: 425.0945pt x 263.83965pt.
 
-Overfull \hbox (65.0945pt too wide) in paragraph at lines 191--192
+Overfull \hbox (65.0945pt too wide) in paragraph at lines 196--197
  [][] 
  []
 
@@ -1148,7 +1148,7 @@ s/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></
 usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Design_Document.pdf (37 pages, 1306046 bytes).
+Output written on Design_Document.pdf (37 pages, 1306419 bytes).
 PDF statistics:
  456 PDF objects out of 1000 (max. 8388607)
  367 compressed objects within 4 object streams
