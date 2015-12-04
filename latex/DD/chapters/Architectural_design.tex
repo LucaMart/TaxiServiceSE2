@@ -81,6 +81,7 @@ The controller interacts with the clients through a network interface.
 \newpage
 \section{Runtime view}
 	\subsection{Sequence diagrams}
+In this section we show how the components of our application interact
 \begin{figure} [h]
 \centering
 \includegraphics[scale=0.5]{Sequence Diagrams/successfully_registration.png}
@@ -118,6 +119,7 @@ The controller interacts with the clients through a network interface.
 \end{figure}
 \newpage
 	\subsection{MVC diagrams}
+In this section we show the interaction of the components in terms of the MVC pattern. 
 \begin{figure} [h]
 \centering
 \includegraphics[scale=0.4]{Sequence Diagrams/MVC_reserve_taxi.png}
@@ -181,7 +183,7 @@ require data contained in the server, implemented in the action class.
 
 \section{Other design decisions}
 The server side structure is composed as shown in Figure \ref{fig:hwarch}:
-The load balancer is needed to equally divides requests coming from different clients, in order to increase performances.
+The load balancer is needed to equally divide requests coming from different clients, in order to increase performances.
 For the client side there's only one constraint, the obligation, for the taxi driver, to use a device with a working GPS.
 
 \begin{figure} [h]
