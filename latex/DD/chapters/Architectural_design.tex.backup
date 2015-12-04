@@ -1,6 +1,4 @@
 \section{Overview}
-% gps required
-%TODO aggiungere anche il numero di tier e qualcosa di più specifico sulla parte hardware?
 The system is composed by 3 tier: database, application server, presentation( client in case of users or guests, terminal in case of master view).
 The system will also include a load balancer.
 The distributed application is composed by a server side, and a client one.
@@ -27,14 +25,13 @@ The controller interacts with the clients through a network interface.
 	 \begin{itemize}
 	  \item [Activity]: an activity is a set of messages and actions, that the application must display to the users.
 	  No more than one activity can be displayed at the same time;
-	  The default activity is the "guest home" activity. Each time the user taps a button, the application must execute
+	  the default activity is the "guest home" activity. Each time the user taps a button, the application must perform
 	  the related action, and select the next activity.
-	  %TODO: paragone con le activity in android
 	  \item [Action]: an action is something that a user can do, in order to interact with the application.
-	  If an action needs some data, the userinterface must display a field, for each input needed, that allows the human
-	  to provide the necessary incormations. Every Action class must also implement a "serverrun" method, that will be used by the 			      controller, when the user ( or the guest) tap on an action that need to communicate with the server.
-	  Some actions can also select the next activity that must be shown, or/and send informations to the server,
-	  in order to complete their job.
+	  If an action needs some data, the Userinterface must display a field, for each input needed, that allows the human
+	  to provide the necessary incormations. Every Action class must also implement a "serverrun" method, that will be used by
+	  the controller,in case of a user ( or a guest) taps on an action that need to communicates with the server. Some actions 
+	  can also select the next activity that must be shown, or/and send informations to the server, in order to complete their job.
 	  \item [Userinterface]: is the component that directly interacts with the human.
 	  It contains the activity that must be displayed, and read the components of the activity, in order to display them.
 	  It also launches the actions selected by the human.
@@ -43,15 +40,16 @@ The controller interacts with the clients through a network interface.
 	\subsection{Application server}
 	\begin{itemize}
 	 \item [Controller]: we have one controller for each client connected; initially it will be a guest controller,
-	 which allows login/register. After a successful login, the guest controller will create a taxi driver/passenger controller,
+	 which allows login/register. After a successful login, the guest controller will create a taxi driver/passenger controller (and will add the corresponding User object),
 	 and substitutes himself with the new controller. The controller must manage requests coming from
 	 the client, taking informations from the ridesmanager, and eventually adding new objects to it.
-	 In order to execute client's requests, the controller must launch the "serverrun" method implemented in the corresponding action class
+	 In order to execute client's requests, the controller must launch the "serverrun" method implemented in the corresponding action class.
 	 In order to send and receive messages from the client, the controller communicates with a Servernetworkinterface.
 	 The controller also contains a User object, that allows him to retrieves information about the specific logged user.
 	 \item [Ridesmanager]: it is a singleton, that contains informations about the queues, the active rides. This corresponds 
 	 to the model in the MVC pattern and it is shared by all the controllers.
-	 The Ridesmanager must also implement some functions, that manage authomatic actions ( like the allocation of a taxi driver for a reservation, 10 minutes before the reservation occur).
+	 The Ridesmanager must also implement some functions, that manage authomatic actions ( like the allocation of a taxi driver for a reservation,
+	 10 minutes before the reservation occur).
 	 \item [User]: is the component that contains every possible information about a logged user, taken from the database.
 	 User is a part of the controller ( obviously only in case of passenger/taxi driver controller).
 	 User is split in taxi driver and passenger, cause there are some differences between the two kind of user.
@@ -59,7 +57,8 @@ The controller interacts with the clients through a network interface.
 	 \item[Ride]: this class allows to create object, containing all information about a specific ride. 
 	 As soon as a passenger makes a taxi requests, the controller creates a ride containing information recevied from the client.
 	 In case of shared ride, a ride object will be created and added to the corresponding sharedride ones.
-	 \item[Sharedride]: the sharedride object contains the set of the ride object, the total cost of the ride and the route.
+	 A Ride object contains also information about users, that allows him to find the correct user on the database, in case it need to send notification.
+	 \item[Sharedride]: the sharedride object contains a set of the ride object, the total cost of the ride and the route.
 	 When a new passenger is added to the shared ride, the controller will adjust the path, the total cost, and the cost of each
 	 rides object, contained in the current sharedride.
 	 \item[Servernetworkinterface]: is the component that allows the interaction with the client side. It converts messages coming from
@@ -76,7 +75,7 @@ The controller interacts with the clients through a network interface.
 	% dovuti metodi sul Server
 	\subsection{Database server}
 	The database server will contain all informations about users, and, for each user, the list of unsent notifications.
-	The client will periodically send notification request to the server, that must query the database, send the list of notification,
+	The client will periodically send a notification request to the server, that must query the database, send the list of notification,
 	and empty the unsent notification list.
 	%TODO facciamo dei backup periodici del database in un altro database posto in una zona "sicura"?
 \newpage
@@ -121,7 +120,7 @@ The controller interacts with the clients through a network interface.
 	\subsection{MVC diagrams}
 \begin{figure} [h]
 \centering
-\includegraphics[scale=0.5]{Sequence Diagrams/MVC_reserve_taxi.png}
+\includegraphics[scale=0.4]{Sequence Diagrams/MVC_reserve_taxi.png}
 \caption{Reserve a taxi }
 \end{figure}
 \newpage
@@ -136,7 +135,7 @@ The controller interacts with the clients through a network interface.
 \section{Component interfaces}
 
 \subsection{Usage of third-party API}
-The passenger controller class must interface with Google map sevice, using its API, to get the shortest path, the Eta to be sent to the user and the 
+The passenger controller class must interface with Google map sevice, using its API, to get the shortest path, the ETA and the 
 kilometers of the ride.
 
 \subsection{In-house developed API}
@@ -170,15 +169,12 @@ A sample response (without the HTTP headers)
 }
 \end{verbatim}
 
-% socket?
-% io (Il Vate(r)), suggerei di usare JSON per incapsulare i messaggi client-server, dato chè è il metodo più
-% semplice e anche popolare per questi usi
 \section{Selected architectural styles and patterns}
 The application follows the MVC (Model-View-Controller) pattern.
 The model is entirely contained in the server side, and it's composed by a singleton class (Ridesmanager), that contains 
 informations shared by all the controllers, and a user class (User), that contains informations about a specific user, and is
 accessible only by the controller assigned to the corresponding user.
-Furthermore, the view is completely contained in the client side; it is composed by the ``userinterface'' class, that must display
+Furthermore, the view is completely contained in the client side; it is composed by the "Userinterface" class, that must display
 the activity's objects.
 The controller is mainly represented by the homonym class, in the server side. There are few controller's functions , that don't 
 require data contained in the server, implemented in the action class.
@@ -186,8 +182,6 @@ require data contained in the server, implemented in the action class.
 \section{Other design decisions}
 The server side structure is composed as shown in Figure \ref{fig:hwarch}:
 The load balancer is needed to equally divides requests coming from different clients, in order to increase performances.
-%Different application servers must be placed in different physical zones, in order to react to possibly partial blackout and other
-%local physical accidents.
 For the client side there's only one constraint, the obligation for the taxi driver to use a device with a working GPS.
 
 \begin{figure} [h]
