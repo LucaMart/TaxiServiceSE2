@@ -1,0 +1,142 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.19)  7 DEC 2015 14:24
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"latex snippets/pseudocode_getAvailableTaxi.tex"
+(./latex snippets/pseudocode_getAvailableTaxi.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 79 languages loaded.
+(/usr/share/texmf-dist/tex/latex/standalone/standalone.cls
+Document Class: standalone 2015/07/15 v1.2 Class to compile TeX sub-files stand
+alone
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks14
+\XKV@tempa@toks=\toks15
+
+(/usr/share/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count79
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\sa@internal=\count80
+\c@sapage=\count81
+
+(/usr/share/texmf-dist/tex/latex/standalone/standalone.cfg
+File: standalone.cfg 2015/07/15 v1.2 Default configuration file for 'standalone
+' class
+)
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count82
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@subparagraph=\count87
+\c@figure=\count88
+\c@table=\count89
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-dist/tex/latex/preview/preview.sty
+Package: preview 2010/02/14 11.88 (AUCTeX/preview-latex)
+
+(/usr/share/texmf-dist/tex/latex/preview/prtightpage.def
+\PreviewBorder=\dimen103
+)
+\pr@snippet=\count90
+\pr@box=\box26
+\pr@output=\toks16
+))
+(./custom_style/algpseudocode.sty
+
+LaTeX Warning: You have requested package `custom_style/algpseudocode',
+               but the package provides `algpseudocode'.
+
+Package: algpseudocode 
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(./custom_style/algorithmicx.sty
+
+LaTeX Warning: You have requested package `custom_style/algorithmicx',
+               but the package provides `algorithmicx'.
+
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count91
+\c@ALG@rem=\count92
+\c@ALG@nested=\count93
+\ALG@tlm=\skip43
+\ALG@thistlm=\skip44
+\c@ALG@Lnr=\count94
+\c@ALG@blocknr=\count95
+\c@ALG@storecount=\count96
+\c@ALG@tmpcounter=\count97
+\ALG@tmplength=\skip45
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+)
+No file pseudocode_getAvailableTaxi.aux.
+\openout1 = `pseudocode_getAvailableTaxi.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+Preview: Fontsize 10pt
+Preview: PDFoutput 1
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 8.
+Preview: Tightpage 0 0 0 0
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(latex snippets//pseudocode_getAvailableTaxi.aux) ) 
+Here is how much of TeX's memory you used:
+ 1339 strings out of 493054
+ 19777 string characters out of 6140585
+ 73595 words of memory out of 5000000
+ 4899 multiletter control sequences out of 15000+600000
+ 4249 words of font info for 16 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 34i,2n,56p,306b,206s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "latex snippets//pseudocode_getAvailableTaxi.pdf" (1 page, 54
+498 bytes).
+PDF statistics:
+ 28 PDF objects out of 1000 (max. 8388607)
+ 19 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

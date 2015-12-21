@@ -1,0 +1,20 @@
+\documentclass[preview]{standalone}
+\usepackage{custom_style/algpseudocode}
+\begin{document}
+\begin{algorithmic}
+ \Function {findSharedRideAvailable} {fromZone, toZone, timeout}
+  \ForAll{ride in Rides}
+    \If {ride is shared}
+      \If {$ride.fromZone == fromZone$ AND $ride.toZone == toZone$}
+	\If {not ride.isFull() AND not ride.isReserved()}
+	  \If {$now() - ride.allocationTime < timeout$}
+	    \State \Return ride
+	  \EndIf
+	\EndIf
+      \EndIf
+    \EndIf
+  \EndFor
+  \State \Return empty set
+ \EndFunction
+\end{algorithmic}
+\end{document} 

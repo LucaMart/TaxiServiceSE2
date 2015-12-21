@@ -1,0 +1,12 @@
+\documentclass[preview]{standalone}
+\usepackage{amsmath}
+\begin{document}
+\begin{align*}
+ B_{i} &= \text{Amount paid by the i-th passenger} \\
+ D_{i} &= \text{Distance traveled by the i-th passenger} \\
+ D &= \text{Total traveled distance} \\
+ C &= \text{Total amount calculated by the taximeter} \\
+ B_{i} &= \frac{D_{i}}{D} * C |_{\substack{\text{rounded to the nearest €0.1 }}} \\
+ T &= \sum_{i=0}^{n} B_{i} = \text{Total cost, calculated as the sum of the n partial costs}
+\end{align*}
+\end{document}

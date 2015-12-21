@@ -1,0 +1,20 @@
+\documentclass[preview]{standalone}
+\usepackage{custom_style/algpseudocode}
+\begin{document}
+\begin{algorithmic}
+\Function {getAvailableTaxi} {fromZone}
+\ForAll {queue in Queues}
+  \If { queue.getZone()==fromZone AND not queue.isEmpty()}
+       \State $ taxi \gets queue.getFirstTaxi() $
+     \If {taxi.sendRequest() == SUCCESS}
+         \State manage queue
+         \Return taxi
+     \Else 
+         \State manage queue and retry
+    \EndIf
+\EndIf
+\EndFor
+\EndFunction
+\end{algorithmic}
+\end{document} 
+ 

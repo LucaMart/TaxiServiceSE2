@@ -1,0 +1,19 @@
+\documentclass[preview]{standalone}
+\usepackage{custom_style/algpseudocode}
+\begin{document}
+\begin{algorithmic}
+ \Function {sharedRequest} {passenger}
+  \State $ shared \gets findSharedRideAvailable(fromZone, toZone, timeout) $
+  \If {exists shared}
+    \State $ shared.addReservation() $
+  \Else
+    \State $ taxi \gets getAvailableTaxi(fromZone) $
+    \If {exists $ taxi $}
+      \State create new shared ride
+    \Else
+      \State error message
+    \EndIf
+  \EndIf
+ \EndFunction
+\end{algorithmic}
+\end{document} 
