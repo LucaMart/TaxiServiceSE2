@@ -1,0 +1,15 @@
+Punto:  Passed      notes
+
+5       yes         human-eye inspection (guarda cos'è FilterNode, forse nextElement() è appropriato )
+
+10      yes         K&R style, matched by ^([^{]+)\s+{
+                    Allman style, matched by ^([^{]+)\n\s*{   (no matches found)
+
+11      yes         human-eye inspection
+
+19      yes         human-eye inspection  -  very good, no commented-out code at all
+
+22      pending
+
+23      pending
+
