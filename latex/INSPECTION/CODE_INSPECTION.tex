@@ -1,0 +1,49 @@
+\documentclass[a4paper,11pt,fleqn]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{rotating}
+\usepackage[hidelinks]{hyperref}
+\usepackage[space]{grffile}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{longtable}
+% Title Page
+\title{\textbf{Code Inspection}}
+\author{
+  Michele Madaschi
+  \and
+  Lidia Moioli
+  \and
+  Luca Martinazzi  % last but not least
+}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter*{Table of content}
+\addcontentsline{toc}{chapter}{Table of content}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+\input{chapters/Table_of_content.tex}
+ 
+\chapter*{Classes to be inspected}
+\addcontentsline{toc}{chapter}{Classes to be inspected}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+\input{chapters/Classes.tex}
+
+\chapter*{Issues and problems found}
+\addcontentsline{toc}{chapter}{Issues and problems found}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+\input{chapters/Issues.tex}
+
+\chapter*{Other problems}
+\addcontentsline{toc}{chapter}{Other problems}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+\input{chapters/other.tex}
+
+\end{document}    
