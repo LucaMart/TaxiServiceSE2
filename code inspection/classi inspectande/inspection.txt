@@ -16,6 +16,9 @@ which include class variable/attributes declarations, constructors, and methods)
 --> righe 269,272,279,287,297,306,314,327,334,344,354,363,373,380,390,393,396,399,402,405,408,411,414,417,420,423,427,437,443,471.
 
 Where practical, line length does not exceed 80 characters.--> REPORT MASS ABUSE
+    ^^^^^ [michele] OBJECTION! secondo me il punto 14 li salva qui, dato che:
+        1) il limite 80 oggi (20XX) non si usa più tanto
+        2) in java non sarebbe pratico, visto la verbosità dei metodi
 
 17: A new statement is aligned with the beginning of the expression at 
 the same level as the previous line.--> report line 142?
