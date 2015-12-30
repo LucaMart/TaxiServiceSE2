@@ -11,5 +11,25 @@ Punto:  Passed      notes
 
 22      pending
 
-23      pending
+23      partial     human-eye inspection  -  thrown exceptions are not indicated
+                    come back once I have a better understanding of the whole code
+
+30      pending
+
+35      pending     mind reading
+
+36      yes (4now)  endElem-ok addDescriptor-ok writeDescriptor-okish
+                    discovered 面白いこと: no check that webBundleDesc really is type WebBundleDescriptor
+                    Vector appListeners <<< see? missing <mytype> ( like "Vector<String> stuff" )
+                    
+42      yes         human-eye
+
+43      no          look here: "logger.fine("Adding Login Config Descriptor" + newDescriptor);"
+                                                                           ^ no space after r
+
+44      yes         però c'è quel modo di usare gli iterator che non mi convince...
+
+47      yes         no divisions => no possible 0 denominators
+
+51      yes         TODO: check again more thoroughly
 
