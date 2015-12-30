@@ -1,5 +1,5 @@
-1: All class names, interface names, method names, class variables, method variables,
- and constants used should have meaningful names and do what the name suggests.
+All class names, interface names, method names, class variables, method variables,
+ and constants used should have meaningful names and do what the name suggests.-->OK
 
 Class names are nouns, in mixed case, with the first letter of each word in
  capitalized. Examples: class Raster; class ImageSprite--> OK
@@ -9,24 +9,25 @@ underscore. Examples: MIN_WIDTH; MAX_HEIGHT;--> OK
 
 9: No tabs are used to indent
 
-12: Blank lines and optional comments are used to separate sections (beginning comments,
+Blank lines and optional comments are used to separate sections (beginning comments,
  package/import statements, class/interface declarations 
 which include class variable/attributes declarations, constructors, and methods).
---> riga bianca tra gli import?
+--> riga bianca 54 tra gli import?
+--> righe 269,272,279,287,297,306,314,327,334,344,354,363,373,380,390,393,396,399,402,405,408,411,414,417,420,423,427,437,443,471.
 
-13: Where practical, line length does not exceed 80 characters.--> REPORT MASS ABUSE
+Where practical, line length does not exceed 80 characters.--> REPORT MASS ABUSE
 
 17: A new statement is aligned with the beginning of the expression at 
-the same level as the previous line.--> report line 142
+the same level as the previous line.--> report line 142?
 
-20:Each Java source file contains a single public class or interface.--> OK
- 
-21: The public class is the first class or interface in the file.-->OK
+Each Java source file contains a single public class or interface.--> OK
 
-24:If any package statements are needed, they should be the
+The public class is the first class or interface in the file.-->OK
+
+If any package statements are needed, they should be the
  first non-comment statements. Import statements follow.-->OK
 
-25:The class or interface declarations shall be in the following order:
+The class or interface declarations shall be in the following order:
 A. class/interface documentation comment
 B. class or interface statement
 C. class/interface implementation comment, if necessary
@@ -42,19 +43,21 @@ f. next package level (no access modifier)
 g. last private instance variables
 F. constructors
 G. methods
+--> OK
 
-26:Methods are grouped by functionality rather than by scope or accessibility.
+26:Methods are grouped by functionality rather than by scope or accessibility.--> all methods public so useless
 
 28: Check that variables and class members are of the correct type.
  Check that they have the right visibility (public/private/protected)
 
 29:Check that variables are declared in the proper scope
 
-38:Check that all array (or other collection) indexes have been prevented from going out-of-bounds--> No Array or collection
+38:Check that all array (or other collection) indexes have been prevented from going out-of-bounds--> No Array or collection, 
+but iterators with hasNext(), hasMoreElements() checking.
 
 Check that all objects (including Strings) are compared with "equals" and not with "=="--> OK
 
-41:Check that displayed output is free of spelling and grammatical errors--> mystical language
+Check that displayed output is free of spelling and grammatical errors--> mystical language but with no errors
 
 Check that integer arithmetic, especially division, are used
  appropriately to avoid causing unexpected truncation/rounding--> no operations
