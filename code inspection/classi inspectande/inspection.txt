@@ -1,4 +1,4 @@
-All class names, interface names, method names, class variables, method variables,
+﻿All class names, interface names, method names, class variables, method variables,
  and constants used should have meaningful names and do what the name suggests.-->OK
 
 Class names are nouns, in mixed case, with the first letter of each word in
@@ -7,7 +7,7 @@ Class names are nouns, in mixed case, with the first letter of each word in
 Constants are declared using all uppercase with words separated by an 
 underscore. Examples: MIN_WIDTH; MAX_HEIGHT;--> OK
 
-9: No tabs are used to indent
+No tabs are used to indent--> report 356-362 reg exp ^(\t)+
 
 Blank lines and optional comments are used to separate sections (beginning comments,
  package/import statements, class/interface declarations 
@@ -20,7 +20,7 @@ Where practical, line length does not exceed 80 characters.--> REPORT MASS ABUSE
         1) il limite 80 oggi (20XX) non si usa più tanto
         2) in java non sarebbe pratico, visto la verbosità dei metodi
 
-17: A new statement is aligned with the beginning of the expression at 
+A new statement is aligned with the beginning of the expression at 
 the same level as the previous line.--> report line 142?
 
 Each Java source file contains a single public class or interface.--> OK
@@ -55,8 +55,7 @@ G. methods
 
 29:Check that variables are declared in the proper scope
 
-38:Check that all array (or other collection) indexes have been prevented from going out-of-bounds--> No Array or collection, 
-but iterators with hasNext(), hasMoreElements() checking.
+Check that all array (or other collection) indexes have been prevented from going out-of-bounds--> No Array or collection, 
 
 Check that all objects (including Strings) are compared with "equals" and not with "=="--> OK
 
