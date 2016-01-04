@@ -1,0 +1,7 @@
+There is a repeated improper use of \textit{for} loops with iterators, in the form:
+
+\begin{lstlisting}[language=Java, breaklines=true]
+  for (Iterator patterns = aServlet.getUrlPatternsSet().iterator(); patterns.hasNext();)
+\end{lstlisting}
+
+However, it might just be following the project's internal coding style

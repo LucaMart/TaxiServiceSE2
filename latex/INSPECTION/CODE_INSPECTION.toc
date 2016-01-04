@@ -1,4 +1,6 @@
-\contentsline {chapter}{Table of content}{2}{chapter*.2}
-\contentsline {chapter}{Classes to be inspected}{3}{chapter*.3}
-\contentsline {chapter}{Issues and problems found}{4}{chapter*.4}
-\contentsline {chapter}{Other problems}{5}{chapter*.5}
+\contentsline {chapter}{Classes to be inspected}{2}{chapter*.2}
+\contentsline {section}{\numberline {1.1}Assigned classes / methods}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Purpose of the assigned class}{2}{section.1.2}
+\contentsline {chapter}{Issues and problems found}{3}{chapter*.3}
+\contentsline {section}{\numberline {2.1}Issues, sorted by numeric index}{3}{section.2.1}
+\contentsline {chapter}{Other problems}{4}{chapter*.4}

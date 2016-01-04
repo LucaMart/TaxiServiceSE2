@@ -1,6 +1,6 @@
 Punto:  Passed      notes
 
-5       yes         human-eye inspection (guarda cos'è FilterNode, forse nextElement() è appropriato )
+5       yes         human-eye inspection
 
 10      yes         K&R style, matched by ^([^{]+)\s+{
                     Allman style, matched by ^([^{]+)\n\s*{   (no matches found)
@@ -11,17 +11,14 @@ Punto:  Passed      notes
 
 22      yes         human-eye inspection
 
-23      partial     human-eye inspection  -  thrown exceptions are not indicated
-                    come back once I have a better understanding of the whole code
+23      no          human-eye inspection  -  thrown exceptions are not indicated
 
-30      pending     mind reading
+30      yes
 
-35      pending     mind reading
+35      yes
 
-36      yes (4now)  endElem-ok addDescriptor-ok writeDescriptor-okish
-                    1) discovered 面白いこと: no check that webBundleDesc really is type WebBundleDescriptor
-                    2) Vector appListeners <<< see? missing <mytype> ( like "Vector<String> stuff" )
-                    
+36      yes
+
 42      yes         human-eye
 
 43      no          look here: "logger.fine("Adding Login Config Descriptor" + newDescriptor);"
@@ -33,14 +30,13 @@ Punto:  Passed      notes
 
 51      yes         TODO: check again more thoroughly
 
-52      yes (sorta) no try-catch blocks; no throws declarations
+52      yes         no try-catch blocks; no throws declarations
 
 53      yes         no try-catch blocks at all
 
 55      yes         no switch statements
 
-56      no          check project coding style
-                    liberal use of iterators, like this:
+56      no          liberal use of iterators, like this:
                     for (Iterator<String> mapping = mappings.iterator();mapping.hasNext();)
 
 57      yes         the inspected classes do not *directly* manipulate files
