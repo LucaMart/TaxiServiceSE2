@@ -1,9 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.1.5)  5 JAN 2016 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.19)  5 JAN 2016 15:48
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
-**\nonstopmode\input CODE_INSPECTION.tex
-(./CODE_INSPECTION.tex (/usr/share/texmf-dist/tex/latex/base/report.cls
+**CODE_INSPECTION.tex
+(./CODE_INSPECTION.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 79 languages loaded.
+(/usr/share/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/fleqn.clo
 File: fleqn.clo 2015/03/31 v1.1i Standard LaTeX option (flush left equations)
@@ -659,18 +662,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 50.
  ) 
 Here is how much of TeX's memory you used:
  7920 strings out of 493054
- 110507 string characters out of 6140587
- 221236 words of memory out of 5000000
+ 110507 string characters out of 6140585
+ 221235 words of memory out of 5000000
  11328 multiletter control sequences out of 15000+600000
  10661 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,6n,42p,325b,1125s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,6n,42p,306b,1125s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on CODE_INSPECTION.pdf (5 pages, 87055 bytes).
+Output written on CODE_INSPECTION.pdf (5 pages, 87229 bytes).
 PDF statistics:
  92 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream
