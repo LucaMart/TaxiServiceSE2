@@ -7,13 +7,11 @@ from: \textit{package org.glassfish.web.deployment.node} \\
 \vspace{2mm}
 The specific methods to be analyzed are:
 \begin{enumerate}
- \item \textbf{public Node writeDescriptor(Node parent, T webBundleDesc)}: This method receives a DOM node and a descriptor as
-   arguments; it writes the descriptor to the node, and then returns it
+ \item public Node writeDescriptor(Node parent, T webBundleDesc) 
  \item \textbf{public void addDescriptor(Object  newDescriptor)}: This methods receives a newDescriptor as argument, determines
    its class, and calls the approprite method to add it to the current descriptor (the one belonging to WebCommonNode)
  Adds a new DOL descriptor instance to the descriptor instance associated with this XMLNode
- \item \textbf{public boolean endElement(XMLElement element)}: This method is called at the end of the parsing of an xml-node,
-   and returns a boolean stating whether the parsing of the xml sub-tree is complete
+ \item public boolean endElement(XMLElement element)
 \end{enumerate}
 
 \section{Purpose of the assigned class}
