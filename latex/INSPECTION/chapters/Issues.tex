@@ -2,6 +2,17 @@
 Please refer to the \textit{Code inspection checklist}, included in the assignment document
 
 \begin{enumerate}
+ \item [8]:There are some indentations that doesn't follow the convention of 4 spaces ( lines: 140, 278, 284, 286, 295, 342, 352, 442)
+ \item [14]:There are some lines that contains more than 120 characters, that is the upper bound suggested (Lines: 249, 408, 411, 414, 417)
+ \item [15]:Some break lines doesn't follow the convention ( Lines 173, 200, 210, 217 and 426 break lines with a '('; line 319 follow the java convention, that is a littble bit different from the convention described in the assignement 3 document;)
  \item [23]: Raised exceptions are not indicated, neither in the method signature, nor in the javadoc.
+ \item [27]: The writeDescriptor methon is very long, and contains a lot of blocks with similar code; Group of similar blocks:
+   \begin{itemize}
+    \item[a]: from 337 to 343, from 346 to 354, from 366 to 373 and from 383 to 390;
+    \item[b]: from 290 to 297 and from 299 to 305;
+    \item[c]: from 275 to 278, from 282 to 287 and from 330 to 334;
+   \end {itemize}
+ \item[31]: Some attributes but not initialize neither in the method nor in the constructor( descriptor in addDescription and endElement)
+ \item[33]:some objects are not created at the beginning of their block (filters, filterMappingNode, appListeners, servlets, mimeNode, welcomeFiles, errorPages, jspConf, securityCOnstraints, lci, roles, lemlistDesc, those are in the writeDescriptor method)
  \item [43]: Several missing spaces in the logging messages (for example: line 143, 148, 173)
 \end{enumerate}
