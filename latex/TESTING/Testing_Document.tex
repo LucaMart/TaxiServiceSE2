@@ -1,0 +1,56 @@
+\documentclass[a4paper,11pt,fleqn]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{rotating}
+\usepackage[hidelinks]{hyperref}
+\usepackage[space]{grffile}
+\usepackage{custom_style/algpseudocode}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{longtable}
+% Title Page
+\title{\textbf{Test Plan Document}}
+\author{
+  Michele Madaschi
+  \and
+  Lidia Moioli
+  \and
+  Luca Martinazzi  % last but not least
+}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+%\input{chapters/Introduction.tex}
+ 
+\chapter*{Integration strategy}
+\addcontentsline{toc}{chapter}{Architectural Design}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+\input{chapters/integration_strategy.tex}
+
+\chapter*{Individual steps and Test description}
+\addcontentsline{toc}{chapter}{Algorithm Design}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+%\input{chapters/Algorithm_design.tex}
+
+\chapter*{Tools and testing equipment required}
+\addcontentsline{toc}{chapter}{User Interface Design}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+%\input{chapters/ui_design.tex}
+
+\chapter*{Program stubs and test data required}
+\addcontentsline{toc}{chapter}{Requirements Traceability}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+%\input{chapters/Requirements_traceability.tex}
+
+\end{document}    
