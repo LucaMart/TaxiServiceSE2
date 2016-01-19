@@ -1,16 +1,61 @@
 \section{Entry criteria}
+Due to start an integration test two constraints must be satisfied:
+the major classes must be covered by ,at least , a 60 percent of unit test, 
+while for the others a 30 percent is sufficient.
+%TODO spiegare meglio quali siano le classi 'major'
 %Ogni classe deve avere una percentuale di unit test del 60% per le classi principali,
 %e il 30% per quelle derivate.
 
 \section{Elements to be integrated}
+In our case element is synonym of class; now we're going to show the classes that
+need integration test in order to be sure that our application will work correctly.
+\begin{itemize}
+  \item[Ridesmanager]: it needs to be integrated with:
+    \begin{itemize}
+      \item[Ride, Sharedride]: in order to store information about the actived rides
+      \item[Taxiqueue]: in order to take information of available taxis
+        in case of taxi request.
+      \item[Controller]: in order to exchange information about user's( and also guest's) requests
+    \end{itemize}
+  \item[Controller]: it needs to be integrated with:
+    \begin{itemize}
+      \item[User]: in order to create an ad-hoc Controller and to retrieve information about users
+      \item[Servernetworkinterface]: in order to communicate with the corresponding client side
+    \end{itemize}
+  \item[Servernetworkinterface]: it needs to be integrated with:
+    \begin{itemize}
+      \item[Clientmessage]: in order to read client's messages
+      \item[Servermessage]: in order to send messages to the client
+    \end{itemize}
+   \item[Activity]: it needs to be integrated with
+     \begin{itemize}
+       \item[Action]: in order to provides the allowed actions
+       \item[Userinterface]: in order to provide the set of items this class needs to show
+     \end{itemize}
+   \item[Action]: it needs to be integrated with the Clientnetworkinterface in order to send
+     requests to the server
+   \item[Userinterface]: it needs to be integrated with the Clientnetworkinterface in order to
+     show the right Activity according to the server message
+   \item[Clientnetworkinterface]: it needs to be integrated with:
+     \begin{itemize}
+       \item[Clientmessage]: in order to send messages to the server 
+       \item[Servermessage]: in order to read server's messages
+     \end{itemize}
+\end{itemize}
 %Ridesmanager: Sharedride, Ride, Controller:{ User, Servornetwrokinterface },
 %              Taxiqueue
 %Servernetworkinterface: Clientmessage, Servermessage
-%Activity: Action:{Clientnetworkinterface},Userinterface,
-%           ClientnetworkinterfaceUserinterface, 
+%Activity: Action:{Clientnetworkinterface},Userinterface 
 %Clientnetworkinterface: Clientmessage, Servermessage
 
 \section{Integration testing strategy}
+In this section we will explain how we plan the integration test
+in order to build, as soon as possible, a running application 
+with few working features; this will allow us to easly show
+our progress to the customer, and also , in case of delay, 
+to launch a working application, also with missing requirements.
+In order to reach our goal we decide to apply a bottom-up method
+for integration test and top down method for unit test.
 %Unit testing->Top-down
 %Integration testing->bottom-up
 
