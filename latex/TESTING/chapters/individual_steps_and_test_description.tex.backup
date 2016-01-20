@@ -1,12 +1,39 @@
 \section{Integration test case I-1}
-\begin{tabular*}{1.18\textwidth}{ l l }
+\begin{tabular*}{1.23\textwidth}{ l l }
  \textbf{Test Case Identifier}		& I-1-T1 \\
  \hline
  \textbf{Test Item(s)}			& Ridesmanager $\rightarrow$ Controller \\
  \hline
  \textbf{Input specification}		& Create the typical Ridesmanager input \\
  \hline
- \textbf{Output specification}		& Check if the correct methods are called in the controller \\
+ \textbf{Output specification}		& Check if the correct methods are called in the Controller \\
  \hline
  \textbf{Environmental needs}		& Ridesmanager driver \\
 \end{tabular*}
+
+\section{Integration test case I-2}
+\begin{tabular*}{1.23\textwidth}{ l l }
+ \textbf{Test Case Identifier}		& I-2-T1 \\
+ \hline
+ \textbf{Test Item(s)}			& Controller $\rightarrow$ GuestController \\
+ \hline
+ \textbf{Input specification}		& Create the typical Controller input \\
+ \hline
+ \textbf{Output specification}		& Check if the correct methods are called in the GuestController \\
+ \hline
+ \textbf{Environmental needs}		& I-1 succeeded \\
+\end{tabular*}
+
+\section{Integration test case I-3}
+\begin{tabular*}{1.23\textwidth}{ l l }
+ \textbf{Test Case Identifier}		& I-3-T1 \\
+ \hline
+ \textbf{Test Item(s)}			& Action $\rightarrow$ LoginAction \\
+ \hline
+ \textbf{Input specification}		& ?? \\
+ \hline
+ \textbf{Output specification}		& ?? \\
+ \hline
+ \textbf{Environmental needs}		& ?? \\
+\end{tabular*}
+
