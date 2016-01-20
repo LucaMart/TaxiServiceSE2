@@ -37,3 +37,56 @@
  \textbf{Environmental needs}		& ?? \\
 \end{tabular*}
 
+% [...] things to clarify たすけてくれて、Luca-くん
+
+\section{Integration test case I-X4}
+\begin{tabular*}{1.23\textwidth}{ l l }
+ \textbf{Test Case Identifier}		& I-X4-T1 \\
+ \hline
+ \textbf{Test Item(s)}			& ClientNetworkInterface $\rightarrow$ ClientMessage \\
+ \hline
+ \textbf{Input specification}		& Invoke various types of network methods \\
+ \hline
+ \textbf{Output specification}		& Check that the correct ClientMessage(s) are generated \\
+ \hline
+ \textbf{Environmental needs}		& ClientNetworkInterface driver \\
+\end{tabular*}
+
+\section{Integration test case I-X5}
+\begin{tabular*}{1.23\textwidth}{ l l }
+ \textbf{Test Case Identifier}		& I-X5-T1 \\
+ \hline
+ \textbf{Test Item(s)}			& ServerNetworkInterface $\rightarrow$ ServerMessage \\
+ \hline
+ \textbf{Input specification}		& Invoke various types of network methods \\
+ \hline
+ \textbf{Output specification}		& Check that the correct ServerMessage(s) are generated \\
+ \hline
+ \textbf{Environmental needs}		& ServerNetworkInterface driver \\
+\end{tabular*}
+
+\section{Integration test case I-X6}
+\begin{tabular*}{1.23\textwidth}{ l l }
+ \textbf{Test Case Identifier}		& I-X6-T1 \\
+ \hline
+ \textbf{Test Item(s)}			& User $\rightarrow$ Ride \\
+ \hline
+ \textbf{Input specification}		& Add a new Ride to an User \\
+ \hline
+ \textbf{Output specification}		& Check that the correct the Ride is correctly added \\
+ \hline
+ \textbf{Environmental needs}		& User driver \\
+\end{tabular*}
+
+\section{Integration test case I-X7}
+\begin{tabular*}{1.23\textwidth}{ l l }
+ \textbf{Test Case Identifier}		& I-X7-T1 \\
+ \hline
+ \textbf{Test Item(s)}			& User $\rightarrow$ Ride \\
+ \hline
+ \textbf{Input specification}		& Add a new Ride to an User \\
+ \hline
+ \textbf{Output specification}		& Check that the correct the Ride is correctly added \\
+ \hline
+ \textbf{Environmental needs}		& User driver \\
+\end{tabular*}
