@@ -1,10 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.1.5)  19 JAN 2016 18:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.19)  20 JAN 2016 09:45
 entering extended mode
- restricted \write18 enabled.
- file:line:error style messages enabled.
+ \write18 enabled.
  %&-line parsing enabled.
-**\input Testing_Document.tex
-(./Testing_Document.tex (/usr/share/texmf-dist/tex/latex/base/report.cls
+**Testing_Document.tex
+(./Testing_Document.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 79 languages loaded.
+(/usr/share/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/fleqn.clo
 File: fleqn.clo 2015/03/31 v1.1i Standard LaTeX option (flush left equations)
@@ -640,13 +642,64 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 ]
 (./chapters/integration_strategy.tex [3
 
-]) [4] [5
+]
+<diagrams/point 1.png, id=107, 503.8825pt x 143.53625pt>
+File: diagrams/point 1.png Graphic file (type png)
 
-] [6
+<use diagrams/point 1.png>
+Package pdftex.def Info: diagrams/point 1.png used on input line 88.
+(pdftex.def)             Requested size: 362.79512pt x 103.34601pt.
+
+Overfull \hbox (2.79512pt too wide) in paragraph at lines 88--89
+ [][] 
+ []
+
+<diagrams/point 2.png, id=109, 664.4825pt x 143.53625pt>
+File: diagrams/point 2.png Graphic file (type png)
+
+<use diagrams/point 2.png>
+Package pdftex.def Info: diagrams/point 2.png used on input line 93.
+(pdftex.def)             Requested size: 398.69257pt x 86.1224pt.
+
+Overfull \hbox (38.69257pt too wide) in paragraph at lines 93--94
+ [][] 
+ []
+
+<diagrams/point 3.png, id=110, 413.545pt x 233.87375pt>
+File: diagrams/point 3.png Graphic file (type png)
+
+<use diagrams/point 3.png>
+Package pdftex.def Info: diagrams/point 3.png used on input line 96.
+(pdftex.def)             Requested size: 297.75217pt x 168.38895pt.
+
+<diagrams/point 5.png, id=111, 513.92pt x 304.13625pt>
+File: diagrams/point 5.png Graphic file (type png)
+
+<use diagrams/point 5.png>
+Package pdftex.def Info: diagrams/point 5.png used on input line 99.
+(pdftex.def)             Requested size: 349.46097pt x 206.8099pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<diagrams/point 7.png, id=112, 313.17pt x 143.53625pt>
+File: diagrams/point 7.png Graphic file (type png)
+
+<use diagrams/point 7.png>
+Package pdftex.def Info: diagrams/point 7.png used on input line 104.
+(pdftex.def)             Requested size: 225.48221pt x 103.34601pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [4 <./diagrams/point 1.png>] [5 <./diagrams/point 2.png> <./diagrams/point 3.
+png> <./diagrams/point 5.png>] [6 <./diagrams/point 7.png>] [7
+
+] [8
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
- [7
+ [9
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
@@ -659,22 +712,22 @@ Package rerunfilecheck Info: File `Testing_Document.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
  ) 
 Here is how much of TeX's memory you used:
- 7571 strings out of 493054
- 107492 string characters out of 6140587
- 200531 words of memory out of 5000000
- 10979 multiletter control sequences out of 15000+600000
+ 7605 strings out of 493054
+ 108182 string characters out of 6140585
+ 200774 words of memory out of 5000000
+ 11006 multiletter control sequences out of 15000+600000
  10968 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,6n,32p,256b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,7n,32p,249b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Testing_Document.pdf (8 pages, 85974 bytes).
+Output written on Testing_Document.pdf (10 pages, 122966 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 179 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

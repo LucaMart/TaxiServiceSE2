@@ -10,6 +10,6 @@
 \contentsline {section}{\numberline {2.4}Sequence of component/Function integration}{4}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Software integration sequence}{4}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Subsystem integration sequence}{4}{subsection.2.4.2}
-\contentsline {chapter}{Individual steps and Test description}{5}{chapter*.4}
-\contentsline {chapter}{Tools and testing equipment required}{6}{chapter*.5}
-\contentsline {chapter}{Program stubs and test data required}{7}{chapter*.6}
+\contentsline {chapter}{Individual steps and Test description}{7}{chapter*.4}
+\contentsline {chapter}{Tools and testing equipment required}{8}{chapter*.5}
+\contentsline {chapter}{Program stubs and test data required}{9}{chapter*.6}

@@ -77,11 +77,6 @@ for integration test and top down method for unit test.
 \subsection{Subsystem integration sequence}
 The classes are presented here in the ordered sequence in which they will be implemented, which is:
 \ref{fig:base_serv_comp} $\rightarrow$ \ref{fig:base_client_comp} $\rightarrow$ \ref{fig:base_net_comp}
- $\rightarrow$ \ref{fig:ext_client_comp} $\rightarrow$ \ref{fig:adv_func}
-
-Note: the arrows here represent the ordering of the implementation, which may happen to partially
-match the logical structure of the class; however, those arrows do not aim to describe the inter-class
-relationships
 
 \begin{figure} [h]
   \centering
@@ -92,17 +87,11 @@ relationships
   \centering
   \includegraphics[scale=0.6]{diagrams/point 2.png}
   \caption{\label{fig:base_client_comp} Base client components}
-  \vspace{3mm}
-  \includegraphics[scale=0.72]{diagrams/point 3.png}
-  \caption{\label{fig:base_net_comp} Base networking components}
-  \vspace{3mm}
-  \includegraphics[scale=0.68]{diagrams/point 5.png}
-  \caption{\label{fig:ext_client_comp} Extended client components}
 \end{figure}
 \begin{figure} [h]
   \centering
-  \includegraphics[scale=0.72]{diagrams/point 7.png}
-  \caption{\label{fig:adv_func} Advanced functions}
+  \includegraphics[scale=0.72]{diagrams/point 3.png}
+  \caption{\label{fig:base_net_comp} Base networking components}
 \end{figure}
 
 %punti: 1,2,3,5,7
