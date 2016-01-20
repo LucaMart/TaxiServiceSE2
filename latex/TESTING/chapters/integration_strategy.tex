@@ -62,6 +62,7 @@ for integration test and top down method for unit test.
 \section{Sequence of component/Function integration}
 %1- Componenti base del server: Ridesmanager, Controller, Guestcontroller
 %2- Componenti base del client: Action, LoginAction, Activity, Userinterface
+%   			        ^^^^^^^^^^^^^^^^^^^^^^^^^^ rivedere questa sequenza
 %3- Componenti base networking: Clientnetworkinterface Servernetworkinterface,
 %                               Clientmessage, Servermessage
 %4- Integrazione server-client
@@ -72,6 +73,11 @@ for integration test and top down method for unit test.
 %8- Integrazione funzioni avanzate
 
 \subsection{Software integration sequence}
+\begin{figure} [h]
+  \centering
+  \includegraphics[scale=0.72]{diagrams/software integration.png}
+  \caption{\label{fig:soft_int} Software integration}
+\end{figure}
 %punti: 4, 6, 8
 
 \subsection{Subsystem integration sequence}
@@ -87,9 +93,7 @@ relationships
   \centering
   \includegraphics[scale=0.72]{diagrams/point 1.png}
   \caption{\label{fig:base_serv_comp} Base server components}
-\end{figure}
-\begin{figure} [h]
-  \centering
+  \vspace{3mm}
   \includegraphics[scale=0.6]{diagrams/point 2.png}
   \caption{\label{fig:base_client_comp} Base client components}
   \vspace{3mm}
