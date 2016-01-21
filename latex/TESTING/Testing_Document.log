@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.1.5)  21 JAN 2016 15:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.1.5)  21 JAN 2016 15:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -641,73 +641,76 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (./chapters/integration_strategy.tex [3
 
 ]
-<diagrams/software integration.png, id=142, 523.9575pt x 143.53625pt>
+<diagrams/software integration.png, id=137, 523.9575pt x 143.53625pt>
 File: diagrams/software integration.png Graphic file (type png)
 
 <use diagrams/software integration.png>
 Package pdftex.def Info: diagrams/software integration.png used on input line 8
-7.
+8.
 (pdftex.def)             Requested size: 377.24911pt x 103.34601pt.
 
-Overfull \hbox (17.24911pt too wide) in paragraph at lines 87--88
+Overfull \hbox (17.24911pt too wide) in paragraph at lines 88--89
  [][] 
  []
-
-[4 <./diagrams/software integration.png>]
-<diagrams/point 1.png, id=155, 503.8825pt x 143.53625pt>
-File: diagrams/point 1.png Graphic file (type png)
-
-<use diagrams/point 1.png>
-Package pdftex.def Info: diagrams/point 1.png used on input line 103.
-(pdftex.def)             Requested size: 362.79512pt x 103.34601pt.
-
-Overfull \hbox (2.79512pt too wide) in paragraph at lines 103--104
- [][] 
- []
-
-<diagrams/point 2.png, id=156, 664.4825pt x 143.53625pt>
-File: diagrams/point 2.png Graphic file (type png)
-
-<use diagrams/point 2.png>
-Package pdftex.def Info: diagrams/point 2.png used on input line 106.
-(pdftex.def)             Requested size: 398.69257pt x 86.1224pt.
-
-Overfull \hbox (38.69257pt too wide) in paragraph at lines 106--107
- [][] 
- []
-
-<diagrams/point 3.png, id=157, 413.545pt x 233.87375pt>
-File: diagrams/point 3.png Graphic file (type png)
-
-<use diagrams/point 3.png>
-Package pdftex.def Info: diagrams/point 3.png used on input line 109.
-(pdftex.def)             Requested size: 297.75217pt x 168.38895pt.
-
-<diagrams/point 5.png, id=158, 513.92pt x 304.13625pt>
-File: diagrams/point 5.png Graphic file (type png)
-
-<use diagrams/point 5.png>
-Package pdftex.def Info: diagrams/point 5.png used on input line 112.
-(pdftex.def)             Requested size: 349.46097pt x 206.8099pt.
-
-
-LaTeX Warning: Float too large for page by 100.39113pt on input line 114.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<diagrams/point 7.png, id=159, 313.17pt x 143.53625pt>
+<diagrams/point 1.png, id=144, 503.8825pt x 143.53625pt>
+File: diagrams/point 1.png Graphic file (type png)
+
+<use diagrams/point 1.png>
+Package pdftex.def Info: diagrams/point 1.png used on input line 106.
+(pdftex.def)             Requested size: 362.79512pt x 103.34601pt.
+
+Overfull \hbox (2.79512pt too wide) in paragraph at lines 106--107
+ [][] 
+ []
+
+<diagrams/point 2.png, id=145, 664.4825pt x 143.53625pt>
+File: diagrams/point 2.png Graphic file (type png)
+
+<use diagrams/point 2.png>
+Package pdftex.def Info: diagrams/point 2.png used on input line 109.
+(pdftex.def)             Requested size: 398.69257pt x 86.1224pt.
+
+Overfull \hbox (38.69257pt too wide) in paragraph at lines 109--110
+ [][] 
+ []
+
+<diagrams/point 3.png, id=146, 413.545pt x 233.87375pt>
+File: diagrams/point 3.png Graphic file (type png)
+
+<use diagrams/point 3.png>
+Package pdftex.def Info: diagrams/point 3.png used on input line 112.
+(pdftex.def)             Requested size: 297.75217pt x 168.38895pt.
+
+<diagrams/point 5.png, id=147, 513.92pt x 304.13625pt>
+File: diagrams/point 5.png Graphic file (type png)
+
+<use diagrams/point 5.png>
+Package pdftex.def Info: diagrams/point 5.png used on input line 115.
+(pdftex.def)             Requested size: 349.46097pt x 206.8099pt.
+
+
+LaTeX Warning: Float too large for page by 100.39113pt on input line 117.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<diagrams/point 7.png, id=148, 313.17pt x 143.53625pt>
 File: diagrams/point 7.png Graphic file (type png)
 
 <use diagrams/point 7.png>
-Package pdftex.def Info: diagrams/point 7.png used on input line 117.
+Package pdftex.def Info: diagrams/point 7.png used on input line 120.
 (pdftex.def)             Requested size: 225.48221pt x 103.34601pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [5] [6 <./diagrams/point 1.png> <./diagrams/point 2.png> <./diagrams/point 3.
-png> <./diagrams/point 5.png>] [7 <./diagrams/point 7.png>]
+) [4] [5 <./diagrams/software integration.png>] [6 <./diagrams/point 1.png> <./
+diagrams/point 2.png> <./diagrams/point 3.png> <./diagrams/point 5.png>]
+[7 <./diagrams/point 7.png>]
 (./chapters/individual_steps_and_test_description.tex
 Underfull \hbox (badness 10000) in alignment at lines 2--12
 [][] 
@@ -800,37 +803,31 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
 (./Testing_Document.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
+Package rerunfilecheck Info: File `Testing_Document.out' has not changed.
+(rerunfilecheck)             Checksum: 7BF3B3C6A57EFFCEF978A8987061F27E;1585.
 
 
-Package rerunfilecheck Warning: File `Testing_Document.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: Checksums for `Testing_Document.out':
-(rerunfilecheck)             Before: 4E97D45D3DF39FE3BB223B883F32A61C;1658
-(rerunfilecheck)             After:  7BF3B3C6A57EFFCEF978A8987061F27E;1585.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 49.
  ) 
 Here is how much of TeX's memory you used:
- 7634 strings out of 493054
- 108835 string characters out of 6140587
- 201821 words of memory out of 5000000
- 11019 multiletter control sequences out of 15000+600000
+ 7632 strings out of 493054
+ 108813 string characters out of 6140587
+ 202821 words of memory out of 5000000
+ 11018 multiletter control sequences out of 15000+600000
  10968 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  29i,7n,32p,256b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{chapter*.6} has been referenced but does not exis
-t, replaced by a fixed one
-
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Testing_Document.pdf (11 pages, 136783 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on Testing_Document.pdf (11 pages, 138758 bytes).
 PDF statistics:
- 229 PDF objects out of 1000 (max. 8388607)
- 196 compressed objects within 2 object streams
- 41 named destinations out of 1000 (max. 500000)
- 215 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 224 PDF objects out of 1000 (max. 8388607)
+ 191 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 207 words of extra memory for PDF output out of 10000 (max. 10000000)
 
