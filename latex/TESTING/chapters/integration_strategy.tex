@@ -1,14 +1,15 @@
 \section{Entry criteria}
-Due to start an integration test two constraints must be satisfied:
-the major classes must be covered by ,at least , a 60 percent of unit test, 
-while for the others a 30 percent is sufficient.
+In order to start an integration test, two constraints must be satisfied:
+the major classes must be covered by, at least, 60 percent of unit tests, 
+while for the others a value of 30 percent is sufficient.
 %TODO spiegare meglio quali siano le classi 'major'
 %Ogni classe deve avere una percentuale di unit test del 60% per le classi principali,
 %e il 30% per quelle derivate.
 
 \section{Elements to be integrated}
-In our case element is synonym of class; now we're going to show the classes that
-need integration test in order to be sure that our application will work correctly.
+In our document, ``element'' is used as synonym of ``class'';
+the following list describes the classes that need to undergo an integration test, 
+in order to be sure that our application will behave correctly.
 \begin{itemize}
   \item[Ridesmanager]: it needs to be integrated with:
     \begin{itemize}
@@ -51,19 +52,19 @@ need integration test in order to be sure that our application will work correct
 \section{Integration testing strategy}
 In this section we will explain how we planned the integration test
 in order to build, as soon as possible, a running application 
-with few working features; this will allow us to easly show
-our progress to the customer, and also , in case of delay, 
-to launch a working application, also with missing requirements.
-In order to reach our goal we decide to apply a bottom-up method
-for integration test and top down method for unit test.\\
+with few working features; this will allow us to promptly show
+our progress to the customer and also, in case of a delay in the development, 
+to launch a working application, although with missing requirements.
+In order to reach our goal we decided to apply a \textit{bottom-up} method
+during the integration test phase, and \textit{top-down} method for the unit tests.\\
 The first working version of our application will include major classes;
-in this there are no users but only a guest that has the possibility
-to access all altredy implemented features.\\
-The second vesrion will add the other users with realted constraints,
-as explained in the previous documents ( RASD and Design Document).\\
-From the second version the application could be released, considering 
-that only few features are already implemented.\\
-The next versions will include other features that allow us to reach
+in this milestone, there are no users, but only a guest that has the possibility  % domanda: un singolo unico guest?
+to access all the already implemented features.\\
+The second version will add the other users with related constraints,
+as explained in the previous documents (see RASD and Design Document).\\
+From the second version onward, the application could be released,
+even if only few features are already implemented.\\
+The next versions will include other features that allow us to reach  % le includeranno *gradualmente*? 
 all missing requirements.
 %Unit testing->Top-down
 %Integration testing->bottom-up
@@ -98,6 +99,8 @@ Note: the arrows here represent the ordering of the implementation, which may ha
 match the logical structure of the class; however, those arrows do not aim to describe the inter-class
 relationships
 
+% queste è meglio sistemarle bene quando la sezione precedente è consolidata
+%   -- Il vate(r)
 \begin{figure} [h]
   \centering
   \includegraphics[scale=0.72]{diagrams/point 1.png}
