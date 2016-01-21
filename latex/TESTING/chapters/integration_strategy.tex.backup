@@ -92,7 +92,7 @@ The software integration sequence is shown in Figure \ref{fig:soft_int}
 %punti: 4, 6, 8
 
 \subsection{Subsystem integration sequence}
-The classes presented in the following figures are ordered according to the sequence in which they will be tested, which is:
+The classes are presented here in the ordered sequence in which they will be tested, which is:
 \ref{fig:base_serv_comp} $\rightarrow$ \ref{fig:base_client_comp} $\rightarrow$ \ref{fig:base_net_comp}
  $\rightarrow$ \ref{fig:ext_client_comp} $\rightarrow$ \ref{fig:adv_func}
 
