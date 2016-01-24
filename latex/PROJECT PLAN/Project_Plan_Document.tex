@@ -1,0 +1,55 @@
+\documentclass[a4paper,11pt,fleqn]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{rotating}
+\usepackage[hidelinks]{hyperref}
+\usepackage[space]{grffile}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{longtable}
+% Title Page
+\title{\textbf{Test Plan Document}}
+\author{
+  Michele Madaschi
+  \and
+  Lidia Moioli
+  \and
+  Luca Martinazzi  % last but not least
+}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+%\input{chapters/introduction.tex}
+ 
+\chapter*{Function Points} %Internal Logic File;External Interface File;External Imput;External Output;External Inquiry.
+\addcontentsline{toc}{chapter}{Function Points}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+%\input{chapters/integration_strategy.tex}
+
+\chapter*{COCOMO II}
+\addcontentsline{toc}{chapter}{COCOMO II}
+\setcounter{section}{0}
+\addtocounter{chapter}{1}
+%\input{chapters/individual_steps_and_test_description.tex}
+
+ \chapter*{Schedule and resources allocation}
+ \addcontentsline{toc}{chapter}{Schedule and resources allocation}
+ \setcounter{section}{0}
+ \addtocounter{chapter}{1}
+ %\input{chapters/tools_and_testing_equipment_required.tex}
+
+ \chapter*{Risk evaluation}
+ \addcontentsline{toc}{chapter}{Risk evaluation}
+ \setcounter{section}{0}
+ \addtocounter{chapter}{1}
+ %\input{chapters/tools_and_testing_equipment_required.tex}
+
+\end{document}    
