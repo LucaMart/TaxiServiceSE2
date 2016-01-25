@@ -28,12 +28,20 @@
 \addtocounter{chapter}{1}
 %\input{chapters/introduction.tex}
  
-\chapter*{Function Points} %Internal Logic File;External Interface File;External Imput;External Output;External Inquiry.
+%Internal Logic File: users(x3), ride, sharedride, taxiqueue 
+%External Interface File: gps coordinates,
+%External Imput: login,logout, request, reserve,delete, reserve shared, accept call, refuse call
+%External Output:message (eta, no taxi message)
+%External Inquiry: see profile, see active ride list
+\chapter*{Function Points} 
 \addcontentsline{toc}{chapter}{Function Points}
 \setcounter{section}{0}
 \addtocounter{chapter}{1}
 %\input{chapters/integration_strategy.tex}
 
+%effort=2.94*EAF*(KLOC)^E
+%duration=3.67*(effort)^Se
+%Npeople=effort/duration
 \chapter*{COCOMO II}
 \addcontentsline{toc}{chapter}{COCOMO II}
 \setcounter{section}{0}
