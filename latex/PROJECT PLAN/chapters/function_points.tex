@@ -1,10 +1,23 @@
 In order to evaluate the cost of the project we have to identify 
-the function points and estimate the compleaxity of each one.
+the function points and estimate the complexity of each one.
+To each point we assign a weight referring to this table:\\
+
+\begin{tabular}{ | c | l | l | l |}
+    \hline
+     Function types & \multicolumn{3}{|c|}{Weight} \\\hline
+       & Simple  & Medium & Complex \\ \hline
+    External Input & 3 & 4 & 6   \\ \hline
+    External Output & 4 & 5 & 7 \\ \hline
+    External Inquiry & 3 & 4  & 6 \\ \hline
+    Internal Logic File & 7 & 10 & 15 \\ \hline
+    External Interface File & 5 & 7 & 10  \\ \hline
+    \end{tabular}
+
 \begin{itemize}
   \item [Internal Logic File]: users (guest, taxidriver and passenger), 
                                ride, sharedride, taxiqueue
   \item[External Interface File]: gps coordinates, map service
-  \item[External Input]: login, logout, request, reserve, delete, reserve shared
+  \item[External Input]: login, logout, request, reserve, delete, reserve shared,
                          accept call, refuse call, report, taxi available,
                          taxi not available, change settings
   \item[External Output]: message (eta, no taxi message)
@@ -16,21 +29,28 @@ the function points and estimate the compleaxity of each one.
   According to our previous specification ( explained in RASD and DD documents)
   users and ride have to store few information, for these we can adopt the
   simple cost weight, while sharedride and taxiqueue have to store a dynamic
-  list, that require more attention, so we adopt a medium cost weight.
+  list, that require more attention, so we adopt a medium cost weight.\\
+(1) 4x7 + 2x10=48 FPs
   %TODO aggiungere il calcolo dei costi seguendo i dati presi dalla tabella
   \subsection{External Interface File}
   The interaction with gps coordinates and the map service is very simple, 
   because we needs few information from them, so we adopt a simple weight for
-  both of External Internal Files.
+  both of External Internal Files.\\
+(2) 2x5= 10 FPs
   %TODO aggiungere la formula
   \subsection{External Input}
+ (3) 12x3=36 FPs
   \subsection{External Output}
   Sending eta requires to access the map service that calculate ,by his own ,
-  the needed value, so we adopt a simple cost weight for message.
+  the needed value, so we adopt a simple cost weight for message.\\
+(4) 2x4= 8 FPs
   %TODO aggiungere la formula
   \subsection{External Inquiry}
   See the profile requires only to send some fields saved in the current user,
   for this External Inquiry we adopt a simple cost weight, while the active
   ride list requires to scan the ridehistory and check its status ( actived or
-  not), we adopt a medium cost weight for this.
+  not), we adopt a medium cost weight for this.\\
   %TODO aggiungere la formula
+(5) 1x3 + 1x4= 7 FPs
+
+In summary we have FPs= $\displaystyle\sum_{i=1}^{5} FPi$ = 109

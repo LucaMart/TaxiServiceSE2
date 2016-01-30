@@ -1,11 +1,14 @@
 \BOOKMARK [0][-]{chapter*.2}{Introduction}{}% 1
-\BOOKMARK [0][-]{chapter*.3}{Function Points}{}% 2
-\BOOKMARK [1][-]{section.2.1}{Complexity and cost evaluation}{chapter*.3}% 3
-\BOOKMARK [2][-]{subsection.2.1.1}{ Internal Logic File}{section.2.1}% 4
-\BOOKMARK [2][-]{subsection.2.1.2}{External Interface File}{section.2.1}% 5
-\BOOKMARK [2][-]{subsection.2.1.3}{External Input}{section.2.1}% 6
-\BOOKMARK [2][-]{subsection.2.1.4}{External Output}{section.2.1}% 7
-\BOOKMARK [2][-]{subsection.2.1.5}{External Inquiry}{section.2.1}% 8
-\BOOKMARK [0][-]{chapter*.4}{COCOMO II}{}% 9
-\BOOKMARK [0][-]{chapter*.5}{Schedule and resources allocation}{}% 10
-\BOOKMARK [0][-]{chapter*.6}{Risk evaluation}{}% 11
+\BOOKMARK [1][-]{section.1.1}{Scope and purpose}{chapter*.2}% 2
+\BOOKMARK [0][-]{chapter*.3}{Function Points}{}% 3
+\BOOKMARK [1][-]{section.2.1}{Complexity and cost evaluation}{chapter*.3}% 4
+\BOOKMARK [2][-]{subsection.2.1.1}{ Internal Logic File}{section.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.1.2}{External Interface File}{section.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.1.3}{External Input}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.4}{External Output}{section.2.1}% 8
+\BOOKMARK [2][-]{subsection.2.1.5}{External Inquiry}{section.2.1}% 9
+\BOOKMARK [0][-]{chapter*.4}{COCOMO II}{}% 10
+\BOOKMARK [0][-]{chapter*.5}{Schedule and resources allocation}{}% 11
+\BOOKMARK [1][-]{section.4.1}{ Gantt's diagram}{chapter*.5}% 12
+\BOOKMARK [0][-]{chapter*.6}{Risk evaluation}{}% 13
+\BOOKMARK [1][-]{section.5.1}{Risk evaluation and avoidance}{chapter*.6}% 14
