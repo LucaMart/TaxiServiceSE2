@@ -41,22 +41,25 @@
 \addtocounter{chapter}{1}
 \input{chapters/function_points.tex}
 
+%effort=2.94*EAF*(KLOC)^E
+%duration=3.67*(effort)^Se
+%Npeople=effort/duration
 \chapter*{COCOMO II}
 \addcontentsline{toc}{chapter}{COCOMO II}
 \setcounter{section}{0}
 \addtocounter{chapter}{1}
 \input{chapters/cocomo.tex}
 
-\chapter*{Schedule and resources allocation}
-\addcontentsline{toc}{chapter}{Schedule and resources allocation}
-\setcounter{section}{0}
-\addtocounter{chapter}{1}
-\input{chapters/schedule.tex}
+ \chapter*{Schedule and resources allocation}
+ \addcontentsline{toc}{chapter}{Schedule and resources allocation}
+ \setcounter{section}{0}
+ \addtocounter{chapter}{1}
+ \input{chapters/schedule.tex}
 
-\chapter*{Risk evaluation}
-\addcontentsline{toc}{chapter}{Risk evaluation}
-\setcounter{section}{0}
-\addtocounter{chapter}{1}
-\input{chapters/risk_evaluation.tex}
+ \chapter*{Risk evaluation}
+ \addcontentsline{toc}{chapter}{Risk evaluation}
+ \setcounter{section}{0}
+ \addtocounter{chapter}{1}
+ \input{chapters/risk_evaluation.tex}
 
 \end{document}    
