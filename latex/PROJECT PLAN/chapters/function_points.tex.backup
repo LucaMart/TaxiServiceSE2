@@ -30,14 +30,14 @@ To each point we assign a weight referring to this table:\\
   According to our previous specification (explained in the RASD and DD documents),
   users and ride have to store few informations, thus we can adopt the
   simple cost weight for those ones.
-  On the other hand, \textbf{sharedride} and \textbf{taxiqueue} have to store a dynamic
+  On the other hand, sharedride and taxiqueue have to store a dynamic
   list, that require more attention, so we adopt a medium cost weight.
   \begin{equation}
    4*7 + 2*10 = 48 \text{ FPs}
   \end{equation}
 
   \subsection{External Interface File}
-  The interactions with \textbf{gps} coordinates and the \textbf{map service} are very simple, 
+  The interactions with gps coordinates and the map service are very simple, 
   because we need to gather few information from them, so we adopt a simple weight for
   both of External Internal Files.
   \begin{equation}
@@ -47,21 +47,21 @@ To each point we assign a weight referring to this table:\\
   \subsection{External Input}
   Most of the external inputs are simple actions involving a few number of entities,
   therefore we can adopt a simple weight cost for all of them.
-  \textbf{request} and \textbf{change settings} however are more complex, and thus require a medium weight cost.
+  request and change settings however are more complex, and thus require a medium weight cost.
   \begin{equation}
     10*3 + 2*4= 38 \text{ FPs}
   \end{equation}
   
   \subsection{External Output}
-  Sending \textbf{eta} requires to access the map service that calculate, on its own,
+  Sending eta requires to access the map service that calculate, on its own,
   the appropriate value, so we adopt a simple cost weight for message.
   \begin{equation}
     2*4 = 8 \text{ FPs}
   \end{equation}
   
   \subsection{External Inquiry}
-  \textbf{see profile} requires only to send some fields saved in the current user,
-  while \textbf{see active ride} list requires to scan the ridehistory and check its status (active or not).
+  The profile requires only to send some fields saved in the current user,
+  while the active ride list requires to scan the ridehistory and check its status (active or not).
   Therefore, we adopt a simple cost weight for the former, and a medium cost weight for the latter.
   \begin{equation}
     1*3 + 1*4 = 7 \text{ FPs}
