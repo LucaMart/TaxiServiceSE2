@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.4)  31 JAN 2016 20:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.11.4)  31 JAN 2016 20:58
 entering extended mode
 **"C:/Users/lidia/Documents/GitHub/TaxiServiceSE2/TaxiServiceSE2/latex/PROJECT 
 PLAN/Project_Plan_Document.tex"
@@ -616,10 +616,15 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 17.
- [3
 
-]) [4]
-(chapters/cocomo.tex
+Overfull \hbox (26.10966pt too wide) in paragraph at lines 17--19
+[][]\OT1/cmr/m/n/10.95 : users (guest, taxidriver and pas-sen-ger), ride, share
+dride,
+ []
+
+[3
+
+]) [4] (chapters/cocomo.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
  []
@@ -718,7 +723,7 @@ onts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Project_Plan_Document.pdf (9 pages, 184843 bytes).
+Output written on Project_Plan_Document.pdf (9 pages, 184647 bytes).
 PDF statistics:
  200 PDF objects out of 1000 (max. 8388607)
  43 named destinations out of 1000 (max. 500000)
