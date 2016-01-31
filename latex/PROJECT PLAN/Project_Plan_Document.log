@@ -1,10 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.1.5)  31 JAN 2016 12:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.19)  31 JAN 2016 13:16
 entering extended mode
- restricted \write18 enabled.
- file:line:error style messages enabled.
+ \write18 enabled.
  %&-line parsing enabled.
-**\input Project_Plan_Document.tex
-(./Project_Plan_Document.tex (/usr/share/texmf-dist/tex/latex/base/report.cls
+**Project_Plan_Document.tex
+(./Project_Plan_Document.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 79 languages loaded.
+(/usr/share/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/fleqn.clo
 File: fleqn.clo 2015/03/31 v1.1i Standard LaTeX option (flush left equations)
@@ -549,20 +551,20 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 (./Project_Plan_Document.aux)
 \openout1 = `Project_Plan_Document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 (/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -594,7 +596,7 @@ e
 ))
 \c@lstlisting=\count131
 \AtBeginShipoutBox=\box36
-Package hyperref Info: Link coloring OFF on input line 21.
+Package hyperref Info: Link coloring OFF on input line 23.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -604,9 +606,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count132
 )
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
 
 (./Project_Plan_Document.out) (./Project_Plan_Document.out)
 \@outlinefile=\write3
@@ -623,7 +625,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 \chapter
+l.27 \chapter
              *{Introduction} [1
 
 ] (./chapters/introduction.tex) [2
@@ -639,7 +641,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--4
 ]) [4] [5
 
 ] (./chapters/schedule.tex
-<chapters/SWE2.png, id=111, 181.67876pt x 1564.84625pt>
+<chapters/SWE2.png, id=118, 181.67876pt x 1564.84625pt>
 File: chapters/SWE2.png Graphic file (type png)
 
 <use chapters/SWE2.png>
@@ -670,35 +672,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--12
  []
 
 )
-Overfull \hbox (101.73901pt too wide) in paragraph at lines 13--62
+Overfull \hbox (101.73901pt too wide) in paragraph at lines 13--64
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--62
+Underfull \hbox (badness 10000) in paragraph at lines 13--64
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
 [8
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
  (./Project_Plan_Document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
-Package rerunfilecheck Info: File `Project_Plan_Document.out' has not changed.
-(rerunfilecheck)             Checksum: AFACA3AA3C359D59F7319D7C39607EF9;902.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
+
+
+Package rerunfilecheck Warning: File `Project_Plan_Document.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Project_Plan_Document.out':
+(rerunfilecheck)             Before: AFACA3AA3C359D59F7319D7C39607EF9;902
+(rerunfilecheck)             After:  3CD1FF4EE4EE6B0A87E61EB097BD6D7B;962.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 7569 strings out of 493054
- 107546 string characters out of 6140587
- 200531 words of memory out of 5000000
+ 7575 strings out of 493054
+ 107632 string characters out of 6140585
+ 201532 words of memory out of 5000000
  10970 multiletter control sequences out of 15000+600000
  10968 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,8n,32p,261b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,32p,254b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -706,11 +715,12 @@ c/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 /share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmti10.pfb>
-Output written on Project_Plan_Document.pdf (9 pages, 120597 bytes).
+ublic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmti10.pfb>
+Output written on Project_Plan_Document.pdf (9 pages, 127510 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 143 compressed objects within 2 object streams
- 28 named destinations out of 1000 (max. 500000)
+ 178 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
  118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
