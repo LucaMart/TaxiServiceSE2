@@ -9,7 +9,9 @@
 \contentsline {subsection}{\numberline {2.1.5}External Inquiry}{4}{subsection.2.1.5}
 \contentsline {subsection}{\numberline {2.1.6}Overall}{4}{subsection.2.1.6}
 \contentsline {chapter}{COCOMO II}{5}{chapter*.4}
-\contentsline {chapter}{Schedule and resources allocation}{6}{chapter*.5}
-\contentsline {section}{\numberline {4.1} Gantt's diagram}{6}{section.4.1}
-\contentsline {chapter}{Risk evaluation}{8}{chapter*.6}
-\contentsline {section}{\numberline {5.1}Risk evaluation and avoidance}{8}{section.5.1}
+\contentsline {section}{\numberline {3.1}Approach}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}Results}{5}{section.3.2}
+\contentsline {chapter}{Schedule and resources allocation}{7}{chapter*.5}
+\contentsline {section}{\numberline {4.1} Gantt's diagram}{7}{section.4.1}
+\contentsline {chapter}{Risk evaluation}{9}{chapter*.6}
+\contentsline {section}{\numberline {5.1}Risk evaluation and avoidance}{9}{section.5.1}

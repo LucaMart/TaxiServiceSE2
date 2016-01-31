@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.19)  31 JAN 2016 13:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.19)  31 JAN 2016 19:07
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -548,36 +548,56 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count124
 \LT@p@ftn=\toks25
 )
+(/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen126
+\lightrulewidth=\dimen127
+\cmidrulewidth=\dimen128
+\belowrulesep=\dimen129
+\belowbottomsep=\dimen130
+\aboverulesep=\dimen131
+\abovetopsep=\dimen132
+\cmidrulesep=\dimen133
+\cmidrulekern=\dimen134
+\defaultaddspace=\dimen135
+\@cmidla=\count125
+\@cmidlb=\count126
+\@aboverulesep=\dimen136
+\@belowrulesep=\dimen137
+\@thisruleclass=\count127
+\@lastruleclass=\count128
+\@thisrulewidth=\dimen138
+)
 (./Project_Plan_Document.aux)
 \openout1 = `Project_Plan_Document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 (/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count125
-\scratchdimen=\dimen126
+\scratchcounter=\count129
+\scratchdimen=\dimen139
 \scratchbox=\box35
-\nofMPsegments=\count126
-\nofMParguments=\count127
+\nofMPsegments=\count130
+\nofMParguments=\count131
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count128
-\MPscratchDim=\dimen127
-\MPnumerator=\count129
-\makeMPintoPDFobject=\count130
+\MPscratchCnt=\count132
+\MPscratchDim=\dimen140
+\MPnumerator=\count133
+\makeMPintoPDFobject=\count134
 \everyMPtoPDFconversion=\toks27
 ) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -594,9 +614,9 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count131
+\c@lstlisting=\count135
 \AtBeginShipoutBox=\box36
-Package hyperref Info: Link coloring OFF on input line 23.
+Package hyperref Info: Link coloring OFF on input line 24.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -604,11 +624,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count132
+\c@section@level=\count136
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
 
 (./Project_Plan_Document.out) (./Project_Plan_Document.out)
 \@outlinefile=\write3
@@ -625,7 +645,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 \chapter
+l.28 \chapter
              *{Introduction} [1
 
 ] (./chapters/introduction.tex) [2
@@ -638,10 +658,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--4
 
 [3
 
-]) [4] [5
+]) [4] (./chapters/cocomo.tex
+Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
-] (./chapters/schedule.tex
-<chapters/SWE2.png, id=122, 181.67876pt x 1564.84625pt>
+ []
+
+(./chapters/cocomo_data/developement.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+
+ []
+
+
+Overfull \hbox (0.942pt too wide) in paragraph at lines 57--59
+[]|\OT1/cmr/m/n/10.95 Construction 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 88
+ []
+
+) (./chapters/cocomo_data/effort.tex
+Overfull \hbox (5.81926pt too wide) in paragraph at lines 1--2
+[]\OT1/cmr/bx/n/10.95 Software Ef-fort Dis-tri-bu-tion for RUP/M-BASE (Person-M
+onths) 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 15
+ []
+
+[5
+
+])) [6] (./chapters/schedule.tex
+<chapters/SWE2.png, id=139, 181.67876pt x 1564.84625pt>
 File: chapters/SWE2.png Graphic file (type png)
 
 <use chapters/SWE2.png>
@@ -654,9 +703,9 @@ LaTeX Warning: Float too large for page by 212.35013pt on input line 7.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [6
+) [7
 
-] [7 <./chapters/SWE2.png>] (./chapters/risk_evaluation.tex
+] [8 <./chapters/SWE2.png>] (./chapters/risk_evaluation.tex
 Overfull \hbox (82.20294pt too wide) in paragraph at lines 3--12
 [] 
  []
@@ -672,35 +721,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--12
  []
 
 )
-Overfull \hbox (101.73901pt too wide) in paragraph at lines 13--64
+Overfull \hbox (101.73901pt too wide) in paragraph at lines 13--62
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 13--64
+Underfull \hbox (badness 10000) in paragraph at lines 13--62
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
-[8
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
+[9
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 63.
  (./Project_Plan_Document.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 63.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 63.
 Package rerunfilecheck Info: File `Project_Plan_Document.out' has not changed.
-(rerunfilecheck)             Checksum: 3CD1FF4EE4EE6B0A87E61EB097BD6D7B;962.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
+(rerunfilecheck)             Checksum: 28B5A8511B3C91F4A99974F064BBC9E7;1073.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
  ) 
 Here is how much of TeX's memory you used:
- 7576 strings out of 493054
- 107650 string characters out of 6140585
- 201532 words of memory out of 5000000
- 10971 multiletter control sequences out of 15000+600000
+ 7649 strings out of 493054
+ 108666 string characters out of 6140585
+ 205435 words of memory out of 5000000
+ 11025 multiletter control sequences out of 15000+600000
  10968 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,8n,32p,254b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,8n,32p,254b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -710,10 +759,10 @@ cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti10.pfb>
-Output written on Project_Plan_Document.pdf (9 pages, 129344 bytes).
+Output written on Project_Plan_Document.pdf (10 pages, 135525 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 157 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 201 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 142 words of extra memory for PDF output out of 10000 (max. 10000000)
 

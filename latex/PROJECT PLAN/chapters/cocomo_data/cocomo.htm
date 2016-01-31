@@ -1,0 +1,956 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+  <meta name="Author" content="Ray Madachy">
+  <meta name="description" content="COCOMO II">
+  <meta name="keywords" content="COCOMO tool, COCOMO Suite tool, COCOMO, COCOMO II - Constructive Cost Model, COCOMO Suite of Constructive Cost Models, Expert COSYSMO - Systems Engineering Cost Model Risk Advisor, ODC COQUALMO - Orthogonal Defect Classification Constructive Quality Model, COSYSMO, COSYSMO and COCOMO Cost Models with Monte Carlo Risk Analysis, software cost estimation, systems cost estimation, cost estimation, Ray Madachy, Raymond Madachy">
+  
+<style type="text/css">
+.style1 {color: #00FFCC}
+.style2 {color: #FF0000}
+.style3 {color: #669900}
+</style>
+
+<title>COCOMO II - Constructive Cost Model</title>
+<style> <!--
+BODY, P, SPAN, DIV, TABLE, TD, TH, UL, OL, LI {
+  font-family: Arial, Helvetica;
+  font-size: 12px;
+  color: black;
+}
+--> </style>
+<link href="COCOMO%20II%20-%20Constructive%20Cost%20Model_files/socialwidgets.css" type="text/css" rel="stylesheet"></head>
+<body topmargin="10" leftmargin="10" marginheight="10" marginwidth="10">
+
+
+<form name="f1" method="post">
+
+<input name="startCOCOMO" value="1" type="hidden">
+
+<table style="width: 100%; text-align: left;" border="0" cellpadding="2" cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="width: 101px; vertical-align: top;"><img alt="" src="COCOMO%20II%20-%20Constructive%20Cost%20Model_files/csse_insignia.jpg"><br>
+
+      </td>
+      <td style="text-align: center; vertical-align: top;">
+      
+      <h3>COCOMO II - Constructive Cost Model</h3>
+      
+      </td>
+      <td style="width: 160px; vertical-align: top; background-color: rgb(240, 240, 240);">
+      
+      <table style="text-align: left; width: 100%;" border="1" bordercolor="silver" cellpadding="2" cellspacing="0">
+	<tbody>
+	<tr>
+	<td style="vertical-align: top;">
+  
+      
+Model(s)
+<select name="Models" onchange="f1.submit()">
+<option value="COCOMO" selected="selected">COCOMO
+</option><option value="COSYSMO">COSYSMO
+</option><option value="COCOMOandCOSYSMO">COCOMO and COSYSMO
+</option><option value="COQUALMO">COCOMO and COQUALMO
+</option></select>
+
+Monte Carlo Risk
+<select name="MonteCarlo" onchange="f1.submit()">
+<option value="MonteCarlo_On" selected="selected">On
+</option><option value="MonteCarlo_Off">Off
+</option></select><br>
+
+Auto Calculate
+<select name="AutoCalculate" onchange="f1.submit()">
+<option value="On">On
+</option><option value="Off" selected="selected">Off
+</option></select>
+
+     </td>
+</tr>
+</tbody>
+</table>
+
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+<br>
+
+
+
+<b>Software Size</b>
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sizing Method <select name="size_type" onchange="f1.submit()">
+
+<option value="SLOC" selected="selected">Source Lines of Code</option>
+
+<option value="Function Points">Function Points</option>
+
+</select>
+
+<br><table style="width: 100%; text-align: left; 
+border=" 1"="" cellpadding="1" cellspacing="0"><tbody><tr><td style="width: 101px; vertical-align: top;"><br>
+
+<table style="width: 60%; text-align: left;" border="0" cellpadding="2" cellspacing="2">
+
+<tbody>
+
+<tr>
+
+<td style="vertical-align: top;"><br>
+
+</td>
+
+<td style="vertical-align: top; text-align: center;"><a href="http://sunset.usc.edu/research/COCOMOII/expert_cocomo/sloc.html">SLOC</a></td>
+
+<td style="vertical-align: top; text-align: center;"><font color="#000000"><i>&nbsp;</i>% Design Modified</font></td>
+
+<td style="vertical-align: top; text-align: center;"><font color="#000000">% Code Modified</font></td>
+
+<td style="vertical-align: top; text-align: center;"><font color="#000000">% Integration Required</font></td>
+
+<td style="vertical-align: top; text-align: center;"><font color="#000000">Assessment and Assimilation <br>
+
+(0%
+
+- 8%)</font></td>
+
+<td style="vertical-align: top; text-align: center;"><font color="#000000">&nbsp;Software Understanding <br>
+
+(0% - 50%)</font></td>
+
+<td style="vertical-align: top; text-align: center;">
+
+<center><font color="#000000">Unfamiliarity</font> <br>
+
+<font color="#000000">(0-1)</font></center>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="vertical-align: top;">New<br>
+
+</td>
+
+<td style="vertical-align: top;"><input name="new_size" size="8" maxlength="8" value="5223" align="right" type="text"> <br>
+
+</td>
+
+<td style="vertical-align: top;"><br>
+
+</td>
+
+<td style="vertical-align: top;"><br>
+
+</td>
+
+<td style="vertical-align: top;"><br>
+
+</td>
+
+<td style="vertical-align: top;"><br>
+
+</td>
+
+<td style="vertical-align: top;"><br>
+
+</td>
+
+<td style="vertical-align: top;"><br>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="vertical-align: top;">Reused<br>
+
+</td>
+
+<td style="vertical-align: top;"><input name="reused_size" size="8" maxlength="8" align="right" type="text"> <br>
+
+</td>
+
+<td style="vertical-align: top;"><center><input name="DM_reused" size="6" value="0" disabled="disabled" align="right"></center>
+
+</td>
+
+<td style="vertical-align: top;"><center><input name="CM_reused" size="6" value="0" disabled="disabled" align="right"></center>
+
+</td>
+
+<td style="vertical-align: top;"><center><input name="IM_reused" size="6" maxlength="6" align="right" type="text"> <br></center>
+
+</td>
+
+<td style="vertical-align: top;"><center>
+
+<input name="AA_reused" size="6" maxlength="6" align="right" type="text"> <br>
+
+</center>
+
+</td>
+
+<td style="vertical-align: top;"><br>
+
+</td>
+
+<td style="vertical-align: top;"><br>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="vertical-align: top;">Modified<br>
+
+</td>
+
+<td style="vertical-align: top;"><input name="modified_size" size="8" maxlength="8" align="right" type="text"> <br>
+
+</td>
+
+<td style="vertical-align: top;"><center>
+
+<input name="DM_modified" size="6" maxlength="6" align="right" type="text"> <br>
+
+</center>
+
+</td>
+
+<td style="vertical-align: top;"><center>
+
+<input name="CM_modified" size="6" maxlength="6" align="right" type="text"> <br>
+
+</center>
+
+</td>
+
+<td style="vertical-align: top;"><center>
+
+<input name="IM_modified" size="6" maxlength="6" align="right" type="text"> <br>
+
+</center>
+
+</td>
+
+<td style="vertical-align: top;"><center>
+
+<input name="AA_modified" size="6" maxlength="6" align="right" type="text"> <br>
+
+</center>
+
+</td>
+
+<td style="vertical-align: top;"><center>
+
+<input name="SU_modified" size="6" maxlength="6" align="right" type="text"> <br>
+
+</center>
+
+</td>
+
+<td style="vertical-align: top;"><center>
+
+<input name="UNFM_modified" size="6" maxlength="6" align="right" type="text"> <br>
+
+</center>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<br></td><td style="text-align: left; vertical-align: top;"><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Software Size Probability Distribution</b><br><br>&nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Iterations<br><table border="0" cellpadding="5" cellspacing="0"><tbody><tr><td style="background-color:#FFFFFF;border:1px white;"><table border="0" cellpadding="0" cellspacing="2"><tbody><tr align="center" valign="bottom"><td style="background-color:#FFFFFF;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr align="center"><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" height="104" nowrap="nowrap" valign="bottom">27</td></tr><tr align="center" valign="bottom"><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="27" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="8" width="35"></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><td style="background-color:#FFFFFF;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr align="center"><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" height="63" nowrap="nowrap" valign="bottom">172</td></tr><tr align="center" valign="bottom"><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="172" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="49" width="35"></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><td style="background-color:#FFFFFF;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr align="center"><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" height="12" nowrap="nowrap" valign="bottom">348</td></tr><tr align="center" valign="bottom"><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="348" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="100" width="35"></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><td style="background-color:#FFFFFF;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr align="center"><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" height="15" nowrap="nowrap" valign="bottom">340</td></tr><tr align="center" valign="bottom"><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="340" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="97" width="35"></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><td style="background-color:#FFFFFF;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr align="center"><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" height="84" nowrap="nowrap" valign="bottom">97</td></tr><tr align="center" valign="bottom"><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="97" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="28" width="35"></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><td style="background-color:#FFFFFF;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr align="center"><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" height="108" nowrap="nowrap" valign="bottom">15</td></tr><tr align="center" valign="bottom"><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="15" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="4" width="35"></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td style="color:#000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;2-3&nbsp;</td><td style="color:#000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;3-4&nbsp;</td><td style="color:#000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;4-5&nbsp;</td><td style="color:#000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;5-6&nbsp;</td><td style="color:#000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;6-7&nbsp;</td><td style="color:#000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;7-7&nbsp;</td></tr></tbody></table></td></tr></tbody></table>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Software Equivalent Size (KSLOC)<br><br></td>
+<td style="text-align: left; vertical-align: top;">Distribution Type
+<select name="software_size_distribution_type" onchange="f1.submit()">
+<option value="Uniform">Uniform
+</option><option value="Normal" selected="selected">Normal
+</option><option value="Triangle">Triangle
+</option></select>
+</td>
+</tr></tbody></table><b>&nbsp;Software Scale Drivers </b>
+
+
+
+<table border="0"><tbody><tr valign="top">
+
+<td>
+
+  <table border="0"><tbody><tr>
+
+  <td align="left">Precedentedness</td>
+
+  <td><select name="prec">
+
+  <option value="Very_Low">Very Low
+
+  </option><option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+  </option><option value="Extra_High">Extra High
+
+  </option></select></td>
+
+  </tr><tr>
+
+  <td align="left">Development Flexibility</td>
+
+  <td><select name="flex">
+
+  <option value="Very_Low">Very Low
+
+  </option><option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+  </option><option value="Extra_High">Extra High
+
+  </option></select></td>
+
+  </tr>
+
+<tr>
+
+  <td><br>
+  <b>Software Cost Drivers</b></td>
+
+  </tr>
+
+  <tr>
+
+  <td><b>Product</b></td>
+
+  </tr>
+
+<tr>
+
+<td align="left">Required Software Reliability</td>
+
+<td>
+
+<select name="rely">
+
+  <option value="Very_Low">Very Low
+
+  </option><option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+</option></select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="left">Data Base Size</td>
+
+<td>
+
+<select name="data">
+
+  <option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+</option></select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="left">Product Complexity</td>
+
+<td>
+
+<select name="cplx">
+
+  <option value="Very_Low">Very Low
+
+  </option><option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+  </option><option value="Extra_High">Extra High
+
+</option></select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="left">Developed for Reusability</td>
+
+<td>
+
+<select name="ruse">
+
+  <option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+  </option><option value="Extra_High">Extra High
+
+</option></select>
+
+</td>
+
+</tr><tr>
+
+<td align="left">Documentation Match to Lifecycle Needs</td>
+
+<td>
+
+<select name="docu">
+
+  <option value="Very_Low">Very Low
+
+  </option><option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+</option></select>
+
+</td>
+
+</tr>
+
+<tr>
+
+  <td>&nbsp;</td>
+
+  </tr>
+
+  <tr>
+
+  <td>&nbsp;</td>
+
+  </tr>
+
+
+
+     </tbody></table>
+
+</td>
+
+<td>
+
+  <table border="0"><tbody><tr>
+
+    <td align="left">Architecture / Risk Resolution</td>
+
+  <td><select name="resl">
+
+  <option value="Very_Low">Very Low
+
+  </option><option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+  </option><option value="Extra_High">Extra High
+
+  </option></select></td>  </tr>
+
+    <tr><td align="left">Team Cohesion</td>
+
+   <td><select name="team">
+
+  <option value="Very_Low">Very Low
+
+  </option><option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+  </option><option value="Extra_High">Extra High
+
+  </option></select></td>
+
+  </tr>
+
+<tr>
+
+  <td><b>&nbsp;</b></td>
+
+  </tr>
+
+<tr>
+
+</tr><tr>
+
+  <td><br><b>Personnel</b></td>
+
+  </tr>
+
+<tr>
+
+<td align="left">Analyst Capability</td>
+
+<td>
+
+<select name="acap">
+
+  <option value="Very_Low">Very Low
+
+  </option><option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+</option></select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="left">Programmer Capability</td>
+
+<td>
+
+<select name="pcap">
+
+  <option value="Very_Low">Very Low
+
+  </option><option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+</option></select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="left">Personnel Continuity</td>
+
+<td>
+
+<select name="pcon">
+
+  <option value="Very_Low">Very Low
+
+  </option><option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+</option></select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="left">Application Experience</td>
+
+<td>
+
+<select name="apex">
+
+  <option value="Very_Low">Very Low
+
+  </option><option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+</option></select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="left">Platform Experience</td>
+
+<td>
+
+<select name="pexp">
+
+  <option value="Very_Low">Very Low
+
+  </option><option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+</option></select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="left">Language and Toolset Experience</td>
+
+<td>
+
+<select name="ltex">
+
+  <option value="Very_Low">Very Low
+
+  </option><option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+</option></select>
+
+</td>
+
+</tr>
+
+  <tr>
+
+    <td>&nbsp;</td>
+
+  </tr>
+
+
+
+    </tbody></table>
+
+</td>
+
+<td>
+
+  <table border="0"><tbody><tr>
+
+    <td align="left">Process Maturity</td>
+
+   <td><select name="pmat">
+
+  <option value="Very_Low">Very Low
+
+  </option><option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+  </option><option value="Extra_High">Extra High
+
+  </option></select></td>  </tr>
+
+  <tr>
+
+    <td>&nbsp;</td>
+
+  </tr>
+
+  <tr>
+
+  </tr><tr>
+
+  <td><b>&nbsp;</b></td>
+
+  </tr>
+
+<tr>
+
+</tr><tr>
+
+    <td><br><b>Platform</b></td>
+
+  </tr>
+
+<tr>
+
+<td align="left">Time Constraint</td>
+
+<td>
+
+<select name="time">
+
+  <option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+  </option><option value="Extra_High">Extra High
+
+</option></select>
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td align="left">Storage Constraint</td>
+
+<td>
+
+<select name="stor">
+
+  <option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+  </option><option value="Extra_High">Extra High
+
+</option></select>
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td align="left">Platform Volatility</td>
+
+<td>
+
+<select name="pvol">
+
+  <option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+</option></select>
+
+</td>
+
+</tr>
+
+   <tr>
+
+    <td><br><b>Project</b></td>
+
+  </tr>
+
+<tr>
+
+<td align="left">Use of Software Tools</td>
+
+<td>
+
+<select name="tool">
+
+  <option value="Very_Low">Very Low
+
+  </option><option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+</option></select>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td align="left">Multisite Development</td>
+
+<td>
+
+<select name="site">
+
+  <option value="Very_Low">Very Low
+
+  </option><option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+  </option><option value="Extra_High">Extra High
+
+</option></select></td>
+
+</tr>
+
+<tr><td align="left">Required Development Schedule</td>
+
+<td>
+
+<select name="sced">
+
+  <option value="Very_Low">Very Low
+
+  </option><option value="Low">Low
+
+  </option><option value="Nominal" selected="selected">Nominal
+
+  </option><option value="High">High
+
+  </option><option value="Very_High">Very High
+
+</option></select></td>
+
+</tr>
+
+      </tbody></table>
+
+</td></tr>
+
+</tbody></table>
+ 
+<b>Maintenance</b> <select name="software_maintenance" onchange="f1.submit()">
+<option value="Off" selected="selected">Off</option>
+<option value="On">On</option>
+</select>
+
+
+
+<br><br><b>Software Labor Rates</b><br>
+Cost per Person-Month (Dollars)<input name="software_labor_cost_per_PM" size="8" maxlength="8" value="1500" align="right" type="text"> <br><input name="submit2" value="Calculate" type="submit"><hr><b>Results</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</form>
+<br><table style="text-align: left;" border="0" cellpadding="1" cellspacing="1">
+
+<tbody>
+<tr>
+
+<td style="vertical-align: top; text-align: left;"><b>Software Development (Elaboration and Construction)</b><br><br>Effort = 18.1 Person-months<br>Schedule = 9.5 Months<br>Cost = $27160<br><br>Total Equivalent Size = 5223&nbsp;SLOC <br><br><b>Acquisition Phase Distribution</b><br><span class="style2">
+</span><table cols="3" border="1" cellpadding="1" cellspacing="0" width="200 pixels"><tbody><tr><td>Phase</td><td>Effort (Person-months)</td><td>Schedule (Months)</td><td>Average Staff</td> <td>Cost (Dollars)</td></tr>
+<tr>
+
+<td><font color="red">Inception</font></td><td align="CENTER">1.1</td><td align="CENTER">1.2</td><td align="CENTER">0.9</td> <td>$1630</td></tr>
+
+<tr><td><font color="800000">Elaboration</font></td><td align="CENTER">4.3</td><td align="CENTER">3.6</td><td align="CENTER">1.2</td> <td>$6518</td></tr>
+
+<tr><td><font color="$construction_color">Construction</font></td><td align="CENTER">13.8</td><td align="CENTER">6.0</td><td align="CENTER">2.3</td> <td>$20642</td></tr>
+
+
+<tr><td><div class="style2"><font color="green">Transition</font>
+</div></td><td align="CENTER">2.2</td><td align="CENTER">1.2</td><td align="CENTER">1.8</td> <td>$3259</td></tr></tbody></table><br></td>
+
+<td style="vertical-align: top; text-align: center;"><b>Staffing Profile</b><br><img src="COCOMO%20II%20-%20Constructive%20Cost%20Model_files/chart.png">
+
+
+
+</td>
+</tr>
+</tbody>
+</table><b>Software Effort Distribution for RUP/MBASE (Person-Months)</b><br>
+<table cols="5" border="1" cellpadding="1" cellspacing="0" width="200 pixels"><tbody><tr><td>Phase/Activity</td><td>Inception</td><td>Elaboration</td><td>Construction</td><td>Transition</td></tr>
+<tr><td>Management</td><td align="CENTER"><font color="#000000"><font color="#000000">0.2</font></font></td><td align="CENTER"><font color="#000000">0.5</font></td><td align="CENTER">1.4</td><td align="CENTER"><font color="##000000">0.3</font></td></tr>
+<tr><td>Environment/CM</td><td align="CENTER"><font color="#000000"><font color="#000000">0.1</font></font></td><td align="CENTER"><font color="#000000">0.3</font></td><td align="CENTER">0.7</td><td align="CENTER"><font color="##000000">0.1</font></td></tr>
+<tr><td>Requirements</td><td align="CENTER"><font color="#000000"><font color="#000000">0.4</font></font></td><td align="CENTER"><font color="#000000">0.8</font></td><td align="CENTER"><font color="#000000">1.1</font></td><td align="CENTER"><font color="##000000">0.1</font></td></tr>
+<tr><td>Design</td><td align="CENTER"><font color="##000000">        0.2</font></td><td align="CENTER"><font color="##000000">1.6</font></td><td align="CENTER"><font color="##000000">2.2</font></td><td align="CENTER"><font color="##000000">0.1</font></td></tr>
+<tr><td>Implementation</td><td align="CENTER"><font color="##000000">0.1</font></td><td align="CENTER"><font color="##000000">0.6</font></td><td align="CENTER">4.7</td><td align="CENTER"><font color="##000000">0.4</font></td></tr>
+<tr><td>Assessment</td><td align="CENTER"><font color="#000000">0.1</font></td><td align="CENTER"><font color="#000000">0.4</font></td><td align="CENTER">3.3</td><td align="CENTER"><font color="##000000">0.5</font></td></tr>
+<tr><td>Deployment</td><td align="CENTER"><font color="#000000">0.0</font></td><td align="CENTER"><font color="#000000">0.1</font></td><td align="CENTER"><font color="#000000">0.4</font></td><td align="CENTER"><font color="##000000">0.7</font></td></tr></tbody></table><p></p><b>Acquisition Monte Carlo Results</b><p></p><table style="text-align: left;" border="0" cellpadding="1" cellspacing="1">
+<tbody>
+
+<tr>
+
+<td style="vertical-align: top; text-align: center;">
+</td>
+<td><table style="text-align: left; width: 100%;" border="0" cellpadding="1" cellspacing="1"> <tbody> <tr> <td><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Software Effort Distribution Function</b><br><br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Iterations<br><table border="0" cellpadding="5" cellspacing="0"><tbody><tr><td style="background-color:#FFFFFF;border:1px white;"><table border="0" cellpadding="0" cellspacing="2"><tbody><tr align="center" valign="bottom"><td style="background-color:#FFFFFF;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr align="center"><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" height="103" nowrap="nowrap" valign="bottom">30</td></tr><tr align="center" valign="bottom"><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="30" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="9" width="35"></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><td style="background-color:#FFFFFF;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr align="center"><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" height="57" nowrap="nowrap" valign="bottom">193</td></tr><tr align="center" valign="bottom"><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="193" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="55" width="35"></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><td style="background-color:#FFFFFF;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr align="center"><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" height="12" nowrap="nowrap" valign="bottom">349</td></tr><tr align="center" valign="bottom"><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="349" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="100" width="35"></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><td style="background-color:#FFFFFF;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr align="center"><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" height="22" nowrap="nowrap" valign="bottom">314</td></tr><tr align="center" valign="bottom"><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="314" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="90" width="35"></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><td style="background-color:#FFFFFF;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr align="center"><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" height="86" nowrap="nowrap" valign="bottom">92</td></tr><tr align="center" valign="bottom"><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="92" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="26" width="35"></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td><td style="background-color:#FFFFFF;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr align="center"><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" height="107" nowrap="nowrap" valign="bottom">19</td></tr><tr align="center" valign="bottom"><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="19" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="5" width="35"></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td style="color:#000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;9-12&nbsp;</td><td style="color:#000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;12-15&nbsp;</td><td style="color:#000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;15-18&nbsp;</td><td style="color:#000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;18-21&nbsp;</td><td style="color:#000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;21-24&nbsp;</td><td style="color:#000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;24-28&nbsp;</td></tr></tbody></table></td></tr></tbody></table>&nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Effort (Person-Months)<br><br></td><td><b>Software Effort Confidence Levels</b><br><table border="0" cellpadding="2" cellspacing="0"><tbody><tr><td style="background-color:#FFFFFF;border:1px white;"><table border="0" cellpadding="0" cellspacing="2"><tbody><tr><td style="color:000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;10%&nbsp;</td><td style="color:#000000;background-color:#FFFFFF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;" align="right" nowrap="nowrap">&nbsp;13&nbsp;</td><td style="background-color:#FFFFFF;" height="100%" width="116"><table border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="13" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="10" width="46"></td></tr></tbody></table></td></tr></tbody></table></td><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" align="left" nowrap="nowrap" width="66">&nbsp;</td></tr></tbody></table></td></tr><tr><td style="color:000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;20%&nbsp;</td><td style="color:#000000;background-color:#FFFFFF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;" align="right" nowrap="nowrap">&nbsp;15&nbsp;</td><td style="background-color:#FFFFFF;" height="100%" width="116"><table border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="15" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="10" width="53"></td></tr></tbody></table></td></tr></tbody></table></td><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" align="left" nowrap="nowrap" width="59">&nbsp;</td></tr></tbody></table></td></tr><tr><td style="color:000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;30%&nbsp;</td><td style="color:#000000;background-color:#FFFFFF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;" align="right" nowrap="nowrap">&nbsp;16&nbsp;</td><td style="background-color:#FFFFFF;" height="100%" width="116"><table border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="16" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="10" width="57"></td></tr></tbody></table></td></tr></tbody></table></td><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" align="left" nowrap="nowrap" width="55">&nbsp;</td></tr></tbody></table></td></tr><tr><td style="color:000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;40%&nbsp;</td><td style="color:#000000;background-color:#FFFFFF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;" align="right" nowrap="nowrap">&nbsp;17&nbsp;</td><td style="background-color:#FFFFFF;" height="100%" width="116"><table border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="17" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="10" width="61"></td></tr></tbody></table></td></tr></tbody></table></td><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" align="left" nowrap="nowrap" width="51">&nbsp;</td></tr></tbody></table></td></tr><tr><td style="color:000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;50%&nbsp;</td><td style="color:#000000;background-color:#FFFFFF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;" align="right" nowrap="nowrap">&nbsp;18&nbsp;</td><td style="background-color:#FFFFFF;" height="100%" width="116"><table border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="18" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="10" width="64"></td></tr></tbody></table></td></tr></tbody></table></td><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" align="left" nowrap="nowrap" width="48">&nbsp;</td></tr></tbody></table></td></tr><tr><td style="color:000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;60%&nbsp;</td><td style="color:#000000;background-color:#FFFFFF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;" align="right" nowrap="nowrap">&nbsp;19&nbsp;</td><td style="background-color:#FFFFFF;" height="100%" width="116"><table border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="19" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="10" width="68"></td></tr></tbody></table></td></tr></tbody></table></td><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" align="left" nowrap="nowrap" width="44">&nbsp;</td></tr></tbody></table></td></tr><tr><td style="color:000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;70%&nbsp;</td><td style="color:#000000;background-color:#FFFFFF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;" align="right" nowrap="nowrap">&nbsp;19&nbsp;</td><td style="background-color:#FFFFFF;" height="100%" width="116"><table border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="19" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="10" width="68"></td></tr></tbody></table></td></tr></tbody></table></td><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" align="left" nowrap="nowrap" width="44">&nbsp;</td></tr></tbody></table></td></tr><tr><td style="color:000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;80%&nbsp;</td><td style="color:#000000;background-color:#FFFFFF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;" align="right" nowrap="nowrap">&nbsp;20&nbsp;</td><td style="background-color:#FFFFFF;" height="100%" width="116"><table border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="20" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="10" width="71"></td></tr></tbody></table></td></tr></tbody></table></td><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" align="left" nowrap="nowrap" width="41">&nbsp;</td></tr></tbody></table></td></tr><tr><td style="color:000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;90%&nbsp;</td><td style="color:#000000;background-color:#FFFFFF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;" align="right" nowrap="nowrap">&nbsp;22&nbsp;</td><td style="background-color:#FFFFFF;" height="100%" width="116"><table border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="22" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="10" width="78"></td></tr></tbody></table></td></tr></tbody></table></td><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" align="left" nowrap="nowrap" width="34">&nbsp;</td></tr></tbody></table></td></tr><tr><td style="color:000000;background-color:#C0E0FF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;text-align:center;">&nbsp;100%&nbsp;</td><td style="color:#000000;background-color:#FFFFFF;border:2px groove white;font-family:Arial, Helvetica;font-size:12px;" align="right" nowrap="nowrap">&nbsp;28&nbsp;</td><td style="background-color:#FFFFFF;" height="100%" width="116"><table border="0" cellpadding="0" cellspacing="0" height="100%"><tbody><tr><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td style="border:2px outset white;" title="28" bgcolor="#0000FF"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td height="10" width="100"></td></tr></tbody></table></td></tr></tbody></table></td><td style="color:black;font-family:Arial, Helvetica;font-size:12px;" align="left" nowrap="nowrap" width="12">&nbsp;</td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table>
+</td>
+</tr>
+</tbody>
+</table><br>
+
+
+<p></p>Your output file is <a href="http://csse.usc.edu/tools/data/COCOMO_January_31_2016_09_09_40_315125.txt">http://csse.usc.edu/tools/data/COCOMO_January_31_2016_09_09_40_315125.txt</a> <br>
+<br>
+Created by Ray Madachy at the Naval Postgraduate School.  For more information contact him at rjmadach@nps.edu
+
+
+</body></html>

@@ -10,9 +10,3 @@
 %Npeople=effort/duration
 
 \section{Results}
-Results obtained using the online calculator tool available at \\
-http://csse.usc.edu/tools/COCOMOII.php \\
-
-\input{chapters/cocomo_data/developement.tex}
-
-\input{chapters/cocomo_data/effort.tex}
