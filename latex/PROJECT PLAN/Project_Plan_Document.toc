@@ -15,6 +15,7 @@
 \contentsline {subsection}{\numberline {3.2.2}Input (drivers)}{6}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Output}{7}{subsection.3.2.3}
 \contentsline {chapter}{Schedule and resources allocation}{9}{chapter*.5}
-\contentsline {section}{\numberline {4.1} Gantt's diagram}{9}{section.4.1}
-\contentsline {chapter}{Risk evaluation}{11}{chapter*.6}
-\contentsline {section}{\numberline {5.1}Risk evaluation and avoidance}{11}{section.5.1}
+\contentsline {section}{\numberline {4.1}Design}{9}{section.4.1}
+\contentsline {section}{\numberline {4.2}Implementation}{9}{section.4.2}
+\contentsline {chapter}{Risk evaluation}{12}{chapter*.6}
+\contentsline {section}{\numberline {5.1}Risk evaluation and avoidance}{12}{section.5.1}

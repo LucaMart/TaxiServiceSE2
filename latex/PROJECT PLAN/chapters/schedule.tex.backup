@@ -1,4 +1,4 @@
-\section{ Gantt's diagram}
+\section{Design}
 For this project we had to arrange several deliverables, each one with a strict deadline.
 In particular:
 \begin{enumerate}
@@ -24,6 +24,59 @@ The whole project lasted 4 months, with an individual work of 110 hours/person a
 \vspace{6mm}
 \noindent\makebox[\textwidth]{\includegraphics[scale=0.4]{chapters/Gestione Progetti(2).png}}
 \caption{Gantt's diagram (implementation phase)}
+%    __    __
+%   >° \__/// 
+%    \__ __/
+%      _||
+%
+%  kotori-chan saw you talking with senpai
+%  kotori-chan is not pleased
 
  \end{figure}
 \end{center}
+
+\section{Implementation}
+%In questa sezione mostreremo la suddivisione dei compiti relativi all'implementazione, 
+%tenendo conto di quanto già descritto nel documento relativo testing.
+The following section describes the partitioning of the implementation tasks, in compliance to
+the project's design document and COCOMO II's data. \\
+The job will be distributed to 2 developers, and the project will be split up into
+smaller releases.
+Every release is scheduled in the same way: an initial phase, during which development of code and unit tests
+are carried out in parallel; an intermediate phase, in which integration tests begin, and a final phase, when
+unit tests are completed and the code is fixed as needed. \\
+%Seguendo i dati ottenuti grazie a COCOMO II considereremo l'impiego di due sviluppatori
+%Gli schedule di ogni release seguono lo stesso schema: nella fase iniziale l'implementazione viene svolta in parallelo agli unit test, 
+%nella fase intermedia cominciano gli integration test, mentre nella fase finale gli unit test sono completati e 
+%vengono svolti integration test  e correzioni al codice
+More precisely, the plan includes 4 releases:
+\begin{enumerate}
+ \item In the first release, we aim to provide a prototype of the application, capable of executing the basic operations;
+ \textit{developer 1} is tasked with writing the client-side ``major classes'', including the ones devoted to the graphic
+ user interface; on top of that, (s)he will also add \textit{actions} and \textit{activities}, which allow to call a taxi,
+ append it to a queue and responding to a call; \\
+ \textit{developer 2} is tasked with the server-side logic, required for the correct working of the client functions,
+ but this first release will feature only a single \textit{universal user}. (s)he will also work on the map-service
+ integration. \\
+ Each developer will also test their own components.
+\end{enumerate}
+
+
+
+Più precisamente le versioni di rilascio saranno quattro:
+>1:sviluppatore1 ha il compito di scrivere "major classes" del lato client, incluse quelle relative all'interfaccia grafica; 
+aggiungerà inoltre le "actions" e le "activities" che consentano di  prenotare un taxi, aggiungersi ad una coda e risondere 
+ad una prenotazione;
+    sviluppatore2 si concentrerà sulla parte server necessaria per la corretta gestione delle funzioni del client che verranno 
+    implementate da sviluppatore1 in questa versione, ma considerando un solo utente universale. sviluppatore 2 si occuperà 
+    anche dell'integrazione con il servizio di mappe. Ognuno si occuperà di testare i propri componenti. 
+
+ >2: in questa release sviluppatore1 si occuperà di aggiungere il supporto alle activities di gestione dell'utente (login, logout) e 
+ dell'interfaccia per il master terminal. contemporaneamente sviluppatore2 aggiungerà la gestione degli utenti lato server. In questo 
+ caso ogni sviluppatore si occuperà degli unit test relativi ai propri componenti, data la maggior mole di lavoro attribuita a 
+ sviluppatore2 gli, gli integration verranno assegnati a sviluppatore1 ( da questa versione l'applicazione può essere usata dagli 
+ utenti finali, seppur priva di alcune funzionalità richieste)
+ >3 sviluppatore1 si occupera, come sempre, della parte client, mentre sviluppatore2 si occuperà di quella server. in questa fase 
+ verranno aggiunte le funzionalità riguardanti le prenotazioni e le "corsecondivise". Ognuno effettuerà i test sui propri componenti
+ >4 Infine verranno aggiunti i report e il sistema di calcolo del costo delle corse, di queste due parti si occuperà sviluppatore1, a 
+ sviluppatore2 sarà invece assegnato il compito di implementare le API.

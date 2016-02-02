@@ -1,4 +1,4 @@
-\section{ Gantt's diagram}
+\section{Design}
 For this project we had to arrange several deliverables, each one with a strict deadline.
 In particular:
 \begin{enumerate}
@@ -34,3 +34,36 @@ The whole project lasted 4 months, with an individual work of 110 hours/person a
 
  \end{figure}
 \end{center}
+
+\section{Implementation}
+The following section describes the partitioning of the implementation tasks, in compliance to
+the project's design document and COCOMO II's data. \\
+The job will be distributed to 2 developers, and the project will be split up into
+smaller releases.
+Every release is scheduled in the same way: an initial phase, during which development of code and unit tests
+are carried out in parallel; an intermediate phase, in which integration tests begin, and a final phase, when
+unit tests are completed and the code is fixed as needed. \\
+More precisely, the plan includes 4 releases:
+\begin{enumerate}
+ \item In the first release, we aim to provide a prototype of the application, capable of executing the basic operations;
+ \textit{developer 1} is tasked with writing the client-side ``major classes'', including the ones devoted to the graphic
+ user interface; on top of that, (s)he will also add \textit{actions} and \textit{activities}, which allow to call a taxi,
+ append it to a queue and responding to a call; \\
+ \textit{developer 2} is tasked with the server-side logic, required for the correct working of the client functions,
+ but this first release will feature only a single \textit{universal user}. (s)he will also work on the map-service
+ integration. \\
+ Each developer will also test their own components.
+ \item In the second release, \textit{developer 1} is tasked with adding support for the user-management activities
+ (i.e. login, logout) and the \textit{master terminal} user interface. \\
+ \textit{developer 2} will work on the server-side user management. \\
+ Each developer is still required to test their own components, but, given the significative job already assigned to
+ \textit{developer 2}, \textit{developer 1} will work on the integration tests. \\
+ This version is already deliverable to the end users, albeit with missing features.
+ \item In the third release, \textit{reservations} and \textit{shared rides} will be implemented, following the
+ same work distribution as before (\textit{developer 1} on the client, \textit{developer 2} on the server, each one
+ write their own tests)
+ \item Finally, \textit{developer 1} will implement the \textit{report} system and the \textit{ride cost calculation} system,
+ while \textit{developer 2} will implement the \textit{API}.
+\end{enumerate}
+
+

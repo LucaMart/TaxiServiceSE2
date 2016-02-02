@@ -15,6 +15,7 @@
 \BOOKMARK [2][-]{subsection.3.2.2}{Input \(drivers\)}{section.3.2}% 15
 \BOOKMARK [2][-]{subsection.3.2.3}{Output}{section.3.2}% 16
 \BOOKMARK [0][-]{chapter*.5}{Schedule and resources allocation}{}% 17
-\BOOKMARK [1][-]{section.4.1}{ Gantt's diagram}{chapter*.5}% 18
-\BOOKMARK [0][-]{chapter*.6}{Risk evaluation}{}% 19
-\BOOKMARK [1][-]{section.5.1}{Risk evaluation and avoidance}{chapter*.6}% 20
+\BOOKMARK [1][-]{section.4.1}{Design}{chapter*.5}% 18
+\BOOKMARK [1][-]{section.4.2}{Implementation}{chapter*.5}% 19
+\BOOKMARK [0][-]{chapter*.6}{Risk evaluation}{}% 20
+\BOOKMARK [1][-]{section.5.1}{Risk evaluation and avoidance}{chapter*.6}% 21
