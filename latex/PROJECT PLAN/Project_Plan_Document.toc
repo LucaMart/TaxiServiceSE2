@@ -11,17 +11,10 @@
 \contentsline {chapter}{COCOMO II}{5}{chapter*.4}
 \contentsline {section}{\numberline {3.1}Approach}{5}{section.3.1}
 \contentsline {section}{\numberline {3.2}Results}{6}{section.3.2}
-<<<<<<< HEAD
 \contentsline {subsection}{\numberline {3.2.1}Input (software sizing)}{6}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Input (drivers)}{6}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Output}{7}{subsection.3.2.3}
 \contentsline {chapter}{Schedule and resources allocation}{9}{chapter*.5}
 \contentsline {section}{\numberline {4.1} Gantt's diagram}{9}{section.4.1}
-\contentsline {chapter}{Risk evaluation}{10}{chapter*.6}
-\contentsline {section}{\numberline {5.1}Risk evaluation and avoidance}{10}{section.5.1}
-=======
-\contentsline {chapter}{Schedule and resources allocation}{7}{chapter*.5}
-\contentsline {section}{\numberline {4.1} Gantt's diagram}{7}{section.4.1}
-\contentsline {chapter}{Risk evaluation}{9}{chapter*.6}
-\contentsline {section}{\numberline {5.1}Risk evaluation and avoidance}{9}{section.5.1}
->>>>>>> e0f9ff34340ab51877a727c2f3adf5f93f85162c
+\contentsline {chapter}{Risk evaluation}{11}{chapter*.6}
+\contentsline {section}{\numberline {5.1}Risk evaluation and avoidance}{11}{section.5.1}
