@@ -1,12 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.19)  2 FEB 2016 17:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.1.5)  2 FEB 2016 19:42
 entering extended mode
- \write18 enabled.
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**Project_Plan_Document.tex
-(./Project_Plan_Document.tex
-LaTeX2e <2015/10/01> patch level 2
-Babel <3.9m> and hyphenation patterns for 79 languages loaded.
-(/usr/share/texmf-dist/tex/latex/base/report.cls
+**\input Project_Plan_Document.tex
+(./Project_Plan_Document.tex (/usr/share/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/fleqn.clo
 File: fleqn.clo 2015/03/31 v1.1i Standard LaTeX option (flush left equations)
@@ -799,12 +797,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
  ) 
 Here is how much of TeX's memory you used:
  7700 strings out of 493054
- 109543 string characters out of 6140585
- 206565 words of memory out of 5000000
+ 109543 string characters out of 6140587
+ 206566 words of memory out of 5000000
  11049 multiletter control sequences out of 15000+600000
  11669 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,10n,32p,254b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,10n,32p,261b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -815,7 +813,7 @@ st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
 
-Output written on Project_Plan_Document.pdf (12 pages, 190149 bytes).
+Output written on Project_Plan_Document.pdf (12 pages, 190174 bytes).
 PDF statistics:
  245 PDF objects out of 1000 (max. 8388607)
  214 compressed objects within 3 object streams

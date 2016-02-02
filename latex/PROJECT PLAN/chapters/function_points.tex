@@ -28,7 +28,7 @@ To each point we assign a weight referring to this table:\\
 \section{Complexity and cost evaluation}
   \subsection{Internal Logic File}
   According to our previous specification (explained in the RASD and DD documents),
-  users and ride have to store few informations, thus we can adopt the
+  \textbf{users} and \textbf{ride} have to store few informations, thus we can adopt the
   simple cost weight for those ones.
   On the other hand, \textbf{sharedride} and \textbf{taxiqueue} have to store a dynamic
   list, that require more attention, so we adopt a medium cost weight.
@@ -46,7 +46,7 @@ To each point we assign a weight referring to this table:\\
   
   \subsection{External Input}
   Most of the external inputs are simple actions involving a few number of entities,
-  therefore we can adopt a simple weight cost for all of them.
+  therefore we can adopt a simple weight cost for them.
   \textbf{request} and \textbf{change settings} however are more complex, and thus require a medium weight cost.
   \begin{equation}
     10*3 + 2*4= 38 \text{ FPs}
