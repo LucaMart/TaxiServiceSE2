@@ -11,7 +11,10 @@
 \BOOKMARK [0][-]{chapter*.4}{COCOMO II}{}% 11
 \BOOKMARK [1][-]{section.3.1}{Approach}{chapter*.4}% 12
 \BOOKMARK [1][-]{section.3.2}{Results}{chapter*.4}% 13
-\BOOKMARK [0][-]{chapter*.5}{Schedule and resources allocation}{}% 14
-\BOOKMARK [1][-]{section.4.1}{ Gantt's diagram}{chapter*.5}% 15
-\BOOKMARK [0][-]{chapter*.6}{Risk evaluation}{}% 16
-\BOOKMARK [1][-]{section.5.1}{Risk evaluation and avoidance}{chapter*.6}% 17
+\BOOKMARK [2][-]{subsection.3.2.1}{Input \(software sizing\)}{section.3.2}% 14
+\BOOKMARK [2][-]{subsection.3.2.2}{Input \(drivers\)}{section.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.2.3}{Output}{section.3.2}% 16
+\BOOKMARK [0][-]{chapter*.5}{Schedule and resources allocation}{}% 17
+\BOOKMARK [1][-]{section.4.1}{ Gantt's diagram}{chapter*.5}% 18
+\BOOKMARK [0][-]{chapter*.6}{Risk evaluation}{}% 19
+\BOOKMARK [1][-]{section.5.1}{Risk evaluation and avoidance}{chapter*.6}% 20
