@@ -4,9 +4,30 @@
 % using table from http://www.qsm.com/resources/function-point-languages-table
 %           VV
 % 111 FPs * 46 = 5106 SLOCs
+In order to apply the COCOMOII method, we apply first a simple \textit{Funtion Points to Lines Of Code}
+conversion. The adjustment factor of 46 is provided by the updated table available at 
+http://www.qsm.com/resources/function-point-languages-table
+\begin{equation}
+ 111 \text{ FPs} * 46 = 5106 \text{ SLOCs}
+\end{equation}
 
 %effort=2.94*EAF*(KLOC)^E
+The effort estimation takes into account a ``Nominal'' value for all the Cost Drivers and Scale Drivers.
+\begin{multline}
+ \textit{effort} = 2.94 * \text{EAF} * (\text{KLOC})^E \\
+ \text{EAF} = 1.0 \\
+ \text{KLOC} = 5.106 \\
+ E = 1.0997 \\
+ \text{Therefore, } \textit{effort} = 2.94 * 1.0 * (5.106)^1.0997 = 17.66 \textit{ Person/Months} \\
+\end{multline}
+
 %duration=3.67*(effort)^Se
 %Npeople=effort/duration
 
 \section{Results}
+Results obtained using the online calculator tool available at \\
+http://csse.usc.edu/tools/COCOMOII.php \\
+
+\input{chapters/cocomo_data/developement.tex}
+
+\input{chapters/cocomo_data/effort.tex}

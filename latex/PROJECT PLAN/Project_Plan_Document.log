@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.19)  31 JAN 2016 23:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.19)  2 FEB 2016 15:51
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -671,11 +671,13 @@ dride,
 [3
 
 ]) [4] (./chapters/cocomo.tex
-Underfull \hbox (badness 10000) in paragraph at lines 13--15
+Underfull \hbox (badness 10000) in paragraph at lines 43--46
 
  []
 
-(./chapters/cocomo_data/developement.tex
+[5
+
+] (./chapters/cocomo_data/developement.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 
  []
@@ -699,10 +701,8 @@ onths)
 Underfull \vbox (badness 10000) detected at line 15
  []
 
-[5
-
-])) [6] (./chapters/schedule.tex
-<chapters/SWE2-4.png, id=139, 1151.30125pt x 217.81375pt>
+)) [6] (./chapters/schedule.tex
+<chapters/SWE2-4.png, id=145, 1151.30125pt x 217.81375pt>
 File: chapters/SWE2-4.png Graphic file (type png)
 
 <use chapters/SWE2-4.png>
@@ -749,13 +749,13 @@ Package rerunfilecheck Info: File `Project_Plan_Document.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 64.
  ) 
 Here is how much of TeX's memory you used:
- 7670 strings out of 493054
- 108977 string characters out of 6140585
+ 7678 strings out of 493054
+ 109071 string characters out of 6140585
  205435 words of memory out of 5000000
- 11039 multiletter control sequences out of 15000+600000
- 10968 words of font info for 39 fonts, out of 8000000 for 9000
+ 11041 multiletter control sequences out of 15000+600000
+ 11669 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,8n,32p,254b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,10n,32p,254b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/publi
@@ -764,11 +764,12 @@ cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 /share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmti10.pfb>
-Output written on Project_Plan_Document.pdf (9 pages, 166534 bytes).
+/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
+
+Output written on Project_Plan_Document.pdf (9 pages, 181545 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 178 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
+ 211 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 500000)
  142 words of extra memory for PDF output out of 10000 (max. 10000000)
 

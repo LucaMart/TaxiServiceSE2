@@ -4,13 +4,44 @@
 % using table from http://www.qsm.com/resources/function-point-languages-table
 %           VV
 % 111 FPs * 46 = 5106 SLOCs
+In order to apply the COCOMOII method, we apply first a simple \textit{Funtion Points to Lines Of Code}
+conversion. The adjustment factor of 46 is provided by the updated table available at 
+http://www.qsm.com/resources/function-point-languages-table
+\begin{equation}
+ 111 \text{ FPs} * 46 = 5106 \text{ SLOCs}
+\end{equation}
 
 %effort=2.94*EAF*(KLOC)^E
+The effort estimation takes into account a ``Nominal'' value for all the Cost Drivers and Scale Drivers.
+\begin{multline}
+ \text{effort} = 2.94 * \textit{EAF} * (\textit{KLOC})^E \\
+ \textit{EAF} = 1.0 \\
+ \textit{KLOC} = 5.106 \\
+ E = 1.0997 \\
+ \text{Therefore, effort} = 2.94 * 1.0 * (5.106)^{1.0997} = 17.66 \text{ Person/Months} \\
+\end{multline}
+
 %duration=3.67*(effort)^Se
+Next, we estimate the project duration using the following equation.
+\begin{multline}
+ \text{duration} = 3.67 * (\textit{effort})^\textit{Se} \\
+ \textit{Se} = 0.3179 \\
+ \text{Therefore, duration} = 3.67 * (17.66)^{0.3179} = 9.14 \text{ Months} \\
+\end{multline}
+
 %Npeople=effort/duration
+Last, we determine the number of people required to complete the project within
+the previously computed parameters
+\begin{multline}
+ N_{\textit{people}} = \lceil \textit{effort} / \textit{duration} \rceil \\
+ \textit{Se} = 0.3179 \\
+ \text{Therefore, } N_{\textit{people}} = \lceil 17.66 / 9.14 \rceil = 2 \text{ People} \\
+\end{multline}
+% we'll just call them 'Alice' and 'Bob'
 
 \section{Results}
-Results obtained using the online calculator tool available at \\
+We employed an online COCOMOII calculator in order to generate a more fine-grained estimate. \\
+The following results were obtained using the tool available at \\
 http://csse.usc.edu/tools/COCOMOII.php \\
 
 \input{chapters/cocomo_data/developement.tex}
